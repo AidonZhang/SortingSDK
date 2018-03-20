@@ -1,0 +1,359 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/drv/ui
+END
+bank_a_ui_show_sliderbar.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_sliderbar.c
+END
+bank_b_ui_show_timebox.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_timebox.c
+END
+bank_b_ui_show_dialogbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_dialogbox.c
+END
+bank_a_ui_show_parambox.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_parambox.c
+END
+bank_c_ui_putstring_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1194/trunk/US216A/case/drv/ui/bank_c_ui_putstring_sub.c
+END
+bank_a_fix_ui_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_a_fix_ui_string.c
+END
+bank_a_ui_get_picbox_attrb.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_get_picbox_attrb.c
+END
+rcode_ui_op_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/77/trunk/US216A/case/drv/ui/rcode_ui_op_entry.c
+END
+bank_a_ui_draw_rect_frame.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_draw_rect_frame.c
+END
+bank_b_ui_show_picbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/77/trunk/US216A/case/drv/ui/bank_b_ui_show_picbox.c
+END
+bank_c_ui_char_to_unicode.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_c_ui_char_to_unicode.c
+END
+bank_a_ui_fill_rect_dump.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_fill_rect_dump.c
+END
+bank_c_misc_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/963/trunk/US216A/case/drv/ui/bank_c_misc_functions.c
+END
+bank_b_ui_show_parambox_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_parambox_1.c
+END
+bank_b_ui_show_progressbar.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_b_ui_show_progressbar.c
+END
+bank_b_ui_get_text_line.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_get_text_line.c
+END
+new_font.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/256/trunk/US216A/case/drv/ui/new_font.h
+END
+bank_c_ui_putstring_sub2.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1312/trunk/US216A/case/drv/ui/bank_c_ui_putstring_sub2.c
+END
+bank_a_ui_itoa.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_itoa.c
+END
+bank_b_ui_arabic_nsm.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_arabic_nsm.c
+END
+ui_driver.xn
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/942/trunk/US216A/case/drv/ui/ui_driver.xn
+END
+bank_c_ui_show_transparent.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_c_ui_show_transparent.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/1168/trunk/US216A/case/drv/ui/Makefile
+END
+bank_c_ui_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_c_ui_init.c
+END
+bank_a_ui_show_listbox_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_a_ui_show_listbox_2.c
+END
+bank_b_ui_show_listbox_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_listbox_1.c
+END
+cmd.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/cmd.txt
+END
+bank_b_ui_show_numbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_numbox.c
+END
+bank_a_ui_res_open.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1273/trunk/US216A/case/drv/ui/bank_a_ui_res_open.c
+END
+bank_b_ui_copy_arabic.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/77/trunk/US216A/case/drv/ui/bank_b_ui_copy_arabic.c
+END
+bank_b_ui_arabic_ligature.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_arabic_ligature.c
+END
+bank_a_ui_get_listbox_attrb.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_get_listbox_attrb.c
+END
+bank_a_ui_show_listbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_listbox.c
+END
+bank_b_ui_scroll_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_scroll_string.c
+END
+bank_c_ui_unicode_to_char.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/556/trunk/US216A/case/drv/ui/bank_c_ui_unicode_to_char.c
+END
+bank_a_ui_show_numbox_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_numbox_1.c
+END
+UI0_ROM0.BIN
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/60/trunk/US216A/case/drv/ui/UI0_ROM0.BIN
+END
+bank_a_ui_get_textbox_attrb.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_get_textbox_attrb.c
+END
+bank_b_ui_show_sliderbar_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_sliderbar_1.c
+END
+bank_b_ui_show_timebox_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_timebox_1.c
+END
+bank_a_ui_show_timebox_3.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1237/trunk/US216A/case/drv/ui/bank_a_ui_show_timebox_3.c
+END
+bank_a_ui_show_sliderbar_3.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_sliderbar_3.c
+END
+bank_a_ui_putstring_sub_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1300/trunk/US216A/case/drv/ui/bank_a_ui_putstring_sub_2.c
+END
+bank_b_ui_show_sliderbar_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_sliderbar_2.c
+END
+bank_b_ui_show_timebox_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_show_timebox_2.c
+END
+rcode_ui_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/rcode_ui_functions.c
+END
+bank_a_ui_show_parambox_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_show_parambox_2.c
+END
+bank_a_fix_ui_string_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_a_fix_ui_string_2.c
+END
+bank_a_ui_thai_point.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_a_ui_thai_point.c
+END
+bank_b_ui_show_textbox.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_b_ui_show_textbox.c
+END
+bank_b_ui_putstring.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_b_ui_putstring.c
+END
+bank_b_ui_string_sdimage.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1300/trunk/US216A/case/drv/ui/bank_b_ui_string_sdimage.c
+END
+bank_c_ui_ellipsis_to_longstr.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_c_ui_ellipsis_to_longstr.c
+END
+bank_c_ui_set_language.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/556/trunk/US216A/case/drv/ui/bank_c_ui_set_language.c
+END
+bank_c_ui_utf8_to_unicode.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_c_ui_utf8_to_unicode.c
+END
+bank_a_ui_draw_3Drect.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_draw_3Drect.c
+END
+bank_a_ui_load_attribute.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/bank_a_ui_load_attribute.c
+END
+bank_b_ui_scroll_string_ext.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1028/trunk/US216A/case/drv/ui/bank_b_ui_scroll_string_ext.c
+END
+ui_driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/825/trunk/US216A/case/drv/ui/ui_driver.h
+END

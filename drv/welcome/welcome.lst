@@ -1,0 +1,5536 @@
+
+welcome.exe:     file format elf32-tradlittlemips
+
+Disassembly of section .text:
+
+bfc32000 <disp_starting>:
+bfc32000:	64d4      	save	32,ra,s1
+bfc32002:	0104      	addiu	s1,sp,16
+bfc32004:	d984      	sw	a0,16(s1)
+bfc32006:	d9a5      	sw	a1,20(s1)
+bfc32008:	d9c6      	sw	a2,24(s1)
+bfc3200a:	9946      	lw	v0,24(s1)
+bfc3200c:	9a41      	lw	v0,4(v0)
+bfc3200e:	d940      	sw	v0,0(s1)
+bfc32010:	b414      	lw	a0,bfc32060 <WELCOME_START_ADDR+0x60>
+bfc32012:	b214      	lw	v0,bfc32060 <WELCOME_START_ADDR+0x60>
+bfc32014:	9a60      	lw	v1,0(v0)
+bfc32016:	b214      	lw	v0,bfc32064 <WELCOME_START_ADDR+0x64>
+bfc32018:	ea6c      	and	v0,v1
+bfc3201a:	dc40      	sw	v0,0(a0)
+bfc3201c:	9940      	lw	v0,0(s1)
+bfc3201e:	aa40      	lhu	v0,0(v0)
+bfc32020:	c144      	sb	v0,4(s1)
+bfc32022:	9940      	lw	v0,0(s1)
+bfc32024:	aa41      	lhu	v0,2(v0)
+bfc32026:	c145      	sb	v0,5(s1)
+bfc32028:	a145      	lbu	v0,5(s1)
+bfc3202a:	2a03      	bnez	v0,bfc32032 <WELCOME_START_ADDR+0x32>
+bfc3202c:	b30f      	lw	v1,bfc32068 <WELCOME_START_ADDR+0x68>
+bfc3202e:	6a5d      	li	v0,93
+bfc32030:	db40      	sw	v0,0(v1)
+bfc32032:	a144      	lbu	v0,4(s1)
+bfc32034:	6782      	move	a0,v0
+bfc32036:	1a1f c843 	jal	bfc3210c <disp_starting_board_config>
+bfc3203a:	6500      	nop
+bfc3203c:	9944      	lw	v0,16(s1)
+bfc3203e:	6782      	move	a0,v0
+bfc32040:	1a1f c86d 	jal	bfc321b4 <disp_starting_adfu_check>
+bfc32044:	6500      	nop
+bfc32046:	a144      	lbu	v0,4(s1)
+bfc32048:	6782      	move	a0,v0
+bfc3204a:	1a1f c880 	jal	bfc32200 <disp_starting_low_power>
+bfc3204e:	6500      	nop
+bfc32050:	9945      	lw	v0,20(s1)
+bfc32052:	6782      	move	a0,v0
+bfc32054:	1a1f c892 	jal	bfc32248 <disp_starting_show_welcome>
+bfc32058:	6500      	nop
+bfc3205a:	65b9      	move	sp,s1
+bfc3205c:	6452      	restore	16,ra,s1
+bfc3205e:	e8a0      	jrc	ra
+bfc32060:	005c      	addiu	s0,sp,368
+bfc32062:	c009      	sb	s0,9(s0)
+bfc32064:	ffff      	daddiu	a3,sp,124
+bfc32066:	bfff      	lwu	a3,124(a3)
+bfc32068:	001c      	addiu	s0,sp,112
+bfc3206a:	c012      	sb	s0,18(s0)
+
+bfc3206c <flush_rtc>:
+bfc3206c:	6491      	save	8,s1
+bfc3206e:	673d      	move	s1,sp
+bfc32070:	b308      	lw	v1,bfc32090 <flush_rtc+0x24>
+bfc32072:	f594 6a16 	li	v0,42390
+bfc32076:	db40      	sw	v0,0(v1)
+bfc32078:	b206      	lw	v0,bfc32090 <flush_rtc+0x24>
+bfc3207a:	9a40      	lw	v0,0(v0)
+bfc3207c:	f26b 7209 	cmpi	v0,23145
+bfc32080:	6758      	move	v0,t8
+bfc32082:	5a01      	sltiu	v0,1
+bfc32084:	6101      	btnez	bfc32088 <flush_rtc+0x1c>
+bfc32086:	17f8      	b	bfc32078 <flush_rtc+0xc>
+bfc32088:	65b9      	move	sp,s1
+bfc3208a:	6411      	restore	8,s1
+bfc3208c:	e8a0      	jrc	ra
+bfc3208e:	0000      	addiu	s0,sp,0
+bfc32090:	0004      	addiu	s0,sp,16
+bfc32092:	c012      	sb	s0,18(s0)
+
+bfc32094 <mcu_enter_sleep_S4>:
+bfc32094:	6491      	save	8,s1
+bfc32096:	673d      	move	s1,sp
+bfc32098:	b40a      	lw	a0,bfc320c0 <mcu_enter_sleep_S4+0x2c>
+bfc3209a:	b20a      	lw	v0,bfc320c0 <mcu_enter_sleep_S4+0x2c>
+bfc3209c:	9a60      	lw	v1,0(v0)
+bfc3209e:	f003 6a01 	li	v0,6145
+bfc320a2:	ea4b      	neg	v0
+bfc320a4:	ea6c      	and	v0,v1
+bfc320a6:	dc40      	sw	v0,0(a0)
+bfc320a8:	b406      	lw	a0,bfc320c0 <mcu_enter_sleep_S4+0x2c>
+bfc320aa:	b206      	lw	v0,bfc320c0 <mcu_enter_sleep_S4+0x2c>
+bfc320ac:	9a60      	lw	v1,0(v0)
+bfc320ae:	f002 6a00 	li	v0,4096
+bfc320b2:	ea6d      	or	v0,v1
+bfc320b4:	dc40      	sw	v0,0(a0)
+bfc320b6:	b304      	lw	v1,bfc320c4 <mcu_enter_sleep_S4+0x30>
+bfc320b8:	6a00      	li	v0,0
+bfc320ba:	db40      	sw	v0,0(v1)
+bfc320bc:	17ff      	b	bfc320bc <mcu_enter_sleep_S4+0x28>
+bfc320be:	0000      	addiu	s0,sp,0
+bfc320c0:	0008      	addiu	s0,sp,32
+bfc320c2:	c002      	sb	s0,2(s0)
+bfc320c4:	0044      	addiu	s0,sp,272
+bfc320c6:	c002      	sb	s0,2(s0)
+
+bfc320c8 <is_usb_cable_in>:
+bfc320c8:	6492      	save	16,s1
+bfc320ca:	673d      	move	s1,sp
+bfc320cc:	6a00      	li	v0,0
+bfc320ce:	c140      	sb	v0,0(s1)
+bfc320d0:	6a00      	li	v0,0
+bfc320d2:	c141      	sb	v0,1(s1)
+bfc320d4:	b20c      	lw	v0,bfc32104 <is_usb_cable_in+0x3c>
+bfc320d6:	a240      	lbu	v0,0(v0)
+bfc320d8:	6762      	move	v1,v0
+bfc320da:	eb11      	zeb	v1
+bfc320dc:	6a40      	li	v0,64
+bfc320de:	ea6c      	and	v0,v1
+bfc320e0:	2a07      	bnez	v0,bfc320f0 <is_usb_cable_in+0x28>
+bfc320e2:	b20a      	lw	v0,bfc32108 <is_usb_cable_in+0x40>
+bfc320e4:	9a60      	lw	v1,0(v0)
+bfc320e6:	f180 6a00 	li	v0,384
+bfc320ea:	ea6c      	and	v0,v1
+bfc320ec:	2a01      	bnez	v0,bfc320f0 <is_usb_cable_in+0x28>
+bfc320ee:	1002      	b	bfc320f4 <is_usb_cable_in+0x2c>
+bfc320f0:	6a01      	li	v0,1
+bfc320f2:	c141      	sb	v0,1(s1)
+bfc320f4:	a141      	lbu	v0,1(s1)
+bfc320f6:	c140      	sb	v0,0(s1)
+bfc320f8:	a140      	lbu	v0,0(s1)
+bfc320fa:	651a      	move	t8,v0
+bfc320fc:	6758      	move	v0,t8
+bfc320fe:	65b9      	move	sp,s1
+bfc32100:	6412      	restore	16,s1
+bfc32102:	e8a0      	jrc	ra
+bfc32104:	041a      	addiu	a0,sp,104
+bfc32106:	c008      	sb	s0,8(s0)
+bfc32108:	0010      	addiu	s0,sp,64
+bfc3210a:	c002      	sb	s0,2(s0)
+
+bfc3210c <disp_starting_board_config>:
+bfc3210c:	64d3      	save	24,ra,s1
+bfc3210e:	0104      	addiu	s1,sp,16
+bfc32110:	6744      	move	v0,a0
+bfc32112:	c148      	sb	v0,8(s1)
+bfc32114:	b420      	lw	a0,bfc32194 <disp_starting_board_config+0x88>
+bfc32116:	b220      	lw	v0,bfc32194 <disp_starting_board_config+0x88>
+bfc32118:	9a60      	lw	v1,0(v0)
+bfc3211a:	6a80      	li	v0,128
+bfc3211c:	ea6d      	or	v0,v1
+bfc3211e:	dc40      	sw	v0,0(a0)
+bfc32120:	b41d      	lw	a0,bfc32194 <disp_starting_board_config+0x88>
+bfc32122:	b21d      	lw	v0,bfc32194 <disp_starting_board_config+0x88>
+bfc32124:	9a60      	lw	v1,0(v0)
+bfc32126:	6a10      	li	v0,16
+bfc32128:	ea6d      	or	v0,v1
+bfc3212a:	dc40      	sw	v0,0(a0)
+bfc3212c:	b41b      	lw	a0,bfc32198 <disp_starting_board_config+0x8c>
+bfc3212e:	b21b      	lw	v0,bfc32198 <disp_starting_board_config+0x8c>
+bfc32130:	9a60      	lw	v1,0(v0)
+bfc32132:	f600 6a01 	li	v0,1537
+bfc32136:	ea4b      	neg	v0
+bfc32138:	ea6c      	and	v0,v1
+bfc3213a:	dc40      	sw	v0,0(a0)
+bfc3213c:	b417      	lw	a0,bfc32198 <disp_starting_board_config+0x8c>
+bfc3213e:	b217      	lw	v0,bfc32198 <disp_starting_board_config+0x8c>
+bfc32140:	9a60      	lw	v1,0(v0)
+bfc32142:	f200 6a00 	li	v0,512
+bfc32146:	ea6d      	or	v0,v1
+bfc32148:	dc40      	sw	v0,0(a0)
+bfc3214a:	b315      	lw	v1,bfc3219c <disp_starting_board_config+0x90>
+bfc3214c:	f594 6a16 	li	v0,42390
+bfc32150:	db40      	sw	v0,0(v1)
+bfc32152:	b213      	lw	v0,bfc3219c <disp_starting_board_config+0x90>
+bfc32154:	9a40      	lw	v0,0(v0)
+bfc32156:	f26b 7209 	cmpi	v0,23145
+bfc3215a:	6758      	move	v0,t8
+bfc3215c:	5a01      	sltiu	v0,1
+bfc3215e:	6101      	btnez	bfc32162 <disp_starting_board_config+0x56>
+bfc32160:	17f8      	b	bfc32152 <disp_starting_board_config+0x46>
+bfc32162:	b410      	lw	a0,bfc321a0 <disp_starting_board_config+0x94>
+bfc32164:	b20f      	lw	v0,bfc321a0 <disp_starting_board_config+0x94>
+bfc32166:	9a60      	lw	v1,0(v0)
+bfc32168:	b20f      	lw	v0,bfc321a4 <disp_starting_board_config+0x98>
+bfc3216a:	ea6d      	or	v0,v1
+bfc3216c:	dc40      	sw	v0,0(a0)
+bfc3216e:	6c05      	li	a0,5
+bfc32170:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc32174:	6500      	nop
+bfc32176:	b40d      	lw	a0,bfc321a8 <disp_starting_board_config+0x9c>
+bfc32178:	b20c      	lw	v0,bfc321a8 <disp_starting_board_config+0x9c>
+bfc3217a:	9a60      	lw	v1,0(v0)
+bfc3217c:	b20c      	lw	v0,bfc321ac <disp_starting_board_config+0xa0>
+bfc3217e:	eb4c      	and	v1,v0
+bfc32180:	b20c      	lw	v0,bfc321b0 <disp_starting_board_config+0xa4>
+bfc32182:	ea6d      	or	v0,v1
+bfc32184:	dc40      	sw	v0,0(a0)
+bfc32186:	6c05      	li	a0,5
+bfc32188:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc3218c:	6500      	nop
+bfc3218e:	65b9      	move	sp,s1
+bfc32190:	6451      	restore	8,ra,s1
+bfc32192:	e8a0      	jrc	ra
+bfc32194:	0014      	addiu	s0,sp,80
+bfc32196:	c002      	sb	s0,2(s0)
+bfc32198:	003c      	addiu	s0,sp,240
+bfc3219a:	c009      	sb	s0,9(s0)
+bfc3219c:	0004      	addiu	s0,sp,16
+bfc3219e:	c012      	sb	s0,18(s0)
+bfc321a0:	0100      	addiu	s1,sp,0
+bfc321a2:	c000      	sb	s0,0(s0)
+bfc321a4:	0000      	addiu	s0,sp,0
+bfc321a6:	001f      	addiu	s0,sp,124
+bfc321a8:	003c      	addiu	s0,sp,240
+bfc321aa:	c002      	sb	s0,2(s0)
+bfc321ac:	ffff      	daddiu	a3,sp,124
+bfc321ae:	ffe7      	daddiu	a3,sp,28
+bfc321b0:	0000      	addiu	s0,sp,0
+bfc321b2:	0010      	addiu	s0,sp,64
+
+bfc321b4 <disp_starting_adfu_check>:
+bfc321b4:	64d4      	save	32,ra,s1
+bfc321b6:	0104      	addiu	s1,sp,16
+bfc321b8:	d984      	sw	a0,16(s1)
+bfc321ba:	6a00      	li	v0,0
+bfc321bc:	c140      	sb	v0,0(s1)
+bfc321be:	1a1f c832 	jal	bfc320c8 <is_usb_cable_in>
+bfc321c2:	6500      	nop
+bfc321c4:	7201      	cmpi	v0,1
+bfc321c6:	6758      	move	v0,t8
+bfc321c8:	5a01      	sltiu	v0,1
+bfc321ca:	600e      	bteqz	bfc321e8 <disp_starting_adfu_check+0x34>
+bfc321cc:	6c14      	li	a0,20
+bfc321ce:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc321d2:	6500      	nop
+bfc321d4:	b20a      	lw	v0,bfc321fc <disp_starting_adfu_check+0x48>
+bfc321d6:	a240      	lbu	v0,0(v0)
+bfc321d8:	6762      	move	v1,v0
+bfc321da:	eb11      	zeb	v1
+bfc321dc:	6a7f      	li	v0,127
+bfc321de:	ea6c      	and	v0,v1
+bfc321e0:	5262      	slti	v0,98
+bfc321e2:	6002      	bteqz	bfc321e8 <disp_starting_adfu_check+0x34>
+bfc321e4:	6a01      	li	v0,1
+bfc321e6:	c140      	sb	v0,0(s1)
+bfc321e8:	a140      	lbu	v0,0(s1)
+bfc321ea:	7201      	cmpi	v0,1
+bfc321ec:	6758      	move	v0,t8
+bfc321ee:	5a01      	sltiu	v0,1
+bfc321f0:	6002      	bteqz	bfc321f6 <disp_starting_adfu_check+0x42>
+bfc321f2:	9944      	lw	v0,16(s1)
+bfc321f4:	eac0      	jalrc	v0
+bfc321f6:	65b9      	move	sp,s1
+bfc321f8:	6452      	restore	16,ra,s1
+bfc321fa:	e8a0      	jrc	ra
+bfc321fc:	0028      	addiu	s0,sp,160
+bfc321fe:	c002      	sb	s0,2(s0)
+
+bfc32200 <disp_starting_low_power>:
+bfc32200:	64d4      	save	32,ra,s1
+bfc32202:	0104      	addiu	s1,sp,16
+bfc32204:	6744      	move	v0,a0
+bfc32206:	c150      	sb	v0,16(s1)
+bfc32208:	6a00      	li	v0,0
+bfc3220a:	c140      	sb	v0,0(s1)
+bfc3220c:	1a1f c832 	jal	bfc320c8 <is_usb_cable_in>
+bfc32210:	6500      	nop
+bfc32212:	c141      	sb	v0,1(s1)
+bfc32214:	a141      	lbu	v0,1(s1)
+bfc32216:	2a0a      	bnez	v0,bfc3222c <disp_starting_low_power+0x2c>
+bfc32218:	b20b      	lw	v0,bfc32244 <disp_starting_low_power+0x44>
+bfc3221a:	a240      	lbu	v0,0(v0)
+bfc3221c:	6762      	move	v1,v0
+bfc3221e:	eb11      	zeb	v1
+bfc32220:	6a7f      	li	v0,127
+bfc32222:	ea6c      	and	v0,v1
+bfc32224:	5251      	slti	v0,81
+bfc32226:	6002      	bteqz	bfc3222c <disp_starting_low_power+0x2c>
+bfc32228:	6a01      	li	v0,1
+bfc3222a:	c140      	sb	v0,0(s1)
+bfc3222c:	a140      	lbu	v0,0(s1)
+bfc3222e:	7201      	cmpi	v0,1
+bfc32230:	6758      	move	v0,t8
+bfc32232:	5a01      	sltiu	v0,1
+bfc32234:	6003      	bteqz	bfc3223c <disp_starting_low_power+0x3c>
+bfc32236:	1a1f c825 	jal	bfc32094 <mcu_enter_sleep_S4>
+bfc3223a:	6500      	nop
+bfc3223c:	65b9      	move	sp,s1
+bfc3223e:	6452      	restore	16,ra,s1
+bfc32240:	e8a0      	jrc	ra
+bfc32242:	0000      	addiu	s0,sp,0
+bfc32244:	0018      	addiu	s0,sp,96
+bfc32246:	c002      	sb	s0,2(s0)
+
+bfc32248 <disp_starting_show_welcome>:
+bfc32248:	64f7      	save	56,ra,s0-s1
+bfc3224a:	0104      	addiu	s1,sp,16
+bfc3224c:	d98a      	sw	a0,40(s1)
+bfc3224e:	b22e      	lw	v0,bfc32304 <disp_starting_show_welcome+0xbc>
+bfc32250:	d942      	sw	v0,8(s1)
+bfc32252:	6a00      	li	v0,0
+bfc32254:	c948      	sh	v0,16(s1)
+bfc32256:	b22d      	lw	v0,bfc32308 <disp_starting_show_welcome+0xc0>
+bfc32258:	eac0      	jalrc	v0
+bfc3225a:	6c01      	li	a0,1
+bfc3225c:	6d00      	li	a1,0
+bfc3225e:	6e00      	li	a2,0
+bfc32260:	b22b      	lw	v0,bfc3230c <disp_starting_show_welcome+0xc4>
+bfc32262:	eac0      	jalrc	v0
+bfc32264:	6a00      	li	v0,0
+bfc32266:	c940      	sh	v0,0(s1)
+bfc32268:	6a00      	li	v0,0
+bfc3226a:	c941      	sh	v0,2(s1)
+bfc3226c:	f140 6a00 	li	v0,320
+bfc32270:	c942      	sh	v0,4(s1)
+bfc32272:	6af0      	li	v0,240
+bfc32274:	c943      	sh	v0,6(s1)
+bfc32276:	6791      	move	a0,s1
+bfc32278:	6d00      	li	a1,0
+bfc3227a:	6e00      	li	a2,0
+bfc3227c:	b225      	lw	v0,bfc32310 <disp_starting_show_welcome+0xc8>
+bfc3227e:	eac0      	jalrc	v0
+bfc32280:	b225      	lw	v0,bfc32310 <disp_starting_show_welcome+0xc8>
+bfc32282:	d943      	sw	v0,12(s1)
+bfc32284:	6a00      	li	v0,0
+bfc32286:	c948      	sh	v0,16(s1)
+bfc32288:	9943      	lw	v0,12(s1)
+bfc3228a:	222d      	beqz	v0,bfc322e6 <disp_starting_show_welcome+0x9e>
+bfc3228c:	9943      	lw	v0,12(s1)
+bfc3228e:	f005 5a00 	sltiu	v0,10240
+bfc32292:	6117      	btnez	bfc322c2 <disp_starting_show_welcome+0x7a>
+bfc32294:	9942      	lw	v0,8(s1)
+bfc32296:	a968      	lhu	v1,16(s1)
+bfc32298:	990a      	lw	s0,40(s1)
+bfc3229a:	6782      	move	a0,v0
+bfc3229c:	67a3      	move	a1,v1
+bfc3229e:	6e28      	li	a2,40
+bfc322a0:	e8c0      	jalrc	s0
+bfc322a2:	9942      	lw	v0,8(s1)
+bfc322a4:	f005 6b00 	li	v1,10240
+bfc322a8:	6782      	move	a0,v0
+bfc322aa:	67a3      	move	a1,v1
+bfc322ac:	6e00      	li	a2,0
+bfc322ae:	b21b      	lw	v0,bfc32318 <disp_starting_show_welcome+0xd0>
+bfc322b0:	eac0      	jalrc	v0
+bfc322b2:	a948      	lhu	v0,16(s1)
+bfc322b4:	4a28      	addiu	v0,40
+bfc322b6:	c948      	sh	v0,16(s1)
+bfc322b8:	9943      	lw	v0,12(s1)
+bfc322ba:	f01b 4a00 	addiu	v0,-10240
+bfc322be:	d943      	sw	v0,12(s1)
+bfc322c0:	17e3      	b	bfc32288 <disp_starting_show_welcome+0x40>
+bfc322c2:	9982      	lw	a0,8(s1)
+bfc322c4:	a9a8      	lhu	a1,16(s1)
+bfc322c6:	9943      	lw	v0,12(s1)
+bfc322c8:	3244      	sll	v0,1
+bfc322ca:	3242      	srl	v0,8
+bfc322cc:	3246      	srl	v0,1
+bfc322ce:	ea31      	zeh	v0
+bfc322d0:	996a      	lw	v1,40(s1)
+bfc322d2:	67c2      	move	a2,v0
+bfc322d4:	ebc0      	jalrc	v1
+bfc322d6:	9962      	lw	v1,8(s1)
+bfc322d8:	9943      	lw	v0,12(s1)
+bfc322da:	ea31      	zeh	v0
+bfc322dc:	6783      	move	a0,v1
+bfc322de:	67a2      	move	a1,v0
+bfc322e0:	6e00      	li	a2,0
+bfc322e2:	b20e      	lw	v0,bfc32318 <disp_starting_show_welcome+0xd0>
+bfc322e4:	eac0      	jalrc	v0
+bfc322e6:	6c01      	li	a0,1
+bfc322e8:	6d00      	li	a1,0
+bfc322ea:	6e00      	li	a2,0
+bfc322ec:	b20c      	lw	v0,bfc3231c <disp_starting_show_welcome+0xd4>
+bfc322ee:	eac0      	jalrc	v0
+bfc322f0:	6c08      	li	a0,8
+bfc322f2:	6d00      	li	a1,0
+bfc322f4:	6e00      	li	a2,0
+bfc322f6:	1a1f c8c8 	jal	bfc32320 <set_contrast>
+bfc322fa:	6500      	nop
+bfc322fc:	65b9      	move	sp,s1
+bfc322fe:	6475      	restore	40,ra,s0-s1
+bfc32300:	e8a0      	jrc	ra
+bfc32302:	0000      	addiu	s0,sp,0
+bfc32304:	8000      	lb	s0,0(s0)
+bfc32306:	bfc2      	lwu	a2,8(a3)
+bfc32308:	2705      	beqz	a3,bfc32314 <disp_starting_show_welcome+0xcc>
+bfc3230a:	bfc3      	lwu	a2,12(a3)
+bfc3230c:	2c05      	bnez	a0,bfc32318 <disp_starting_show_welcome+0xd0>
+bfc3230e:	bfc3      	lwu	a2,12(a3)
+bfc32310:	2b45      	bnez	v1,bfc3239c <standby_screen+0x44>
+bfc32312:	bfc3      	lwu	a2,12(a3)
+bfc32314:	2c00      	bnez	a0,bfc32316 <disp_starting_show_welcome+0xce>
+bfc32316:	0001      	addiu	s0,sp,4
+bfc32318:	286d      	bnez	s0,bfc323f4 <standby_screen+0x9c>
+bfc3231a:	bfc3      	lwu	a2,12(a3)
+bfc3231c:	2415      	beqz	a0,bfc32348 <set_contrast+0x28>
+bfc3231e:	bfc3      	lwu	a2,12(a3)
+
+bfc32320 <set_contrast>:
+bfc32320:	6491      	save	8,s1
+bfc32322:	673d      	move	s1,sp
+bfc32324:	6744      	move	v0,a0
+bfc32326:	d9a3      	sw	a1,12(s1)
+bfc32328:	d9c4      	sw	a2,16(s1)
+bfc3232a:	c148      	sb	v0,8(s1)
+bfc3232c:	b309      	lw	v1,bfc32350 <set_contrast+0x30>
+bfc3232e:	a148      	lbu	v0,8(s1)
+bfc32330:	c340      	sb	v0,0(v1)
+bfc32332:	b409      	lw	a0,bfc32354 <set_contrast+0x34>
+bfc32334:	b208      	lw	v0,bfc32354 <set_contrast+0x34>
+bfc32336:	9a60      	lw	v1,0(v0)
+bfc32338:	6aff      	li	v0,255
+bfc3233a:	4241      	addiu	v0,v0,1
+bfc3233c:	ea4b      	neg	v0
+bfc3233e:	eb4c      	and	v1,v0
+bfc32340:	b204      	lw	v0,bfc32350 <set_contrast+0x30>
+bfc32342:	a240      	lbu	v0,0(v0)
+bfc32344:	3250      	sll	v0,4
+bfc32346:	ea6d      	or	v0,v1
+bfc32348:	dc40      	sw	v0,0(a0)
+bfc3234a:	65b9      	move	sp,s1
+bfc3234c:	6411      	restore	8,s1
+bfc3234e:	e8a0      	jrc	ra
+bfc32350:	2cbc      	bnez	a0,bfc322ca <disp_starting_show_welcome+0x82>
+bfc32352:	bfc3      	lwu	a2,12(a3)
+bfc32354:	0048      	addiu	s0,sp,288
+bfc32356:	c009      	sb	s0,9(s0)
+
+bfc32358 <standby_screen>:
+bfc32358:	64d4      	save	32,ra,s1
+bfc3235a:	0104      	addiu	s1,sp,16
+bfc3235c:	6744      	move	v0,a0
+bfc3235e:	d9a5      	sw	a1,20(s1)
+bfc32360:	d9c6      	sw	a2,24(s1)
+bfc32362:	c150      	sb	v0,16(s1)
+bfc32364:	b227      	lw	v0,bfc32400 <standby_screen+0xa8>
+bfc32366:	eac0      	jalrc	v0
+bfc32368:	a150      	lbu	v0,16(s1)
+bfc3236a:	7201      	cmpi	v0,1
+bfc3236c:	6758      	move	v0,t8
+bfc3236e:	5a01      	sltiu	v0,1
+bfc32370:	6026      	bteqz	bfc323be <standby_screen+0x66>
+bfc32372:	6cc8      	li	a0,200
+bfc32374:	1a1f ca10 	jal	bfc32840 <welcome_delay_us>
+bfc32378:	6500      	nop
+bfc3237a:	6c29      	li	a0,41
+bfc3237c:	b222      	lw	v0,bfc32404 <standby_screen+0xac>
+bfc3237e:	eac0      	jalrc	v0
+bfc32380:	6cc8      	li	a0,200
+bfc32382:	1a1f ca10 	jal	bfc32840 <welcome_delay_us>
+bfc32386:	6500      	nop
+bfc32388:	6cc8      	li	a0,200
+bfc3238a:	1a1f ca10 	jal	bfc32840 <welcome_delay_us>
+bfc3238e:	6500      	nop
+bfc32390:	6c11      	li	a0,17
+bfc32392:	b21d      	lw	v0,bfc32404 <standby_screen+0xac>
+bfc32394:	eac0      	jalrc	v0
+bfc32396:	b21d      	lw	v0,bfc32408 <standby_screen+0xb0>
+bfc32398:	eac0      	jalrc	v0
+bfc3239a:	6cc8      	li	a0,200
+bfc3239c:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc323a0:	6500      	nop
+bfc323a2:	6c01      	li	a0,1
+bfc323a4:	6d00      	li	a1,0
+bfc323a6:	6e00      	li	a2,0
+bfc323a8:	b219      	lw	v0,bfc3240c <standby_screen+0xb4>
+bfc323aa:	eac0      	jalrc	v0
+bfc323ac:	b219      	lw	v0,bfc3240c <standby_screen+0xb4>
+bfc323ae:	a240      	lbu	v0,0(v0)
+bfc323b0:	6782      	move	a0,v0
+bfc323b2:	6d00      	li	a1,0
+bfc323b4:	6e00      	li	a2,0
+bfc323b6:	1a1f c8c8 	jal	bfc32320 <set_contrast>
+bfc323ba:	6500      	nop
+bfc323bc:	101d      	b	bfc323f8 <standby_screen+0xa0>
+bfc323be:	b215      	lw	v0,bfc32410 <standby_screen+0xb8>
+bfc323c0:	a240      	lbu	v0,0(v0)
+bfc323c2:	c140      	sb	v0,0(s1)
+bfc323c4:	6c00      	li	a0,0
+bfc323c6:	6d00      	li	a1,0
+bfc323c8:	6e00      	li	a2,0
+bfc323ca:	1a1f c8c8 	jal	bfc32320 <set_contrast>
+bfc323ce:	6500      	nop
+bfc323d0:	b310      	lw	v1,bfc32410 <standby_screen+0xb8>
+bfc323d2:	a140      	lbu	v0,0(s1)
+bfc323d4:	c340      	sb	v0,0(v1)
+bfc323d6:	6c00      	li	a0,0
+bfc323d8:	6d00      	li	a1,0
+bfc323da:	6e00      	li	a2,0
+bfc323dc:	b20c      	lw	v0,bfc3240c <standby_screen+0xb4>
+bfc323de:	eac0      	jalrc	v0
+bfc323e0:	6c28      	li	a0,40
+bfc323e2:	b209      	lw	v0,bfc32404 <standby_screen+0xac>
+bfc323e4:	eac0      	jalrc	v0
+bfc323e6:	6c0a      	li	a0,10
+bfc323e8:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc323ec:	6500      	nop
+bfc323ee:	6c10      	li	a0,16
+bfc323f0:	b205      	lw	v0,bfc32404 <standby_screen+0xac>
+bfc323f2:	eac0      	jalrc	v0
+bfc323f4:	b205      	lw	v0,bfc32404 <standby_screen+0xac>
+bfc323f6:	eac0      	jalrc	v0
+bfc323f8:	65b9      	move	sp,s1
+bfc323fa:	6452      	restore	16,ra,s1
+bfc323fc:	e8a0      	jrc	ra
+bfc323fe:	0000      	addiu	s0,sp,0
+bfc32400:	2ae5      	bnez	v0,bfc323cc <standby_screen+0x74>
+bfc32402:	bfc3      	lwu	a2,12(a3)
+bfc32404:	278d      	beqz	a3,bfc32320 <set_contrast>
+bfc32406:	bfc3      	lwu	a2,12(a3)
+bfc32408:	2b15      	bnez	v1,bfc32434 <backlight_on_off+0x20>
+bfc3240a:	bfc3      	lwu	a2,12(a3)
+bfc3240c:	2415      	beqz	a0,bfc32438 <backlight_on_off+0x24>
+bfc3240e:	bfc3      	lwu	a2,12(a3)
+bfc32410:	2cbc      	bnez	a0,bfc3238a <standby_screen+0x32>
+bfc32412:	bfc3      	lwu	a2,12(a3)
+
+bfc32414 <backlight_on_off>:
+bfc32414:	64d3      	save	24,ra,s1
+bfc32416:	0104      	addiu	s1,sp,16
+bfc32418:	6744      	move	v0,a0
+bfc3241a:	d9a3      	sw	a1,12(s1)
+bfc3241c:	d9c4      	sw	a2,16(s1)
+bfc3241e:	c148      	sb	v0,8(s1)
+bfc32420:	a148      	lbu	v0,8(s1)
+bfc32422:	7201      	cmpi	v0,1
+bfc32424:	6758      	move	v0,t8
+bfc32426:	5a01      	sltiu	v0,1
+bfc32428:	6038      	bteqz	bfc3249a <backlight_on_off+0x86>
+bfc3242a:	b42c      	lw	a0,bfc324d8 <backlight_on_off+0xc4>
+bfc3242c:	b22b      	lw	v0,bfc324d8 <backlight_on_off+0xc4>
+bfc3242e:	9a60      	lw	v1,0(v0)
+bfc32430:	b22b      	lw	v0,bfc324dc <backlight_on_off+0xc8>
+bfc32432:	ea6d      	or	v0,v1
+bfc32434:	dc40      	sw	v0,0(a0)
+bfc32436:	b42b      	lw	a0,bfc324e0 <backlight_on_off+0xcc>
+bfc32438:	b22a      	lw	v0,bfc324e0 <backlight_on_off+0xcc>
+bfc3243a:	9a60      	lw	v1,0(v0)
+bfc3243c:	f002 6a00 	li	v0,4096
+bfc32440:	ea6d      	or	v0,v1
+bfc32442:	dc40      	sw	v0,0(a0)
+bfc32444:	b428      	lw	a0,bfc324e4 <backlight_on_off+0xd0>
+bfc32446:	b228      	lw	v0,bfc324e4 <backlight_on_off+0xd0>
+bfc32448:	9a60      	lw	v1,0(v0)
+bfc3244a:	f002 6a00 	li	v0,4096
+bfc3244e:	ea6d      	or	v0,v1
+bfc32450:	dc40      	sw	v0,0(a0)
+bfc32452:	b425      	lw	a0,bfc324e4 <backlight_on_off+0xd0>
+bfc32454:	b224      	lw	v0,bfc324e4 <backlight_on_off+0xd0>
+bfc32456:	9a60      	lw	v1,0(v0)
+bfc32458:	f200 6a00 	li	v0,512
+bfc3245c:	ea4b      	neg	v0
+bfc3245e:	eb4c      	and	v1,v0
+bfc32460:	6a0f      	li	v0,15
+bfc32462:	ea6d      	or	v0,v1
+bfc32464:	dc40      	sw	v0,0(a0)
+bfc32466:	b421      	lw	a0,bfc324e8 <backlight_on_off+0xd4>
+bfc32468:	b220      	lw	v0,bfc324e8 <backlight_on_off+0xd4>
+bfc3246a:	9a60      	lw	v1,0(v0)
+bfc3246c:	b220      	lw	v0,bfc324ec <backlight_on_off+0xd8>
+bfc3246e:	ea6d      	or	v0,v1
+bfc32470:	dc40      	sw	v0,0(a0)
+bfc32472:	6c0a      	li	a0,10
+bfc32474:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc32478:	6500      	nop
+bfc3247a:	b41e      	lw	a0,bfc324f0 <backlight_on_off+0xdc>
+bfc3247c:	b21d      	lw	v0,bfc324f0 <backlight_on_off+0xdc>
+bfc3247e:	9a60      	lw	v1,0(v0)
+bfc32480:	6a81      	li	v0,129
+bfc32482:	ea4b      	neg	v0
+bfc32484:	ea6c      	and	v0,v1
+bfc32486:	dc40      	sw	v0,0(a0)
+bfc32488:	b41b      	lw	a0,bfc324f4 <backlight_on_off+0xe0>
+bfc3248a:	b21b      	lw	v0,bfc324f4 <backlight_on_off+0xe0>
+bfc3248c:	9a60      	lw	v1,0(v0)
+bfc3248e:	b21b      	lw	v0,bfc324f8 <backlight_on_off+0xe4>
+bfc32490:	eb4c      	and	v1,v0
+bfc32492:	b21b      	lw	v0,bfc324fc <backlight_on_off+0xe8>
+bfc32494:	ea6d      	or	v0,v1
+bfc32496:	dc40      	sw	v0,0(a0)
+bfc32498:	101b      	b	bfc324d0 <backlight_on_off+0xbc>
+bfc3249a:	b410      	lw	a0,bfc324d8 <backlight_on_off+0xc4>
+bfc3249c:	b20f      	lw	v0,bfc324d8 <backlight_on_off+0xc4>
+bfc3249e:	9a60      	lw	v1,0(v0)
+bfc324a0:	b218      	lw	v0,bfc32500 <backlight_on_off+0xec>
+bfc324a2:	ea6c      	and	v0,v1
+bfc324a4:	dc40      	sw	v0,0(a0)
+bfc324a6:	b40f      	lw	a0,bfc324e0 <backlight_on_off+0xcc>
+bfc324a8:	b20e      	lw	v0,bfc324e0 <backlight_on_off+0xcc>
+bfc324aa:	9a60      	lw	v1,0(v0)
+bfc324ac:	f002 6a01 	li	v0,4097
+bfc324b0:	ea4b      	neg	v0
+bfc324b2:	ea6c      	and	v0,v1
+bfc324b4:	dc40      	sw	v0,0(a0)
+bfc324b6:	b40f      	lw	a0,bfc324f0 <backlight_on_off+0xdc>
+bfc324b8:	b20e      	lw	v0,bfc324f0 <backlight_on_off+0xdc>
+bfc324ba:	9a60      	lw	v1,0(v0)
+bfc324bc:	6a80      	li	v0,128
+bfc324be:	ea6d      	or	v0,v1
+bfc324c0:	dc40      	sw	v0,0(a0)
+bfc324c2:	b411      	lw	a0,bfc32504 <backlight_on_off+0xf0>
+bfc324c4:	b210      	lw	v0,bfc32504 <backlight_on_off+0xf0>
+bfc324c6:	9a60      	lw	v1,0(v0)
+bfc324c8:	6a81      	li	v0,129
+bfc324ca:	ea4b      	neg	v0
+bfc324cc:	ea6c      	and	v0,v1
+bfc324ce:	dc40      	sw	v0,0(a0)
+bfc324d0:	65b9      	move	sp,s1
+bfc324d2:	6451      	restore	8,ra,s1
+bfc324d4:	e8a0      	jrc	ra
+bfc324d6:	0000      	addiu	s0,sp,0
+bfc324d8:	1004      	b	bfc324e2 <backlight_on_off+0xce>
+bfc324da:	c000      	sb	s0,0(s0)
+bfc324dc:	0000      	addiu	s0,sp,0
+bfc324de:	0001      	addiu	s0,sp,4
+bfc324e0:	0000      	addiu	s0,sp,0
+bfc324e2:	c000      	sb	s0,0(s0)
+bfc324e4:	1028      	b	bfc32536 <invert_buff_data_trans+0x1e>
+bfc324e6:	c000      	sb	s0,0(s0)
+bfc324e8:	0048      	addiu	s0,sp,288
+bfc324ea:	c009      	sb	s0,9(s0)
+bfc324ec:	0000      	addiu	s0,sp,0
+bfc324ee:	0800      	la	s0,bfc324ec <backlight_on_off+0xd8>
+bfc324f0:	0000      	addiu	s0,sp,0
+bfc324f2:	c009      	sb	s0,9(s0)
+bfc324f4:	0058      	addiu	s0,sp,352
+bfc324f6:	c009      	sb	s0,9(s0)
+bfc324f8:	ffff      	daddiu	a3,sp,124
+bfc324fa:	ff8f      	daddiu	a0,sp,60
+bfc324fc:	0000      	addiu	s0,sp,0
+bfc324fe:	0040      	addiu	s0,sp,256
+bfc32500:	ffff      	daddiu	a3,sp,124
+bfc32502:	fffe      	daddiu	a3,sp,120
+bfc32504:	0008      	addiu	s0,sp,32
+bfc32506:	c009      	sb	s0,9(s0)
+
+bfc32508 <update_screen>:
+bfc32508:	6491      	save	8,s1
+bfc3250a:	673d      	move	s1,sp
+bfc3250c:	d982      	sw	a0,8(s1)
+bfc3250e:	d9a3      	sw	a1,12(s1)
+bfc32510:	d9c4      	sw	a2,16(s1)
+bfc32512:	65b9      	move	sp,s1
+bfc32514:	6411      	restore	8,s1
+bfc32516:	e8a0      	jrc	ra
+
+bfc32518 <invert_buff_data_trans>:
+bfc32518:	6493      	save	24,s1
+bfc3251a:	673d      	move	s1,sp
+bfc3251c:	d986      	sw	a0,24(s1)
+bfc3251e:	6745      	move	v0,a1
+bfc32520:	d9c8      	sw	a2,32(s1)
+bfc32522:	c94e      	sh	v0,28(s1)
+bfc32524:	9946      	lw	v0,24(s1)
+bfc32526:	d941      	sw	v0,4(s1)
+bfc32528:	6a00      	li	v0,0
+bfc3252a:	d942      	sw	v0,8(s1)
+bfc3252c:	a94e      	lhu	v0,28(s1)
+bfc3252e:	9962      	lw	v1,8(s1)
+bfc32530:	eb43      	sltu	v1,v0
+bfc32532:	6011      	bteqz	bfc32556 <invert_buff_data_trans+0x3e>
+bfc32534:	9941      	lw	v0,4(s1)
+bfc32536:	a240      	lbu	v0,0(v0)
+bfc32538:	c140      	sb	v0,0(s1)
+bfc3253a:	9961      	lw	v1,4(s1)
+bfc3253c:	9941      	lw	v0,4(s1)
+bfc3253e:	a241      	lbu	v0,1(v0)
+bfc32540:	c340      	sb	v0,0(v1)
+bfc32542:	9961      	lw	v1,4(s1)
+bfc32544:	a140      	lbu	v0,0(s1)
+bfc32546:	c341      	sb	v0,1(v1)
+bfc32548:	9941      	lw	v0,4(s1)
+bfc3254a:	4242      	addiu	v0,v0,2
+bfc3254c:	d941      	sw	v0,4(s1)
+bfc3254e:	9942      	lw	v0,8(s1)
+bfc32550:	4241      	addiu	v0,v0,1
+bfc32552:	d942      	sw	v0,8(s1)
+bfc32554:	17eb      	b	bfc3252c <invert_buff_data_trans+0x14>
+bfc32556:	65b9      	move	sp,s1
+bfc32558:	6413      	restore	24,s1
+bfc3255a:	e8a0      	jrc	ra
+
+bfc3255c <lcd_reset>:
+bfc3255c:	64d3      	save	24,ra,s1
+bfc3255e:	0104      	addiu	s1,sp,16
+bfc32560:	b416      	lw	a0,bfc325b8 <lcd_reset+0x5c>
+bfc32562:	b216      	lw	v0,bfc325b8 <lcd_reset+0x5c>
+bfc32564:	9a60      	lw	v1,0(v0)
+bfc32566:	f400 6a00 	li	v0,1024
+bfc3256a:	ea6d      	or	v0,v1
+bfc3256c:	dc40      	sw	v0,0(a0)
+bfc3256e:	b414      	lw	a0,bfc325bc <lcd_reset+0x60>
+bfc32570:	b213      	lw	v0,bfc325bc <lcd_reset+0x60>
+bfc32572:	9a60      	lw	v1,0(v0)
+bfc32574:	f400 6a00 	li	v0,1024
+bfc32578:	ea6d      	or	v0,v1
+bfc3257a:	dc40      	sw	v0,0(a0)
+bfc3257c:	6c0a      	li	a0,10
+bfc3257e:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc32582:	6500      	nop
+bfc32584:	b40e      	lw	a0,bfc325bc <lcd_reset+0x60>
+bfc32586:	b20e      	lw	v0,bfc325bc <lcd_reset+0x60>
+bfc32588:	9a60      	lw	v1,0(v0)
+bfc3258a:	f400 6a01 	li	v0,1025
+bfc3258e:	ea4b      	neg	v0
+bfc32590:	ea6c      	and	v0,v1
+bfc32592:	dc40      	sw	v0,0(a0)
+bfc32594:	6c0f      	li	a0,15
+bfc32596:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc3259a:	6500      	nop
+bfc3259c:	b408      	lw	a0,bfc325bc <lcd_reset+0x60>
+bfc3259e:	b208      	lw	v0,bfc325bc <lcd_reset+0x60>
+bfc325a0:	9a60      	lw	v1,0(v0)
+bfc325a2:	f400 6a00 	li	v0,1024
+bfc325a6:	ea6d      	or	v0,v1
+bfc325a8:	dc40      	sw	v0,0(a0)
+bfc325aa:	6c78      	li	a0,120
+bfc325ac:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc325b0:	6500      	nop
+bfc325b2:	65b9      	move	sp,s1
+bfc325b4:	6451      	restore	8,ra,s1
+bfc325b6:	e8a0      	jrc	ra
+bfc325b8:	0014      	addiu	s0,sp,80
+bfc325ba:	c009      	sb	s0,9(s0)
+bfc325bc:	001c      	addiu	s0,sp,112
+bfc325be:	c009      	sb	s0,9(s0)
+
+bfc325c0 <lcd_buf_init>:
+bfc325c0:	64d4      	save	32,ra,s1
+bfc325c2:	0104      	addiu	s1,sp,16
+bfc325c4:	6a00      	li	v0,0
+bfc325c6:	c140      	sb	v0,0(s1)
+bfc325c8:	b225      	lw	v0,bfc3265c <lcd_buf_init+0x9c>
+bfc325ca:	eac0      	jalrc	v0
+bfc325cc:	a140      	lbu	v0,0(s1)
+bfc325ce:	5a6c      	sltiu	v0,108
+bfc325d0:	6040      	bteqz	bfc32652 <lcd_buf_init+0x92>
+bfc325d2:	b324      	lw	v1,bfc32660 <lcd_buf_init+0xa0>
+bfc325d4:	a140      	lbu	v0,0(s1)
+bfc325d6:	e349      	addu	v0,v1,v0
+bfc325d8:	a240      	lbu	v0,0(v0)
+bfc325da:	72ff      	cmpi	v0,255
+bfc325dc:	6758      	move	v0,t8
+bfc325de:	5a01      	sltiu	v0,1
+bfc325e0:	6138      	btnez	bfc32652 <lcd_buf_init+0x92>
+bfc325e2:	b320      	lw	v1,bfc32660 <lcd_buf_init+0xa0>
+bfc325e4:	a140      	lbu	v0,0(s1)
+bfc325e6:	e349      	addu	v0,v1,v0
+bfc325e8:	a240      	lbu	v0,0(v0)
+bfc325ea:	72fd      	cmpi	v0,253
+bfc325ec:	6758      	move	v0,t8
+bfc325ee:	5a01      	sltiu	v0,1
+bfc325f0:	600e      	bteqz	bfc3260e <lcd_buf_init+0x4e>
+bfc325f2:	a140      	lbu	v0,0(s1)
+bfc325f4:	4241      	addiu	v0,v0,1
+bfc325f6:	c140      	sb	v0,0(s1)
+bfc325f8:	a140      	lbu	v0,0(s1)
+bfc325fa:	5a6c      	sltiu	v0,108
+bfc325fc:	6026      	bteqz	bfc3264a <lcd_buf_init+0x8a>
+bfc325fe:	b319      	lw	v1,bfc32660 <lcd_buf_init+0xa0>
+bfc32600:	a140      	lbu	v0,0(s1)
+bfc32602:	e349      	addu	v0,v1,v0
+bfc32604:	a240      	lbu	v0,0(v0)
+bfc32606:	6782      	move	a0,v0
+bfc32608:	b217      	lw	v0,bfc32664 <lcd_buf_init+0xa4>
+bfc3260a:	eac0      	jalrc	v0
+bfc3260c:	101e      	b	bfc3264a <lcd_buf_init+0x8a>
+bfc3260e:	b315      	lw	v1,bfc32660 <lcd_buf_init+0xa0>
+bfc32610:	a140      	lbu	v0,0(s1)
+bfc32612:	e349      	addu	v0,v1,v0
+bfc32614:	a240      	lbu	v0,0(v0)
+bfc32616:	72fe      	cmpi	v0,254
+bfc32618:	6758      	move	v0,t8
+bfc3261a:	5a01      	sltiu	v0,1
+bfc3261c:	600f      	bteqz	bfc3263c <lcd_buf_init+0x7c>
+bfc3261e:	a140      	lbu	v0,0(s1)
+bfc32620:	4241      	addiu	v0,v0,1
+bfc32622:	c140      	sb	v0,0(s1)
+bfc32624:	a140      	lbu	v0,0(s1)
+bfc32626:	5a6c      	sltiu	v0,108
+bfc32628:	6010      	bteqz	bfc3264a <lcd_buf_init+0x8a>
+bfc3262a:	b30e      	lw	v1,bfc32660 <lcd_buf_init+0xa0>
+bfc3262c:	a140      	lbu	v0,0(s1)
+bfc3262e:	e349      	addu	v0,v1,v0
+bfc32630:	a240      	lbu	v0,0(v0)
+bfc32632:	6782      	move	a0,v0
+bfc32634:	1a1f c9ff 	jal	bfc327fc <welcome_delay_ms>
+bfc32638:	6500      	nop
+bfc3263a:	1007      	b	bfc3264a <lcd_buf_init+0x8a>
+bfc3263c:	a160      	lbu	v1,0(s1)
+bfc3263e:	b209      	lw	v0,bfc32660 <lcd_buf_init+0xa0>
+bfc32640:	e349      	addu	v0,v1,v0
+bfc32642:	6782      	move	a0,v0
+bfc32644:	6d01      	li	a1,1
+bfc32646:	b209      	lw	v0,bfc32668 <lcd_buf_init+0xa8>
+bfc32648:	eac0      	jalrc	v0
+bfc3264a:	a140      	lbu	v0,0(s1)
+bfc3264c:	4241      	addiu	v0,v0,1
+bfc3264e:	c140      	sb	v0,0(s1)
+bfc32650:	17bd      	b	bfc325cc <lcd_buf_init+0xc>
+bfc32652:	b207      	lw	v0,bfc3266c <lcd_buf_init+0xac>
+bfc32654:	eac0      	jalrc	v0
+bfc32656:	65b9      	move	sp,s1
+bfc32658:	6452      	restore	16,ra,s1
+bfc3265a:	e8a0      	jrc	ra
+bfc3265c:	2ae5      	bnez	v0,bfc32628 <lcd_buf_init+0x68>
+bfc3265e:	bfc3      	lwu	a2,12(a3)
+bfc32660:	2720      	beqz	a3,bfc326a2 <lcd_clock_init+0x32>
+bfc32662:	bfc3      	lwu	a2,12(a3)
+bfc32664:	278d      	beqz	a3,bfc32580 <lcd_reset+0x24>
+bfc32666:	bfc3      	lwu	a2,12(a3)
+bfc32668:	27b9      	beqz	a3,bfc325dc <lcd_buf_init+0x1c>
+bfc3266a:	bfc3      	lwu	a2,12(a3)
+bfc3266c:	2b15      	bnez	v1,bfc32698 <lcd_clock_init+0x28>
+bfc3266e:	bfc3      	lwu	a2,12(a3)
+
+bfc32670 <lcd_clock_init>:
+bfc32670:	64d3      	save	24,ra,s1
+bfc32672:	0104      	addiu	s1,sp,16
+bfc32674:	b41e      	lw	a0,bfc326ec <lcd_clock_init+0x7c>
+bfc32676:	b21e      	lw	v0,bfc326ec <lcd_clock_init+0x7c>
+bfc32678:	9a60      	lw	v1,0(v0)
+bfc3267a:	6aff      	li	v0,255
+bfc3267c:	4241      	addiu	v0,v0,1
+bfc3267e:	ea6d      	or	v0,v1
+bfc32680:	dc40      	sw	v0,0(a0)
+bfc32682:	b41c      	lw	a0,bfc326f0 <lcd_clock_init+0x80>
+bfc32684:	b21b      	lw	v0,bfc326f0 <lcd_clock_init+0x80>
+bfc32686:	9a60      	lw	v1,0(v0)
+bfc32688:	6a80      	li	v0,128
+bfc3268a:	ea6d      	or	v0,v1
+bfc3268c:	dc40      	sw	v0,0(a0)
+bfc3268e:	b41a      	lw	a0,bfc326f4 <lcd_clock_init+0x84>
+bfc32690:	b219      	lw	v0,bfc326f4 <lcd_clock_init+0x84>
+bfc32692:	9a60      	lw	v1,0(v0)
+bfc32694:	6a80      	li	v0,128
+bfc32696:	ea4b      	neg	v0
+bfc32698:	eb4c      	and	v1,v0
+bfc3269a:	6a8c      	li	v0,140
+bfc3269c:	ea6d      	or	v0,v1
+bfc3269e:	dc40      	sw	v0,0(a0)
+bfc326a0:	6c64      	li	a0,100
+bfc326a2:	1a1f ca10 	jal	bfc32840 <welcome_delay_us>
+bfc326a6:	6500      	nop
+bfc326a8:	b414      	lw	a0,bfc326f8 <lcd_clock_init+0x88>
+bfc326aa:	b214      	lw	v0,bfc326f8 <lcd_clock_init+0x88>
+bfc326ac:	9a60      	lw	v1,0(v0)
+bfc326ae:	6a10      	li	v0,16
+bfc326b0:	ea6d      	or	v0,v1
+bfc326b2:	dc40      	sw	v0,0(a0)
+bfc326b4:	b411      	lw	a0,bfc326f8 <lcd_clock_init+0x88>
+bfc326b6:	b211      	lw	v0,bfc326f8 <lcd_clock_init+0x88>
+bfc326b8:	9a60      	lw	v1,0(v0)
+bfc326ba:	6a04      	li	v0,4
+bfc326bc:	ea4b      	neg	v0
+bfc326be:	ea6c      	and	v0,v1
+bfc326c0:	dc40      	sw	v0,0(a0)
+bfc326c2:	b30f      	lw	v1,bfc326fc <lcd_clock_init+0x8c>
+bfc326c4:	6a00      	li	v0,0
+bfc326c6:	db40      	sw	v0,0(v1)
+bfc326c8:	b30e      	lw	v1,bfc32700 <lcd_clock_init+0x90>
+bfc326ca:	6a00      	li	v0,0
+bfc326cc:	db40      	sw	v0,0(v1)
+bfc326ce:	b408      	lw	a0,bfc326ec <lcd_clock_init+0x7c>
+bfc326d0:	b207      	lw	v0,bfc326ec <lcd_clock_init+0x7c>
+bfc326d2:	9a60      	lw	v1,0(v0)
+bfc326d4:	6a01      	li	v0,1
+bfc326d6:	ea6d      	or	v0,v1
+bfc326d8:	dc40      	sw	v0,0(a0)
+bfc326da:	b406      	lw	a0,bfc326f0 <lcd_clock_init+0x80>
+bfc326dc:	b205      	lw	v0,bfc326f0 <lcd_clock_init+0x80>
+bfc326de:	9a60      	lw	v1,0(v0)
+bfc326e0:	6a01      	li	v0,1
+bfc326e2:	ea6d      	or	v0,v1
+bfc326e4:	dc40      	sw	v0,0(a0)
+bfc326e6:	65b9      	move	sp,s1
+bfc326e8:	6451      	restore	8,ra,s1
+bfc326ea:	e8a0      	jrc	ra
+bfc326ec:	1004      	b	bfc326f6 <lcd_clock_init+0x86>
+bfc326ee:	c000      	sb	s0,0(s0)
+bfc326f0:	0000      	addiu	s0,sp,0
+bfc326f2:	c000      	sb	s0,0(s0)
+bfc326f4:	010c      	addiu	s1,sp,48
+bfc326f6:	c000      	sb	s0,0(s0)
+bfc326f8:	101c      	b	bfc32732 <lcd_init_buf+0x12>
+bfc326fa:	c000      	sb	s0,0(s0)
+bfc326fc:	0004      	addiu	s0,sp,16
+bfc326fe:	c00d      	sb	s0,13(s0)
+bfc32700:	000c      	addiu	s0,sp,48
+bfc32702:	c00d      	sb	s0,13(s0)
+
+bfc32704 <lcd_hardware_init>:
+bfc32704:	64d3      	save	24,ra,s1
+bfc32706:	0104      	addiu	s1,sp,16
+bfc32708:	1a1f c99c 	jal	bfc32670 <lcd_clock_init>
+bfc3270c:	6500      	nop
+bfc3270e:	1a1f c957 	jal	bfc3255c <lcd_reset>
+bfc32712:	6500      	nop
+bfc32714:	1a1f c970 	jal	bfc325c0 <lcd_buf_init>
+bfc32718:	6500      	nop
+bfc3271a:	65b9      	move	sp,s1
+bfc3271c:	6451      	restore	8,ra,s1
+bfc3271e:	e8a0      	jrc	ra
+
+bfc32720 <lcd_init_buf>:
+bfc32720:	c300cffd 	ll	zero,-12291(t8)
+bfc32724:	64edfd30 	0x64edfd30
+bfc32728:	fd811203 	sdc3	$1,4611(t4)
+bfc3272c:	780085e8 	0x780085e8
+bfc32730:	2c39cbfd 	sltiu	t9,at,-13315
+bfc32734:	fd023400 	sdc3	$2,13312(t0)
+bfc32738:	eafd20f7 	swc2	$29,8439(s7)
+bfc3273c:	c0fd0000 	ll	sp,0(a3)
+bfc32740:	11c1fd19 	beq	t6,at,bfc31ba8 <ROM_TEXT_ADDR+0x2e7a8>
+bfc32744:	3f3cc5fd 	0x3f3cc5fd
+bfc32748:	fd96c7fd 	sdc3	$22,-14339(t4)
+bfc3274c:	3afd0836 	xori	sp,s7,0x836
+bfc32750:	00b1fd55 	0xb1fd55
+bfc32754:	0ab6fd17 	j	badbf45c <RDATA_ADDR_BASE+0x1b1bf45c>
+bfc32758:	01f6fda2 	0x1f6fda2
+bfc3275c:	00f2fd30 	tge	a3,s2,0x3f4
+bfc32760:	fd0126fd 	sdc3	$1,9981(t0)
+bfc32764:	22260fe0 	addi	a2,s1,4064
+bfc32768:	4c0a100a 	0x4c0a100a
+bfc3276c:	150036ca 	bnez	t0,bfc40298 <pic_mode+0xd5da>
+bfc32770:	00101000 	sll	v0,s0,0x0
+bfc32774:	1900e1fd 	blez	t0,bfc2af6c <ROM_TEXT_ADDR+0x27b6c>
+bfc32778:	050f051b 	0x50f051b
+bfc3277c:	0f493533 	jal	bd24d4cc <RDATA_ADDR_BASE+0x1d64d4cc>
+bfc32780:	3f3f0f1f 	0x3f3f0f1f
+bfc32784:	fe11fd0f 	sdc3	$17,-753(s0)
+bfc32788:	ff29fd78 	sdc3	$9,-648(t9)
+
+bfc3278c <write_command>:
+bfc3278c:	6491      	save	8,s1
+bfc3278e:	673d      	move	s1,sp
+bfc32790:	6744      	move	v0,a0
+bfc32792:	c148      	sb	v0,8(s1)
+bfc32794:	b407      	lw	a0,bfc327b0 <write_command+0x24>
+bfc32796:	b207      	lw	v0,bfc327b0 <write_command+0x24>
+bfc32798:	9a60      	lw	v1,0(v0)
+bfc3279a:	6a02      	li	v0,2
+bfc3279c:	ea4b      	neg	v0
+bfc3279e:	ea6c      	and	v0,v1
+bfc327a0:	dc40      	sw	v0,0(a0)
+bfc327a2:	b305      	lw	v1,bfc327b4 <write_command+0x28>
+bfc327a4:	a148      	lbu	v0,8(s1)
+bfc327a6:	db40      	sw	v0,0(v1)
+bfc327a8:	65b9      	move	sp,s1
+bfc327aa:	6411      	restore	8,s1
+bfc327ac:	e8a0      	jrc	ra
+bfc327ae:	0000      	addiu	s0,sp,0
+bfc327b0:	0008      	addiu	s0,sp,32
+bfc327b2:	c00d      	sb	s0,13(s0)
+bfc327b4:	0010      	addiu	s0,sp,64
+bfc327b6:	c00d      	sb	s0,13(s0)
+
+bfc327b8 <write_data>:
+bfc327b8:	6492      	save	16,s1
+bfc327ba:	673d      	move	s1,sp
+bfc327bc:	d984      	sw	a0,16(s1)
+bfc327be:	6745      	move	v0,a1
+bfc327c0:	c94a      	sh	v0,20(s1)
+bfc327c2:	b40d      	lw	a0,bfc327f4 <write_data+0x3c>
+bfc327c4:	b20c      	lw	v0,bfc327f4 <write_data+0x3c>
+bfc327c6:	9a60      	lw	v1,0(v0)
+bfc327c8:	6a01      	li	v0,1
+bfc327ca:	ea6d      	or	v0,v1
+bfc327cc:	dc40      	sw	v0,0(a0)
+bfc327ce:	6a00      	li	v0,0
+bfc327d0:	c940      	sh	v0,0(s1)
+bfc327d2:	a940      	lhu	v0,0(s1)
+bfc327d4:	a96a      	lhu	v1,20(s1)
+bfc327d6:	ea63      	sltu	v0,v1
+bfc327d8:	600a      	bteqz	bfc327ee <write_data+0x36>
+bfc327da:	b408      	lw	a0,bfc327f8 <write_data+0x40>
+bfc327dc:	a960      	lhu	v1,0(s1)
+bfc327de:	9944      	lw	v0,16(s1)
+bfc327e0:	e349      	addu	v0,v1,v0
+bfc327e2:	a240      	lbu	v0,0(v0)
+bfc327e4:	dc40      	sw	v0,0(a0)
+bfc327e6:	a940      	lhu	v0,0(s1)
+bfc327e8:	4241      	addiu	v0,v0,1
+bfc327ea:	c940      	sh	v0,0(s1)
+bfc327ec:	17f2      	b	bfc327d2 <write_data+0x1a>
+bfc327ee:	65b9      	move	sp,s1
+bfc327f0:	6412      	restore	16,s1
+bfc327f2:	e8a0      	jrc	ra
+bfc327f4:	0008      	addiu	s0,sp,32
+bfc327f6:	c00d      	sb	s0,13(s0)
+bfc327f8:	0010      	addiu	s0,sp,64
+bfc327fa:	c00d      	sb	s0,13(s0)
+
+bfc327fc <welcome_delay_ms>:
+bfc327fc:	6492      	save	16,s1
+bfc327fe:	673d      	move	s1,sp
+bfc32800:	6744      	move	v0,a0
+bfc32802:	c150      	sb	v0,16(s1)
+bfc32804:	a150      	lbu	v0,16(s1)
+bfc32806:	2218      	beqz	v0,bfc32838 <welcome_delay_ms+0x3c>
+bfc32808:	6a00      	li	v0,0
+bfc3280a:	c140      	sb	v0,0(s1)
+bfc3280c:	a140      	lbu	v0,0(s1)
+bfc3280e:	5a03      	sltiu	v0,3
+bfc32810:	600f      	bteqz	bfc32830 <welcome_delay_ms+0x34>
+bfc32812:	6a00      	li	v0,0
+bfc32814:	c141      	sb	v0,1(s1)
+bfc32816:	a141      	lbu	v0,1(s1)
+bfc32818:	72ff      	cmpi	v0,255
+bfc3281a:	6758      	move	v0,t8
+bfc3281c:	5a01      	sltiu	v0,1
+bfc3281e:	6104      	btnez	bfc32828 <welcome_delay_ms+0x2c>
+bfc32820:	a141      	lbu	v0,1(s1)
+bfc32822:	4241      	addiu	v0,v0,1
+bfc32824:	c141      	sb	v0,1(s1)
+bfc32826:	17f7      	b	bfc32816 <welcome_delay_ms+0x1a>
+bfc32828:	a140      	lbu	v0,0(s1)
+bfc3282a:	4241      	addiu	v0,v0,1
+bfc3282c:	c140      	sb	v0,0(s1)
+bfc3282e:	17ee      	b	bfc3280c <welcome_delay_ms+0x10>
+bfc32830:	a150      	lbu	v0,16(s1)
+bfc32832:	424f      	addiu	v0,v0,-1
+bfc32834:	c150      	sb	v0,16(s1)
+bfc32836:	17e6      	b	bfc32804 <welcome_delay_ms+0x8>
+bfc32838:	65b9      	move	sp,s1
+bfc3283a:	6412      	restore	16,s1
+bfc3283c:	e8a0      	jrc	ra
+	...
+
+bfc32840 <welcome_delay_us>:
+bfc32840:	6492      	save	16,s1
+bfc32842:	673d      	move	s1,sp
+bfc32844:	6744      	move	v0,a0
+bfc32846:	c150      	sb	v0,16(s1)
+bfc32848:	a150      	lbu	v0,16(s1)
+bfc3284a:	220d      	beqz	v0,bfc32866 <welcome_delay_us+0x26>
+bfc3284c:	6a00      	li	v0,0
+bfc3284e:	c140      	sb	v0,0(s1)
+bfc32850:	a140      	lbu	v0,0(s1)
+bfc32852:	5a02      	sltiu	v0,2
+bfc32854:	6004      	bteqz	bfc3285e <welcome_delay_us+0x1e>
+bfc32856:	a140      	lbu	v0,0(s1)
+bfc32858:	4241      	addiu	v0,v0,1
+bfc3285a:	c140      	sb	v0,0(s1)
+bfc3285c:	17f9      	b	bfc32850 <welcome_delay_us+0x10>
+bfc3285e:	a150      	lbu	v0,16(s1)
+bfc32860:	424f      	addiu	v0,v0,-1
+bfc32862:	c150      	sb	v0,16(s1)
+bfc32864:	17f1      	b	bfc32848 <welcome_delay_us+0x8>
+bfc32866:	65b9      	move	sp,s1
+bfc32868:	6412      	restore	16,s1
+bfc3286a:	e8a0      	jrc	ra
+
+bfc3286c <buff_data_trans>:
+bfc3286c:	64d3      	save	24,ra,s1
+bfc3286e:	0104      	addiu	s1,sp,16
+bfc32870:	d982      	sw	a0,8(s1)
+bfc32872:	6745      	move	v0,a1
+bfc32874:	d9c4      	sw	a2,16(s1)
+bfc32876:	c946      	sh	v0,12(s1)
+bfc32878:	b208      	lw	v0,bfc32898 <buff_data_trans+0x2c>
+bfc3287a:	eac0      	jalrc	v0
+bfc3287c:	9962      	lw	v1,8(s1)
+bfc3287e:	a946      	lhu	v0,12(s1)
+bfc32880:	3244      	sll	v0,1
+bfc32882:	ea31      	zeh	v0
+bfc32884:	6783      	move	a0,v1
+bfc32886:	67a2      	move	a1,v0
+bfc32888:	b205      	lw	v0,bfc3289c <buff_data_trans+0x30>
+bfc3288a:	eac0      	jalrc	v0
+bfc3288c:	b205      	lw	v0,bfc3289c <buff_data_trans+0x30>
+bfc3288e:	eac0      	jalrc	v0
+bfc32890:	65b9      	move	sp,s1
+bfc32892:	6451      	restore	8,ra,s1
+bfc32894:	e8a0      	jrc	ra
+bfc32896:	0000      	addiu	s0,sp,0
+bfc32898:	2ae5      	bnez	v0,bfc32864 <welcome_delay_us+0x24>
+bfc3289a:	bfc3      	lwu	a2,12(a3)
+bfc3289c:	27b9      	beqz	a3,bfc32810 <welcome_delay_ms+0x14>
+bfc3289e:	bfc3      	lwu	a2,12(a3)
+bfc328a0:	2b15      	bnez	v1,bfc328cc <get_buff_data+0x28>
+bfc328a2:	bfc3      	lwu	a2,12(a3)
+
+bfc328a4 <get_buff_data>:
+bfc328a4:	64d4      	save	32,ra,s1
+bfc328a6:	0104      	addiu	s1,sp,16
+bfc328a8:	d984      	sw	a0,16(s1)
+bfc328aa:	6745      	move	v0,a1
+bfc328ac:	d9c6      	sw	a2,24(s1)
+bfc328ae:	c94a      	sh	v0,20(s1)
+bfc328b0:	b222      	lw	v0,bfc32938 <get_buff_data+0x94>
+bfc328b2:	eac0      	jalrc	v0
+bfc328b4:	6c01      	li	a0,1
+bfc328b6:	6d00      	li	a1,0
+bfc328b8:	6e00      	li	a2,0
+bfc328ba:	6f1e      	li	a3,30
+bfc328bc:	b220      	lw	v0,bfc3293c <get_buff_data+0x98>
+bfc328be:	eac0      	jalrc	v0
+bfc328c0:	6c2e      	li	a0,46
+bfc328c2:	b220      	lw	v0,bfc32940 <get_buff_data+0x9c>
+bfc328c4:	eac0      	jalrc	v0
+bfc328c6:	b420      	lw	a0,bfc32944 <get_buff_data+0xa0>
+bfc328c8:	b21f      	lw	v0,bfc32944 <get_buff_data+0xa0>
+bfc328ca:	9a60      	lw	v1,0(v0)
+bfc328cc:	6a01      	li	v0,1
+bfc328ce:	ea6d      	or	v0,v1
+bfc328d0:	dc40      	sw	v0,0(a0)
+bfc328d2:	b21e      	lw	v0,bfc32948 <get_buff_data+0xa4>
+bfc328d4:	a240      	lbu	v0,0(v0)
+bfc328d6:	6a00      	li	v0,0
+bfc328d8:	c940      	sh	v0,0(s1)
+bfc328da:	a940      	lhu	v0,0(s1)
+bfc328dc:	a96a      	lhu	v1,20(s1)
+bfc328de:	ea63      	sltu	v0,v1
+bfc328e0:	6025      	bteqz	bfc3292c <get_buff_data+0x88>
+bfc328e2:	99a4      	lw	a1,16(s1)
+bfc328e4:	b219      	lw	v0,bfc32948 <get_buff_data+0xa4>
+bfc328e6:	a240      	lbu	v0,0(v0)
+bfc328e8:	6762      	move	v1,v0
+bfc328ea:	eb11      	zeb	v1
+bfc328ec:	6af8      	li	v0,248
+bfc328ee:	ea6c      	and	v0,v1
+bfc328f0:	3440      	sll	a0,v0,8
+bfc328f2:	b216      	lw	v0,bfc32948 <get_buff_data+0xa4>
+bfc328f4:	a240      	lbu	v0,0(v0)
+bfc328f6:	6762      	move	v1,v0
+bfc328f8:	eb11      	zeb	v1
+bfc328fa:	6afc      	li	v0,252
+bfc328fc:	ea6c      	and	v0,v1
+bfc328fe:	324c      	sll	v0,3
+bfc32900:	651c      	move	t8,a0
+bfc32902:	6778      	move	v1,t8
+bfc32904:	6783      	move	a0,v1
+bfc32906:	ec4d      	or	a0,v0
+bfc32908:	b210      	lw	v0,bfc32948 <get_buff_data+0xa4>
+bfc3290a:	a240      	lbu	v0,0(v0)
+bfc3290c:	6762      	move	v1,v0
+bfc3290e:	eb11      	zeb	v1
+bfc32910:	6af8      	li	v0,248
+bfc32912:	ea6c      	and	v0,v1
+bfc32914:	324f      	sra	v0,3
+bfc32916:	651c      	move	t8,a0
+bfc32918:	6778      	move	v1,t8
+bfc3291a:	ea6d      	or	v0,v1
+bfc3291c:	cd40      	sh	v0,0(a1)
+bfc3291e:	9944      	lw	v0,16(s1)
+bfc32920:	4242      	addiu	v0,v0,2
+bfc32922:	d944      	sw	v0,16(s1)
+bfc32924:	a940      	lhu	v0,0(s1)
+bfc32926:	4241      	addiu	v0,v0,1
+bfc32928:	c940      	sh	v0,0(s1)
+bfc3292a:	17d7      	b	bfc328da <get_buff_data+0x36>
+bfc3292c:	b208      	lw	v0,bfc3294c <get_buff_data+0xa8>
+bfc3292e:	eac0      	jalrc	v0
+bfc32930:	65b9      	move	sp,s1
+bfc32932:	6452      	restore	16,ra,s1
+bfc32934:	e8a0      	jrc	ra
+bfc32936:	0000      	addiu	s0,sp,0
+bfc32938:	2ae5      	bnez	v0,bfc32904 <get_buff_data+0x60>
+bfc3293a:	bfc3      	lwu	a2,12(a3)
+bfc3293c:	2cb1      	bnez	a0,bfc328a0 <buff_data_trans+0x34>
+bfc3293e:	bfc3      	lwu	a2,12(a3)
+bfc32940:	278d      	beqz	a3,bfc3285c <welcome_delay_us+0x1c>
+bfc32942:	bfc3      	lwu	a2,12(a3)
+bfc32944:	0008      	addiu	s0,sp,32
+bfc32946:	c00d      	sb	s0,13(s0)
+bfc32948:	0010      	addiu	s0,sp,64
+bfc3294a:	c00d      	sb	s0,13(s0)
+bfc3294c:	2b15      	bnez	v1,bfc32978 <set_mfp_to_emif+0x28>
+bfc3294e:	bfc3      	lwu	a2,12(a3)
+
+bfc32950 <set_mfp_to_emif>:
+bfc32950:	6492      	save	16,s1
+bfc32952:	673d      	move	s1,sp
+bfc32954:	b218      	lw	v0,bfc329b4 <set_mfp_to_emif+0x64>
+bfc32956:	9a40      	lw	v0,0(v0)
+bfc32958:	d941      	sw	v0,4(s1)
+bfc3295a:	9961      	lw	v1,4(s1)
+bfc3295c:	f41c 6a00 	li	v0,58368
+bfc32960:	ea4b      	neg	v0
+bfc32962:	ea6c      	and	v0,v1
+bfc32964:	d941      	sw	v0,4(s1)
+bfc32966:	9961      	lw	v1,4(s1)
+bfc32968:	f084 6a09 	li	v0,8329
+bfc3296c:	ea6d      	or	v0,v1
+bfc3296e:	d941      	sw	v0,4(s1)
+bfc32970:	b311      	lw	v1,bfc329b4 <set_mfp_to_emif+0x64>
+bfc32972:	9941      	lw	v0,4(s1)
+bfc32974:	db40      	sw	v0,0(v1)
+bfc32976:	9961      	lw	v1,4(s1)
+bfc32978:	b210      	lw	v0,bfc329b8 <set_mfp_to_emif+0x68>
+bfc3297a:	ea6c      	and	v0,v1
+bfc3297c:	d941      	sw	v0,4(s1)
+bfc3297e:	9961      	lw	v1,4(s1)
+bfc32980:	b20f      	lw	v0,bfc329bc <set_mfp_to_emif+0x6c>
+bfc32982:	ea6d      	or	v0,v1
+bfc32984:	d941      	sw	v0,4(s1)
+bfc32986:	b30c      	lw	v1,bfc329b4 <set_mfp_to_emif+0x64>
+bfc32988:	9941      	lw	v0,4(s1)
+bfc3298a:	db40      	sw	v0,0(v1)
+bfc3298c:	b20d      	lw	v0,bfc329c0 <set_mfp_to_emif+0x70>
+bfc3298e:	9a40      	lw	v0,0(v0)
+bfc32990:	d940      	sw	v0,0(s1)
+bfc32992:	9960      	lw	v1,0(s1)
+bfc32994:	f001 6a00 	li	v0,2048
+bfc32998:	ea4b      	neg	v0
+bfc3299a:	ea6c      	and	v0,v1
+bfc3299c:	d940      	sw	v0,0(s1)
+bfc3299e:	9960      	lw	v1,0(s1)
+bfc329a0:	f2a0 6a09 	li	v0,681
+bfc329a4:	ea6d      	or	v0,v1
+bfc329a6:	d940      	sw	v0,0(s1)
+bfc329a8:	b306      	lw	v1,bfc329c0 <set_mfp_to_emif+0x70>
+bfc329aa:	9940      	lw	v0,0(s1)
+bfc329ac:	db40      	sw	v0,0(v1)
+bfc329ae:	65b9      	move	sp,s1
+bfc329b0:	6412      	restore	16,s1
+bfc329b2:	e8a0      	jrc	ra
+bfc329b4:	0058      	addiu	s0,sp,352
+bfc329b6:	c009      	sb	s0,9(s0)
+bfc329b8:	ffff      	daddiu	a3,sp,124
+bfc329ba:	007f      	addiu	s0,sp,508
+bfc329bc:	0000      	addiu	s0,sp,0
+bfc329be:	2480      	beqz	a0,bfc328c0 <get_buff_data+0x1c>
+bfc329c0:	0054      	addiu	s0,sp,336
+bfc329c2:	c009      	sb	s0,9(s0)
+
+bfc329c4 <set_mfp_to_lcd>:
+bfc329c4:	6492      	save	16,s1
+bfc329c6:	673d      	move	s1,sp
+bfc329c8:	b218      	lw	v0,bfc32a28 <set_mfp_to_lcd+0x64>
+bfc329ca:	9a40      	lw	v0,0(v0)
+bfc329cc:	d941      	sw	v0,4(s1)
+bfc329ce:	9961      	lw	v1,4(s1)
+bfc329d0:	f09c 6a00 	li	v0,57472
+bfc329d4:	ea4b      	neg	v0
+bfc329d6:	ea6c      	and	v0,v1
+bfc329d8:	d941      	sw	v0,4(s1)
+bfc329da:	9961      	lw	v1,4(s1)
+bfc329dc:	f008 6a12 	li	v0,16402
+bfc329e0:	ea6d      	or	v0,v1
+bfc329e2:	d941      	sw	v0,4(s1)
+bfc329e4:	b311      	lw	v1,bfc32a28 <set_mfp_to_lcd+0x64>
+bfc329e6:	9941      	lw	v0,4(s1)
+bfc329e8:	db40      	sw	v0,0(v1)
+bfc329ea:	9961      	lw	v1,4(s1)
+bfc329ec:	b210      	lw	v0,bfc32a2c <set_mfp_to_lcd+0x68>
+bfc329ee:	ea6c      	and	v0,v1
+bfc329f0:	d941      	sw	v0,4(s1)
+bfc329f2:	9961      	lw	v1,4(s1)
+bfc329f4:	b20f      	lw	v0,bfc32a30 <set_mfp_to_lcd+0x6c>
+bfc329f6:	ea6d      	or	v0,v1
+bfc329f8:	d941      	sw	v0,4(s1)
+bfc329fa:	b30c      	lw	v1,bfc32a28 <set_mfp_to_lcd+0x64>
+bfc329fc:	9941      	lw	v0,4(s1)
+bfc329fe:	db40      	sw	v0,0(v1)
+bfc32a00:	b20d      	lw	v0,bfc32a34 <set_mfp_to_lcd+0x70>
+bfc32a02:	9a40      	lw	v0,0(v0)
+bfc32a04:	d940      	sw	v0,0(s1)
+bfc32a06:	9960      	lw	v1,0(s1)
+bfc32a08:	f001 6a00 	li	v0,2048
+bfc32a0c:	ea4b      	neg	v0
+bfc32a0e:	ea6c      	and	v0,v1
+bfc32a10:	d940      	sw	v0,0(s1)
+bfc32a12:	9960      	lw	v1,0(s1)
+bfc32a14:	f540 6a12 	li	v0,1362
+bfc32a18:	ea6d      	or	v0,v1
+bfc32a1a:	d940      	sw	v0,0(s1)
+bfc32a1c:	b306      	lw	v1,bfc32a34 <set_mfp_to_lcd+0x70>
+bfc32a1e:	9940      	lw	v0,0(s1)
+bfc32a20:	db40      	sw	v0,0(v1)
+bfc32a22:	65b9      	move	sp,s1
+bfc32a24:	6412      	restore	16,s1
+bfc32a26:	e8a0      	jrc	ra
+bfc32a28:	0058      	addiu	s0,sp,352
+bfc32a2a:	c009      	sb	s0,9(s0)
+bfc32a2c:	ffff      	daddiu	a3,sp,124
+bfc32a2e:	007f      	addiu	s0,sp,508
+bfc32a30:	0000      	addiu	s0,sp,0
+bfc32a32:	4900      	addiu	s1,0
+bfc32a34:	0054      	addiu	s0,sp,336
+bfc32a36:	c009      	sb	s0,9(s0)
+
+bfc32a38 <store_ce_gio>:
+bfc32a38:	6491      	save	8,s1
+bfc32a3a:	673d      	move	s1,sp
+bfc32a3c:	b406      	lw	a0,bfc32a54 <store_ce_gio+0x1c>
+bfc32a3e:	b206      	lw	v0,bfc32a54 <store_ce_gio+0x1c>
+bfc32a40:	9a60      	lw	v1,0(v0)
+bfc32a42:	b206      	lw	v0,bfc32a58 <store_ce_gio+0x20>
+bfc32a44:	eb4c      	and	v1,v0
+bfc32a46:	b206      	lw	v0,bfc32a5c <store_ce_gio+0x24>
+bfc32a48:	ea6d      	or	v0,v1
+bfc32a4a:	dc40      	sw	v0,0(a0)
+bfc32a4c:	65b9      	move	sp,s1
+bfc32a4e:	6411      	restore	8,s1
+bfc32a50:	e8a0      	jrc	ra
+bfc32a52:	0000      	addiu	s0,sp,0
+bfc32a54:	0008      	addiu	s0,sp,32
+bfc32a56:	c00d      	sb	s0,13(s0)
+bfc32a58:	ffff      	daddiu	a3,sp,124
+bfc32a5a:	1fff 0000 	jalx	bffc0000 <pic_mode+0x38d342>
+bfc32a5e:	4000      	addiu	s0,s0,0
+
+bfc32a60 <restore_ce_gio>:
+bfc32a60:	6491      	save	8,s1
+bfc32a62:	673d      	move	s1,sp
+bfc32a64:	b406      	lw	a0,bfc32a7c <restore_ce_gio+0x1c>
+bfc32a66:	b206      	lw	v0,bfc32a7c <restore_ce_gio+0x1c>
+bfc32a68:	9a60      	lw	v1,0(v0)
+bfc32a6a:	b206      	lw	v0,bfc32a80 <restore_ce_gio+0x20>
+bfc32a6c:	eb4c      	and	v1,v0
+bfc32a6e:	b206      	lw	v0,bfc32a84 <restore_ce_gio+0x24>
+bfc32a70:	ea6d      	or	v0,v1
+bfc32a72:	dc40      	sw	v0,0(a0)
+bfc32a74:	65b9      	move	sp,s1
+bfc32a76:	6411      	restore	8,s1
+bfc32a78:	e8a0      	jrc	ra
+bfc32a7a:	0000      	addiu	s0,sp,0
+bfc32a7c:	0008      	addiu	s0,sp,32
+bfc32a7e:	c00d      	sb	s0,13(s0)
+bfc32a80:	ffff      	daddiu	a3,sp,124
+bfc32a82:	1fff 0000 	jalx	bffc0000 <pic_mode+0x38d342>
+bfc32a86:	2000      	beqz	s0,bfc32a88 <controller_init>
+
+bfc32a88 <controller_init>:
+bfc32a88:	6492      	save	16,s1
+bfc32a8a:	673d      	move	s1,sp
+bfc32a8c:	6744      	move	v0,a0
+bfc32a8e:	d9a5      	sw	a1,20(s1)
+bfc32a90:	d9c6      	sw	a2,24(s1)
+bfc32a92:	c150      	sb	v0,16(s1)
+bfc32a94:	b211      	lw	v0,bfc32ad8 <controller_init+0x50>
+bfc32a96:	9a40      	lw	v0,0(v0)
+bfc32a98:	d940      	sw	v0,0(s1)
+bfc32a9a:	9960      	lw	v1,0(s1)
+bfc32a9c:	6a19      	li	v0,25
+bfc32a9e:	ea4b      	neg	v0
+bfc32aa0:	ea6c      	and	v0,v1
+bfc32aa2:	d940      	sw	v0,0(s1)
+bfc32aa4:	9960      	lw	v1,0(s1)
+bfc32aa6:	6a80      	li	v0,128
+bfc32aa8:	ea6d      	or	v0,v1
+bfc32aaa:	d940      	sw	v0,0(s1)
+bfc32aac:	b30b      	lw	v1,bfc32ad8 <controller_init+0x50>
+bfc32aae:	9940      	lw	v0,0(s1)
+bfc32ab0:	db40      	sw	v0,0(v1)
+bfc32ab2:	b40b      	lw	a0,bfc32adc <controller_init+0x54>
+bfc32ab4:	b20a      	lw	v0,bfc32adc <controller_init+0x54>
+bfc32ab6:	9a60      	lw	v1,0(v0)
+bfc32ab8:	f7e1 6a11 	li	v0,4081
+bfc32abc:	ea4b      	neg	v0
+bfc32abe:	eb4c      	and	v1,v0
+bfc32ac0:	f700 6a00 	li	v0,1792
+bfc32ac4:	ea6d      	or	v0,v1
+bfc32ac6:	dc40      	sw	v0,0(a0)
+bfc32ac8:	b306      	lw	v1,bfc32ae0 <controller_init+0x58>
+bfc32aca:	f200 6a02 	li	v0,514
+bfc32ace:	db40      	sw	v0,0(v1)
+bfc32ad0:	65b9      	move	sp,s1
+bfc32ad2:	6412      	restore	16,s1
+bfc32ad4:	e8a0      	jrc	ra
+bfc32ad6:	0000      	addiu	s0,sp,0
+bfc32ad8:	0000      	addiu	s0,sp,0
+bfc32ada:	c00d      	sb	s0,13(s0)
+bfc32adc:	0028      	addiu	s0,sp,160
+bfc32ade:	c00c      	sb	s0,12(s0)
+bfc32ae0:	0004      	addiu	s0,sp,16
+bfc32ae2:	c00c      	sb	s0,12(s0)
+
+bfc32ae4 <store_ce>:
+bfc32ae4:	64e3      	save	24,ra,s0
+bfc32ae6:	b009      	lw	s0,bfc32b08 <store_ce+0x24>
+bfc32ae8:	a040      	lbu	v0,0(s0)
+bfc32aea:	2204      	beqz	v0,bfc32af4 <store_ce+0x10>
+bfc32aec:	4281      	addiu	a0,v0,1
+bfc32aee:	c080      	sb	a0,0(s0)
+bfc32af0:	6463      	restore	24,ra,s0
+bfc32af2:	e8a0      	jrc	ra
+bfc32af4:	b306      	lw	v1,bfc32b08 <store_ce+0x24>
+bfc32af6:	ebc0      	jalrc	v1
+bfc32af8:	b206      	lw	v0,bfc32b0c <store_ce+0x28>
+bfc32afa:	eac0      	jalrc	v0
+bfc32afc:	a040      	lbu	v0,0(s0)
+bfc32afe:	4281      	addiu	a0,v0,1
+bfc32b00:	c080      	sb	a0,0(s0)
+bfc32b02:	6463      	restore	24,ra,s0
+bfc32b04:	e8a0      	jrc	ra
+bfc32b06:	0000      	addiu	s0,sp,0
+bfc32b08:	2cb4      	bnez	a0,bfc32a72 <restore_ce_gio+0x12>
+bfc32b0a:	bfc3      	lwu	a2,12(a3)
+bfc32b0c:	2951      	bnez	s1,bfc32bb0 <set_window+0x6c>
+bfc32b0e:	bfc3      	lwu	a2,12(a3)
+bfc32b10:	2a39      	bnez	v0,bfc32b84 <set_window+0x40>
+bfc32b12:	bfc3      	lwu	a2,12(a3)
+
+bfc32b14 <restore_ce>:
+bfc32b14:	64c3      	save	24,ra
+bfc32b16:	b40a      	lw	a0,bfc32b3c <restore_ce+0x28>
+bfc32b18:	a440      	lbu	v0,0(a0)
+bfc32b1a:	424f      	addiu	v0,v0,-1
+bfc32b1c:	6762      	move	v1,v0
+bfc32b1e:	eb91      	seb	v1
+bfc32b20:	2305      	beqz	v1,bfc32b2c <restore_ce+0x18>
+bfc32b22:	5300      	slti	v1,0
+bfc32b24:	6108      	btnez	bfc32b36 <restore_ce+0x22>
+bfc32b26:	c440      	sb	v0,0(a0)
+bfc32b28:	6443      	restore	24,ra
+bfc32b2a:	e8a0      	jrc	ra
+bfc32b2c:	b305      	lw	v1,bfc32b3c <restore_ce+0x28>
+bfc32b2e:	eb40      	jalr	v1
+bfc32b30:	c440      	sb	v0,0(a0)
+bfc32b32:	6443      	restore	24,ra
+bfc32b34:	e8a0      	jrc	ra
+bfc32b36:	6a00      	li	v0,0
+bfc32b38:	c440      	sb	v0,0(a0)
+bfc32b3a:	17f6      	b	bfc32b28 <restore_ce+0x14>
+bfc32b3c:	2cb4      	bnez	a0,bfc32aa6 <controller_init+0x1e>
+bfc32b3e:	bfc3      	lwu	a2,12(a3)
+bfc32b40:	2a61      	bnez	v0,bfc32c04 <set_draw_mode>
+bfc32b42:	bfc3      	lwu	a2,12(a3)
+
+bfc32b44 <set_window>:
+bfc32b44:	64f7      	save	56,ra,s0-s1
+bfc32b46:	6d00      	li	a1,0
+bfc32b48:	b32a      	lw	v1,bfc32bf0 <set_window+0xac>
+bfc32b4a:	6704      	move	s0,a0
+bfc32b4c:	eb40      	jalr	v1
+bfc32b4e:	d504      	sw	a1,16(sp)
+bfc32b50:	a820      	lhu	s1,0(s0)
+bfc32b52:	a842      	lhu	v0,4(s0)
+bfc32b54:	67b1      	move	a1,s1
+bfc32b56:	e159      	addu	a2,s1,v0
+bfc32b58:	466f      	addiu	v1,a2,-1
+bfc32b5a:	6723      	move	s1,v1
+bfc32b5c:	a861      	lhu	v1,2(s0)
+bfc32b5e:	a843      	lhu	v0,6(s0)
+bfc32b60:	6783      	move	a0,v1
+bfc32b62:	ec31      	zeh	a0
+bfc32b64:	d406      	sw	a0,24(sp)
+bfc32b66:	e351      	addu	a0,v1,v0
+bfc32b68:	b223      	lw	v0,bfc32bf4 <set_window+0xb0>
+bfc32b6a:	440f      	addiu	s0,a0,-1
+bfc32b6c:	a240      	lbu	v0,0(v0)
+bfc32b6e:	ed31      	zeh	a1
+bfc32b70:	e931      	zeh	s1
+bfc32b72:	e831      	zeh	s0
+bfc32b74:	7203      	cmpi	v0,3
+bfc32b76:	67e5      	move	a3,a1
+bfc32b78:	67d1      	move	a2,s1
+bfc32b7a:	d007      	sw	s0,28(sp)
+bfc32b7c:	6006      	bteqz	bfc32b8a <set_window+0x46>
+bfc32b7e:	7205      	cmpi	v0,5
+bfc32b80:	612b      	btnez	bfc32bd8 <set_window+0x94>
+bfc32b82:	9506      	lw	a1,24(sp)
+bfc32b84:	9107      	lw	s1,28(sp)
+bfc32b86:	d706      	sw	a3,24(sp)
+bfc32b88:	d607      	sw	a2,28(sp)
+bfc32b8a:	b01c      	lw	s0,bfc32bf8 <set_window+0xb4>
+bfc32b8c:	d508      	sw	a1,32(sp)
+bfc32b8e:	e840      	jalr	s0
+bfc32b90:	6c2a      	li	a0,42
+bfc32b92:	9308      	lw	v1,32(sp)
+bfc32b94:	67fd      	move	a3,sp
+bfc32b96:	3262      	srl	v0,v1,8
+bfc32b98:	3622      	srl	a2,s1,8
+bfc32b9a:	c733      	sb	s1,19(a3)
+bfc32b9c:	b118      	lw	s1,bfc32bfc <set_window+0xb8>
+bfc32b9e:	c750      	sb	v0,16(a3)
+bfc32ba0:	c771      	sb	v1,17(a3)
+bfc32ba2:	c7d2      	sb	a2,18(a3)
+bfc32ba4:	0404      	addiu	a0,sp,16
+bfc32ba6:	e940      	jalr	s1
+bfc32ba8:	6d04      	li	a1,4
+bfc32baa:	e840      	jalr	s0
+bfc32bac:	6c2b      	li	a0,43
+bfc32bae:	9506      	lw	a1,24(sp)
+bfc32bb0:	677d      	move	v1,sp
+bfc32bb2:	a358      	lbu	v0,24(v1)
+bfc32bb4:	34a2      	srl	a0,a1,8
+bfc32bb6:	c351      	sb	v0,17(v1)
+bfc32bb8:	c390      	sb	a0,16(v1)
+bfc32bba:	9607      	lw	a2,28(sp)
+bfc32bbc:	679d      	move	a0,sp
+bfc32bbe:	a4bc      	lbu	a1,28(a0)
+bfc32bc0:	37c2      	srl	a3,a2,8
+bfc32bc2:	c4f2      	sb	a3,18(a0)
+bfc32bc4:	c4b3      	sb	a1,19(a0)
+bfc32bc6:	6d04      	li	a1,4
+bfc32bc8:	e940      	jalr	s1
+bfc32bca:	0404      	addiu	a0,sp,16
+bfc32bcc:	e840      	jalr	s0
+bfc32bce:	6c2c      	li	a0,44
+bfc32bd0:	b30c      	lw	v1,bfc32c00 <set_window+0xbc>
+bfc32bd2:	ebc0      	jalrc	v1
+bfc32bd4:	6477      	restore	56,ra,s0-s1
+bfc32bd6:	e8a0      	jrc	ra
+bfc32bd8:	7202      	cmpi	v0,2
+bfc32bda:	61d7      	btnez	bfc32b8a <set_window+0x46>
+bfc32bdc:	6af0      	li	v0,240
+bfc32bde:	68ef      	li	s0,239
+bfc32be0:	e29b      	subu	a2,v0,a0
+bfc32be2:	e07f      	subu	a3,s0,v1
+bfc32be4:	ee31      	zeh	a2
+bfc32be6:	ef31      	zeh	a3
+bfc32be8:	d606      	sw	a2,24(sp)
+bfc32bea:	d707      	sw	a3,28(sp)
+bfc32bec:	17ce      	b	bfc32b8a <set_window+0x46>
+bfc32bee:	0000      	addiu	s0,sp,0
+bfc32bf0:	2ae5      	bnez	v0,bfc32bbc <set_window+0x78>
+bfc32bf2:	bfc3      	lwu	a2,12(a3)
+bfc32bf4:	2cbe      	bnez	a0,bfc32b72 <set_window+0x2e>
+bfc32bf6:	bfc3      	lwu	a2,12(a3)
+bfc32bf8:	278d      	beqz	a3,bfc32b14 <restore_ce>
+bfc32bfa:	bfc3      	lwu	a2,12(a3)
+bfc32bfc:	27b9      	beqz	a3,bfc32b70 <set_window+0x2c>
+bfc32bfe:	bfc3      	lwu	a2,12(a3)
+bfc32c00:	2b15      	bnez	v1,bfc32c2c <set_draw_mode+0x28>
+bfc32c02:	bfc3      	lwu	a2,12(a3)
+
+bfc32c04 <set_draw_mode>:
+bfc32c04:	64e4      	save	32,ra,s0
+bfc32c06:	b225      	lw	v0,bfc32c98 <set_draw_mode+0x94>
+bfc32c08:	ea40      	jalr	v0
+bfc32c0a:	6704      	move	s0,a0
+bfc32c0c:	b324      	lw	v1,bfc32c9c <set_draw_mode+0x98>
+bfc32c0e:	eb40      	jalr	v1
+bfc32c10:	6c36      	li	a0,54
+bfc32c12:	e811      	zeb	s0
+bfc32c14:	b223      	lw	v0,bfc32ca0 <set_draw_mode+0x9c>
+bfc32c16:	5806      	sltiu	s0,6
+bfc32c18:	c200      	sb	s0,0(v0)
+bfc32c1a:	6013      	bteqz	bfc32c42 <set_draw_mode+0x3e>
+bfc32c1c:	0e03      	la	a2,bfc32c28 <set_draw_mode+0x24>
+bfc32c1e:	3304      	sll	v1,s0,1
+bfc32c20:	e3dd      	addu	a3,v1,a2
+bfc32c22:	8fa0      	lh	a1,0(a3)
+bfc32c24:	e5d1      	addu	a0,a1,a2
+bfc32c26:	ec80      	jrc	a0
+bfc32c28:	000d      	addiu	s0,sp,52
+bfc32c2a:	003b      	addiu	s0,sp,236
+bfc32c2c:	004b      	addiu	s0,sp,300
+bfc32c2e:	0059      	addiu	s0,sp,356
+bfc32c30:	0065      	addiu	s0,sp,404
+bfc32c32:	002b      	addiu	s0,sp,172
+bfc32c34:	679d      	move	a0,sp
+bfc32c36:	6a38      	li	v0,56
+bfc32c38:	ea4b      	neg	v0
+bfc32c3a:	c450      	sb	v0,16(a0)
+bfc32c3c:	b41a      	lw	a0,bfc32ca4 <set_draw_mode+0xa0>
+bfc32c3e:	6b00      	li	v1,0
+bfc32c40:	c460      	sb	v1,0(a0)
+bfc32c42:	b31a      	lw	v1,bfc32ca8 <set_draw_mode+0xa4>
+bfc32c44:	0404      	addiu	a0,sp,16
+bfc32c46:	eb40      	jalr	v1
+bfc32c48:	6d01      	li	a1,1
+bfc32c4a:	b219      	lw	v0,bfc32cac <set_draw_mode+0xa8>
+bfc32c4c:	eac0      	jalrc	v0
+bfc32c4e:	6464      	restore	32,ra,s0
+bfc32c50:	e8a0      	jrc	ra
+bfc32c52:	677d      	move	v1,sp
+bfc32c54:	6a78      	li	v0,120
+bfc32c56:	ea4b      	neg	v0
+bfc32c58:	c350      	sb	v0,16(v1)
+bfc32c5a:	6b05      	li	v1,5
+bfc32c5c:	b412      	lw	a0,bfc32ca4 <set_draw_mode+0xa0>
+bfc32c5e:	c460      	sb	v1,0(a0)
+bfc32c60:	17f0      	b	bfc32c42 <set_draw_mode+0x3e>
+bfc32c62:	6a58      	li	v0,88
+bfc32c64:	ea4b      	neg	v0
+bfc32c66:	67fd      	move	a3,sp
+bfc32c68:	c750      	sb	v0,16(a3)
+bfc32c6a:	6b03      	li	v1,3
+bfc32c6c:	b40e      	lw	a0,bfc32ca4 <set_draw_mode+0xa0>
+bfc32c6e:	c460      	sb	v1,0(a0)
+bfc32c70:	17e8      	b	bfc32c42 <set_draw_mode+0x3e>
+bfc32c72:	b40d      	lw	a0,bfc32ca4 <set_draw_mode+0xa0>
+bfc32c74:	6e48      	li	a2,72
+bfc32c76:	67bd      	move	a1,sp
+bfc32c78:	6b02      	li	v1,2
+bfc32c7a:	c5d0      	sb	a2,16(a1)
+bfc32c7c:	c460      	sb	v1,0(a0)
+bfc32c7e:	17e1      	b	bfc32c42 <set_draw_mode+0x3e>
+bfc32c80:	6a18      	li	v0,24
+bfc32c82:	ea4b      	neg	v0
+bfc32c84:	67fd      	move	a3,sp
+bfc32c86:	6b03      	li	v1,3
+bfc32c88:	c750      	sb	v0,16(a3)
+bfc32c8a:	17f0      	b	bfc32c6c <set_draw_mode+0x68>
+bfc32c8c:	677d      	move	v1,sp
+bfc32c8e:	6a18      	li	v0,24
+bfc32c90:	ea4b      	neg	v0
+bfc32c92:	c350      	sb	v0,16(v1)
+bfc32c94:	6b05      	li	v1,5
+bfc32c96:	17e2      	b	bfc32c5c <set_draw_mode+0x58>
+bfc32c98:	2ae5      	bnez	v0,bfc32c64 <set_draw_mode+0x60>
+bfc32c9a:	bfc3      	lwu	a2,12(a3)
+bfc32c9c:	278d      	beqz	a3,bfc32bb8 <set_window+0x74>
+bfc32c9e:	bfc3      	lwu	a2,12(a3)
+bfc32ca0:	2cb5      	bnez	a0,bfc32c0c <set_draw_mode+0x8>
+bfc32ca2:	bfc3      	lwu	a2,12(a3)
+bfc32ca4:	2cbe      	bnez	a0,bfc32c22 <set_draw_mode+0x1e>
+bfc32ca6:	bfc3      	lwu	a2,12(a3)
+bfc32ca8:	27b9      	beqz	a3,bfc32c1c <set_draw_mode+0x18>
+bfc32caa:	bfc3      	lwu	a2,12(a3)
+bfc32cac:	2b15      	bnez	v1,bfc32cd8 <pic_mode+0x1a>
+bfc32cae:	bfc3      	lwu	a2,12(a3)
+
+bfc32cb0 <sys_op_entry>:
+bfc32cb0:	6b0f      	li	v1,15
+bfc32cb2:	e805      	break	0
+
+bfc32cb4 <reent_flag>:
+	...
+
+bfc32cb5 <lcd_draw_mode>:
+bfc32cb5:	0000      	addiu	s0,sp,0
+	...
+
+bfc32cb8 <irq_status>:
+bfc32cb8:	00000000 	nop
+
+bfc32cbc <contrast_grade>:
+	...
+
+bfc32cbd <dma_chan>:
+	...
+
+bfc32cbe <pic_mode>:
+	...
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	a102007f 	sb	v0,127(t0)
+	...
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	bfc3206d 	cache	0x3,8301(s8)
+   4:	00020000 	sll	zero,v0,0x0
+   8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  14:	00000008 	jr	zero
+  18:	00000011 	mthi	zero
+  1c:	0000001f 	0x1f
+  20:	bfc32095 	cache	0x3,8341(s8)
+  24:	00020000 	sll	zero,v0,0x0
+  28:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  34:	00000008 	jr	zero
+  38:	00000011 	mthi	zero
+  3c:	0000001f 	0x1f
+  40:	bfc320c9 	cache	0x3,8393(s8)
+  44:	00020000 	sll	zero,v0,0x0
+  48:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  54:	00000010 	mfhi	zero
+  58:	00000011 	mthi	zero
+  5c:	0000001f 	0x1f
+  60:	bfc3210d 	cache	0x3,8461(s8)
+  64:	80020000 	lb	v0,0(zero)
+  68:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  74:	00000008 	jr	zero
+  78:	00000011 	mthi	zero
+  7c:	0000001f 	0x1f
+  80:	bfc321b5 	cache	0x3,8629(s8)
+  84:	80020000 	lb	v0,0(zero)
+  88:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  94:	00000010 	mfhi	zero
+  98:	00000011 	mthi	zero
+  9c:	0000001f 	0x1f
+  a0:	bfc32201 	cache	0x3,8705(s8)
+  a4:	80020000 	lb	v0,0(zero)
+  a8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  b4:	00000010 	mfhi	zero
+  b8:	00000011 	mthi	zero
+  bc:	0000001f 	0x1f
+  c0:	bfc32249 	cache	0x3,8777(s8)
+  c4:	80030000 	lb	v1,0(zero)
+  c8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  d4:	00000028 	0x28
+  d8:	00000011 	mthi	zero
+  dc:	0000001f 	0x1f
+  e0:	bfc32001 	cache	0x3,8193(s8)
+  e4:	80020000 	lb	v0,0(zero)
+  e8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+  f4:	00000010 	mfhi	zero
+  f8:	00000011 	mthi	zero
+  fc:	0000001f 	0x1f
+ 100:	bfc32321 	cache	0x3,8993(s8)
+ 104:	00020000 	sll	zero,v0,0x0
+ 108:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 114:	00000008 	jr	zero
+ 118:	00000011 	mthi	zero
+ 11c:	0000001f 	0x1f
+ 120:	bfc32359 	cache	0x3,9049(s8)
+ 124:	80020000 	lb	v0,0(zero)
+ 128:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 134:	00000010 	mfhi	zero
+ 138:	00000011 	mthi	zero
+ 13c:	0000001f 	0x1f
+ 140:	bfc32415 	cache	0x3,9237(s8)
+ 144:	80020000 	lb	v0,0(zero)
+ 148:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 154:	00000008 	jr	zero
+ 158:	00000011 	mthi	zero
+ 15c:	0000001f 	0x1f
+ 160:	bfc32509 	cache	0x3,9481(s8)
+ 164:	00020000 	sll	zero,v0,0x0
+ 168:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 174:	00000008 	jr	zero
+ 178:	00000011 	mthi	zero
+ 17c:	0000001f 	0x1f
+ 180:	bfc32519 	cache	0x3,9497(s8)
+ 184:	00020000 	sll	zero,v0,0x0
+ 188:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 194:	00000018 	mult	zero,zero
+ 198:	00000011 	mthi	zero
+ 19c:	0000001f 	0x1f
+ 1a0:	bfc3255d 	cache	0x3,9565(s8)
+ 1a4:	80020000 	lb	v0,0(zero)
+ 1a8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 1b4:	00000008 	jr	zero
+ 1b8:	00000011 	mthi	zero
+ 1bc:	0000001f 	0x1f
+ 1c0:	bfc325c1 	cache	0x3,9665(s8)
+ 1c4:	80020000 	lb	v0,0(zero)
+ 1c8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 1d4:	00000010 	mfhi	zero
+ 1d8:	00000011 	mthi	zero
+ 1dc:	0000001f 	0x1f
+ 1e0:	bfc32671 	cache	0x3,9841(s8)
+ 1e4:	80020000 	lb	v0,0(zero)
+ 1e8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 1f4:	00000008 	jr	zero
+ 1f8:	00000011 	mthi	zero
+ 1fc:	0000001f 	0x1f
+ 200:	bfc32705 	cache	0x3,9989(s8)
+ 204:	80020000 	lb	v0,0(zero)
+ 208:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 214:	00000008 	jr	zero
+ 218:	00000011 	mthi	zero
+ 21c:	0000001f 	0x1f
+ 220:	bfc3278d 	cache	0x3,10125(s8)
+ 224:	00020000 	sll	zero,v0,0x0
+ 228:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 234:	00000008 	jr	zero
+ 238:	00000011 	mthi	zero
+ 23c:	0000001f 	0x1f
+ 240:	bfc327b9 	cache	0x3,10169(s8)
+ 244:	00020000 	sll	zero,v0,0x0
+ 248:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 254:	00000010 	mfhi	zero
+ 258:	00000011 	mthi	zero
+ 25c:	0000001f 	0x1f
+ 260:	bfc327fd 	cache	0x3,10237(s8)
+ 264:	00020000 	sll	zero,v0,0x0
+ 268:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 274:	00000010 	mfhi	zero
+ 278:	00000011 	mthi	zero
+ 27c:	0000001f 	0x1f
+ 280:	bfc32841 	cache	0x3,10305(s8)
+ 284:	00020000 	sll	zero,v0,0x0
+ 288:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 294:	00000010 	mfhi	zero
+ 298:	00000011 	mthi	zero
+ 29c:	0000001f 	0x1f
+ 2a0:	bfc3286d 	cache	0x3,10349(s8)
+ 2a4:	80020000 	lb	v0,0(zero)
+ 2a8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 2b4:	00000008 	jr	zero
+ 2b8:	00000011 	mthi	zero
+ 2bc:	0000001f 	0x1f
+ 2c0:	bfc328a5 	cache	0x3,10405(s8)
+ 2c4:	80020000 	lb	v0,0(zero)
+ 2c8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 2d4:	00000010 	mfhi	zero
+ 2d8:	00000011 	mthi	zero
+ 2dc:	0000001f 	0x1f
+ 2e0:	bfc32951 	cache	0x3,10577(s8)
+ 2e4:	00020000 	sll	zero,v0,0x0
+ 2e8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 2f4:	00000010 	mfhi	zero
+ 2f8:	00000011 	mthi	zero
+ 2fc:	0000001f 	0x1f
+ 300:	bfc329c5 	cache	0x3,10693(s8)
+ 304:	00020000 	sll	zero,v0,0x0
+ 308:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 314:	00000010 	mfhi	zero
+ 318:	00000011 	mthi	zero
+ 31c:	0000001f 	0x1f
+ 320:	bfc32a39 	cache	0x3,10809(s8)
+ 324:	00020000 	sll	zero,v0,0x0
+ 328:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 334:	00000008 	jr	zero
+ 338:	00000011 	mthi	zero
+ 33c:	0000001f 	0x1f
+ 340:	bfc32a61 	cache	0x3,10849(s8)
+ 344:	00020000 	sll	zero,v0,0x0
+ 348:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 354:	00000008 	jr	zero
+ 358:	00000011 	mthi	zero
+ 35c:	0000001f 	0x1f
+ 360:	bfc32a89 	cache	0x3,10889(s8)
+ 364:	00020000 	sll	zero,v0,0x0
+ 368:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 374:	00000010 	mfhi	zero
+ 378:	00000011 	mthi	zero
+ 37c:	0000001f 	0x1f
+ 380:	bfc32ae5 	cache	0x3,10981(s8)
+ 384:	80010000 	lb	at,0(zero)
+ 388:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 394:	00000018 	mult	zero,zero
+ 398:	0000001d 	0x1d
+ 39c:	0000001f 	0x1f
+ 3a0:	bfc32b15 	cache	0x3,11029(s8)
+ 3a4:	80000000 	lb	zero,0(zero)
+ 3a8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 3b4:	00000018 	mult	zero,zero
+ 3b8:	0000001d 	0x1d
+ 3bc:	0000001f 	0x1f
+ 3c0:	bfc32b45 	cache	0x3,11077(s8)
+ 3c4:	80030000 	lb	v1,0(zero)
+ 3c8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 3d4:	00000038 	0x38
+ 3d8:	0000001d 	0x1d
+ 3dc:	0000001f 	0x1f
+ 3e0:	bfc32c05 	cache	0x3,11269(s8)
+ 3e4:	80010000 	lb	at,0(zero)
+ 3e8:	fffffffc 	sdc3	$31,-4(ra)
+	...
+ 3f4:	00000020 	add	zero,zero,zero
+ 3f8:	0000001d 	0x1d
+ 3fc:	0000001f 	0x1f
+ 400:	bfc32cb1 	cache	0x3,11441(s8)
+	...
+ 418:	0000001d 	0x1d
+ 41c:	0000001f 	0x1f
+Disassembly of section .debug_abbrev:
+
+00000000 <.debug_abbrev>:
+   0:	10011101 	beq	zero,at,4408 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x408>
+   4:	13082506 	beq	t8,t0,9420 <SRAM_BANK_B_ADDR+0x20>
+   8:	1b08030b 	0x1b08030b
+   c:	02000008 	jr	s0
+  10:	08030024 	j	c0090 <BANK_SPACE+0x80090>
+  14:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+  18:	16030000 	bne	s0,v1,1c <SRAM_CARD_GLOBAL_DATA_SIZE+0xc>
+  1c:	3a080300 	xori	t0,s0,0x300
+  20:	490b3b0b 	bc2tl	$cc2,ec50 <SROM_SPINOR1_ADDR+0x1050>
+  24:	04000013 	bltz	zero,74 <AP_BANK_BTENGINE_LIB_2>
+  28:	0e030024 	jal	80c0090 <BANK_SPACE+0x8080090>
+  2c:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+  30:	13050000 	beq	t8,a1,34 <SRAM_IRQ_DSP_PRINT_TEMP_SIZE+0x14>
+  34:	0b130101 	j	c4c0404 <BANK_SPACE+0xc480404>
+  38:	3b0b3a0b 	xori	t3,t8,0x3a0b
+  3c:	0600000b 	bltz	s0,6c <AP_BANK_BACK_BASAL+0x4>
+  40:	0803000d 	j	c0034 <BANK_SPACE+0x80034>
+  44:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+  48:	0a381349 	j	8e04d24 <BANK_SPACE+0x8dc4d24>
+  4c:	0f070000 	jal	c1c0000 <BANK_SPACE+0xc180000>
+  50:	490b0b00 	bc2tl	$cc2,2c54 <SROM_BROM_SIZE+0x654>
+  54:	08000013 	j	4c <AP_BANK_FRONT_UI_1+0x4>
+  58:	0c270015 	jal	9c0054 <BANK_SPACE+0x980054>
+  5c:	2e090000 	sltiu	t1,s0,0
+  60:	030c3f00 	0x30c3f00
+  64:	3b0b3a08 	xori	t3,t8,0x3a08
+  68:	110c270b 	beq	t0,t4,9c98 <SRAM_UI_RCODE1_ADDR+0x98>
+  6c:	40011201 	0x40011201
+  70:	0a00000a 	j	8000028 <BANK_SPACE+0x7fc0028>
+  74:	1301012e 	beq	t8,at,530 <SROM_STUB_SIZE_MDY+0x30>
+  78:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+  7c:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+  80:	13490c27 	beq	k0,t1,3120 <SROM_BROM_SIZE+0xb20>
+  84:	01120111 	0x1120111
+  88:	00000a40 	sll	at,zero,0x9
+  8c:	0300340b 	0x300340b
+  90:	3b0b3a08 	xori	t3,t8,0x3a08
+  94:	0213490b 	0x213490b
+  98:	0c00000a 	jal	28 <SRAM_IRQ_DSP_PRINT_TEMP_SIZE+0x8>
+  9c:	1301012e 	beq	t8,at,558 <SROM_STUB_SIZE_MDY+0x58>
+  a0:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+  a4:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+  a8:	01110c27 	0x1110c27
+  ac:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+  b0:	050d0000 	0x50d0000
+  b4:	3a0e0300 	xori	t6,s0,0x300
+  b8:	490b3b0b 	bc2tl	$cc2,ece8 <SROM_SPINOR1_ADDR+0x10e8>
+  bc:	000a0213 	0xa0213
+  c0:	012e0e00 	0x12e0e00
+  c4:	0c3f1301 	jal	fc4c04 <BANK_SPACE+0xf84c04>
+  c8:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+  cc:	0c27053b 	jal	9c14ec <BANK_SPACE+0x9814ec>
+  d0:	01120111 	0x1120111
+  d4:	00000a40 	sll	at,zero,0x9
+  d8:	0300050f 	0x300050f
+  dc:	3b0b3a0e 	xori	t3,t8,0x3a0e
+  e0:	02134905 	0x2134905
+  e4:	1000000a 	b	110 <SRAM_DSP_PRINT_BUFFER_SIZE>
+  e8:	08030034 	j	c00d0 <BANK_SPACE+0x800d0>
+  ec:	053b0b3a 	0x53b0b3a
+  f0:	0a021349 	j	8084d24 <BANK_SPACE+0x8044d24>
+  f4:	05110000 	bgezal	t0,f8 <SRAM_KERNEL_BSS_SIZE+0x18>
+  f8:	3a080300 	xori	t0,s0,0x300
+  fc:	49053b0b 	bc2t	$cc1,ed2c <SROM_SPINOR1_ADDR+0x112c>
+ 100:	000a0213 	0xa0213
+ 104:	01151200 	0x1151200
+ 108:	0c271301 	jal	9c4c04 <BANK_SPACE+0x984c04>
+ 10c:	05130000 	bgezall	t0,110 <SRAM_DSP_PRINT_BUFFER_SIZE>
+ 110:	00134900 	sll	t1,s3,0x4
+ 114:	00341400 	0x341400
+ 118:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 11c:	1349053b 	beq	k0,t1,160c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x60c>
+ 120:	00000a02 	srl	at,zero,0x8
+ 124:	01110100 	0x1110100
+ 128:	01120610 	0x1120610
+ 12c:	08250111 	j	940444 <BANK_SPACE+0x900444>
+ 130:	08030b13 	j	c2c4c <BANK_SPACE+0x82c4c>
+ 134:	0000081b 	0x81b
+ 138:	03002402 	0x3002402
+ 13c:	3e0b0b08 	0x3e0b0b08
+ 140:	0300000b 	movn	zero,t8,zero
+ 144:	08030016 	j	c0058 <BANK_SPACE+0x80058>
+ 148:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 14c:	00001349 	0x1349
+ 150:	03002404 	0x3002404
+ 154:	3e0b0b0e 	0x3e0b0b0e
+ 158:	0500000b 	bltz	t0,188 <SRAM_DSP_PRINT_BUFFER_SIZE+0x78>
+ 15c:	0b0b000f 	j	c2c003c <BANK_SPACE+0xc28003c>
+ 160:	0f060000 	jal	c180000 <BANK_SPACE+0xc140000>
+ 164:	490b0b00 	bc2tl	$cc2,2d68 <SROM_BROM_SIZE+0x768>
+ 168:	07000013 	bltz	t8,1b8 <SRAM_DSP_PRINT_BUFFER_SIZE+0xa8>
+ 16c:	13010113 	beq	t8,at,5bc <SRAM_OS_HEAP_SIZE+0x3c>
+ 170:	0b3a0b0b 	j	ce82c2c <BANK_SPACE+0xce42c2c>
+ 174:	00000b3b 	0xb3b
+ 178:	03000d08 	0x3000d08
+ 17c:	3b0b3a08 	xori	t3,t8,0x3a08
+ 180:	3813490b 	xori	s3,zero,0x490b
+ 184:	0900000a 	j	4000028 <BANK_SPACE+0x3fc0028>
+ 188:	1301012e 	beq	t8,at,644 <SRAM_AP_BACK_DATA_SIZE+0x44>
+ 18c:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 190:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 194:	01110c27 	0x1110c27
+ 198:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+ 19c:	050a0000 	tlti	t0,0
+ 1a0:	3a080300 	xori	t0,s0,0x300
+ 1a4:	490b3b0b 	bc2tl	$cc2,edd4 <SROM_SPINOR1_ADDR+0x11d4>
+ 1a8:	000a0213 	0xa0213
+ 1ac:	00050b00 	sll	at,a1,0xc
+ 1b0:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 1b4:	13490b3b 	beq	k0,t1,2ea4 <SROM_BROM_SIZE+0x8a4>
+ 1b8:	00000a02 	srl	at,zero,0x8
+ 1bc:	0300340c 	syscall	0xc00d0
+ 1c0:	3b0b3a08 	xori	t3,t8,0x3a08
+ 1c4:	0213490b 	0x213490b
+ 1c8:	0d00000a 	jal	4000028 <BANK_SPACE+0x3fc0028>
+ 1cc:	08030034 	j	c00d0 <BANK_SPACE+0x800d0>
+ 1d0:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 1d4:	0c3f1349 	jal	fc4d24 <BANK_SPACE+0xf84d24>
+ 1d8:	00000c3c 	0xc3c
+ 1dc:	01110100 	0x1110100
+ 1e0:	01120610 	0x1120610
+ 1e4:	08250111 	j	940444 <BANK_SPACE+0x900444>
+ 1e8:	08030b13 	j	c2c4c <BANK_SPACE+0x82c4c>
+ 1ec:	0000081b 	0x81b
+ 1f0:	03002402 	0x3002402
+ 1f4:	3e0b0b08 	0x3e0b0b08
+ 1f8:	0300000b 	movn	zero,t8,zero
+ 1fc:	0e030024 	jal	80c0090 <BANK_SPACE+0x8080090>
+ 200:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+ 204:	16040000 	bne	s0,a0,208 <SRAM_AP_BANK_MANAGER_SIZE+0x8>
+ 208:	3a080300 	xori	t0,s0,0x300
+ 20c:	490b3b0b 	bc2tl	$cc2,ee3c <SROM_SPINOR1_ADDR+0x123c>
+ 210:	05000013 	bltz	t0,260 <SRAM_AP_BANK_MANAGER_SIZE+0x60>
+ 214:	0b0b000f 	j	c2c003c <BANK_SPACE+0xc28003c>
+ 218:	2e060000 	sltiu	a2,s0,0
+ 21c:	3f130101 	0x3f130101
+ 220:	3a08030c 	xori	t0,s0,0x30c
+ 224:	270b3b0b 	addiu	t3,t8,15115
+ 228:	1113490c 	beq	t0,s3,1265c <SRAM_AP_BANK_FRONT_BASAL_ADDR+0x15c>
+ 22c:	40011201 	0x40011201
+ 230:	0700000a 	bltz	t8,25c <SRAM_AP_BANK_MANAGER_SIZE+0x5c>
+ 234:	08030005 	j	c0014 <BANK_SPACE+0x80014>
+ 238:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 23c:	0a021349 	j	8084d24 <BANK_SPACE+0x8044d24>
+ 240:	34080000 	li	t0,0x0
+ 244:	3a080300 	xori	t0,s0,0x300
+ 248:	490b3b0b 	bc2tl	$cc2,ee78 <SROM_SPINOR1_ADDR+0x1278>
+ 24c:	3c0c3f13 	lui	t4,0x3f13
+ 250:	0000000c 	syscall
+ 254:	10011101 	beq	zero,at,465c <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x65c>
+ 258:	11011206 	beq	t0,at,4a74 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xa74>
+ 25c:	13082501 	beq	t8,t0,9664 <SRAM_BANK_B_ADDR+0x264>
+ 260:	1b08030b 	0x1b08030b
+ 264:	02000008 	jr	s0
+ 268:	08030024 	j	c0090 <BANK_SPACE+0x80090>
+ 26c:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+ 270:	24030000 	li	v1,0
+ 274:	0b0e0300 	j	c380c00 <BANK_SPACE+0xc340c00>
+ 278:	000b3e0b 	0xb3e0b
+ 27c:	00160400 	sll	zero,s6,0x10
+ 280:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 284:	13490b3b 	beq	k0,t1,2f74 <SROM_BROM_SIZE+0x974>
+ 288:	2e050000 	sltiu	a1,s0,0
+ 28c:	030c3f00 	0x30c3f00
+ 290:	3b0b3a08 	xori	t3,t8,0x3a08
+ 294:	110c270b 	beq	t0,t4,9ec4 <SRAM_UI_RCODE1_ADDR+0x2c4>
+ 298:	40011201 	0x40011201
+ 29c:	0600000a 	bltz	s0,2c8 <SRAM_AP_BANK_MANAGER_SIZE+0xc8>
+ 2a0:	1301012e 	beq	t8,at,75c <ROM_TEXT_SIZE+0x5c>
+ 2a4:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 2a8:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 2ac:	01110c27 	0x1110c27
+ 2b0:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+ 2b4:	34070000 	li	a3,0x0
+ 2b8:	3a080300 	xori	t0,s0,0x300
+ 2bc:	490b3b0b 	bc2tl	$cc2,eeec <SROM_SPINOR1_ADDR+0x12ec>
+ 2c0:	000a0213 	0xa0213
+ 2c4:	01010800 	0x1010800
+ 2c8:	13491301 	beq	k0,t1,4ed0 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xed0>
+ 2cc:	21090000 	addi	t1,t0,0
+ 2d0:	2f134900 	sltiu	s3,t8,18688
+ 2d4:	0a00000b 	j	800002c <BANK_SPACE+0x7fc002c>
+ 2d8:	13490026 	beq	k0,t1,374 <SRAM_FS_DATA_SIZE+0x74>
+ 2dc:	340b0000 	li	t3,0x0
+ 2e0:	3a080300 	xori	t0,s0,0x300
+ 2e4:	490b3b0b 	bc2tl	$cc2,ef14 <SROM_SPINOR1_ADDR+0x1314>
+ 2e8:	020c3f13 	0x20c3f13
+ 2ec:	0000000a 	movz	zero,zero,zero
+ 2f0:	10011101 	beq	zero,at,46f8 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x6f8>
+ 2f4:	11011206 	beq	t0,at,4b10 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xb10>
+ 2f8:	13082501 	beq	t8,t0,9700 <SRAM_BANK_B_ADDR+0x300>
+ 2fc:	1b08030b 	0x1b08030b
+ 300:	02000008 	jr	s0
+ 304:	08030024 	j	c0090 <BANK_SPACE+0x80090>
+ 308:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+ 30c:	24030000 	li	v1,0
+ 310:	0b0e0300 	j	c380c00 <BANK_SPACE+0xc340c00>
+ 314:	000b3e0b 	0xb3e0b
+ 318:	00160400 	sll	zero,s6,0x10
+ 31c:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 320:	13490b3b 	beq	k0,t1,3010 <SROM_BROM_SIZE+0xa10>
+ 324:	0f050000 	jal	c140000 <BANK_SPACE+0xc100000>
+ 328:	000b0b00 	sll	at,t3,0xc
+ 32c:	000f0600 	sll	zero,t7,0x18
+ 330:	13490b0b 	beq	k0,t1,2f60 <SROM_BROM_SIZE+0x960>
+ 334:	2e070000 	sltiu	a3,s0,0
+ 338:	3f130101 	0x3f130101
+ 33c:	3a08030c 	xori	t0,s0,0x30c
+ 340:	270b3b0b 	addiu	t3,t8,15115
+ 344:	1201110c 	beq	s0,at,4778 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x778>
+ 348:	000a4001 	0xa4001
+ 34c:	00050800 	sll	at,a1,0x0
+ 350:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 354:	13490b3b 	beq	k0,t1,3044 <SROM_BROM_SIZE+0xa44>
+ 358:	00000a02 	srl	at,zero,0x8
+ 35c:	03000509 	0x3000509
+ 360:	3b0b3a0e 	xori	t3,t8,0x3a0e
+ 364:	0213490b 	0x213490b
+ 368:	0a00000a 	j	8000028 <BANK_SPACE+0x7fc0028>
+ 36c:	08030034 	j	c00d0 <BANK_SPACE+0x800d0>
+ 370:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 374:	0a021349 	j	8084d24 <BANK_SPACE+0x8044d24>
+ 378:	2e0b0000 	sltiu	t3,s0,0
+ 37c:	030c3f01 	0x30c3f01
+ 380:	3b0b3a08 	xori	t3,t8,0x3a08
+ 384:	110c270b 	beq	t0,t4,9fb4 <SRAM_SYS_SHARE_DATA_ADDR+0x34>
+ 388:	40011201 	0x40011201
+ 38c:	0000000a 	movz	zero,zero,zero
+ 390:	10011101 	beq	zero,at,4798 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x798>
+ 394:	11011206 	beq	t0,at,4bb0 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xbb0>
+ 398:	13082501 	beq	t8,t0,97a0 <SRAM_BANK_B_ADDR+0x3a0>
+ 39c:	1b08030b 	0x1b08030b
+ 3a0:	02000008 	jr	s0
+ 3a4:	08030024 	j	c0090 <BANK_SPACE+0x80090>
+ 3a8:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+ 3ac:	24030000 	li	v1,0
+ 3b0:	0b0e0300 	j	c380c00 <BANK_SPACE+0xc340c00>
+ 3b4:	000b3e0b 	0xb3e0b
+ 3b8:	000f0400 	sll	zero,t7,0x10
+ 3bc:	00000b0b 	0xb0b
+ 3c0:	01010405 	0x1010405
+ 3c4:	3a0b0b13 	xori	t3,s0,0xb13
+ 3c8:	000b3b0b 	0xb3b0b
+ 3cc:	00280600 	0x280600
+ 3d0:	0d1c0803 	jal	470200c <BANK_SPACE+0x46c200c>
+ 3d4:	16070000 	bne	s0,a3,3d8 <SRAM_FS_DATA_SIZE+0xd8>
+ 3d8:	3a080300 	xori	t0,s0,0x300
+ 3dc:	490b3b0b 	bc2tl	$cc2,f00c <SROM_SPINOR1_ADDR+0x140c>
+ 3e0:	08000013 	j	4c <AP_BANK_FRONT_UI_1+0x4>
+ 3e4:	1301012e 	beq	t8,at,8a0 <SRAM_OS_DATA_SIZE+0x20>
+ 3e8:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 3ec:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 3f0:	01110c27 	0x1110c27
+ 3f4:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+ 3f8:	34090000 	li	t1,0x0
+ 3fc:	3a0e0300 	xori	t6,s0,0x300
+ 400:	490b3b0b 	bc2tl	$cc2,f030 <SROM_SPINOR1_ADDR+0x1430>
+ 404:	000a0213 	0xa0213
+ 408:	002e0a00 	0x2e0a00
+ 40c:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 410:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 414:	01110c27 	0x1110c27
+ 418:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+ 41c:	2e0b0000 	sltiu	t3,s0,0
+ 420:	030c3f01 	0x30c3f01
+ 424:	3b0b3a08 	xori	t3,t8,0x3a08
+ 428:	110c270b 	beq	t0,t4,a058 <SRAM_LCD_RCODE_ADDR+0x58>
+ 42c:	40011201 	0x40011201
+ 430:	0c00000a 	jal	28 <SRAM_IRQ_DSP_PRINT_TEMP_SIZE+0x8>
+ 434:	08030005 	j	c0014 <BANK_SPACE+0x80014>
+ 438:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 43c:	0a021349 	j	8084d24 <BANK_SPACE+0x8044d24>
+ 440:	340d0000 	li	t5,0x0
+ 444:	3a080300 	xori	t0,s0,0x300
+ 448:	490b3b0b 	bc2tl	$cc2,f078 <SROM_SPINOR1_ADDR+0x1478>
+ 44c:	000a0213 	0xa0213
+ 450:	11010000 	beq	t0,at,454 <SRAM_BANK_A_SIZE+0x54>
+ 454:	12061001 	beq	s0,a2,445c <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x45c>
+ 458:	25011101 	addiu	at,t0,4353
+ 45c:	030b1308 	0x30b1308
+ 460:	00081b08 	0x81b08
+ 464:	00240200 	0x240200
+ 468:	0b0b0803 	j	c2c200c <BANK_SPACE+0xc28200c>
+ 46c:	00000b3e 	0xb3e
+ 470:	03001603 	0x3001603
+ 474:	3b0b3a08 	xori	t3,t8,0x3a08
+ 478:	0013490b 	0x13490b
+ 47c:	00240400 	0x240400
+ 480:	0b0b0e03 	j	c2c380c <BANK_SPACE+0xc28380c>
+ 484:	00000b3e 	0xb3e
+ 488:	0b000f05 	j	c003c14 <BANK_SPACE+0xbfc3c14>
+ 48c:	0600000b 	bltz	s0,4bc <SRAM_BANK_A_SIZE+0xbc>
+ 490:	1301012e 	beq	t8,at,94c <SRAM_OS_DATA_SIZE+0xcc>
+ 494:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 498:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 49c:	13490c27 	beq	k0,t1,353c <SROM_TWI_ADDR_MDY+0x13c>
+ 4a0:	01120111 	0x1120111
+ 4a4:	00000a40 	sll	at,zero,0x9
+ 4a8:	03000507 	0x3000507
+ 4ac:	3b0b3a08 	xori	t3,t8,0x3a08
+ 4b0:	0213490b 	0x213490b
+ 4b4:	0800000a 	j	28 <SRAM_IRQ_DSP_PRINT_TEMP_SIZE+0x8>
+ 4b8:	1301012e 	beq	t8,at,974 <SRAM_OS_DATA_SIZE+0xf4>
+ 4bc:	08030c3f 	j	c30fc <BANK_SPACE+0x830fc>
+ 4c0:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 4c4:	01110c27 	0x1110c27
+ 4c8:	0a400112 	j	9000448 <BANK_SPACE+0x8fc0448>
+ 4cc:	2e090000 	sltiu	t1,s0,0
+ 4d0:	030c3f01 	0x30c3f01
+ 4d4:	3b0b3a08 	xori	t3,t8,0x3a08
+ 4d8:	110c270b 	beq	t0,t4,a108 <SRAM_LCD_RCODE_ADDR+0x108>
+ 4dc:	40011201 	0x40011201
+ 4e0:	0000000a 	movz	zero,zero,zero
+ 4e4:	10011101 	beq	zero,at,48ec <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x8ec>
+ 4e8:	11011206 	beq	t0,at,4d04 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xd04>
+ 4ec:	13082501 	beq	t8,t0,98f4 <SRAM_BANK_B_ADDR+0x4f4>
+ 4f0:	1b08030b 	0x1b08030b
+ 4f4:	02000008 	jr	s0
+ 4f8:	08030024 	j	c0090 <BANK_SPACE+0x80090>
+ 4fc:	0b3e0b0b 	j	cf82c2c <BANK_SPACE+0xcf42c2c>
+ 500:	24030000 	li	v1,0
+ 504:	0b0e0300 	j	c380c00 <BANK_SPACE+0xc340c00>
+ 508:	000b3e0b 	0xb3e0b
+ 50c:	00160400 	sll	zero,s6,0x10
+ 510:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 514:	13490b3b 	beq	k0,t1,3204 <SROM_TWI_ADDR+0x4>
+ 518:	0f050000 	jal	c140000 <BANK_SPACE+0xc100000>
+ 51c:	000b0b00 	sll	at,t3,0xc
+ 520:	000f0600 	sll	zero,t7,0x18
+ 524:	13490b0b 	beq	k0,t1,3154 <SROM_BROM_SIZE+0xb54>
+ 528:	15070000 	bne	t0,a3,52c <SROM_STUB_SIZE_MDY+0x2c>
+ 52c:	27130101 	addiu	s3,t8,257
+ 530:	0013490c 	syscall	0x4d24
+ 534:	00050800 	sll	at,a1,0x0
+ 538:	00001349 	0x1349
+ 53c:	01011309 	0x1011309
+ 540:	3a0b0b13 	xori	t3,s0,0xb13
+ 544:	000b3b0b 	0xb3b0b
+ 548:	000d0a00 	sll	at,t5,0x8
+ 54c:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 550:	13490b3b 	beq	k0,t1,3240 <SROM_TWI_ADDR+0x40>
+ 554:	00000a38 	0xa38
+ 558:	0300340b 	0x300340b
+ 55c:	3b0b3a08 	xori	t3,t8,0x3a08
+ 560:	3f13490b 	0x3f13490b
+ 564:	000a020c 	syscall	0x2808
+ 568:	00340c00 	0x340c00
+ 56c:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 570:	13490b3b 	beq	k0,t1,3260 <SROM_TWI_ADDR+0x60>
+ 574:	0a020c3f 	j	80830fc <BANK_SPACE+0x80430fc>
+ 578:	01000000 	0x1000000
+ 57c:	06100111 	bltzal	s0,9c4 <SRAM_OS_DATA_SIZE+0x144>
+ 580:	01110112 	0x1110112
+ 584:	0b130e25 	j	c4c3894 <BANK_SPACE+0xc483894>
+ 588:	0e1b0e03 	jal	86c380c <BANK_SPACE+0x868380c>
+ 58c:	24020000 	li	v0,0
+ 590:	0b0e0300 	j	c380c00 <BANK_SPACE+0xc340c00>
+ 594:	000b3e0b 	0xb3e0b
+ 598:	00160300 	sll	zero,s6,0xc
+ 59c:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 5a0:	13490b3b 	beq	k0,t1,3290 <SROM_TWI_ADDR+0x90>
+ 5a4:	24040000 	li	a0,0
+ 5a8:	0b080300 	j	c200c00 <BANK_SPACE+0xc1c0c00>
+ 5ac:	000b3e0b 	0xb3e0b
+ 5b0:	000f0500 	sll	zero,t7,0x14
+ 5b4:	00000b0b 	0xb0b
+ 5b8:	01011306 	0x1011306
+ 5bc:	3a0b0b13 	xori	t3,s0,0xb13
+ 5c0:	000b3b0b 	0xb3b0b
+ 5c4:	000d0700 	sll	zero,t5,0x1c
+ 5c8:	0b3a0803 	j	ce8200c <BANK_SPACE+0xce4200c>
+ 5cc:	13490b3b 	beq	k0,t1,32bc <SROM_TWI_ADDR+0xbc>
+ 5d0:	00000a38 	0xa38
+ 5d4:	03000d08 	0x3000d08
+ 5d8:	3b0b3a0e 	xori	t3,t8,0x3a0e
+ 5dc:	3813490b 	xori	s3,zero,0x490b
+ 5e0:	0900000a 	j	4000028 <BANK_SPACE+0x3fc0028>
+ 5e4:	0c3f002e 	jal	fc00b8 <BANK_SPACE+0xf800b8>
+ 5e8:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 5ec:	0c270b3b 	jal	9c2cec <BANK_SPACE+0x982cec>
+ 5f0:	01120111 	0x1120111
+ 5f4:	00000a40 	sll	at,zero,0x9
+ 5f8:	01012e0a 	0x1012e0a
+ 5fc:	030c3f13 	0x30c3f13
+ 600:	3b0b3a0e 	xori	t3,t8,0x3a0e
+ 604:	110c270b 	beq	t0,t4,a234 <SRAM_LCD_RCODE_ADDR+0x234>
+ 608:	40011201 	0x40011201
+ 60c:	0b00000a 	j	c000028 <BANK_SPACE+0xbfc0028>
+ 610:	0e030005 	jal	80c0014 <BANK_SPACE+0x8080014>
+ 614:	0b3b0b3a 	j	cec2ce8 <BANK_SPACE+0xce82ce8>
+ 618:	0a021349 	j	8084d24 <BANK_SPACE+0x8044d24>
+ 61c:	340c0000 	li	t4,0x0
+ 620:	3a0e0300 	xori	t6,s0,0x300
+ 624:	490b3b0b 	bc2tl	$cc2,f254 <SROM_SPINOR1_ADDR+0x1654>
+ 628:	000a0213 	0xa0213
+ 62c:	00340d00 	0x340d00
+ 630:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 634:	13490b3b 	beq	k0,t1,3324 <SROM_TWI_ADDR+0x124>
+ 638:	0f0e0000 	jal	c380000 <BANK_SPACE+0xc340000>
+ 63c:	490b0b00 	bc2tl	$cc2,3240 <SROM_TWI_ADDR+0x40>
+ 640:	0f000013 	jal	c00004c <BANK_SPACE+0xbfc004c>
+ 644:	13010101 	beq	t8,at,a4c <SRAM_FS_BUF_SIZE+0x4c>
+ 648:	00001349 	0x1349
+ 64c:	49002110 	bc2f	8a90 <SRAM_OS_RCODE_ADDR+0xa90>
+ 650:	000b2f13 	0xb2f13
+ 654:	00341100 	0x341100
+ 658:	0b3a0e03 	j	ce8380c <BANK_SPACE+0xce4380c>
+ 65c:	13490b3b 	beq	k0,t1,334c <SROM_TWI_ADDR+0x14c>
+ 660:	0c3c0c3f 	jal	f030fc <BANK_SPACE+0xec30fc>
+ 664:	01000000 	0x1000000
+ 668:	06100011 	bltzal	s0,6b0 <SRAM_AP_BACK_DATA_SIZE+0xb0>
+ 66c:	01120111 	0x1120111
+ 670:	081b0803 	j	6c200c <BANK_SPACE+0x68200c>
+ 674:	05130825 	bgezall	t0,270c <SROM_BROM_SIZE+0x10c>
+ 678:	Address 0x678 is out of bounds.
+
+Disassembly of section .debug_info:
+
+00000000 <.debug_info>:
+       0:	000004d4 	0x4d4
+       4:	00000002 	srl	zero,zero,0x0
+       8:	01040000 	0x1040000
+       c:	00000000 	nop
+      10:	20554e47 	addi	s5,v0,20039
+      14:	2e332043 	sltiu	s3,s1,8259
+      18:	20342e34 	addi	s4,at,11828
+      1c:	7370696d 	0x7370696d
+      20:	2d656473 	sltiu	a1,t3,25715
+      24:	36302e36 	ori	s0,s1,0x2e36
+      28:	2d31302e 	sltiu	s1,t1,12334
+      2c:	37303032 	ori	s0,t9,0x3032
+      30:	30323430 	andi	s2,at,0x3430
+      34:	65770100 	0x65770100
+      38:	6d6f636c 	0x6d6f636c
+      3c:	00632e65 	0x632e65
+      40:	6779632f 	0x6779632f
+      44:	76697264 	jalx	9a5c990 <BANK_SPACE+0x9a1c990>
+      48:	2f662f65 	sltiu	a2,k1,12133
+      4c:	72756f53 	udi3	s3,s5,t5,0x1d
+      50:	435f6573 	c0	0x15f6573
+      54:	2f65646f 	sltiu	a1,k1,25711
+      58:	36313135 	ori	s1,s1,0x3135
+      5c:	33504d2f 	andi	s0,k0,0x4d2f
+      60:	3631322d 	ori	s1,s1,0x322d
+      64:	53552f37 	beql	k0,s5,bd44 <SRAM_UI_DATA_ADDR+0x144>
+      68:	41363132 	0x41363132
+      6c:	7361632f 	0x7361632f
+      70:	72642f65 	0x72642f65
+      74:	65772f76 	0x65772f76
+      78:	6d6f636c 	0x6d6f636c
+      7c:	75020065 	jalx	4080194 <BANK_SPACE+0x4040194>
+      80:	6769736e 	0x6769736e
+      84:	2064656e 	addi	a0,v1,25966
+      88:	72616863 	0x72616863
+      8c:	03080100 	0x3080100
+      90:	38544e49 	xori	s4,v0,0x4e49
+      94:	0f020055 	jal	c080154 <BANK_SPACE+0xc040154>
+      98:	0000007e 	0x7e
+      9c:	67697302 	0x67697302
+      a0:	2064656e 	addi	a0,v1,25966
+      a4:	72616863 	0x72616863
+      a8:	02060100 	0x2060100
+      ac:	726f6873 	0x726f6873
+      b0:	6e752074 	0x6e752074
+      b4:	6e676973 	0x6e676973
+      b8:	69206465 	0x69206465
+      bc:	0200746e 	0x200746e
+      c0:	68730207 	0x68730207
+      c4:	2074726f 	addi	s4,v1,29295
+      c8:	00746e69 	0x746e69
+      cc:	0c040502 	jal	101408 <BANK_SPACE+0xc1408>
+      d0:	04000000 	bltz	zero,d4 <SRAM_CARD_DATA_SIZE+0x54>
+      d4:	6f6c0207 	0x6f6c0207
+      d8:	6920676e 	0x6920676e
+      dc:	0400746e 	bltz	zero,1d298 <SRAM_OS_TASK_STACK_ADDR+0x1698>
+      e0:	6c660205 	0x6c660205
+      e4:	0074616f 	0x74616f
+      e8:	64020404 	0x64020404
+      ec:	6c62756f 	0x6c62756f
+      f0:	04080065 	tgei	zero,101
+      f4:	6e6f6c02 	0x6e6f6c02
+      f8:	6f6c2067 	0x6f6c2067
+      fc:	7520676e 	jalx	4819db8 <BANK_SPACE+0x47d9db8>
+     100:	6769736e 	0x6769736e
+     104:	2064656e 	addi	a0,v1,25966
+     108:	00746e69 	0x746e69
+     10c:	6c020708 	0x6c020708
+     110:	20676e6f 	addi	a3,v1,28271
+     114:	676e6f6c 	0x676e6f6c
+     118:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     11c:	02050800 	0x2050800
+     120:	69736e75 	0x69736e75
+     124:	64656e67 	0x64656e67
+     128:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     12c:	03070400 	0x3070400
+     130:	746e6975 	jalx	1b9a5d4 <BANK_SPACE+0x1b5a5d4>
+     134:	17030038 	bne	t8,v1,218 <SRAM_AP_BANK_MANAGER_SIZE+0x18>
+     138:	0000007e 	0x7e
+     13c:	6e697503 	0x6e697503
+     140:	00363174 	teq	at,s6,0xc5
+     144:	00ab1f03 	0xab1f03
+     148:	75030000 	jalx	40c0000 <BANK_SPACE+0x4080000>
+     14c:	33746e69 	andi	s4,k1,0x6e69
+     150:	27030032 	addiu	v1,t8,50
+     154:	0000011f 	0x11f
+     158:	746e6902 	jalx	1b9a408 <BANK_SPACE+0x1b5a408>
+     15c:	02050400 	0x2050400
+     160:	72616863 	0x72616863
+     164:	05060100 	0x5060100
+     168:	00000197 	0x197
+     16c:	06980508 	0x6980508
+     170:	656b6177 	0x656b6177
+     174:	0070755f 	0x70755f
+     178:	014a9605 	0x14a9605
+     17c:	23020000 	addi	v0,t8,0
+     180:	66630600 	0x66630600
+     184:	75625f67 	jalx	5897d9c <BANK_SPACE+0x5857d9c>
+     188:	72656666 	0x72656666
+     18c:	97970500 	lhu	s7,1280(gp)
+     190:	02000001 	movf	zero,s0,$fcc0
+     194:	07000423 	bltz	t8,1224 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x224>
+     198:	00012f04 	0x12f04
+     19c:	65770300 	0x65770300
+     1a0:	6d6f636c 	0x6d6f636c
+     1a4:	72615f65 	0x72615f65
+     1a8:	656d7567 	0x656d7567
+     1ac:	745f746e 	jalx	17dd1b8 <BANK_SPACE+0x179d1b8>
+     1b0:	67980500 	0x67980500
+     1b4:	04000001 	bltz	zero,1bc <SRAM_DSP_PRINT_BUFFER_SIZE+0xac>
+     1b8:	0000000c 	syscall
+     1bc:	04070704 	0x4070704
+     1c0:	000001c4 	0x1c4
+     1c4:	08050108 	j	140420 <BANK_SPACE+0x100420>
+     1c8:	08000002 	j	8 <DRV_GROUP_FM>
+     1cc:	78062f04 	0x78062f04
+     1d0:	3c280400 	0x3c280400
+     1d4:	02000001 	movf	zero,s0,$fcc0
+     1d8:	79060023 	0x79060023
+     1dc:	3c2a0400 	0x3c2a0400
+     1e0:	02000001 	movf	zero,s0,$fcc0
+     1e4:	77060223 	jalx	c18088c <BANK_SPACE+0xc14088c>
+     1e8:	68746469 	0x68746469
+     1ec:	3c2c0400 	0x3c2c0400
+     1f0:	02000001 	movf	zero,s0,$fcc0
+     1f4:	68060423 	0x68060423
+     1f8:	68676965 	0x68676965
+     1fc:	2e040074 	sltiu	a0,s0,116
+     200:	0000013c 	0x13c
+     204:	00062302 	srl	a0,a2,0xc
+     208:	67657203 	0x67657203
+     20c:	5f6e6f69 	0x5f6e6f69
+     210:	2f040074 	sltiu	a0,t8,116
+     214:	000001c6 	0x1c6
+     218:	6c660109 	0x6c660109
+     21c:	5f687375 	0x5f687375
+     220:	00637472 	tlt	v1,v1,0x1d1
+     224:	6d01bf01 	0x6d01bf01
+     228:	90bfc320 	lbu	ra,-15584(a1)
+     22c:	01bfc320 	0x1bfc320
+     230:	6d010961 	0x6d010961
+     234:	655f7563 	0x655f7563
+     238:	7265746e 	0x7265746e
+     23c:	656c735f 	0x656c735f
+     240:	535f7065 	beql	k0,ra,1c3d8 <SRAM_OS_TASK_STACK_ADDR+0x7d8>
+     244:	c8010034 	lwc2	$1,52(zero)
+     248:	c3209501 	ll	zero,-27391(t9)
+     24c:	c320c0bf 	ll	zero,-16193(t9)
+     250:	0a6101bf 	j	98406fc <BANK_SPACE+0x98006fc>
+     254:	0000028c 	syscall	0xa
+     258:	5f736901 	0x5f736901
+     25c:	5f627375 	0x5f627375
+     260:	6c626163 	0x6c626163
+     264:	6e695f65 	0x6e695f65
+     268:	01dd0100 	0x1dd0100
+     26c:	0000008f 	0x8f
+     270:	bfc320c9 	cache	0x3,8393(s8)
+     274:	bfc32104 	cache	0x3,8452(s8)
+     278:	750b6101 	jalx	42d8404 <BANK_SPACE+0x4298404>
+     27c:	695f6273 	0x695f6273
+     280:	de01006e 	ldc3	$1,110(s0)
+     284:	0000008f 	0x8f
+     288:	00009102 	srl	s2,zero,0x4
+     28c:	0002c90c 	syscall	0xb24
+     290:	69640100 	0x69640100
+     294:	735f7073 	0x735f7073
+     298:	74726174 	jalx	1c985d0 <BANK_SPACE+0x1c585d0>
+     29c:	5f676e69 	0x5f676e69
+     2a0:	72616f62 	0x72616f62
+     2a4:	6f635f64 	0x6f635f64
+     2a8:	6769666e 	0x6769666e
+     2ac:	01e70100 	0x1e70100
+     2b0:	bfc3210d 	cache	0x3,8461(s8)
+     2b4:	bfc32194 	cache	0x3,8596(s8)
+     2b8:	000d6101 	0xd6101
+     2bc:	01000000 	0x1000000
+     2c0:	00012fe6 	0x12fe6
+     2c4:	08910200 	j	2440800 <BANK_SPACE+0x2400800>
+     2c8:	031b0e00 	0x31b0e00
+     2cc:	64010000 	0x64010000
+     2d0:	5f707369 	0x5f707369
+     2d4:	72617473 	0x72617473
+     2d8:	676e6974 	0x676e6974
+     2dc:	6664615f 	0x6664615f
+     2e0:	68635f75 	0x68635f75
+     2e4:	006b6365 	0x6b6365
+     2e8:	01010301 	0x1010301
+     2ec:	bfc321b5 	cache	0x3,8629(s8)
+     2f0:	bfc321fc 	cache	0x3,8700(s8)
+     2f4:	1e0f6101 	0x1e0f6101
+     2f8:	01000000 	0x1000000
+     2fc:	01be0102 	0x1be0102
+     300:	91020000 	lbu	v0,0(t0)
+     304:	64611010 	0x64611010
+     308:	665f7566 	0x665f7566
+     30c:	0067616c 	0x67616c
+     310:	8f010401 	lw	at,1025(t8)
+     314:	02000000 	0x2000000
+     318:	0e000091 	jal	8000244 <BANK_SPACE+0x7fc0244>
+     31c:	00000388 	0x388
+     320:	73696401 	0x73696401
+     324:	74735f70 	jalx	1cd7dc0 <BANK_SPACE+0x1c97dc0>
+     328:	69747261 	0x69747261
+     32c:	6c5f676e 	0x6c5f676e
+     330:	705f776f 	0x705f776f
+     334:	7265776f 	0x7265776f
+     338:	01170100 	0x1170100
+     33c:	c3220101 	ll	v0,257(t9)
+     340:	c32244bf 	ll	v0,17599(t9)
+     344:	0f6101bf 	jal	d8406fc <BANK_SPACE+0xd8006fc>
+     348:	00000000 	nop
+     34c:	2f011601 	sltiu	at,t8,5633
+     350:	02000001 	movf	zero,s0,$fcc0
+     354:	65101091 	0x65101091
+     358:	7265746e 	0x7265746e
+     35c:	0034735f 	0x34735f
+     360:	8f011801 	lw	at,6145(t8)
+     364:	02000000 	0x2000000
+     368:	75100091 	jalx	4400244 <BANK_SPACE+0x43c0244>
+     36c:	635f6273 	0x635f6273
+     370:	656c6261 	0x656c6261
+     374:	6164615f 	0x6164615f
+     378:	72657470 	0x72657470
+     37c:	01190100 	0x1190100
+     380:	0000008f 	0x8f
+     384:	00019102 	srl	s2,at,0x4
+     388:	0004180e 	0x4180e
+     38c:	69640100 	0x69640100
+     390:	735f7073 	0x735f7073
+     394:	74726174 	jalx	1c985d0 <BANK_SPACE+0x1c585d0>
+     398:	5f676e69 	0x5f676e69
+     39c:	776f6873 	jalx	dbda1cc <BANK_SPACE+0xdb9a1cc>
+     3a0:	6c65775f 	0x6c65775f
+     3a4:	656d6f63 	0x656d6f63
+     3a8:	012c0100 	0x12c0100
+     3ac:	c3224901 	ll	v0,18689(t9)
+     3b0:	c32304bf 	ll	v1,1215(t9)
+     3b4:	116101bf 	beq	t3,at,ab4 <SRAM_FS_BUF_SIZE+0xb4>
+     3b8:	725f6472 	0x725f6472
+     3bc:	01007365 	0x1007365
+     3c0:	042e012b 	tnei	at,299
+     3c4:	91020000 	lbu	v0,0(t0)
+     3c8:	69701028 	0x69701028
+     3cc:	67657263 	0x67657263
+     3d0:	012d0100 	0x12d0100
+     3d4:	00000208 	0x208
+     3d8:	10009102 	b	fffe47e4 <pic_mode+0x403b1b26>
+     3dc:	66667562 	0x66667562
+     3e0:	615f7265 	0x615f7265
+     3e4:	00726464 	0x726464
+     3e8:	97012e01 	lhu	at,11777(t8)
+     3ec:	02000001 	movf	zero,s0,$fcc0
+     3f0:	70100891 	udi1	zero,s0,at,0x2
+     3f4:	6e637869 	0x6e637869
+     3f8:	2f010074 	sltiu	at,t8,116
+     3fc:	00014a01 	0x14a01
+     400:	0c910200 	jal	2440800 <BANK_SPACE+0x2400800>
+     404:	63657310 	0x63657310
+     408:	746e635f 	jalx	1b98d7c <BANK_SPACE+0x1b58d7c>
+     40c:	01300100 	0x1300100
+     410:	0000013c 	0x13c
+     414:	00109102 	srl	s2,s0,0x4
+     418:	00042e12 	0x42e12
+     41c:	97130100 	lhu	s3,256(t8)
+     420:	13000001 	beqz	t8,428 <SRAM_BANK_A_SIZE+0x28>
+     424:	0000013c 	0x13c
+     428:	00013c13 	0x13c13
+     42c:	04070000 	0x4070000
+     430:	00000418 	0x418
+     434:	0004cb0e 	0x4cb0e
+     438:	69640100 	0x69640100
+     43c:	735f7073 	0x735f7073
+     440:	74726174 	jalx	1c985d0 <BANK_SPACE+0x1c585d0>
+     444:	00676e69 	0x676e69
+     448:	01015d01 	0x1015d01
+     44c:	bfc32001 	cache	0x3,8193(s8)
+     450:	bfc32060 	cache	0x3,8288(s8)
+     454:	1e0f6101 	0x1e0f6101
+     458:	01000000 	0x1000000
+     45c:	01be015b 	0x1be015b
+     460:	91020000 	lbu	v0,0(t0)
+     464:	65721110 	0x65721110
+     468:	725f6461 	0x725f6461
+     46c:	01007365 	0x1007365
+     470:	042e015b 	tnei	at,347
+     474:	91020000 	lbu	v0,0(t0)
+     478:	65771114 	0x65771114
+     47c:	6d6f636c 	0x6d6f636c
+     480:	72615f65 	0x72615f65
+     484:	5c010067 	0x5c010067
+     488:	0004cb01 	0x4cb01
+     48c:	18910200 	0x18910200
+     490:	67666310 	0x67666310
+     494:	6c61765f 	0x6c61765f
+     498:	01006575 	0x1006575
+     49c:	04d1015e 	bgezal	a2,a18 <SRAM_FS_BUF_SIZE+0x18>
+     4a0:	91020000 	lbu	v0,0(t0)
+     4a4:	00001400 	sll	v0,zero,0x10
+     4a8:	5f010000 	0x5f010000
+     4ac:	00012f01 	0x12f01
+     4b0:	04910200 	bgezal	a0,cb4 <SRAM_CARD_UD_RCODE_SIZE+0xb4>
+     4b4:	62656410 	0x62656410
+     4b8:	6d5f6775 	0x6d5f6775
+     4bc:	0065646f 	0x65646f
+     4c0:	2f016001 	sltiu	at,t8,24577
+     4c4:	02000001 	movf	zero,s0,$fcc0
+     4c8:	07000591 	bltz	t8,1b10 <SRAM_OS_TASK_STACK_SIZE+0x110>
+     4cc:	00019d04 	0x19d04
+     4d0:	3c040700 	lui	a0,0x700
+     4d4:	00000001 	movf	zero,zero,$fcc0
+     4d8:	00000407 	0x407
+     4dc:	01250002 	0x1250002
+     4e0:	01040000 	0x1040000
+     4e4:	00000118 	0x118
+     4e8:	bfc3255c 	cache	0x3,9564(s8)
+     4ec:	bfc32320 	cache	0x3,8992(s8)
+     4f0:	20554e47 	addi	s5,v0,20039
+     4f4:	2e332043 	sltiu	s3,s1,8259
+     4f8:	20342e34 	addi	s4,at,11828
+     4fc:	7370696d 	0x7370696d
+     500:	2d656473 	sltiu	a1,t3,25715
+     504:	36302e36 	ori	s0,s1,0x2e36
+     508:	2d31302e 	sltiu	s1,t1,12334
+     50c:	37303032 	ori	s0,t9,0x3032
+     510:	30323430 	andi	s2,at,0x3430
+     514:	2f2e0100 	sltiu	t6,t9,256
+     518:	2e2f2e2e 	sltiu	t7,s1,11822
+     51c:	72642f2e 	0x72642f2e
+     520:	636c2f76 	0x636c2f76
+     524:	4c495f64 	0x4c495f64
+     528:	34333949 	ori	s3,at,0x3949
+     52c:	61622f31 	0x61622f31
+     530:	615f6b6e 	0x615f6b6e
+     534:	64636c5f 	0x64636c5f
+     538:	6e75665f 	0x6e75665f
+     53c:	6f697463 	0x6f697463
+     540:	632e736e 	0x632e736e
+     544:	79632f00 	0x79632f00
+     548:	69726467 	0x69726467
+     54c:	662f6576 	0x662f6576
+     550:	756f532f 	jalx	5bd4cbc <BANK_SPACE+0x5b94cbc>
+     554:	5f657372 	0x5f657372
+     558:	65646f43 	0x65646f43
+     55c:	3131352f 	andi	s1,t1,0x352f
+     560:	504d2f36 	beql	v0,t5,c23c <SROM_FS_ADDR+0x23c>
+     564:	31322d33 	andi	s2,t1,0x2d33
+     568:	552f3736 	bnel	t1,t7,e244 <SROM_SPINOR1_ADDR+0x644>
+     56c:	36313253 	ori	s1,s1,0x3253
+     570:	61632f41 	0x61632f41
+     574:	642f6573 	0x642f6573
+     578:	772f7672 	jalx	cbdd9c8 <BANK_SPACE+0xcb9d9c8>
+     57c:	6f636c65 	0x6f636c65
+     580:	0200656d 	0x200656d
+     584:	69736e75 	0x69736e75
+     588:	64656e67 	0x64656e67
+     58c:	61686320 	0x61686320
+     590:	08010072 	j	401c8 <BANK_SPACE+0x1c8>
+     594:	544e4903 	bnel	v0,t6,129a4 <SRAM_AP_BANK_FRONT_BASAL_ADDR+0x4a4>
+     598:	03005538 	0x3005538
+     59c:	0000ab0f 	0xab0f
+     5a0:	69730200 	0x69730200
+     5a4:	64656e67 	0x64656e67
+     5a8:	61686320 	0x61686320
+     5ac:	06010072 	bgez	s0,778 <ROM_TEXT_SIZE+0x78>
+     5b0:	6f687302 	0x6f687302
+     5b4:	75207472 	jalx	481d1c8 <BANK_SPACE+0x47dd1c8>
+     5b8:	6769736e 	0x6769736e
+     5bc:	2064656e 	addi	a0,v1,25966
+     5c0:	00746e69 	0x746e69
+     5c4:	73020702 	0x73020702
+     5c8:	74726f68 	jalx	1c9bda0 <BANK_SPACE+0x1c5bda0>
+     5cc:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     5d0:	04050200 	0x4050200
+     5d4:	00000036 	tne	zero,zero
+     5d8:	6c020704 	0x6c020704
+     5dc:	20676e6f 	addi	a3,v1,28271
+     5e0:	00746e69 	0x746e69
+     5e4:	66020504 	0x66020504
+     5e8:	74616f6c 	jalx	185bdb0 <BANK_SPACE+0x181bdb0>
+     5ec:	02040400 	0x2040400
+     5f0:	62756f64 	0x62756f64
+     5f4:	0800656c 	j	195b0 <SRAM_KERNEL_XSYS_ADDR+0x30>
+     5f8:	6f6c0204 	0x6f6c0204
+     5fc:	6c20676e 	0x6c20676e
+     600:	20676e6f 	addi	a3,v1,28271
+     604:	69736e75 	0x69736e75
+     608:	64656e67 	0x64656e67
+     60c:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     610:	02070800 	0x2070800
+     614:	676e6f6c 	0x676e6f6c
+     618:	6e6f6c20 	0x6e6f6c20
+     61c:	6e692067 	0x6e692067
+     620:	05080074 	tgei	t0,116
+     624:	736e7502 	0x736e7502
+     628:	656e6769 	0x656e6769
+     62c:	6e692064 	0x6e692064
+     630:	07040074 	0x7040074
+     634:	6e697503 	0x6e697503
+     638:	02003874 	teq	s0,zero,0xe1
+     63c:	0000ab17 	0xab17
+     640:	69750300 	0x69750300
+     644:	3631746e 	ori	s1,s1,0x746e
+     648:	d81f0200 	ldc2	$31,512(zero)
+     64c:	03000000 	0x3000000
+     650:	746e6975 	jalx	1b9a5d4 <BANK_SPACE+0x1b5a5d4>
+     654:	02003233 	tltu	s0,zero,0xc8
+     658:	00014c27 	0x14c27
+     65c:	6e690200 	0x6e690200
+     660:	05040074 	0x5040074
+     664:	61686302 	0x61686302
+     668:	06010072 	bgez	s0,834 <SRAM_AP_BACK_BASAL_RCODE_SIZE+0x34>
+     66c:	00003604 	0x3604
+     670:	05070400 	0x5070400
+     674:	5c040604 	0x5c040604
+     678:	07000001 	bltz	t8,680 <SRAM_AP_BACK_DATA_SIZE+0x80>
+     67c:	000001e5 	0x1e5
+     680:	082f0408 	j	bc1020 <BANK_SPACE+0xb81020>
+     684:	28040078 	slti	a0,zero,120
+     688:	00000169 	0x169
+     68c:	08002302 	j	8c08 <SRAM_SPINOR_RCODE_ADDR+0x8>
+     690:	2a040079 	slti	a0,s0,121
+     694:	00000169 	0x169
+     698:	08022302 	j	88c08 <BANK_SPACE+0x48c08>
+     69c:	74646977 	jalx	191a5dc <BANK_SPACE+0x18da5dc>
+     6a0:	2c040068 	sltiu	a0,zero,104
+     6a4:	00000169 	0x169
+     6a8:	08042302 	j	108c08 <BANK_SPACE+0xc8c08>
+     6ac:	67696568 	0x67696568
+     6b0:	04007468 	bltz	zero,1d854 <SRAM_OS_SYS_STACK_ADDR+0x254>
+     6b4:	0001692e 	0x1692e
+     6b8:	06230200 	bgezl	s1,ebc <SROM_SPINOR_SIZE_MDY+0xbc>
+     6bc:	65720300 	0x65720300
+     6c0:	6e6f6967 	0x6e6f6967
+     6c4:	0400745f 	bltz	zero,1d844 <SRAM_OS_SYS_STACK_ADDR+0x244>
+     6c8:	0001a32f 	0x1a32f
+     6cc:	024b0900 	0x24b0900
+     6d0:	73010000 	madd	t8,at
+     6d4:	635f7465 	0x635f7465
+     6d8:	72746e6f 	0x72746e6f
+     6dc:	00747361 	0x747361
+     6e0:	21012801 	addi	at,t0,10241
+     6e4:	50bfc323 	beql	a1,ra,ffff1374 <pic_mode+0x403be6b6>
+     6e8:	01bfc323 	0x1bfc323
+     6ec:	6f630a61 	0x6f630a61
+     6f0:	6172746e 	0x6172746e
+     6f4:	765f7473 	jalx	97dd1cc <BANK_SPACE+0x979d1cc>
+     6f8:	65756c61 	0x65756c61
+     6fc:	5c270100 	0x5c270100
+     700:	02000001 	movf	zero,s0,$fcc0
+     704:	2a0b0891 	slti	t3,s0,2193
+     708:	01000000 	0x1000000
+     70c:	00019b27 	0x19b27
+     710:	0c910200 	jal	2440800 <BANK_SPACE+0x2400800>
+     714:	0000300b 	movn	a2,zero,zero
+     718:	9b270100 	lwr	a3,256(t9)
+     71c:	02000001 	movf	zero,s0,$fcc0
+     720:	09001091 	j	4004244 <BANK_SPACE+0x3fc4244>
+     724:	000002bd 	0x2bd
+     728:	61747301 	0x61747301
+     72c:	7962646e 	0x7962646e
+     730:	7263735f 	udi15	s3,v1,t6,0xd
+     734:	006e6565 	0x6e6565
+     738:	59013c01 	0x59013c01
+     73c:	00bfc323 	0xbfc323
+     740:	01bfc324 	0x1bfc324
+     744:	74730a61 	jalx	1cc2984 <BANK_SPACE+0x1c82984>
+     748:	62646e61 	0x62646e61
+     74c:	6c665f79 	0x6c665f79
+     750:	01006761 	0x1006761
+     754:	0000bc3b 	0xbc3b
+     758:	10910200 	beq	a0,s1,f5c <SROM_SPINOR_SIZE_MDY+0x15c>
+     75c:	00002a0b 	0x2a0b
+     760:	9b3b0100 	lwr	k1,256(t9)
+     764:	02000001 	movf	zero,s0,$fcc0
+     768:	300b1491 	andi	t3,zero,0x1491
+     76c:	01000000 	0x1000000
+     770:	00019b3b 	0x19b3b
+     774:	18910200 	0x18910200
+     778:	6e6f630c 	0x6e6f630c
+     77c:	73617274 	0x73617274
+     780:	72675f74 	0x72675f74
+     784:	5f656461 	0x5f656461
+     788:	01006b62 	0x1006b62
+     78c:	00015c3d 	0x15c3d
+     790:	00910200 	0x910200
+     794:	030e0900 	0x30e0900
+     798:	62010000 	0x62010000
+     79c:	6c6b6361 	0x6c6b6361
+     7a0:	74686769 	jalx	1a19da4 <BANK_SPACE+0x19d9da4>
+     7a4:	5f6e6f5f 	0x5f6e6f5f
+     7a8:	0066666f 	0x66666f
+     7ac:	15017b01 	bne	t0,at,1f3b4 <SRAM_RAM1_RESEVER2_ADDR+0x19b4>
+     7b0:	d8bfc324 	ldc2	$31,-15580(a1)
+     7b4:	01bfc324 	0x1bfc324
+     7b8:	6c620a61 	0x6c620a61
+     7bc:	006c7463 	0x6c7463
+     7c0:	00bc7a01 	0xbc7a01
+     7c4:	91020000 	lbu	v0,0(t0)
+     7c8:	002a0b08 	0x2a0b08
+     7cc:	7a010000 	0x7a010000
+     7d0:	0000019b 	0x19b
+     7d4:	0b0c9102 	j	c324408 <BANK_SPACE+0xc2e4408>
+     7d8:	00000030 	tge	zero,zero
+     7dc:	019b7a01 	0x19b7a01
+     7e0:	91020000 	lbu	v0,0(t0)
+     7e4:	64090010 	0x64090010
+     7e8:	01000003 	0x1000003
+     7ec:	61647075 	0x61647075
+     7f0:	735f6574 	0x735f6574
+     7f4:	65657263 	0x65657263
+     7f8:	bf01006e 	cache	0x1,110(t8)
+     7fc:	c3250901 	ll	a1,2305(t9)
+     800:	c32518bf 	ll	a1,6335(t9)
+     804:	0a6101bf 	j	98406fc <BANK_SPACE+0x98006fc>
+     808:	61647075 	0x61647075
+     80c:	725f6574 	0x725f6574
+     810:	6f696765 	0x6f696765
+     814:	be01006e 	cache	0x1,110(s0)
+     818:	00000364 	0x364
+     81c:	0b089102 	j	c224408 <BANK_SPACE+0xc1e4408>
+     820:	0000002a 	slt	zero,zero,zero
+     824:	019bbe01 	0x19bbe01
+     828:	91020000 	lbu	v0,0(t0)
+     82c:	00300b0c 	syscall	0xc02c
+     830:	be010000 	cache	0x1,0(s0)
+     834:	0000019b 	0x19b
+     838:	00109102 	srl	s2,s0,0x4
+     83c:	01e50406 	0x1e50406
+     840:	f2090000 	0xf2090000
+     844:	01000003 	0x1000003
+     848:	65766e69 	0x65766e69
+     84c:	625f7472 	0x625f7472
+     850:	5f666675 	0x5f666675
+     854:	61746164 	0x61746164
+     858:	6172745f 	0x6172745f
+     85c:	0100736e 	0x100736e
+     860:	251901d6 	addiu	t9,t0,470
+     864:	255cbfc3 	addiu	gp,t2,-16445
+     868:	6101bfc3 	0x6101bfc3
+     86c:	6675620a 	0x6675620a
+     870:	d5010066 	ldc1	$f1,102(t0)
+     874:	0000019d 	0x19d
+     878:	0a189102 	j	8624408 <BANK_SPACE+0x85e4408>
+     87c:	5f786970 	0x5f786970
+     880:	00746e63 	0x746e63
+     884:	0169d501 	0x169d501
+     888:	91020000 	lbu	v0,0(t0)
+     88c:	00300b1c 	0x300b1c
+     890:	d5010000 	ldc1	$f1,0(t0)
+     894:	0000019b 	0x19b
+     898:	0c209102 	jal	824408 <BANK_SPACE+0x7e4408>
+     89c:	706d6574 	0x706d6574
+     8a0:	d7010038 	ldc1	$f1,56(t8)
+     8a4:	0000015c 	0x15c
+     8a8:	0c009102 	jal	24408 <SRAM_RAM1_RESEVER2_ADDR+0x6a08>
+     8ac:	61746164 	0x61746164
+     8b0:	00705f38 	0x705f38
+     8b4:	019dd801 	movt	k1,t4,$fcc7
+     8b8:	91020000 	lbu	v0,0(t0)
+     8bc:	00690c04 	0x690c04
+     8c0:	0177d901 	0x177d901
+     8c4:	91020000 	lbu	v0,0(t0)
+     8c8:	630d0008 	0x630d0008
+     8cc:	72746e6f 	0x72746e6f
+     8d0:	5f747361 	0x5f747361
+     8d4:	64617267 	0x64617267
+     8d8:	d1040065 	0xd1040065
+     8dc:	0000015c 	0x15c
+     8e0:	45000101 	bc1f	ce8 <SRAM_CARD_UD_RCODE_SIZE+0xe8>
+     8e4:	02000002 	0x2000002
+     8e8:	0001dd00 	sll	k1,at,0x14
+     8ec:	2c010400 	sltiu	at,zero,1024
+     8f0:	3a000002 	xori	zero,s0,0x2
+     8f4:	00000000 	nop
+     8f8:	47000000 	c1	0x1000000
+     8fc:	4320554e 	c0	0x120554e
+     900:	342e3320 	ori	t6,at,0x3320
+     904:	6d20342e 	0x6d20342e
+     908:	73737069 	0x73737069
+     90c:	362d6564 	ori	t5,s1,0x6564
+     910:	2e36302e 	sltiu	s6,s1,12334
+     914:	322d3130 	andi	t5,s1,0x3130
+     918:	30373030 	andi	s7,at,0x3030
+     91c:	00303234 	teq	at,s0,0xc8
+     920:	2e2f2e01 	sltiu	t7,s1,11777
+     924:	2e2e2f2e 	sltiu	t6,s1,12078
+     928:	7672642f 	jalx	9c990bc <BANK_SPACE+0x9c590bc>
+     92c:	64636c2f 	0x64636c2f
+     930:	494c495f 	0x494c495f
+     934:	31343339 	andi	s4,t1,0x3339
+     938:	6e61622f 	0x6e61622f
+     93c:	5f615f6b 	0x5f615f6b
+     940:	5f64636c 	0x5f64636c
+     944:	74696e69 	jalx	1a5b9a4 <BANK_SPACE+0x1a1b9a4>
+     948:	2f00632e 	sltiu	zero,t8,25390
+     94c:	64677963 	0x64677963
+     950:	65766972 	0x65766972
+     954:	532f662f 	beql	t9,t7,1a214 <SRAM_APPLIB_GLOBAL_DATA_ADDR+0x94>
+     958:	7372756f 	0x7372756f
+     95c:	6f435f65 	0x6f435f65
+     960:	352f6564 	ori	t7,t1,0x6564
+     964:	2f363131 	sltiu	s6,t9,12593
+     968:	2d33504d 	sltiu	s3,t1,20557
+     96c:	37363132 	ori	s6,t9,0x3132
+     970:	3253552f 	andi	s3,s2,0x552f
+     974:	2f413631 	sltiu	at,k0,13873
+     978:	65736163 	0x65736163
+     97c:	7672642f 	jalx	9c990bc <BANK_SPACE+0x9c590bc>
+     980:	6c65772f 	0x6c65772f
+     984:	656d6f63 	0x656d6f63
+     988:	6e750200 	0x6e750200
+     98c:	6e676973 	0x6e676973
+     990:	63206465 	0x63206465
+     994:	00726168 	0x726168
+     998:	73020801 	0x73020801
+     99c:	656e6769 	0x656e6769
+     9a0:	68632064 	0x68632064
+     9a4:	01007261 	0x1007261
+     9a8:	68730206 	0x68730206
+     9ac:	2074726f 	addi	s4,v1,29295
+     9b0:	69736e75 	0x69736e75
+     9b4:	64656e67 	0x64656e67
+     9b8:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     9bc:	02070200 	0x2070200
+     9c0:	726f6873 	0x726f6873
+     9c4:	6e692074 	0x6e692074
+     9c8:	05020074 	bltzl	t0,b9c <SRAM_FS_BUF_SIZE+0x19c>
+     9cc:	00004803 	sra	t1,zero,0x0
+     9d0:	02070400 	0x2070400
+     9d4:	676e6f6c 	0x676e6f6c
+     9d8:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     9dc:	02050400 	0x2050400
+     9e0:	616f6c66 	0x616f6c66
+     9e4:	04040074 	0x4040074
+     9e8:	756f6402 	jalx	5bd9008 <BANK_SPACE+0x5b99008>
+     9ec:	00656c62 	0x656c62
+     9f0:	6c020408 	0x6c020408
+     9f4:	20676e6f 	addi	a3,v1,28271
+     9f8:	676e6f6c 	0x676e6f6c
+     9fc:	736e7520 	0x736e7520
+     a00:	656e6769 	0x656e6769
+     a04:	6e692064 	0x6e692064
+     a08:	07080074 	tgei	t8,116
+     a0c:	6e6f6c02 	0x6e6f6c02
+     a10:	6f6c2067 	0x6f6c2067
+     a14:	6920676e 	0x6920676e
+     a18:	0800746e 	j	1d1b8 <SRAM_OS_TASK_STACK_ADDR+0x15b8>
+     a1c:	6e750205 	0x6e750205
+     a20:	6e676973 	0x6e676973
+     a24:	69206465 	0x69206465
+     a28:	0400746e 	bltz	zero,1dbe4 <SRAM_RAM1_RESEVER2_ADDR+0x1e4>
+     a2c:	69750407 	0x69750407
+     a30:	0038746e 	0x38746e
+     a34:	00a61703 	0xa61703
+     a38:	69040000 	0x69040000
+     a3c:	0038746e 	0x38746e
+     a40:	00b71b03 	0xb71b03
+     a44:	69020000 	0x69020000
+     a48:	0400746e 	bltz	zero,1dc04 <SRAM_RAM1_RESEVER2_ADDR+0x204>
+     a4c:	68630205 	0x68630205
+     a50:	01007261 	0x1007261
+     a54:	00480306 	0x480306
+     a58:	07040000 	0x7040000
+     a5c:	cc060405 	pref	0x6,1029(zero)
+     a60:	01000001 	movf	zero,t0,$fcc0
+     a64:	5f64636c 	0x5f64636c
+     a68:	74696e69 	jalx	1a5b9a4 <BANK_SPACE+0x1a1b9a4>
+     a6c:	01250100 	0x1250100
+     a70:	00000163 	0x163
+     a74:	00000000 	nop
+     a78:	00000020 	add	zero,zero,zero
+     a7c:	6e076101 	0x6e076101
+     a80:	306c6c75 	andi	t4,v1,0x6c75
+     a84:	79240100 	0x79240100
+     a88:	02000001 	movf	zero,s0,$fcc0
+     a8c:	6e070891 	0x6e070891
+     a90:	316c6c75 	andi	t4,t3,0x6c75
+     a94:	79240100 	0x79240100
+     a98:	02000001 	movf	zero,s0,$fcc0
+     a9c:	6e070c91 	0x6e070c91
+     aa0:	326c6c75 	andi	t4,s3,0x6c75
+     aa4:	79240100 	0x79240100
+     aa8:	02000001 	movf	zero,s0,$fcc0
+     aac:	06001091 	bltz	s0,4cf4 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0xcf4>
+     ab0:	0000021d 	0x21d
+     ab4:	64636c01 	0x64636c01
+     ab8:	6978655f 	0x6978655f
+     abc:	37010074 	ori	at,t8,0x74
+     ac0:	00016301 	0x16301
+     ac4:	00000000 	nop
+     ac8:	00003a00 	sll	a3,zero,0x8
+     acc:	07610100 	bgez	k1,ed0 <SROM_SPINOR_SIZE_MDY+0xd0>
+     ad0:	6c6c756e 	0x6c6c756e
+     ad4:	36010030 	ori	at,s0,0x30
+     ad8:	00000179 	0x179
+     adc:	07089102 	tgei	t8,-28414
+     ae0:	6c6c756e 	0x6c6c756e
+     ae4:	36010031 	ori	at,s0,0x31
+     ae8:	00000179 	0x179
+     aec:	070c9102 	teqi	t8,-28414
+     af0:	6c6c756e 	0x6c6c756e
+     af4:	36010032 	ori	at,s0,0x32
+     af8:	00000179 	0x179
+     afc:	00109102 	srl	s2,s0,0x4
+     b00:	64636c08 	0x64636c08
+     b04:	6172645f 	0x6172645f
+     b08:	6f6d5f77 	0x6f6d5f77
+     b0c:	02006564 	0x2006564
+     b10:	00014ace 	0x14ace
+     b14:	08010100 	j	40400 <BANK_SPACE+0x400>
+     b18:	6e656572 	0x6e656572
+     b1c:	6c665f74 	0x6c665f74
+     b20:	02006761 	0x2006761
+     b24:	000157cf 	0x157cf
+     b28:	00010100 	sll	zero,at,0x4
+     b2c:	00000226 	0x226
+     b30:	02540002 	0x2540002
+     b34:	01040000 	0x1040000
+     b38:	000002cf 	0x2cf
+     b3c:	bfc32720 	cache	0x3,10016(s8)
+     b40:	bfc3255c 	cache	0x3,9564(s8)
+     b44:	20554e47 	addi	s5,v0,20039
+     b48:	2e332043 	sltiu	s3,s1,8259
+     b4c:	20342e34 	addi	s4,at,11828
+     b50:	7370696d 	0x7370696d
+     b54:	2d656473 	sltiu	a1,t3,25715
+     b58:	36302e36 	ori	s0,s1,0x2e36
+     b5c:	2d31302e 	sltiu	s1,t1,12334
+     b60:	37303032 	ori	s0,t9,0x3032
+     b64:	30323430 	andi	s2,at,0x3430
+     b68:	2f2e0100 	sltiu	t6,t9,256
+     b6c:	2e2f2e2e 	sltiu	t7,s1,11822
+     b70:	72642f2e 	0x72642f2e
+     b74:	636c2f76 	0x636c2f76
+     b78:	4c495f64 	0x4c495f64
+     b7c:	34333949 	ori	s3,at,0x3949
+     b80:	636c2f31 	0x636c2f31
+     b84:	61685f64 	0x61685f64
+     b88:	61776472 	0x61776472
+     b8c:	695f6572 	0x695f6572
+     b90:	2e74696e 	sltiu	s4,s3,26990
+     b94:	632f0063 	0x632f0063
+     b98:	72646779 	0x72646779
+     b9c:	2f657669 	sltiu	a1,k1,30313
+     ba0:	6f532f66 	0x6f532f66
+     ba4:	65737275 	0x65737275
+     ba8:	646f435f 	0x646f435f
+     bac:	31352f65 	andi	s5,t1,0x2f65
+     bb0:	4d2f3631 	0x4d2f3631
+     bb4:	322d3350 	andi	t5,s1,0x3350
+     bb8:	2f373631 	sltiu	s7,t9,13873
+     bbc:	31325355 	andi	s2,t1,0x5355
+     bc0:	632f4136 	0x632f4136
+     bc4:	2f657361 	sltiu	a1,k1,29537
+     bc8:	2f767264 	sltiu	s6,k1,29284
+     bcc:	636c6577 	0x636c6577
+     bd0:	00656d6f 	0x656d6f
+     bd4:	736e7502 	0x736e7502
+     bd8:	656e6769 	0x656e6769
+     bdc:	68632064 	0x68632064
+     be0:	01007261 	0x1007261
+     be4:	69730208 	0x69730208
+     be8:	64656e67 	0x64656e67
+     bec:	61686320 	0x61686320
+     bf0:	06010072 	bgez	s0,dbc <SRAM_CARD_UD_RCODE_SIZE+0x1bc>
+     bf4:	6f687302 	0x6f687302
+     bf8:	75207472 	jalx	481d1c8 <BANK_SPACE+0x47dd1c8>
+     bfc:	6769736e 	0x6769736e
+     c00:	2064656e 	addi	a0,v1,25966
+     c04:	00746e69 	0x746e69
+     c08:	73020702 	0x73020702
+     c0c:	74726f68 	jalx	1c9bda0 <BANK_SPACE+0x1c5bda0>
+     c10:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     c14:	03050200 	0x3050200
+     c18:	0000005a 	0x5a
+     c1c:	6c020704 	0x6c020704
+     c20:	20676e6f 	addi	a3,v1,28271
+     c24:	00746e69 	0x746e69
+     c28:	66020504 	0x66020504
+     c2c:	74616f6c 	jalx	185bdb0 <BANK_SPACE+0x181bdb0>
+     c30:	02040400 	0x2040400
+     c34:	62756f64 	0x62756f64
+     c38:	0800656c 	j	195b0 <SRAM_KERNEL_XSYS_ADDR+0x30>
+     c3c:	6f6c0204 	0x6f6c0204
+     c40:	6c20676e 	0x6c20676e
+     c44:	20676e6f 	addi	a3,v1,28271
+     c48:	69736e75 	0x69736e75
+     c4c:	64656e67 	0x64656e67
+     c50:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     c54:	02070800 	0x2070800
+     c58:	676e6f6c 	0x676e6f6c
+     c5c:	6e6f6c20 	0x6e6f6c20
+     c60:	6e692067 	0x6e692067
+     c64:	05080074 	tgei	t0,116
+     c68:	736e7502 	0x736e7502
+     c6c:	656e6769 	0x656e6769
+     c70:	6e692064 	0x6e692064
+     c74:	07040074 	0x7040074
+     c78:	6e697504 	0x6e697504
+     c7c:	02003874 	teq	s0,zero,0xe1
+     c80:	0000a817 	0xa817
+     c84:	6e690200 	0x6e690200
+     c88:	05040074 	0x5040074
+     c8c:	61686302 	0x61686302
+     c90:	06010072 	bgez	s0,e5c <SROM_SPINOR_SIZE_MDY+0x5c>
+     c94:	00005a03 	sra	t3,zero,0x8
+     c98:	05070400 	0x5070400
+     c9c:	64636c01 	0x64636c01
+     ca0:	7365725f 	udi15	k1,a1,t6,0x9
+     ca4:	01007465 	0x1007465
+     ca8:	255d0143 	addiu	sp,t2,323
+     cac:	25b8bfc3 	addiu	t8,t5,-16445
+     cb0:	6101bfc3 	0x6101bfc3
+     cb4:	0001b506 	0x1b506
+     cb8:	636c0100 	0x636c0100
+     cbc:	75625f64 	jalx	5897d90 <BANK_SPACE+0x5857d90>
+     cc0:	6e695f66 	0x6e695f66
+     cc4:	01007469 	0x1007469
+     cc8:	25c10167 	addiu	at,t6,359
+     ccc:	265cbfc3 	addiu	gp,s2,-16445
+     cd0:	6101bfc3 	0x6101bfc3
+     cd4:	01006907 	0x1006907
+     cd8:	00014c68 	0x14c68
+     cdc:	00910200 	0x910200
+     ce0:	6c010500 	0x6c010500
+     ce4:	635f6463 	0x635f6463
+     ce8:	6b636f6c 	0x6b636f6c
+     cec:	696e695f 	0x696e695f
+     cf0:	94010074 	lhu	at,116(zero)
+     cf4:	c3267101 	ll	a2,28929(t9)
+     cf8:	c326ecbf 	ll	a2,-4929(t9)
+     cfc:	056101bf 	bgez	t3,13fc <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x3fc>
+     d00:	64636c01 	0x64636c01
+     d04:	7261685f 	udi15	s3,at,t5,0x1
+     d08:	72617764 	0x72617764
+     d0c:	6e695f65 	0x6e695f65
+     d10:	01007469 	0x1007469
+     d14:	270501ce 	addiu	a1,t8,462
+     d18:	2720bfc3 	addiu	zero,t9,-16445
+     d1c:	6101bfc3 	0x6101bfc3
+     d20:	00020408 	0x20408
+     d24:	00020400 	sll	zero,v0,0x10
+     d28:	01680900 	0x1680900
+     d2c:	006b0000 	0x6b0000
+     d30:	00014c0a 	0x14c0a
+     d34:	636c0b00 	0x636c0b00
+     d38:	6e695f64 	0x6e695f64
+     d3c:	625f7469 	0x625f7469
+     d40:	01006675 	0x1006675
+     d44:	0002241a 	0x2241a
+     d48:	03050100 	0x3050100
+     d4c:	bfc32720 	cache	0x3,10016(s8)
+     d50:	0001f40a 	0x1f40a
+     d54:	03380000 	0x3380000
+     d58:	00020000 	sll	zero,v0,0x0
+     d5c:	000002f0 	tge	zero,zero,0xb
+     d60:	03840104 	0x3840104
+     d64:	29500000 	slti	s0,t2,0
+     d68:	278cbfc3 	addiu	t4,gp,-16445
+     d6c:	4e47bfc3 	c3	0x47bfc3
+     d70:	20432055 	addi	v1,v0,8277
+     d74:	2e342e33 	sltiu	s4,s1,11827
+     d78:	696d2034 	0x696d2034
+     d7c:	64737370 	0x64737370
+     d80:	2e362d65 	sltiu	s6,s1,11621
+     d84:	302e3630 	andi	t6,at,0x3630
+     d88:	30322d31 	andi	s2,at,0x2d31
+     d8c:	34303730 	ori	s0,at,0x3730
+     d90:	01003032 	tlt	t0,zero,0xc0
+     d94:	2e2e2f2e 	sltiu	t6,s1,12078
+     d98:	2f2e2e2f 	sltiu	t6,t9,11823
+     d9c:	2f767264 	sltiu	s6,k1,29284
+     da0:	5f64636c 	0x5f64636c
+     da4:	39494c49 	xori	t1,t2,0x4c49
+     da8:	2f313433 	sltiu	s1,t9,13363
+     dac:	646f6372 	0x646f6372
+     db0:	636c5f65 	0x636c5f65
+     db4:	75665f64 	jalx	5997d90 <BANK_SPACE+0x5957d90>
+     db8:	6974636e 	0x6974636e
+     dbc:	2e736e6f 	sltiu	s3,s3,28271
+     dc0:	632f0063 	0x632f0063
+     dc4:	72646779 	0x72646779
+     dc8:	2f657669 	sltiu	a1,k1,30313
+     dcc:	6f532f66 	0x6f532f66
+     dd0:	65737275 	0x65737275
+     dd4:	646f435f 	0x646f435f
+     dd8:	31352f65 	andi	s5,t1,0x2f65
+     ddc:	4d2f3631 	0x4d2f3631
+     de0:	322d3350 	andi	t5,s1,0x3350
+     de4:	2f373631 	sltiu	s7,t9,13873
+     de8:	31325355 	andi	s2,t1,0x5355
+     dec:	632f4136 	0x632f4136
+     df0:	2f657361 	sltiu	a1,k1,29537
+     df4:	2f767264 	sltiu	s6,k1,29284
+     df8:	636c6577 	0x636c6577
+     dfc:	00656d6f 	0x656d6f
+     e00:	736e7502 	0x736e7502
+     e04:	656e6769 	0x656e6769
+     e08:	68632064 	0x68632064
+     e0c:	01007261 	0x1007261
+     e10:	69730208 	0x69730208
+     e14:	64656e67 	0x64656e67
+     e18:	61686320 	0x61686320
+     e1c:	06010072 	bgez	s0,fe8 <SROM_SPINOR_SIZE_MDY+0x1e8>
+     e20:	6f687302 	0x6f687302
+     e24:	75207472 	jalx	481d1c8 <BANK_SPACE+0x47dd1c8>
+     e28:	6769736e 	0x6769736e
+     e2c:	2064656e 	addi	a0,v1,25966
+     e30:	00746e69 	0x746e69
+     e34:	73020702 	0x73020702
+     e38:	74726f68 	jalx	1c9bda0 <BANK_SPACE+0x1c5bda0>
+     e3c:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     e40:	03050200 	0x3050200
+     e44:	00000074 	teq	zero,zero,0x1
+     e48:	6c020704 	0x6c020704
+     e4c:	20676e6f 	addi	a3,v1,28271
+     e50:	00746e69 	0x746e69
+     e54:	66020504 	0x66020504
+     e58:	74616f6c 	jalx	185bdb0 <BANK_SPACE+0x181bdb0>
+     e5c:	02040400 	0x2040400
+     e60:	62756f64 	0x62756f64
+     e64:	0800656c 	j	195b0 <SRAM_KERNEL_XSYS_ADDR+0x30>
+     e68:	6f6c0204 	0x6f6c0204
+     e6c:	6c20676e 	0x6c20676e
+     e70:	20676e6f 	addi	a3,v1,28271
+     e74:	69736e75 	0x69736e75
+     e78:	64656e67 	0x64656e67
+     e7c:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+     e80:	02070800 	0x2070800
+     e84:	676e6f6c 	0x676e6f6c
+     e88:	6e6f6c20 	0x6e6f6c20
+     e8c:	6e692067 	0x6e692067
+     e90:	05080074 	tgei	t0,116
+     e94:	736e7502 	0x736e7502
+     e98:	656e6769 	0x656e6769
+     e9c:	6e692064 	0x6e692064
+     ea0:	07040074 	0x7040074
+     ea4:	6e697504 	0x6e697504
+     ea8:	02003874 	teq	s0,zero,0xe1
+     eac:	0000aa17 	0xaa17
+     eb0:	69750400 	0x69750400
+     eb4:	3631746e 	ori	s1,s1,0x746e
+     eb8:	ca1f0200 	lwc2	$31,512(s0)
+     ebc:	02000000 	0x2000000
+     ec0:	00746e69 	0x746e69
+     ec4:	63020504 	0x63020504
+     ec8:	00726168 	0x726168
+     ecc:	74030601 	jalx	c1804 <BANK_SPACE+0x81804>
+     ed0:	04000000 	bltz	zero,ed4 <SROM_SPINOR_SIZE_MDY+0xd4>
+     ed4:	06040507 	0x6040507
+     ed8:	00014e04 	0x14e04
+     edc:	01b70700 	0x1b70700
+     ee0:	77010000 	jalx	c040000 <BANK_SPACE+0xc000000>
+     ee4:	65746972 	0x65746972
+     ee8:	6d6f635f 	0x6d6f635f
+     eec:	646e616d 	0x646e616d
+     ef0:	01150100 	0x1150100
+     ef4:	bfc3278d 	cache	0x3,10125(s8)
+     ef8:	bfc327b0 	cache	0x3,10160(s8)
+     efc:	63086101 	0x63086101
+     f00:	0100646d 	0x100646d
+     f04:	00014e14 	0x14e14
+     f08:	08910200 	j	2440800 <BANK_SPACE+0x2400800>
+     f0c:	02030700 	0x2030700
+     f10:	77010000 	jalx	c040000 <BANK_SPACE+0xc000000>
+     f14:	65746972 	0x65746972
+     f18:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+     f1c:	21010061 	addi	at,t0,97
+     f20:	c327b901 	ll	a3,-18175(t9)
+     f24:	c327f4bf 	ll	a3,-2881(t9)
+     f28:	086101bf 	j	18406fc <BANK_SPACE+0x18006fc>
+     f2c:	61746164 	0x61746164
+     f30:	6675625f 	0x6675625f
+     f34:	81200100 	lb	zero,256(t1)
+     f38:	02000001 	movf	zero,s0,$fcc0
+     f3c:	6c091091 	0x6c091091
+     f40:	01000000 	0x1000000
+     f44:	00015b20 	0x15b20
+     f48:	14910200 	bne	a0,s1,174c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x74c>
+     f4c:	0100690a 	0x100690a
+     f50:	00015b23 	0x15b23
+     f54:	00910200 	0x910200
+     f58:	02510700 	0x2510700
+     f5c:	77010000 	jalx	c040000 <BANK_SPACE+0xc000000>
+     f60:	6f636c65 	0x6f636c65
+     f64:	645f656d 	0x645f656d
+     f68:	79616c65 	0x79616c65
+     f6c:	00736d5f 	0x736d5f
+     f70:	fd013201 	sdc3	$1,12801(t0)
+     f74:	40bfc327 	0x40bfc327
+     f78:	01bfc328 	0x1bfc328
+     f7c:	6c640861 	0x6c640861
+     f80:	736d5f79 	0x736d5f79
+     f84:	4e310100 	c3	0x310100
+     f88:	02000001 	movf	zero,s0,$fcc0
+     f8c:	690a1091 	0x690a1091
+     f90:	4e330100 	c3	0x330100
+     f94:	02000001 	movf	zero,s0,$fcc0
+     f98:	6a0a0091 	0x6a0a0091
+     f9c:	4e330100 	c3	0x330100
+     fa0:	02000001 	movf	zero,s0,$fcc0
+     fa4:	07000191 	bltz	t8,15ec <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x5ec>
+     fa8:	00000293 	0x293
+     fac:	6c657701 	0x6c657701
+     fb0:	656d6f63 	0x656d6f63
+     fb4:	6c65645f 	0x6c65645f
+     fb8:	755f7961 	jalx	57de584 <BANK_SPACE+0x579e584>
+     fbc:	42010073 	c0	0x10073
+     fc0:	c3284101 	ll	t0,16641(t9)
+     fc4:	c3286cbf 	ll	t0,27839(t9)
+     fc8:	086101bf 	j	18406fc <BANK_SPACE+0x18006fc>
+     fcc:	5f796c64 	0x5f796c64
+     fd0:	01007375 	0x1007375
+     fd4:	00014e41 	0x14e41
+     fd8:	10910200 	beq	a0,s1,17dc <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x7dc>
+     fdc:	0100690a 	0x100690a
+     fe0:	00014e43 	sra	t1,at,0x19
+     fe4:	00910200 	0x910200
+     fe8:	02e40700 	0x2e40700
+     fec:	62010000 	0x62010000
+     ff0:	5f666675 	0x5f666675
+     ff4:	61746164 	0x61746164
+     ff8:	6172745f 	0x6172745f
+     ffc:	0100736e 	0x100736e
+    1000:	286d0163 	slti	t5,v1,355
+    1004:	2898bfc3 	slti	t8,a0,-16445
+    1008:	6101bfc3 	0x6101bfc3
+    100c:	66756208 	0x66756208
+    1010:	62010066 	0x62010066
+    1014:	00000181 	0x181
+    1018:	09089102 	j	4224408 <BANK_SPACE+0x41e4408>
+    101c:	0000006c 	0x6c
+    1020:	015b6201 	0x15b6201
+    1024:	91020000 	lbu	v0,0(t0)
+    1028:	756e080c 	jalx	5b82030 <BANK_SPACE+0x5b42030>
+    102c:	00336c6c 	0x336c6c
+    1030:	017f6201 	0x17f6201
+    1034:	91020000 	lbu	v0,0(t0)
+    1038:	010b0010 	0x10b0010
+    103c:	5f746567 	0x5f746567
+    1040:	66667562 	0x66667562
+    1044:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+    1048:	87010061 	lh	at,97(t8)
+    104c:	c328a501 	ll	t0,-23295(t9)
+    1050:	c32938bf 	ll	t1,14527(t9)
+    1054:	086101bf 	j	18406fc <BANK_SPACE+0x18006fc>
+    1058:	66667562 	0x66667562
+    105c:	81860100 	lb	a2,256(t4)
+    1060:	02000001 	movf	zero,s0,$fcc0
+    1064:	6c091091 	0x6c091091
+    1068:	01000000 	0x1000000
+    106c:	00015b86 	0x15b86
+    1070:	14910200 	bne	a0,s1,1874 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x874>
+    1074:	6c756e08 	0x6c756e08
+    1078:	0100336c 	0x100336c
+    107c:	00017f86 	0x17f86
+    1080:	18910200 	0x18910200
+    1084:	0100690a 	0x100690a
+    1088:	00015b89 	0x15b89
+    108c:	00910200 	0x910200
+    1090:	02ca0000 	0x2ca0000
+    1094:	00020000 	sll	zero,v0,0x0
+    1098:	00000390 	0x390
+    109c:	043b0104 	0x43b0104
+    10a0:	2ae40000 	slti	a0,s7,0
+    10a4:	2950bfc3 	slti	s0,t2,-16445
+    10a8:	4e47bfc3 	c3	0x47bfc3
+    10ac:	20432055 	addi	v1,v0,8277
+    10b0:	2e342e33 	sltiu	s4,s1,11827
+    10b4:	696d2034 	0x696d2034
+    10b8:	64737370 	0x64737370
+    10bc:	2e362d65 	sltiu	s6,s1,11621
+    10c0:	302e3630 	andi	t6,at,0x3630
+    10c4:	30322d31 	andi	s2,at,0x2d31
+    10c8:	34303730 	ori	s0,at,0x3730
+    10cc:	01003032 	tlt	t0,zero,0xc0
+    10d0:	2e2e2f2e 	sltiu	t6,s1,12078
+    10d4:	2f2e2e2f 	sltiu	t6,t9,11823
+    10d8:	2f767264 	sltiu	s6,k1,29284
+    10dc:	5f64636c 	0x5f64636c
+    10e0:	39494c49 	xori	t1,t2,0x4c49
+    10e4:	2f313433 	sltiu	s1,t9,13363
+    10e8:	646f6372 	0x646f6372
+    10ec:	636c5f65 	0x636c5f65
+    10f0:	75665f64 	jalx	5997d90 <BANK_SPACE+0x5957d90>
+    10f4:	6974636e 	0x6974636e
+    10f8:	5f736e6f 	0x5f736e6f
+    10fc:	00632e31 	tgeu	v1,v1,0xb8
+    1100:	6779632f 	0x6779632f
+    1104:	76697264 	jalx	9a5c990 <BANK_SPACE+0x9a1c990>
+    1108:	2f662f65 	sltiu	a2,k1,12133
+    110c:	72756f53 	udi3	s3,s5,t5,0x1d
+    1110:	435f6573 	c0	0x15f6573
+    1114:	2f65646f 	sltiu	a1,k1,25711
+    1118:	36313135 	ori	s1,s1,0x3135
+    111c:	33504d2f 	andi	s0,k0,0x4d2f
+    1120:	3631322d 	ori	s1,s1,0x322d
+    1124:	53552f37 	beql	k0,s5,ce04 <SROM_FS_ADDR+0xe04>
+    1128:	41363132 	0x41363132
+    112c:	7361632f 	0x7361632f
+    1130:	72642f65 	0x72642f65
+    1134:	65772f76 	0x65772f76
+    1138:	6d6f636c 	0x6d6f636c
+    113c:	75020065 	jalx	4080194 <BANK_SPACE+0x4040194>
+    1140:	6769736e 	0x6769736e
+    1144:	2064656e 	addi	a0,v1,25966
+    1148:	72616863 	0x72616863
+    114c:	02080100 	0x2080100
+    1150:	6e676973 	0x6e676973
+    1154:	63206465 	0x63206465
+    1158:	00726168 	0x726168
+    115c:	73020601 	0x73020601
+    1160:	74726f68 	jalx	1c9bda0 <BANK_SPACE+0x1c5bda0>
+    1164:	736e7520 	0x736e7520
+    1168:	656e6769 	0x656e6769
+    116c:	6e692064 	0x6e692064
+    1170:	07020074 	bltzl	t8,1344 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x344>
+    1174:	6f687302 	0x6f687302
+    1178:	69207472 	0x69207472
+    117c:	0200746e 	0x200746e
+    1180:	00940305 	0x940305
+    1184:	07040000 	0x7040000
+    1188:	6e6f6c02 	0x6e6f6c02
+    118c:	6e692067 	0x6e692067
+    1190:	05040074 	0x5040074
+    1194:	6f6c6602 	0x6f6c6602
+    1198:	04007461 	bltz	zero,1e320 <SRAM_RAM1_RESEVER2_ADDR+0x920>
+    119c:	6f640204 	0x6f640204
+    11a0:	656c6275 	0x656c6275
+    11a4:	02040800 	0x2040800
+    11a8:	676e6f6c 	0x676e6f6c
+    11ac:	6e6f6c20 	0x6e6f6c20
+    11b0:	6e752067 	0x6e752067
+    11b4:	6e676973 	0x6e676973
+    11b8:	69206465 	0x69206465
+    11bc:	0800746e 	j	1d1b8 <SRAM_OS_TASK_STACK_ADDR+0x15b8>
+    11c0:	6f6c0207 	0x6f6c0207
+    11c4:	6c20676e 	0x6c20676e
+    11c8:	20676e6f 	addi	a3,v1,28271
+    11cc:	00746e69 	0x746e69
+    11d0:	75020508 	jalx	4081420 <BANK_SPACE+0x4041420>
+    11d4:	6769736e 	0x6769736e
+    11d8:	2064656e 	addi	a0,v1,25966
+    11dc:	00746e69 	0x746e69
+    11e0:	69020704 	0x69020704
+    11e4:	0400746e 	bltz	zero,1e3a0 <SRAM_RAM1_RESEVER2_ADDR+0x9a0>
+    11e8:	68630205 	0x68630205
+    11ec:	01007261 	0x1007261
+    11f0:	00940306 	0x940306
+    11f4:	07040000 	0x7040000
+    11f8:	98050404 	lwr	a1,1028(zero)
+    11fc:	01000001 	movf	zero,t0,$fcc0
+    1200:	52068202 	beql	s0,a2,fffe1a0c <pic_mode+0x403aed4e>
+    1204:	4d5f4247 	0x4d5f4247
+    1208:	0045444f 	0x45444f
+    120c:	55590600 	bnel	t2,t9,2a10 <SROM_BROM_SIZE+0x410>
+    1210:	34343456 	ori	s4,at,0x3456
+    1214:	444f4d5f 	0x444f4d5f
+    1218:	06010045 	bgez	s0,1330 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x330>
+    121c:	34565559 	ori	s6,v0,0x5559
+    1220:	4d5f3032 	0x4d5f3032
+    1224:	0045444f 	0x45444f
+    1228:	6c070002 	0x6c070002
+    122c:	6d5f6463 	0x6d5f6463
+    1230:	5f65646f 	0x5f65646f
+    1234:	89020065 	lwl	v0,101(t0)
+    1238:	00000168 	0x168
+    123c:	0001ea08 	0x1ea08
+    1240:	65730100 	0x65730100
+    1244:	666d5f74 	0x666d5f74
+    1248:	6f745f70 	0x6f745f70
+    124c:	696d655f 	0x696d655f
+    1250:	17010066 	bne	t8,at,13ec <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x3ec>
+    1254:	c3295101 	ll	t1,20737(t9)
+    1258:	c329b4bf 	ll	t1,-19265(t9)
+    125c:	096101bf 	j	58406fc <BANK_SPACE+0x58006fc>
+    1260:	000000a6 	0xa6
+    1264:	01401801 	movf	v1,t2,$fcc0
+    1268:	91020000 	lbu	v0,0(t0)
+    126c:	00860900 	0x860900
+    1270:	18010000 	0x18010000
+    1274:	00000140 	sll	zero,zero,0x5
+    1278:	00049102 	srl	s2,a0,0x4
+    127c:	00022908 	0x22908
+    1280:	65730100 	0x65730100
+    1284:	666d5f74 	0x666d5f74
+    1288:	6f745f70 	0x6f745f70
+    128c:	64636c5f 	0x64636c5f
+    1290:	01410100 	0x1410100
+    1294:	bfc329c5 	cache	0x3,10693(s8)
+    1298:	bfc32a28 	cache	0x3,10792(s8)
+    129c:	a6096101 	sh	t1,24833(s0)
+    12a0:	01000000 	0x1000000
+    12a4:	00014042 	srl	t0,at,0x1
+    12a8:	00910200 	0x910200
+    12ac:	00008609 	0x8609
+    12b0:	40420100 	0x40420100
+    12b4:	02000001 	movf	zero,s0,$fcc0
+    12b8:	0a000491 	j	8001244 <BANK_SPACE+0x7fc1244>
+    12bc:	6f747301 	0x6f747301
+    12c0:	635f6572 	0x635f6572
+    12c4:	69675f65 	0x69675f65
+    12c8:	6601006f 	0x6601006f
+    12cc:	c32a3901 	ll	t2,14593(t9)
+    12d0:	c32a54bf 	ll	t2,21695(t9)
+    12d4:	0a6101bf 	j	98406fc <BANK_SPACE+0x98006fc>
+    12d8:	73657201 	0x73657201
+    12dc:	65726f74 	0x65726f74
+    12e0:	5f65635f 	0x5f65635f
+    12e4:	006f6967 	0x6f6967
+    12e8:	61017001 	0x61017001
+    12ec:	7cbfc32a 	0x7cbfc32a
+    12f0:	01bfc32a 	0x1bfc32a
+    12f4:	63010b61 	0x63010b61
+    12f8:	72746e6f 	0x72746e6f
+    12fc:	656c6c6f 	0x656c6c6f
+    1300:	6e695f72 	0x6e695f72
+    1304:	01007469 	0x1007469
+    1308:	2a89018c 	slti	t1,s4,396
+    130c:	2ad8bfc3 	slti	t8,s6,-16445
+    1310:	6101bfc3 	0x6101bfc3
+    1314:	64636c0c 	0x64636c0c
+    1318:	646f6d5f 	0x646f6d5f
+    131c:	8b010065 	lwl	at,101(t8)
+    1320:	00000198 	0x198
+    1324:	0c109102 	jal	424408 <BANK_SPACE+0x3e4408>
+    1328:	6c6c756e 	0x6c6c756e
+    132c:	8b010032 	lwl	at,50(t8)
+    1330:	00000166 	0x166
+    1334:	0c149102 	jal	524408 <BANK_SPACE+0x4e4408>
+    1338:	6c6c756e 	0x6c6c756e
+    133c:	8b010033 	lwl	at,51(t8)
+    1340:	00000166 	0x166
+    1344:	0d189102 	jal	4624408 <BANK_SPACE+0x45e4408>
+    1348:	5f64636c 	0x5f64636c
+    134c:	5f6c7463 	0x5f6c7463
+    1350:	61746164 	0x61746164
+    1354:	408d0100 	0x408d0100
+    1358:	02000001 	movf	zero,s0,$fcc0
+    135c:	00000091 	0x91
+    1360:	000002a1 	0x2a1
+    1364:	04520002 	bltzall	v0,1370 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x370>
+    1368:	01040000 	0x1040000
+    136c:	000004e3 	0x4e3
+    1370:	000000c4 	0xc4
+    1374:	00000000 	nop
+    1378:	20554e47 	addi	s5,v0,20039
+    137c:	2e332043 	sltiu	s3,s1,8259
+    1380:	20342e34 	addi	s4,at,11828
+    1384:	7370696d 	0x7370696d
+    1388:	2d656473 	sltiu	a1,t3,25715
+    138c:	36302e36 	ori	s0,s1,0x2e36
+    1390:	2d31302e 	sltiu	s1,t1,12334
+    1394:	37303032 	ori	s0,t9,0x3032
+    1398:	30323430 	andi	s2,at,0x3430
+    139c:	2f2e0100 	sltiu	t6,t9,256
+    13a0:	2e2f2e2e 	sltiu	t7,s1,11822
+    13a4:	72642f2e 	0x72642f2e
+    13a8:	636c2f76 	0x636c2f76
+    13ac:	4c495f64 	0x4c495f64
+    13b0:	34333949 	ori	s3,at,0x3949
+    13b4:	63722f31 	0x63722f31
+    13b8:	5f65646f 	0x5f65646f
+    13bc:	5f64636c 	0x5f64636c
+    13c0:	636e7566 	0x636e7566
+    13c4:	6e6f6974 	0x6e6f6974
+    13c8:	2e325f73 	sltiu	s2,s1,24435
+    13cc:	632f0063 	0x632f0063
+    13d0:	72646779 	0x72646779
+    13d4:	2f657669 	sltiu	a1,k1,30313
+    13d8:	6f532f66 	0x6f532f66
+    13dc:	65737275 	0x65737275
+    13e0:	646f435f 	0x646f435f
+    13e4:	31352f65 	andi	s5,t1,0x2f65
+    13e8:	4d2f3631 	0x4d2f3631
+    13ec:	322d3350 	andi	t5,s1,0x3350
+    13f0:	2f373631 	sltiu	s7,t9,13873
+    13f4:	31325355 	andi	s2,t1,0x5355
+    13f8:	632f4136 	0x632f4136
+    13fc:	2f657361 	sltiu	a1,k1,29537
+    1400:	2f767264 	sltiu	s6,k1,29284
+    1404:	636c6577 	0x636c6577
+    1408:	00656d6f 	0x656d6f
+    140c:	736e7502 	0x736e7502
+    1410:	656e6769 	0x656e6769
+    1414:	68632064 	0x68632064
+    1418:	01007261 	0x1007261
+    141c:	4e490308 	c3	0x490308
+    1420:	00553854 	0x553854
+    1424:	00ac0f02 	0xac0f02
+    1428:	73020000 	madd	t8,v0
+    142c:	656e6769 	0x656e6769
+    1430:	68632064 	0x68632064
+    1434:	01007261 	0x1007261
+    1438:	68730206 	0x68730206
+    143c:	2074726f 	addi	s4,v1,29295
+    1440:	69736e75 	0x69736e75
+    1444:	64656e67 	0x64656e67
+    1448:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+    144c:	02070200 	0x2070200
+    1450:	726f6873 	0x726f6873
+    1454:	6e692074 	0x6e692074
+    1458:	05020074 	bltzl	t0,162c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x62c>
+    145c:	0000b404 	0xb404
+    1460:	02070400 	0x2070400
+    1464:	676e6f6c 	0x676e6f6c
+    1468:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+    146c:	02050400 	0x2050400
+    1470:	616f6c66 	0x616f6c66
+    1474:	04040074 	0x4040074
+    1478:	756f6402 	jalx	5bd9008 <BANK_SPACE+0x5b99008>
+    147c:	00656c62 	0x656c62
+    1480:	6c020408 	0x6c020408
+    1484:	20676e6f 	addi	a3,v1,28271
+    1488:	676e6f6c 	0x676e6f6c
+    148c:	736e7520 	0x736e7520
+    1490:	656e6769 	0x656e6769
+    1494:	6e692064 	0x6e692064
+    1498:	07080074 	tgei	t8,116
+    149c:	6e6f6c02 	0x6e6f6c02
+    14a0:	6f6c2067 	0x6f6c2067
+    14a4:	6920676e 	0x6920676e
+    14a8:	0800746e 	j	1d1b8 <SRAM_OS_TASK_STACK_ADDR+0x15b8>
+    14ac:	6e750205 	0x6e750205
+    14b0:	6e676973 	0x6e676973
+    14b4:	69206465 	0x69206465
+    14b8:	0400746e 	bltz	zero,1e674 <SRAM_RAM1_RESEVER2_ADDR+0xc74>
+    14bc:	69750307 	0x69750307
+    14c0:	0038746e 	0x38746e
+    14c4:	00ac1703 	0xac1703
+    14c8:	75030000 	jalx	40c0000 <BANK_SPACE+0x4080000>
+    14cc:	31746e69 	andi	s4,t3,0x6e69
+    14d0:	1f030036 	0x1f030036
+    14d4:	000000d9 	0xd9
+    14d8:	6e697503 	0x6e697503
+    14dc:	00323374 	teq	at,s2,0xcd
+    14e0:	014d2703 	0x14d2703
+    14e4:	69020000 	0x69020000
+    14e8:	0400746e 	bltz	zero,1e6a4 <SRAM_RAM1_RESEVER2_ADDR+0xca4>
+    14ec:	68630205 	0x68630205
+    14f0:	01007261 	0x1007261
+    14f4:	00b40406 	0xb40406
+    14f8:	07040000 	0x7040000
+    14fc:	f8060405 	sdc2	$6,1029(zero)
+    1500:	01000001 	movf	zero,t0,$fcc0
+    1504:	5f616d64 	0x5f616d64
+    1508:	72617473 	0x72617473
+    150c:	72745f74 	0x72745f74
+    1510:	00736e61 	0x736e61
+    1514:	bd012801 	cache	0x1,10241(t0)
+    1518:	00000000 	nop
+    151c:	70000000 	madd	zero,zero
+    1520:	01000000 	0x1000000
+    1524:	6d640761 	0x6d640761
+    1528:	61725f61 	0x61725f61
+    152c:	2701006d 	addiu	at,t8,109
+    1530:	0000015d 	0x15d
+    1534:	07089102 	tgei	t8,-28414
+    1538:	6c6c756e 	0x6c6c756e
+    153c:	27010032 	addiu	at,t8,50
+    1540:	0000019c 	0x19c
+    1544:	070c9102 	teqi	t8,-28414
+    1548:	6c6c756e 	0x6c6c756e
+    154c:	27010033 	addiu	at,t8,51
+    1550:	0000019c 	0x19c
+    1554:	00109102 	srl	s2,s0,0x4
+    1558:	00025308 	0x25308
+    155c:	6d640100 	0x6d640100
+    1560:	65735f61 	0x65735f61
+    1564:	6f635f74 	0x6f635f74
+    1568:	65746e75 	0x65746e75
+    156c:	5a010072 	0x5a010072
+    1570:	00000001 	movf	zero,zero,$fcc0
+    1574:	0000a400 	sll	s4,zero,0x10
+    1578:	07610100 	bgez	k1,197c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x97c>
+    157c:	5f786970 	0x5f786970
+    1580:	00746e63 	0x746e63
+    1584:	01785901 	0x1785901
+    1588:	91020000 	lbu	v0,0(t0)
+    158c:	61640708 	0x61640708
+    1590:	775f6174 	jalx	d7d85d0 <BANK_SPACE+0xd7985d0>
+    1594:	68746469 	0x68746469
+    1598:	6a590100 	0x6a590100
+    159c:	02000001 	movf	zero,s0,$fcc0
+    15a0:	6e070c91 	0x6e070c91
+    15a4:	336c6c75 	andi	t4,k1,0x6c75
+    15a8:	9c590100 	0x9c590100
+    15ac:	02000001 	movf	zero,s0,$fcc0
+    15b0:	09001091 	j	4004244 <BANK_SPACE+0x3fc4244>
+    15b4:	616d6401 	0x616d6401
+    15b8:	7465735f 	jalx	195cd7c <BANK_SPACE+0x191cd7c>
+    15bc:	6372735f 	0x6372735f
+    15c0:	6464615f 	0x6464615f
+    15c4:	73010072 	0x73010072
+    15c8:	00000001 	movf	zero,zero,$fcc0
+    15cc:	0000c000 	sll	t8,zero,0x0
+    15d0:	07610100 	bgez	k1,19d4 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x9d4>
+    15d4:	72646461 	0x72646461
+    15d8:	72010030 	0x72010030
+    15dc:	00000178 	0x178
+    15e0:	07089102 	tgei	t8,-28414
+    15e4:	72646461 	0x72646461
+    15e8:	72010031 	0x72010031
+    15ec:	00000178 	0x178
+    15f0:	070c9102 	teqi	t8,-28414
+    15f4:	72646461 	0x72646461
+    15f8:	72010032 	0x72010032
+    15fc:	00000178 	0x178
+    1600:	00109102 	srl	s2,s0,0x4
+    1604:	0003de00 	sll	k1,v1,0x18
+    1608:	e4000200 	swc1	$f0,512(zero)
+    160c:	04000004 	bltz	zero,1620 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x620>
+    1610:	0005ad01 	0x5ad01
+	...
+    161c:	554e4700 	bnel	t2,t6,13220 <SRAM_AP_BANK_BACK_BASAL_ADDR+0x520>
+    1620:	33204320 	andi	zero,t9,0x4320
+    1624:	342e342e 	ori	t6,at,0x342e
+    1628:	70696d20 	0x70696d20
+    162c:	65647373 	0x65647373
+    1630:	302e362d 	andi	t6,at,0x362d
+    1634:	31302e36 	andi	s0,t1,0x2e36
+    1638:	3030322d 	andi	s0,at,0x322d
+    163c:	32343037 	andi	s4,s1,0x3037
+    1640:	2e010030 	sltiu	at,s0,48
+    1644:	2f2e2e2f 	sltiu	t6,t9,11823
+    1648:	642f2e2e 	0x642f2e2e
+    164c:	6c2f7672 	0x6c2f7672
+    1650:	495f6463 	0x495f6463
+    1654:	3339494c 	andi	t9,t9,0x494c
+    1658:	722f3134 	0x722f3134
+    165c:	65646f63 	0x65646f63
+    1660:	64636c5f 	0x64636c5f
+    1664:	5f706f5f 	0x5f706f5f
+    1668:	72746e65 	0x72746e65
+    166c:	00632e79 	0x632e79
+    1670:	6779632f 	0x6779632f
+    1674:	76697264 	jalx	9a5c990 <BANK_SPACE+0x9a1c990>
+    1678:	2f662f65 	sltiu	a2,k1,12133
+    167c:	72756f53 	udi3	s3,s5,t5,0x1d
+    1680:	435f6573 	c0	0x15f6573
+    1684:	2f65646f 	sltiu	a1,k1,25711
+    1688:	36313135 	ori	s1,s1,0x3135
+    168c:	33504d2f 	andi	s0,k0,0x4d2f
+    1690:	3631322d 	ori	s1,s1,0x322d
+    1694:	53552f37 	beql	k0,s5,d374 <SROM_FS_ADDR+0x1374>
+    1698:	41363132 	0x41363132
+    169c:	7361632f 	0x7361632f
+    16a0:	72642f65 	0x72642f65
+    16a4:	65772f76 	0x65772f76
+    16a8:	6d6f636c 	0x6d6f636c
+    16ac:	75020065 	jalx	4080194 <BANK_SPACE+0x4040194>
+    16b0:	6769736e 	0x6769736e
+    16b4:	2064656e 	addi	a0,v1,25966
+    16b8:	72616863 	0x72616863
+    16bc:	02080100 	0x2080100
+    16c0:	6e676973 	0x6e676973
+    16c4:	63206465 	0x63206465
+    16c8:	00726168 	0x726168
+    16cc:	73020601 	0x73020601
+    16d0:	74726f68 	jalx	1c9bda0 <BANK_SPACE+0x1c5bda0>
+    16d4:	736e7520 	0x736e7520
+    16d8:	656e6769 	0x656e6769
+    16dc:	6e692064 	0x6e692064
+    16e0:	07020074 	bltzl	t8,18b4 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x8b4>
+    16e4:	6f687302 	0x6f687302
+    16e8:	69207472 	0x69207472
+    16ec:	0200746e 	0x200746e
+    16f0:	00c60305 	0xc60305
+    16f4:	07040000 	0x7040000
+    16f8:	6e6f6c02 	0x6e6f6c02
+    16fc:	6e692067 	0x6e692067
+    1700:	05040074 	0x5040074
+    1704:	6f6c6602 	0x6f6c6602
+    1708:	04007461 	bltz	zero,1e890 <SRAM_RAM1_RESEVER2_ADDR+0xe90>
+    170c:	6f640204 	0x6f640204
+    1710:	656c6275 	0x656c6275
+    1714:	02040800 	0x2040800
+    1718:	676e6f6c 	0x676e6f6c
+    171c:	6e6f6c20 	0x6e6f6c20
+    1720:	6e752067 	0x6e752067
+    1724:	6e676973 	0x6e676973
+    1728:	69206465 	0x69206465
+    172c:	0800746e 	j	1d1b8 <SRAM_OS_TASK_STACK_ADDR+0x15b8>
+    1730:	6f6c0207 	0x6f6c0207
+    1734:	6c20676e 	0x6c20676e
+    1738:	20676e6f 	addi	a3,v1,28271
+    173c:	00746e69 	0x746e69
+    1740:	75020508 	jalx	4081420 <BANK_SPACE+0x4041420>
+    1744:	6769736e 	0x6769736e
+    1748:	2064656e 	addi	a0,v1,25966
+    174c:	00746e69 	0x746e69
+    1750:	75040704 	jalx	4101c10 <BANK_SPACE+0x40c1c10>
+    1754:	38746e69 	xori	s4,v1,0x6e69
+    1758:	a9170200 	swl	s7,512(t0)
+    175c:	04000000 	bltz	zero,1760 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x760>
+    1760:	38746e69 	xori	s4,v1,0x6e69
+    1764:	ba1b0200 	swr	k1,512(s0)
+    1768:	04000000 	bltz	zero,176c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x76c>
+    176c:	746e6975 	jalx	1b9a5d4 <BANK_SPACE+0x1b5a5d4>
+    1770:	02003233 	tltu	s0,zero,0xc8
+    1774:	00013d27 	0x13d27
+    1778:	6e690200 	0x6e690200
+    177c:	05040074 	0x5040074
+    1780:	61686302 	0x61686302
+    1784:	06010072 	bgez	s0,1950 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x950>
+    1788:	0000c603 	sra	t8,zero,0x18
+    178c:	05070400 	0x5070400
+    1790:	92040604 	lbu	a0,1540(s0)
+    1794:	07000001 	bltz	t8,179c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x79c>
+    1798:	000001ac 	0x1ac
+    179c:	00018a01 	0x18a01
+    17a0:	018a0800 	0x18a0800
+    17a4:	8a080000 	lwl	t0,0(s0)
+    17a8:	08000001 	j	4 <DRV_GROUP_EXFAT>
+    17ac:	0000018a 	0x18a
+    17b0:	636c0400 	0x636c0400
+    17b4:	706f5f64 	0x706f5f64
+    17b8:	6e75665f 	0x6e75665f
+    17bc:	1c010063 	0x1c010063
+    17c0:	0000018c 	syscall	0x6
+    17c4:	00031409 	0x31409
+    17c8:	2d013400 	sltiu	at,t0,13312
+    17cc:	7465730a 	jalx	195cc28 <BANK_SPACE+0x191cc28>
+    17d0:	6e69775f 	0x6e69775f
+    17d4:	00776f64 	0x776f64
+    17d8:	01ac2001 	movf	a0,t5,$fcc3
+    17dc:	23020000 	addi	v0,t8,0
+    17e0:	65730a00 	0x65730a00
+    17e4:	6f635f74 	0x6f635f74
+    17e8:	6172746e 	0x6172746e
+    17ec:	01007473 	tltu	t0,zero,0x1d1
+    17f0:	0001ac21 	0x1ac21
+    17f4:	04230200 	bgezl	at,1ff8 <SROM_FS_SIZE+0x3f8>
+    17f8:	7465730a 	jalx	195cc28 <BANK_SPACE+0x191cc28>
+    17fc:	6172645f 	0x6172645f
+    1800:	6f6d5f77 	0x6f6d5f77
+    1804:	01006564 	0x1006564
+    1808:	0001ac22 	0x1ac22
+    180c:	08230200 	j	8c0800 <BANK_SPACE+0x880800>
+    1810:	6174730a 	0x6174730a
+    1814:	7962646e 	0x7962646e
+    1818:	7263735f 	udi15	s3,v1,t6,0xd
+    181c:	006e6565 	0x6e6565
+    1820:	01ac2301 	0x1ac2301
+    1824:	23020000 	addi	v0,t8,0
+    1828:	61620a0c 	0x61620a0c
+    182c:	696c6b63 	0x696c6b63
+    1830:	5f746867 	0x5f746867
+    1834:	6f5f6e6f 	0x6f5f6e6f
+    1838:	01006666 	0x1006666
+    183c:	0001ac24 	0x1ac24
+    1840:	10230200 	beq	at,v1,2044 <SROM_FS_SIZE+0x444>
+    1844:	6470750a 	0x6470750a
+    1848:	5f657461 	0x5f657461
+    184c:	65726373 	0x65726373
+    1850:	01006e65 	0x1006e65
+    1854:	0001ac25 	0x1ac25
+    1858:	14230200 	bne	at,v1,205c <SROM_FS_SIZE+0x45c>
+    185c:	6675620a 	0x6675620a
+    1860:	61645f66 	0x61645f66
+    1864:	745f6174 	jalx	17d85d0 <BANK_SPACE+0x17985d0>
+    1868:	736e6172 	0x736e6172
+    186c:	ac260100 	sw	a2,256(at)
+    1870:	02000001 	movf	zero,s0,$fcc0
+    1874:	670a1823 	0x670a1823
+    1878:	625f7465 	0x625f7465
+    187c:	5f666675 	0x5f666675
+    1880:	61746164 	0x61746164
+    1884:	ac270100 	sw	a3,256(at)
+    1888:	02000001 	movf	zero,s0,$fcc0
+    188c:	690a1c23 	0x690a1c23
+    1890:	7265766e 	0x7265766e
+    1894:	75625f74 	jalx	5897dd0 <BANK_SPACE+0x5857dd0>
+    1898:	645f6666 	0x645f6666
+    189c:	5f617461 	0x5f617461
+    18a0:	6e617274 	0x6e617274
+    18a4:	28010073 	slti	at,zero,115
+    18a8:	000001ac 	0x1ac
+    18ac:	0a202302 	j	8808c08 <BANK_SPACE+0x87c8c08>
+    18b0:	746e6f63 	jalx	1b9bd8c <BANK_SPACE+0x1b5bd8c>
+    18b4:	6c6c6f72 	0x6c6c6f72
+    18b8:	695f7265 	0x695f7265
+    18bc:	0074696e 	0x74696e
+    18c0:	01ac2901 	0x1ac2901
+    18c4:	23020000 	addi	v0,t8,0
+    18c8:	6d640a24 	0x6d640a24
+    18cc:	65735f61 	0x65735f61
+    18d0:	6f635f74 	0x6f635f74
+    18d4:	65746e75 	0x65746e75
+    18d8:	2a010072 	slti	at,s0,114
+    18dc:	000001ac 	0x1ac
+    18e0:	0a282302 	j	8a08c08 <BANK_SPACE+0x89c8c08>
+    18e4:	5f616d64 	0x5f616d64
+    18e8:	72617473 	0x72617473
+    18ec:	72745f74 	0x72745f74
+    18f0:	00736e61 	0x736e61
+    18f4:	01ac2b01 	0x1ac2b01
+    18f8:	23020000 	addi	v0,t8,0
+    18fc:	6d640a2c 	0x6d640a2c
+    1900:	65735f61 	0x65735f61
+    1904:	72735f74 	0x72735f74
+    1908:	64615f63 	0x64615f63
+    190c:	01007264 	0x1007264
+    1910:	0001ac2c 	0x1ac2c
+    1914:	30230200 	andi	v1,at,0x200
+    1918:	636c0400 	0x636c0400
+    191c:	72645f64 	0x72645f64
+    1920:	72657669 	0x72657669
+    1924:	65706f5f 	0x65706f5f
+    1928:	69746172 	0x69746172
+    192c:	00736e6f 	0x736e6f
+    1930:	01bf2d01 	0x1bf2d01
+    1934:	6c0b0000 	0x6c0b0000
+    1938:	645f6463 	0x645f6463
+    193c:	5f776172 	0x5f776172
+    1940:	65646f6d 	0x65646f6d
+    1944:	4d190100 	0x4d190100
+    1948:	01000001 	movf	zero,t0,$fcc0
+    194c:	2cb50305 	sltiu	s5,a1,773
+    1950:	720bbfc3 	0x720bbfc3
+    1954:	746e6565 	jalx	1b99594 <BANK_SPACE+0x1b59594>
+    1958:	616c665f 	0x616c665f
+    195c:	1a010067 	0x1a010067
+    1960:	0000015a 	0x15a
+    1964:	b4030501 	0xb4030501
+    1968:	0bbfc32c 	j	eff0cb0 <BANK_SPACE+0xefb0cb0>
+    196c:	5f717269 	0x5f717269
+    1970:	74617473 	jalx	185d1cc <BANK_SPACE+0x181d1cc>
+    1974:	01007375 	0x1007375
+    1978:	00016615 	0x16615
+    197c:	03050100 	0x3050100
+    1980:	bfc32cb8 	cache	0x3,11448(s8)
+    1984:	6e6f630b 	0x6e6f630b
+    1988:	73617274 	0x73617274
+    198c:	72675f74 	0x72675f74
+    1990:	00656461 	0x656461
+    1994:	014d1801 	movt	v1,t2,$fcc3
+    1998:	05010000 	bgez	t0,199c <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x99c>
+    199c:	c32cbc03 	ll	t4,-17405(t9)
+    19a0:	00d80cbf 	0xd80cbf
+    19a4:	17010000 	bne	t8,at,19a8 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x9a8>
+    19a8:	0000014d 	break	0x0,0x5
+    19ac:	bd030501 	cache	0x3,1281(t0)
+    19b0:	0bbfc32c 	j	eff0cb0 <BANK_SPACE+0xefb0cb0>
+    19b4:	5f636970 	0x5f636970
+    19b8:	65646f6d 	0x65646f6d
+    19bc:	4d160100 	0x4d160100
+    19c0:	01000001 	movf	zero,t0,$fcc0
+    19c4:	2cbe0305 	sltiu	s8,a1,773
+    19c8:	6c0bbfc3 	0x6c0bbfc3
+    19cc:	645f6463 	0x645f6463
+    19d0:	65766972 	0x65766972
+    19d4:	706f5f72 	0x706f5f72
+    19d8:	142f0100 	bne	at,t7,1ddc <SROM_FS_SIZE+0x1dc>
+    19dc:	01000003 	0x1000003
+    19e0:	00000305 	0x305
+    19e4:	38000000 	xori	zero,zero,0x0
+    19e8:	02000002 	0x2000002
+    19ec:	00057b00 	sll	t7,a1,0xc
+    19f0:	1f010400 	0x1f010400
+    19f4:	b0000006 	0xb0000006
+    19f8:	e4bfc32c 	swc1	$f31,-15572(a1)
+    19fc:	75bfc32a 	jalx	6ff0ca8 <BANK_SPACE+0x6fb0ca8>
+    1a00:	01000002 	0x1000002
+    1a04:	00000222 	0x222
+    1a08:	00000162 	0x162
+    1a0c:	00010002 	srl	zero,at,0x0
+    1a10:	03080100 	0x3080100
+    1a14:	0000013a 	0x13a
+    1a18:	00250f04 	0x250f04
+    1a1c:	02020000 	0x2020000
+    1a20:	01000001 	movf	zero,t0,$fcc0
+    1a24:	02550206 	0x2550206
+    1a28:	07020000 	bltzl	t8,1a2c <SRAM_OS_TASK_STACK_SIZE+0x2c>
+    1a2c:	0001fe02 	srl	ra,at,0x18
+    1a30:	02050200 	0x2050200
+    1a34:	000001c7 	0x1c7
+    1a38:	45020704 	bc1fl	364c <SROM_TWI_ADDR_MDY+0x24c>
+    1a3c:	04000001 	bltz	zero,1a44 <SRAM_OS_TASK_STACK_SIZE+0x44>
+    1a40:	02680205 	0x2680205
+    1a44:	04040000 	0x4040000
+    1a48:	00012802 	srl	a1,at,0x0
+    1a4c:	02040800 	0x2040800
+    1a50:	000001c2 	srl	zero,zero,0x7
+    1a54:	40020708 	0x40020708
+    1a58:	08000001 	j	4 <DRV_GROUP_EXFAT>
+    1a5c:	01cc0205 	0x1cc0205
+    1a60:	07040000 	0x7040000
+    1a64:	00011603 	sra	v0,at,0x18
+    1a68:	25170300 	addiu	s7,t0,768
+    1a6c:	03000000 	0x3000000
+    1a70:	00000117 	0x117
+    1a74:	00371b03 	0x371b03
+    1a78:	6e030000 	0x6e030000
+    1a7c:	03000002 	0x3000002
+    1a80:	00003e1f 	0x3e1f
+    1a84:	6e690400 	0x6e690400
+    1a88:	05040074 	0x5040074
+    1a8c:	00010902 	srl	at,at,0x4
+    1a90:	02060100 	0x2060100
+    1a94:	000001c7 	0x1c7
+    1a98:	04050704 	0x4050704
+    1a9c:	0000f206 	0xf206
+    1aa0:	2f020800 	sltiu	v0,t8,2048
+    1aa4:	02007807 	srav	t7,zero,s0
+    1aa8:	00009328 	0x9328
+    1aac:	00230200 	0x230200
+    1ab0:	02007907 	0x2007907
+    1ab4:	0000932a 	0x932a
+    1ab8:	02230200 	0x2230200
+    1abc:	0000e108 	0xe108
+    1ac0:	932c0200 	lbu	t4,512(t9)
+    1ac4:	02000000 	0x2000000
+    1ac8:	d9080423 	ldc2	$8,1059(t0)
+    1acc:	02000001 	movf	zero,s0,$fcc0
+    1ad0:	0000932e 	0x932e
+    1ad4:	06230200 	bgezl	s1,22d8 <SROM_FS_SIZE+0x6d8>
+    1ad8:	01ab0300 	0x1ab0300
+    1adc:	2f020000 	sltiu	v0,t8,0
+    1ae0:	000000b5 	0xb5
+    1ae4:	01ec0109 	0x1ec0109
+    1ae8:	16010000 	bne	s0,at,1aec <SRAM_OS_TASK_STACK_SIZE+0xec>
+    1aec:	c32ae501 	ll	t2,-6911(t9)
+    1af0:	c32b08bf 	ll	t3,2239(t9)
+    1af4:	096d01bf 	j	5b406fc <BANK_SPACE+0x5b006fc>
+    1af8:	0001ea01 	0x1ea01
+    1afc:	01260100 	0x1260100
+    1b00:	bfc32b15 	cache	0x3,11029(s8)
+    1b04:	bfc32b3c 	cache	0x3,11068(s8)
+    1b08:	b10a6d01 	0xb10a6d01
+    1b0c:	01000001 	movf	zero,t0,$fcc0
+    1b10:	000000f5 	0xf5
+    1b14:	45015101 	bc1t	15f1c <SRAM_AP_BACK_DATA_ADDR+0x31c>
+    1b18:	f0bfc32b 	0xf0bfc32b
+    1b1c:	01bfc32b 	0x1bfc32b
+    1b20:	012f0b6d 	0x12f0b6d
+    1b24:	50010000 	beql	zero,at,1b28 <SRAM_OS_TASK_STACK_SIZE+0x128>
+    1b28:	000001b1 	tgeu	zero,zero,0x6
+    1b2c:	560b6001 	bnel	s0,t3,19b34 <SRAM_KERNEL_XSYS_ADDR+0x5b4>
+    1b30:	01000001 	movf	zero,t0,$fcc0
+    1b34:	0000b350 	0xb350
+    1b38:	0b550100 	j	d540400 <BANK_SPACE+0xd500400>
+    1b3c:	0000015c 	0x15c
+    1b40:	00b35001 	0xb35001
+    1b44:	56010000 	bnel	s0,at,1b48 <SRAM_OS_TASK_STACK_SIZE+0x148>
+    1b48:	00010e0c 	syscall	0x438
+    1b4c:	93530100 	lbu	s3,256(k0)
+    1b50:	01000000 	0x1000000
+    1b54:	01220c55 	0x1220c55
+    1b58:	53010000 	beql	t8,at,1b5c <SRAM_OS_TASK_STACK_SIZE+0x15c>
+    1b5c:	00000093 	0x93
+    1b60:	4e0c6101 	c3	0xc6101
+    1b64:	01000001 	movf	zero,t0,$fcc0
+    1b68:	00009354 	0x9354
+    1b6c:	18910200 	0x18910200
+    1b70:	00011c0c 	syscall	0x470
+    1b74:	93540100 	lbu	s4,256(k0)
+    1b78:	02000000 	0x2000000
+    1b7c:	080c1c91 	j	307244 <BANK_SPACE+0x2c7244>
+    1b80:	01000002 	0x1000002
+    1b84:	0001b756 	0x1b756
+    1b88:	10910200 	beq	a0,s1,238c <SROM_FS_SIZE+0x78c>
+    1b8c:	0002120d 	break	0x2,0x48
+    1b90:	2c570100 	sltiu	s7,v0,256
+    1b94:	00000000 	nop
+    1b98:	00f2040e 	0xf2040e
+    1b9c:	c70f0000 	lwc1	$f15,0(t8)
+    1ba0:	7d000001 	0x7d000001
+    1ba4:	10000000 	b	1ba8 <SRAM_OS_TASK_STACK_SIZE+0x1a8>
+    1ba8:	000000ac 	0xac
+    1bac:	140a0003 	bne	zero,t2,1bbc <SRAM_OS_TASK_STACK_SIZE+0x1bc>
+    1bb0:	01000002 	0x1000002
+    1bb4:	000000e7 	0xe7
+    1bb8:	0501b301 	bgez	t0,fffee7c0 <pic_mode+0x403bbb02>
+    1bbc:	98bfc32c 	lwr	ra,-15572(a1)
+    1bc0:	01bfc32c 	0x1bfc32c
+    1bc4:	01e50b6d 	0x1e50b6d
+    1bc8:	b2010000 	0xb2010000
+    1bcc:	0000007d 	0x7d
+    1bd0:	560b6001 	bnel	s0,t3,19bd8 <SRAM_KERNEL_XSYS_ADDR+0x658>
+    1bd4:	01000001 	movf	zero,t0,$fcc0
+    1bd8:	0000b3b2 	tlt	zero,zero,0x2ce
+    1bdc:	0b550100 	j	d540400 <BANK_SPACE+0xd500400>
+    1be0:	0000015c 	0x15c
+    1be4:	00b3b201 	0xb3b201
+    1be8:	56010000 	bnel	s0,at,1bec <SRAM_OS_TASK_STACK_SIZE+0x1ec>
+    1bec:	0001e00c 	syscall	0x780
+    1bf0:	7db50100 	0x7db50100
+    1bf4:	02000000 	0x2000000
+    1bf8:	11001091 	beqz	t0,5e40 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x1e40>
+    1bfc:	000001b4 	teq	zero,zero,0x6
+    1c00:	007dce02 	0x7dce02
+    1c04:	01010000 	0x1010000
+    1c08:	0001a011 	0x1a011
+    1c0c:	88cf0200 	lwl	t7,512(a2)
+    1c10:	01000000 	0x1000000
+    1c14:	01f51101 	0x1f51101
+    1c18:	d3020000 	0xd3020000
+    1c1c:	0000007d 	0x7d
+    1c20:	5a000101 	blezl	s0,2028 <SROM_FS_SIZE+0x428>
+    1c24:	02000000 	0x2000000
+    1c28:	00066700 	sll	t4,a2,0x1c
+    1c2c:	8f010400 	lw	at,1024(t8)
+    1c30:	b0000007 	0xb0000007
+    1c34:	b4bfc32c 	0xb4bfc32c
+    1c38:	73bfc32c 	0x73bfc32c
+    1c3c:	6f5f7379 	0x6f5f7379
+    1c40:	6e655f70 	0x6e655f70
+    1c44:	2e797274 	sltiu	t9,s3,29300
+    1c48:	632f0053 	0x632f0053
+    1c4c:	72646779 	0x72646779
+    1c50:	2f657669 	sltiu	a1,k1,30313
+    1c54:	31322f67 	andi	s2,t1,0x2f67
+    1c58:	305f4136 	andi	ra,v0,0x4136
+    1c5c:	2f383139 	sltiu	t8,t9,12601
+    1c60:	70737766 	0x70737766
+    1c64:	62696c2f 	0x62696c2f
+    1c68:	2f637273 	sltiu	v1,k1,29299
+    1c6c:	00697061 	0x697061
+    1c70:	20554e47 	addi	s5,v0,20039
+    1c74:	32205341 	andi	zero,s1,0x5341
+    1c78:	2e35312e 	sltiu	s5,s1,12590
+    1c7c:	01003439 	0x1003439
+    1c80:	Address 0x1c80 is out of bounds.
+
+Disassembly of section .debug_line:
+
+00000000 <.debug_line>:
+   0:	00000114 	0x114
+   4:	009d0002 	0x9d0002
+   8:	01010000 	0x1010000
+   c:	000a0efb 	0xa0efb
+  10:	01010101 	0x1010101
+  14:	01000000 	0x1000000
+  18:	2e2e2f2e 	sltiu	t6,s1,12078
+  1c:	2f2e2e2f 	sltiu	t6,t9,11823
+  20:	702f2e2e 	0x702f2e2e
+  24:	725f7073 	0x725f7073
+  28:	692f6c65 	0x692f6c65
+  2c:	756c636e 	jalx	5b18db8 <BANK_SPACE+0x5ad8db8>
+  30:	752f6564 	jalx	4bd9590 <BANK_SPACE+0x4b99590>
+  34:	00736f63 	0x736f63
+  38:	2e2e2f2e 	sltiu	t6,s1,12078
+  3c:	2f2e2e2f 	sltiu	t6,t9,11823
+  40:	702f2e2e 	0x702f2e2e
+  44:	725f7073 	0x725f7073
+  48:	692f6c65 	0x692f6c65
+  4c:	756c636e 	jalx	5b18db8 <BANK_SPACE+0x5ad8db8>
+  50:	2e006564 	sltiu	zero,s0,25956
+  54:	2f2e2e2f 	sltiu	t6,t9,11823
+  58:	692f2e2e 	0x692f2e2e
+  5c:	0000636e 	0x636e
+  60:	636c6577 	0x636c6577
+  64:	2e656d6f 	sltiu	a1,s3,28015
+  68:	00000063 	0x63
+  6c:	6f637500 	0x6f637500
+  70:	79745f73 	0x79745f73
+  74:	2e736570 	sltiu	s3,s3,25968
+  78:	00010068 	0x10068
+  7c:	70797400 	0x70797400
+  80:	74786565 	jalx	1e19594 <BANK_SPACE+0x1dd9594>
+  84:	0200682e 	0x200682e
+  88:	636c0000 	0x636c0000
+  8c:	72645f64 	0x72645f64
+  90:	72657669 	0x72657669
+  94:	0300682e 	0x300682e
+  98:	79730000 	0x79730000
+  9c:	66656473 	0x66656473
+  a0:	0200682e 	0x200682e
+  a4:	00000000 	nop
+  a8:	20010205 	addi	at,zero,517
+  ac:	dc03bfc3 	ldc3	$3,-16445(zero)
+  b0:	689c0102 	0x689c0102
+  b4:	496565bb 	0x496565bb
+  b8:	9e9e9e67 	0x9e9e9e67
+  bc:	0100089d 	0x100089d
+  c0:	02050001 	movt	zero,s0,$fcc1
+  c4:	bfc3206d 	cache	0x3,8301(s8)
+  c8:	0101be03 	0x101be03
+  cc:	baf38048 	swr	s3,-32696(s7)
+  d0:	6bd5f049 	0x6bd5f049
+  d4:	024948bf 	0x24948bf
+  d8:	f2481228 	0xf2481228
+  dc:	f1bab982 	0xf1bab982
+  e0:	b8f480d6 	swr	s4,-32554(a3)
+  e4:	0281f081 	0x281f081
+  e8:	49641226 	0x49641226
+  ec:	4bf181d5 	c2	0x1f181d5
+  f0:	809e499d 	lb	s8,18845(a0)
+  f4:	f14a8148 	0xf14a8148
+  f8:	ba659d4c 	swr	a1,-25268(s3)
+  fc:	49494965 	0x49494965
+ 100:	6448489d 	0x6448489d
+ 104:	4a489d49 	c2	0x489d49
+ 108:	f0d4814a 	0xf0d4814a
+ 10c:	3a089f64 	xori	t0,s0,0x9f64
+ 110:	02bc9cf4 	teq	s5,gp,0x273
+ 114:	01010023 	subu	zero,t0,at
+ 118:	00000110 	0x110
+ 11c:	00b60002 	0xb60002
+ 120:	01010000 	0x1010000
+ 124:	000a0efb 	0xa0efb
+ 128:	01010101 	0x1010101
+ 12c:	01000000 	0x1000000
+ 130:	2e2e2f2e 	sltiu	t6,s1,12078
+ 134:	2f2e2e2f 	sltiu	t6,t9,11823
+ 138:	2f767264 	sltiu	s6,k1,29284
+ 13c:	5f64636c 	0x5f64636c
+ 140:	39494c49 	xori	t1,t2,0x4c49
+ 144:	00313433 	tltu	at,s1,0xd0
+ 148:	2e2e2f2e 	sltiu	t6,s1,12078
+ 14c:	2f2e2e2f 	sltiu	t6,t9,11823
+ 150:	702f2e2e 	0x702f2e2e
+ 154:	725f7073 	0x725f7073
+ 158:	692f6c65 	0x692f6c65
+ 15c:	756c636e 	jalx	5b18db8 <BANK_SPACE+0x5ad8db8>
+ 160:	2e006564 	sltiu	zero,s0,25956
+ 164:	2f2e2e2f 	sltiu	t6,t9,11823
+ 168:	2e2f2e2e 	sltiu	t7,s1,11822
+ 16c:	73702f2e 	0x73702f2e
+ 170:	65725f70 	0x65725f70
+ 174:	6e692f6c 	0x6e692f6c
+ 178:	64756c63 	0x64756c63
+ 17c:	63752f65 	0x63752f65
+ 180:	2e00736f 	sltiu	zero,s0,29551
+ 184:	2f2e2e2f 	sltiu	t6,t9,11823
+ 188:	692f2e2e 	0x692f2e2e
+ 18c:	0000636e 	0x636e
+ 190:	6b6e6162 	0x6b6e6162
+ 194:	6c5f615f 	0x6c5f615f
+ 198:	665f6463 	0x665f6463
+ 19c:	74636e75 	jalx	18db9d4 <BANK_SPACE+0x189b9d4>
+ 1a0:	736e6f69 	0x736e6f69
+ 1a4:	0100632e 	0x100632e
+ 1a8:	79740000 	0x79740000
+ 1ac:	78656570 	0x78656570
+ 1b0:	00682e74 	teq	v1,t0,0xb9
+ 1b4:	75000002 	jalx	4000008 <BANK_SPACE+0x3fc0008>
+ 1b8:	5f736f63 	0x5f736f63
+ 1bc:	65707974 	0x65707974
+ 1c0:	00682e73 	tltu	v1,t0,0xb9
+ 1c4:	6c000003 	0x6c000003
+ 1c8:	645f6463 	0x645f6463
+ 1cc:	65766972 	0x65766972
+ 1d0:	00682e72 	tlt	v1,t0,0xb9
+ 1d4:	00000004 	sllv	zero,zero,zero
+ 1d8:	21020500 	addi	v0,t0,1280
+ 1dc:	03bfc323 	0x3bfc323
+ 1e0:	64b80127 	0x64b80127
+ 1e4:	11037208 	beq	t0,v1,1ca08 <SRAM_OS_TASK_STACK_ADDR+0xe08>
+ 1e8:	9e48b9d3 	0x9e48b9d3
+ 1ec:	84806583 	lh	zero,25987(a0)
+ 1f0:	9c844964 	0x9c844964
+ 1f4:	b8642208 	swr	a0,8712(v1)
+ 1f8:	83659c64 	lb	a1,-25500(k1)
+ 1fc:	12034964 	beq	s0,v1,12790 <SRAM_AP_BANK_FRONT_BASAL_ADDR+0x290>
+ 200:	9eb8a908 	0x9eb8a908
+ 204:	08d5d5b9 	j	35756e4 <BANK_SPACE+0x35356e4>
+ 208:	d485b93c 	ldc1	$f5,-18116(a0)
+ 20c:	1d080903 	0x1d080903
+ 210:	d7b8f2b9 	ldc1	$f24,-3399(sp)
+ 214:	38021b03 	xori	v0,zero,0x1b03
+ 218:	17039b01 	bne	t8,v1,fffe6e20 <pic_mode+0x403b4162>
+ 21c:	b948be63 	swr	t0,-16797(t2)
+ 220:	5e648064 	0x5e648064
+ 224:	027f0903 	0x27f0903
+ 228:	01010005 	0x1010005
+ 22c:	0000009f 	0x9f
+ 230:	00810002 	0x810002
+ 234:	01010000 	0x1010000
+ 238:	000a0efb 	0xa0efb
+ 23c:	01010101 	0x1010101
+ 240:	01000000 	0x1000000
+ 244:	2e2e2f2e 	sltiu	t6,s1,12078
+ 248:	2f2e2e2f 	sltiu	t6,t9,11823
+ 24c:	2f767264 	sltiu	s6,k1,29284
+ 250:	5f64636c 	0x5f64636c
+ 254:	39494c49 	xori	t1,t2,0x4c49
+ 258:	00313433 	tltu	at,s1,0xd0
+ 25c:	2e2e2f2e 	sltiu	t6,s1,12078
+ 260:	2f2e2e2f 	sltiu	t6,t9,11823
+ 264:	00636e69 	0x636e69
+ 268:	2e2e2f2e 	sltiu	t6,s1,12078
+ 26c:	2f2e2e2f 	sltiu	t6,t9,11823
+ 270:	702f2e2e 	0x702f2e2e
+ 274:	725f7073 	0x725f7073
+ 278:	692f6c65 	0x692f6c65
+ 27c:	756c636e 	jalx	5b18db8 <BANK_SPACE+0x5ad8db8>
+ 280:	00006564 	0x6564
+ 284:	6b6e6162 	0x6b6e6162
+ 288:	6c5f615f 	0x6c5f615f
+ 28c:	695f6463 	0x695f6463
+ 290:	2e74696e 	sltiu	s4,s3,26990
+ 294:	00010063 	0x10063
+ 298:	64636c00 	0x64636c00
+ 29c:	6972645f 	0x6972645f
+ 2a0:	2e726576 	sltiu	s2,s3,25974
+ 2a4:	00020068 	0x20068
+ 2a8:	70797400 	0x70797400
+ 2ac:	74786565 	jalx	1e19594 <BANK_SPACE+0x1dd9594>
+ 2b0:	0300682e 	0x300682e
+ 2b4:	00000000 	nop
+ 2b8:	00010205 	0x10205
+ 2bc:	24030000 	li	v1,0
+ 2c0:	64649c01 	0x64649c01
+ 2c4:	ef0e032c 	swc3	$14,812(t8)
+ 2c8:	05022c9e 	bltzl	t0,b544 <SRAM_UI_RCODE2_ADDR+0xd44>
+ 2cc:	b1010100 	0xb1010100
+ 2d0:	02000000 	0x2000000
+ 2d4:	00006700 	sll	t4,zero,0x1c
+ 2d8:	fb010100 	sdc2	$1,256(t8)
+ 2dc:	01000a0e 	0x1000a0e
+ 2e0:	00010101 	0x10101
+ 2e4:	2e010000 	sltiu	at,s0,0
+ 2e8:	2f2e2e2f 	sltiu	t6,t9,11823
+ 2ec:	642f2e2e 	0x642f2e2e
+ 2f0:	6c2f7672 	0x6c2f7672
+ 2f4:	495f6463 	0x495f6463
+ 2f8:	3339494c 	andi	t9,t9,0x494c
+ 2fc:	2e003134 	sltiu	zero,s0,12596
+ 300:	2f2e2e2f 	sltiu	t6,t9,11823
+ 304:	2e2f2e2e 	sltiu	t7,s1,11822
+ 308:	73702f2e 	0x73702f2e
+ 30c:	65725f70 	0x65725f70
+ 310:	6e692f6c 	0x6e692f6c
+ 314:	64756c63 	0x64756c63
+ 318:	6c000065 	0x6c000065
+ 31c:	685f6463 	0x685f6463
+ 320:	77647261 	jalx	d91c984 <BANK_SPACE+0xd8dc984>
+ 324:	5f657261 	0x5f657261
+ 328:	74696e69 	jalx	1a5b9a4 <BANK_SPACE+0x1a1b9a4>
+ 32c:	0100632e 	0x100632e
+ 330:	79740000 	0x79740000
+ 334:	78656570 	0x78656570
+ 338:	00682e74 	teq	v1,t0,0xb9
+ 33c:	00000002 	srl	zero,zero,0x0
+ 340:	5d020500 	0x5d020500
+ 344:	03bfc325 	0x3bfc325
+ 348:	490100c2 	bc2t	654 <SRAM_AP_BACK_DATA_SIZE+0x54>
+ 34c:	f184d5d5 	0xf184d5d5
+ 350:	0383d584 	0x383d584
+ 354:	4848d30c 	0x4848d30c
+ 358:	f1570848 	0xf1570848
+ 35c:	f1f26564 	0xf1f26564
+ 360:	25086664 	addiu	t0,t0,26212
+ 364:	034881d5 	0x34881d5
+ 368:	4a8d080d 	c2	0x8d080d
+ 36c:	1f08bcd5 	0x1f08bcd5
+ 370:	65d6ba81 	0x65d6ba81
+ 374:	03b9b965 	0x3b9b965
+ 378:	48c5081e 	0x48c5081e
+ 37c:	02646464 	0x2646464
+ 380:	01010005 	0x1010005
+ 384:	000000b3 	tltu	zero,zero,0x2
+ 388:	00690002 	0x690002
+ 38c:	01010000 	0x1010000
+ 390:	000a0efb 	0xa0efb
+ 394:	01010101 	0x1010101
+ 398:	01000000 	0x1000000
+ 39c:	2e2e2f2e 	sltiu	t6,s1,12078
+ 3a0:	2f2e2e2f 	sltiu	t6,t9,11823
+ 3a4:	2f767264 	sltiu	s6,k1,29284
+ 3a8:	5f64636c 	0x5f64636c
+ 3ac:	39494c49 	xori	t1,t2,0x4c49
+ 3b0:	00313433 	tltu	at,s1,0xd0
+ 3b4:	2e2e2f2e 	sltiu	t6,s1,12078
+ 3b8:	2f2e2e2f 	sltiu	t6,t9,11823
+ 3bc:	702f2e2e 	0x702f2e2e
+ 3c0:	725f7073 	0x725f7073
+ 3c4:	692f6c65 	0x692f6c65
+ 3c8:	756c636e 	jalx	5b18db8 <BANK_SPACE+0x5ad8db8>
+ 3cc:	00006564 	0x6564
+ 3d0:	646f6372 	0x646f6372
+ 3d4:	636c5f65 	0x636c5f65
+ 3d8:	75665f64 	jalx	5997d90 <BANK_SPACE+0x5957d90>
+ 3dc:	6974636e 	0x6974636e
+ 3e0:	2e736e6f 	sltiu	s3,s3,28271
+ 3e4:	00010063 	0x10063
+ 3e8:	70797400 	0x70797400
+ 3ec:	74786565 	jalx	1e19594 <BANK_SPACE+0x1dd9594>
+ 3f0:	0200682e 	0x200682e
+ 3f4:	00000000 	nop
+ 3f8:	278d0205 	addiu	t5,gp,517
+ 3fc:	1403bfc3 	bne	zero,v1,ffff030c <pic_mode+0x403bd64e>
+ 400:	69d48101 	0x69d48101
+ 404:	b9b89ef2 	swr	t8,-24846(t5)
+ 408:	7f0903b5 	0x7f0903b5
+ 40c:	9d4981d7 	0x9d4981d7
+ 410:	81865308 	lb	a2,21256(t4)
+ 414:	08498182 	j	1260608 <BANK_SPACE+0x1220608>
+ 418:	17038121 	bne	t8,v1,fffe08a0 <pic_mode+0x403adbe2>
+ 41c:	f24eba63 	0xf24eba63
+ 420:	08160348 	j	580d20 <BANK_SPACE+0x540d20>
+ 424:	bf48bb39 	cache	0x8,-17607(k0)
+ 428:	ba48b964 	swr	t0,-18076(s2)
+ 42c:	03133c02 	0x3133c02
+ 430:	0a036379 	j	80d8de4 <BANK_SPACE+0x8098de4>
+ 434:	1f02497f 	0x1f02497f
+ 438:	a4010100 	sh	at,256(zero)
+ 43c:	02000000 	0x2000000
+ 440:	00005f00 	sll	t3,zero,0x1c
+ 444:	fb010100 	sdc2	$1,256(t8)
+ 448:	01000a0e 	0x1000a0e
+ 44c:	00010101 	0x10101
+ 450:	2e010000 	sltiu	at,s0,0
+ 454:	2f2e2e2f 	sltiu	t6,t9,11823
+ 458:	642f2e2e 	0x642f2e2e
+ 45c:	6c2f7672 	0x6c2f7672
+ 460:	495f6463 	0x495f6463
+ 464:	3339494c 	andi	t9,t9,0x494c
+ 468:	2e003134 	sltiu	zero,s0,12596
+ 46c:	2f2e2e2f 	sltiu	t6,t9,11823
+ 470:	692f2e2e 	0x692f2e2e
+ 474:	0000636e 	0x636e
+ 478:	646f6372 	0x646f6372
+ 47c:	636c5f65 	0x636c5f65
+ 480:	75665f64 	jalx	5997d90 <BANK_SPACE+0x5957d90>
+ 484:	6974636e 	0x6974636e
+ 488:	5f736e6f 	0x5f736e6f
+ 48c:	00632e31 	tgeu	v1,v1,0xb8
+ 490:	6c000001 	0x6c000001
+ 494:	645f6463 	0x645f6463
+ 498:	65766972 	0x65766972
+ 49c:	00682e72 	tlt	v1,t0,0xb9
+ 4a0:	00000002 	srl	zero,zero,0x0
+ 4a4:	51020500 	beql	t0,v0,18a8 <SRAM_AP_BACK_CODEC_RCODE_SIZE+0x8a8>
+ 4a8:	03bfc329 	0x3bfc329
+ 4ac:	034b0116 	0x34b0116
+ 4b0:	9fb96309 	0x9fb96309
+ 4b4:	66828066 	0x66828066
+ 4b8:	659fb964 	0x659fb964
+ 4bc:	694a5908 	0x694a5908
+ 4c0:	80669fb8 	lb	a2,-24648(v1)
+ 4c4:	b9646782 	swr	a0,26498(t3)
+ 4c8:	5808659f 	0x5808659f
+ 4cc:	3c08f14c 	lui	t0,0xf14c
+ 4d0:	1503f14c 	bne	t0,v1,ffffca04 <pic_mode+0x403c9d46>
+ 4d4:	66ba3908 	0x66ba3908
+ 4d8:	0865809c 	j	1960270 <BANK_SPACE+0x1920270>
+ 4dc:	13028157 	beq	t8,v0,fffe0a3c <pic_mode+0x403add7e>
+ 4e0:	c6010100 	lwc1	$f1,256(s0)
+ 4e4:	02000000 	0x2000000
+ 4e8:	00009b00 	sll	s3,zero,0xc
+ 4ec:	fb010100 	sdc2	$1,256(t8)
+ 4f0:	01000a0e 	0x1000a0e
+ 4f4:	00010101 	0x10101
+ 4f8:	2e010000 	sltiu	at,s0,0
+ 4fc:	2f2e2e2f 	sltiu	t6,t9,11823
+ 500:	642f2e2e 	0x642f2e2e
+ 504:	6c2f7672 	0x6c2f7672
+ 508:	495f6463 	0x495f6463
+ 50c:	3339494c 	andi	t9,t9,0x494c
+ 510:	2e003134 	sltiu	zero,s0,12596
+ 514:	2f2e2e2f 	sltiu	t6,t9,11823
+ 518:	2e2f2e2e 	sltiu	t7,s1,11822
+ 51c:	73702f2e 	0x73702f2e
+ 520:	65725f70 	0x65725f70
+ 524:	6e692f6c 	0x6e692f6c
+ 528:	64756c63 	0x64756c63
+ 52c:	63752f65 	0x63752f65
+ 530:	2e00736f 	sltiu	zero,s0,29551
+ 534:	2f2e2e2f 	sltiu	t6,t9,11823
+ 538:	2e2f2e2e 	sltiu	t7,s1,11822
+ 53c:	73702f2e 	0x73702f2e
+ 540:	65725f70 	0x65725f70
+ 544:	6e692f6c 	0x6e692f6c
+ 548:	64756c63 	0x64756c63
+ 54c:	72000065 	0x72000065
+ 550:	65646f63 	0x65646f63
+ 554:	64636c5f 	0x64636c5f
+ 558:	6e75665f 	0x6e75665f
+ 55c:	6f697463 	0x6f697463
+ 560:	325f736e 	andi	ra,s2,0x736e
+ 564:	0100632e 	0x100632e
+ 568:	63750000 	0x63750000
+ 56c:	745f736f 	jalx	17dcdbc <BANK_SPACE+0x179cdbc>
+ 570:	73657079 	0x73657079
+ 574:	0200682e 	0x200682e
+ 578:	79740000 	0x79740000
+ 57c:	78656570 	0x78656570
+ 580:	00682e74 	teq	v1,t0,0xb9
+ 584:	00000003 	sra	zero,zero,0x0
+ 588:	01020500 	0x1020500
+ 58c:	03000000 	0x3000000
+ 590:	49bb0127 	0x49bb0127
+ 594:	bad749b9 	swr	s7,18873(s6)
+ 598:	a2bcb9b8 	sb	gp,-17992(s5)
+ 59c:	0811032c 	j	440cb0 <BANK_SPACE+0x400cb0>
+ 5a0:	0364b8fd 	0x364b8fd
+ 5a4:	659c9b17 	0x659c9b17
+ 5a8:	01000b02 	0x1000b02
+ 5ac:	00006e01 	0x6e01
+ 5b0:	68000200 	0x68000200
+ 5b4:	01000000 	0x1000000
+ 5b8:	0a0efb01 	j	83bec04 <BANK_SPACE+0x837ec04>
+ 5bc:	01010100 	0x1010100
+ 5c0:	00000001 	movf	zero,zero,$fcc0
+ 5c4:	2e2f2e01 	sltiu	t7,s1,11777
+ 5c8:	2e2e2f2e 	sltiu	t6,s1,12078
+ 5cc:	7672642f 	jalx	9c990bc <BANK_SPACE+0x9c590bc>
+ 5d0:	64636c2f 	0x64636c2f
+ 5d4:	494c495f 	0x494c495f
+ 5d8:	31343339 	andi	s4,t1,0x3339
+ 5dc:	2e2f2e00 	sltiu	t7,s1,11776
+ 5e0:	2e2e2f2e 	sltiu	t6,s1,12078
+ 5e4:	2f2e2e2f 	sltiu	t6,t9,11823
+ 5e8:	5f707370 	0x5f707370
+ 5ec:	2f6c6572 	sltiu	t4,k1,25970
+ 5f0:	6c636e69 	0x6c636e69
+ 5f4:	00656475 	0x656475
+ 5f8:	6f637200 	0x6f637200
+ 5fc:	6c5f6564 	0x6c5f6564
+ 600:	6f5f6463 	0x6f5f6463
+ 604:	6e655f70 	0x6e655f70
+ 608:	2e797274 	sltiu	t9,s3,29300
+ 60c:	00010063 	0x10063
+ 610:	70797400 	0x70797400
+ 614:	74786565 	jalx	1e19594 <BANK_SPACE+0x1dd9594>
+ 618:	0200682e 	0x200682e
+ 61c:	6c000000 	0x6c000000
+ 620:	02000001 	movf	zero,s0,$fcc0
+ 624:	0000ba00 	sll	s7,zero,0x8
+ 628:	fb010100 	sdc2	$1,256(t8)
+ 62c:	01000a0e 	0x1000a0e
+ 630:	00010101 	0x10101
+ 634:	2e010000 	sltiu	at,s0,0
+ 638:	2f2e2e2f 	sltiu	t6,t9,11823
+ 63c:	642f2e2e 	0x642f2e2e
+ 640:	6c2f7672 	0x6c2f7672
+ 644:	495f6463 	0x495f6463
+ 648:	3339494c 	andi	t9,t9,0x494c
+ 64c:	4f2f3134 	c3	0x12f3134
+ 650:	2f2e0032 	sltiu	t6,t9,50
+ 654:	2e2f2e2e 	sltiu	t7,s1,11822
+ 658:	6e692f2e 	0x6e692f2e
+ 65c:	2f2e0063 	sltiu	t6,t9,99
+ 660:	2e2f2e2e 	sltiu	t7,s1,11822
+ 664:	2e2e2f2e 	sltiu	t6,s1,12078
+ 668:	7073702f 	0x7073702f
+ 66c:	6c65725f 	0x6c65725f
+ 670:	636e692f 	0x636e692f
+ 674:	6564756c 	0x6564756c
+ 678:	2e2f2e00 	sltiu	t7,s1,11776
+ 67c:	2e2e2f2e 	sltiu	t6,s1,12078
+ 680:	2f2e2e2f 	sltiu	t6,t9,11823
+ 684:	5f707370 	0x5f707370
+ 688:	2f6c6572 	sltiu	t4,k1,25970
+ 68c:	6c636e69 	0x6c636e69
+ 690:	2f656475 	sltiu	a1,k1,25717
+ 694:	736f6375 	0x736f6375
+ 698:	63720000 	0x63720000
+ 69c:	5f65646f 	0x5f65646f
+ 6a0:	5f64636c 	0x5f64636c
+ 6a4:	636e7566 	0x636e7566
+ 6a8:	6e6f6974 	0x6e6f6974
+ 6ac:	2e335f73 	sltiu	s3,s1,24435
+ 6b0:	00010063 	0x10063
+ 6b4:	64636c00 	0x64636c00
+ 6b8:	6972645f 	0x6972645f
+ 6bc:	2e726576 	sltiu	s2,s3,25974
+ 6c0:	00020068 	0x20068
+ 6c4:	70797400 	0x70797400
+ 6c8:	74786565 	jalx	1e19594 <BANK_SPACE+0x1dd9594>
+ 6cc:	0300682e 	0x300682e
+ 6d0:	63750000 	0x63750000
+ 6d4:	745f736f 	jalx	17dcdbc <BANK_SPACE+0x179cdbc>
+ 6d8:	73657079 	0x73657079
+ 6dc:	0400682e 	bltz	zero,1a798 <SRAM_OS_DATA_ADDR+0x398>
+ 6e0:	00000000 	nop
+ 6e4:	2ae50205 	slti	a1,s7,517
+ 6e8:	1503bfc3 	bne	t0,v1,ffff05f8 <pic_mode+0x403bd93a>
+ 6ec:	09032d01 	j	40cb404 <BANK_SPACE+0x408b404>
+ 6f0:	65487c63 	0x65487c63
+ 6f4:	642d5a08 	0x642d5a08
+ 6f8:	6309036b 	0x6309036b
+ 6fc:	03477203 	0x3477203
+ 700:	7903630e 	0x7903630e
+ 704:	d31e0347 	0xd31e0347
+ 708:	77032f30 	jalx	c0cbcc0 <BANK_SPACE+0xc08bcc0>
+ 70c:	2b09032b 	slti	t1,t8,811
+ 710:	2c2a2c49 	sltiu	t2,at,11337
+ 714:	642a2c65 	0x642a2c65
+ 718:	032d292d 	0x32d292d
+ 71c:	2e2c2b7a 	sltiu	t4,s1,11130
+ 720:	2b7a032d 	slti	k0,k1,813
+ 724:	2f2d2e2c 	sltiu	t5,t9,11820
+ 728:	2c2d2c49 	sltiu	t5,at,11337
+ 72c:	802b2203 	lb	t3,8707(at)
+ 730:	272c2c65 	addiu	t4,t9,11365
+ 734:	662d2c2c 	0x662d2c2c
+ 738:	2c2a4848 	sltiu	t2,at,18504
+ 73c:	2a482d2a 	slti	t0,s2,11562
+ 740:	48652c48 	0x48652c48
+ 744:	497f5203 	0x497f5203
+ 748:	2a2c2a2c 	slti	t4,s1,10796
+ 74c:	032c2a2c 	0x32c2a2c
+ 750:	8d0800c0 	lw	t0,192(t0)
+ 754:	034a2b2e 	0x34a2b2e
+ 758:	2d32637a 	sltiu	s2,t1,25466
+ 75c:	90082d29 	lbu	t0,11561(zero)
+ 760:	037f1a03 	0x37f1a03
+ 764:	19032b67 	0x19032b67
+ 768:	0380312b 	0x380312b
+ 76c:	03807f78 	0x3807f78
+ 770:	03807f75 	0x3807f75
+ 774:	6b032b0a 	0x6b032b0a
+ 778:	032a487f 	0x32a487f
+ 77c:	70032b15 	udi5	zero,v1,a1,0xc
+ 780:	2a2c4c47 	slti	t4,s1,19527
+ 784:	26470a03 	addiu	a3,s2,2563
+ 788:	1b022c4c 	0x1b022c4c
+ 78c:	38010100 	xori	at,zero,0x100
+ 790:	02000000 	0x2000000
+ 794:	00002200 	sll	a0,zero,0x8
+ 798:	fb010100 	sdc2	$1,256(t8)
+ 79c:	01000a0e 	0x1000a0e
+ 7a0:	00010101 	0x10101
+ 7a4:	00010000 	sll	zero,at,0x0
+ 7a8:	5f737973 	0x5f737973
+ 7ac:	655f706f 	0x655f706f
+ 7b0:	7972746e 	0x7972746e
+ 7b4:	0000532e 	0x532e
+ 7b8:	00000000 	nop
+ 7bc:	2cb10205 	sltiu	s1,a1,517
+ 7c0:	1f03bfc3 	0x1f03bfc3
+ 7c4:	01022c01 	0x1022c01
+ 7c8:	Address 0x7c8 is out of bounds.
+
+Disassembly of section .debug_frame:
+
+00000000 <.debug_frame>:
+   0:	0000000c 	syscall
+   4:	ffffffff 	sdc3	$31,-1(ra)
+   8:	04010001 	b	10 <SRAM_CARD_GLOBAL_DATA_SIZE>
+   c:	001d0c1f 	0x1d0c1f
+  10:	00000018 	mult	zero,zero
+  14:	00000000 	nop
+  18:	bfc3206d 	cache	0x3,8301(s8)
+  1c:	00000023 	negu	zero,zero
+  20:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  24:	7f111108 	0x7f111108
+  28:	00110d42 	srl	at,s1,0x15
+  2c:	00000018 	mult	zero,zero
+  30:	00000000 	nop
+  34:	bfc32095 	cache	0x3,8341(s8)
+  38:	0000002b 	sltu	zero,zero,zero
+  3c:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  40:	7f111108 	0x7f111108
+  44:	00110d42 	srl	at,s1,0x15
+  48:	00000018 	mult	zero,zero
+  4c:	00000000 	nop
+  50:	bfc320c9 	cache	0x3,8393(s8)
+  54:	0000003b 	0x3b
+  58:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  5c:	7f111110 	0x7f111110
+  60:	00110d42 	srl	at,s1,0x15
+  64:	00000020 	add	zero,zero,zero
+  68:	00000000 	nop
+  6c:	bfc3210d 	cache	0x3,8461(s8)
+  70:	00000087 	0x87
+  74:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  78:	11180e08 	beq	t0,t8,389c <SROM_TWI_ADDR_MDY+0x49c>
+  7c:	1f117e11 	0x1f117e11
+  80:	110c427f 	beq	t0,t4,10a80 <SRAM_RAM0_RESEVER1_ADDR+0x80>
+  84:	00000008 	jr	zero
+  88:	00000020 	add	zero,zero,zero
+  8c:	00000000 	nop
+  90:	bfc321b5 	cache	0x3,8629(s8)
+  94:	00000047 	0x47
+  98:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  9c:	11200e08 	beqz	t1,38c0 <SROM_TWI_ADDR_MDY+0x4c0>
+  a0:	1f117e11 	0x1f117e11
+  a4:	110c427f 	beq	t0,t4,10aa4 <SRAM_RAM0_RESEVER1_ADDR+0xa4>
+  a8:	00000010 	mfhi	zero
+  ac:	00000020 	add	zero,zero,zero
+  b0:	00000000 	nop
+  b4:	bfc32201 	cache	0x3,8705(s8)
+  b8:	00000043 	sra	zero,zero,0x1
+  bc:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  c0:	11200e08 	beqz	t1,38e4 <SROM_TWI_ADDR_MDY+0x4e4>
+  c4:	1f117e11 	0x1f117e11
+  c8:	110c427f 	beq	t0,t4,10ac8 <SRAM_RAM0_RESEVER1_ADDR+0xc8>
+  cc:	00000010 	mfhi	zero
+  d0:	00000024 	and	zero,zero,zero
+  d4:	00000000 	nop
+  d8:	bfc32249 	cache	0x3,8777(s8)
+  dc:	000000bb 	0xbb
+  e0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+  e4:	0e0c0e08 	jal	8303820 <BANK_SPACE+0x82c3820>
+  e8:	7d101138 	0x7d101138
+  ec:	117e1111 	beq	t3,s8,4534 <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x534>
+  f0:	0c427f1f 	jal	109fc7c <BANK_SPACE+0x105fc7c>
+  f4:	00002811 	0x2811
+  f8:	00000020 	add	zero,zero,zero
+  fc:	00000000 	nop
+ 100:	bfc32001 	cache	0x3,8193(s8)
+ 104:	0000005f 	0x5f
+ 108:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 10c:	11200e08 	beqz	t1,3930 <SROM_STUB_ADDR+0x30>
+ 110:	1f117e11 	0x1f117e11
+ 114:	110c427f 	beq	t0,t4,10b14 <SRAM_RAM0_RESEVER1_ADDR+0x114>
+ 118:	00000010 	mfhi	zero
+ 11c:	0000000c 	syscall
+ 120:	ffffffff 	sdc3	$31,-1(ra)
+ 124:	04010001 	b	12c <SRAM_DSP_PRINT_BUFFER_SIZE+0x1c>
+ 128:	001d0c1f 	0x1d0c1f
+ 12c:	00000018 	mult	zero,zero
+ 130:	0000011c 	0x11c
+ 134:	bfc32321 	cache	0x3,8993(s8)
+ 138:	0000002f 	0x2f
+ 13c:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 140:	7f111108 	0x7f111108
+ 144:	00110d42 	srl	at,s1,0x15
+ 148:	00000020 	add	zero,zero,zero
+ 14c:	0000011c 	0x11c
+ 150:	bfc32359 	cache	0x3,9049(s8)
+ 154:	000000a7 	0xa7
+ 158:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 15c:	11200e08 	beqz	t1,3980 <SROM_STUB_ADDR+0x80>
+ 160:	1f117e11 	0x1f117e11
+ 164:	110c427f 	beq	t0,t4,10b64 <SRAM_RAM0_RESEVER1_ADDR+0x164>
+ 168:	00000010 	mfhi	zero
+ 16c:	00000020 	add	zero,zero,zero
+ 170:	0000011c 	0x11c
+ 174:	bfc32415 	cache	0x3,9237(s8)
+ 178:	000000c3 	sra	zero,zero,0x3
+ 17c:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 180:	11180e08 	beq	t0,t8,39a4 <SROM_STUB_ADDR+0xa4>
+ 184:	1f117e11 	0x1f117e11
+ 188:	110c427f 	beq	t0,t4,10b88 <SRAM_RAM0_RESEVER1_ADDR+0x188>
+ 18c:	00000008 	jr	zero
+ 190:	00000018 	mult	zero,zero
+ 194:	0000011c 	0x11c
+ 198:	bfc32509 	cache	0x3,9481(s8)
+ 19c:	0000000f 	sync
+ 1a0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 1a4:	7f111108 	0x7f111108
+ 1a8:	00110d42 	srl	at,s1,0x15
+ 1ac:	00000018 	mult	zero,zero
+ 1b0:	0000011c 	0x11c
+ 1b4:	bfc32519 	cache	0x3,9497(s8)
+ 1b8:	00000043 	sra	zero,zero,0x1
+ 1bc:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 1c0:	7f111118 	0x7f111118
+ 1c4:	00110d42 	srl	at,s1,0x15
+ 1c8:	0000000c 	syscall
+ 1cc:	ffffffff 	sdc3	$31,-1(ra)
+ 1d0:	04010001 	b	1d8 <SRAM_DSP_PRINT_BUFFER_SIZE+0xc8>
+ 1d4:	001d0c1f 	0x1d0c1f
+ 1d8:	00000018 	mult	zero,zero
+ 1dc:	000001c8 	0x1c8
+ 1e0:	00000000 	nop
+ 1e4:	0000001f 	0x1f
+ 1e8:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 1ec:	7f111108 	0x7f111108
+ 1f0:	00110d42 	srl	at,s1,0x15
+ 1f4:	00000018 	mult	zero,zero
+ 1f8:	000001c8 	0x1c8
+ 1fc:	00000000 	nop
+ 200:	00000011 	mthi	zero
+ 204:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 208:	7f111108 	0x7f111108
+ 20c:	00110d42 	srl	at,s1,0x15
+ 210:	0000000c 	syscall
+ 214:	ffffffff 	sdc3	$31,-1(ra)
+ 218:	04010001 	b	220 <SRAM_AP_BANK_MANAGER_SIZE+0x20>
+ 21c:	001d0c1f 	0x1d0c1f
+ 220:	00000020 	add	zero,zero,zero
+ 224:	00000210 	0x210
+ 228:	bfc3255d 	cache	0x3,9565(s8)
+ 22c:	0000005b 	0x5b
+ 230:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 234:	11180e08 	beq	t0,t8,3a58 <SROM_STUB_ADDR+0x158>
+ 238:	1f117e11 	0x1f117e11
+ 23c:	110c427f 	beq	t0,t4,10c3c <SRAM_AP_FRONT_BASAL_RCODE_ADDR+0x3c>
+ 240:	00000008 	jr	zero
+ 244:	00000020 	add	zero,zero,zero
+ 248:	00000210 	0x210
+ 24c:	bfc325c1 	cache	0x3,9665(s8)
+ 250:	0000009b 	0x9b
+ 254:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 258:	11200e08 	beqz	t1,3a7c <SROM_STUB_ADDR+0x17c>
+ 25c:	1f117e11 	0x1f117e11
+ 260:	110c427f 	beq	t0,t4,10c60 <SRAM_AP_FRONT_BASAL_RCODE_ADDR+0x60>
+ 264:	00000010 	mfhi	zero
+ 268:	00000020 	add	zero,zero,zero
+ 26c:	00000210 	0x210
+ 270:	bfc32671 	cache	0x3,9841(s8)
+ 274:	0000007b 	0x7b
+ 278:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 27c:	11180e08 	beq	t0,t8,3aa0 <SROM_STUB_ADDR+0x1a0>
+ 280:	1f117e11 	0x1f117e11
+ 284:	110c427f 	beq	t0,t4,10c84 <SRAM_AP_FRONT_BASAL_RCODE_ADDR+0x84>
+ 288:	00000008 	jr	zero
+ 28c:	00000020 	add	zero,zero,zero
+ 290:	00000210 	0x210
+ 294:	bfc32705 	cache	0x3,9989(s8)
+ 298:	0000001b 	divu	zero,zero,zero
+ 29c:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 2a0:	11180e08 	beq	t0,t8,3ac4 <SROM_STUB_ADDR+0x1c4>
+ 2a4:	1f117e11 	0x1f117e11
+ 2a8:	110c427f 	beq	t0,t4,10ca8 <SRAM_AP_FRONT_BASAL_RCODE_ADDR+0xa8>
+ 2ac:	00000008 	jr	zero
+ 2b0:	0000000c 	syscall
+ 2b4:	ffffffff 	sdc3	$31,-1(ra)
+ 2b8:	04010001 	b	2c0 <SRAM_AP_BANK_MANAGER_SIZE+0xc0>
+ 2bc:	001d0c1f 	0x1d0c1f
+ 2c0:	00000018 	mult	zero,zero
+ 2c4:	000002b0 	tge	zero,zero,0xa
+ 2c8:	bfc3278d 	cache	0x3,10125(s8)
+ 2cc:	00000023 	negu	zero,zero
+ 2d0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 2d4:	7f111108 	0x7f111108
+ 2d8:	00110d42 	srl	at,s1,0x15
+ 2dc:	00000018 	mult	zero,zero
+ 2e0:	000002b0 	tge	zero,zero,0xa
+ 2e4:	bfc327b9 	cache	0x3,10169(s8)
+ 2e8:	0000003b 	0x3b
+ 2ec:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 2f0:	7f111110 	0x7f111110
+ 2f4:	00110d42 	srl	at,s1,0x15
+ 2f8:	00000018 	mult	zero,zero
+ 2fc:	000002b0 	tge	zero,zero,0xa
+ 300:	bfc327fd 	cache	0x3,10237(s8)
+ 304:	00000043 	sra	zero,zero,0x1
+ 308:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 30c:	7f111110 	0x7f111110
+ 310:	00110d42 	srl	at,s1,0x15
+ 314:	00000018 	mult	zero,zero
+ 318:	000002b0 	tge	zero,zero,0xa
+ 31c:	bfc32841 	cache	0x3,10305(s8)
+ 320:	0000002b 	sltu	zero,zero,zero
+ 324:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 328:	7f111110 	0x7f111110
+ 32c:	00110d42 	srl	at,s1,0x15
+ 330:	00000020 	add	zero,zero,zero
+ 334:	000002b0 	tge	zero,zero,0xa
+ 338:	bfc3286d 	cache	0x3,10349(s8)
+ 33c:	0000002b 	sltu	zero,zero,zero
+ 340:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 344:	11180e08 	beq	t0,t8,3b68 <SROM_STUB_ADDR_MDY+0x68>
+ 348:	1f117e11 	0x1f117e11
+ 34c:	110c427f 	beq	t0,t4,10d4c <SRAM_AP_BANK_BACK_CONTROL_ADDR+0x4c>
+ 350:	00000008 	jr	zero
+ 354:	00000020 	add	zero,zero,zero
+ 358:	000002b0 	tge	zero,zero,0xa
+ 35c:	bfc328a5 	cache	0x3,10405(s8)
+ 360:	00000093 	0x93
+ 364:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 368:	11200e08 	beqz	t1,3b8c <SROM_STUB_ADDR_MDY+0x8c>
+ 36c:	1f117e11 	0x1f117e11
+ 370:	110c427f 	beq	t0,t4,10d70 <SRAM_AP_BANK_BACK_CONTROL_ADDR+0x70>
+ 374:	00000010 	mfhi	zero
+ 378:	0000000c 	syscall
+ 37c:	ffffffff 	sdc3	$31,-1(ra)
+ 380:	04010001 	b	388 <SRAM_FS_DATA_SIZE+0x88>
+ 384:	001d0c1f 	0x1d0c1f
+ 388:	00000018 	mult	zero,zero
+ 38c:	00000378 	0x378
+ 390:	bfc32951 	cache	0x3,10577(s8)
+ 394:	00000063 	0x63
+ 398:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 39c:	7f111110 	0x7f111110
+ 3a0:	00110d42 	srl	at,s1,0x15
+ 3a4:	00000018 	mult	zero,zero
+ 3a8:	00000378 	0x378
+ 3ac:	bfc329c5 	cache	0x3,10693(s8)
+ 3b0:	00000063 	0x63
+ 3b4:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 3b8:	7f111110 	0x7f111110
+ 3bc:	00110d42 	srl	at,s1,0x15
+ 3c0:	00000018 	mult	zero,zero
+ 3c4:	00000378 	0x378
+ 3c8:	bfc32a39 	cache	0x3,10809(s8)
+ 3cc:	0000001b 	divu	zero,zero,zero
+ 3d0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 3d4:	7f111108 	0x7f111108
+ 3d8:	00110d42 	srl	at,s1,0x15
+ 3dc:	00000018 	mult	zero,zero
+ 3e0:	00000378 	0x378
+ 3e4:	bfc32a61 	cache	0x3,10849(s8)
+ 3e8:	0000001b 	divu	zero,zero,zero
+ 3ec:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 3f0:	7f111108 	0x7f111108
+ 3f4:	00110d42 	srl	at,s1,0x15
+ 3f8:	00000018 	mult	zero,zero
+ 3fc:	00000378 	0x378
+ 400:	bfc32a89 	cache	0x3,10889(s8)
+ 404:	0000004f 	0x4f
+ 408:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 40c:	7f111110 	0x7f111110
+ 410:	00110d42 	srl	at,s1,0x15
+ 414:	0000000c 	syscall
+ 418:	ffffffff 	sdc3	$31,-1(ra)
+ 41c:	04010001 	b	424 <SRAM_BANK_A_SIZE+0x24>
+ 420:	001d0c1f 	0x1d0c1f
+ 424:	00000020 	add	zero,zero,zero
+ 428:	00000414 	0x414
+ 42c:	00000000 	nop
+ 430:	0000006f 	0x6f
+ 434:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 438:	11180e08 	beq	t0,t8,3c5c <SROM_STUB_ADDR_MDY+0x15c>
+ 43c:	1f117e11 	0x1f117e11
+ 440:	110c427f 	beq	t0,t4,10e40 <SRAM_AP_BANK_BACK_CONTROL_ADDR+0x140>
+ 444:	00000008 	jr	zero
+ 448:	00000018 	mult	zero,zero
+ 44c:	00000414 	0x414
+ 450:	00000000 	nop
+ 454:	00000017 	0x17
+ 458:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 45c:	7f111108 	0x7f111108
+ 460:	00110d42 	srl	at,s1,0x15
+ 464:	00000018 	mult	zero,zero
+ 468:	00000414 	0x414
+ 46c:	00000000 	nop
+ 470:	00000017 	0x17
+ 474:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 478:	7f111108 	0x7f111108
+ 47c:	00110d42 	srl	at,s1,0x15
+ 480:	0000000c 	syscall
+ 484:	ffffffff 	sdc3	$31,-1(ra)
+ 488:	04010001 	b	490 <SRAM_BANK_A_SIZE+0x90>
+ 48c:	001d0c1f 	0x1d0c1f
+ 490:	0000001c 	0x1c
+ 494:	00000480 	sll	zero,zero,0x12
+ 498:	bfc32ae5 	cache	0x3,10981(s8)
+ 49c:	00000023 	negu	zero,zero
+ 4a0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 4a4:	11180e08 	beq	t0,t8,3cc8 <SROM_STUB_ADDR_MDY+0x1c8>
+ 4a8:	1f117e10 	0x1f117e10
+ 4ac:	0000007f 	0x7f
+ 4b0:	00000014 	0x14
+ 4b4:	00000480 	sll	zero,zero,0x12
+ 4b8:	bfc32b15 	cache	0x3,11029(s8)
+ 4bc:	00000027 	nor	zero,zero,zero
+ 4c0:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 4c4:	7f1f1118 	0x7f1f1118
+ 4c8:	00000020 	add	zero,zero,zero
+ 4cc:	00000480 	sll	zero,zero,0x12
+ 4d0:	bfc32b45 	cache	0x3,11077(s8)
+ 4d4:	000000ab 	0xab
+ 4d8:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 4dc:	0e0c0e08 	jal	8303820 <BANK_SPACE+0x82c3820>
+ 4e0:	7d101138 	0x7d101138
+ 4e4:	117e1111 	beq	t3,s8,492c <SRAM_AP_USB_DEVICE_RCODE_SIZE+0x92c>
+ 4e8:	00007f1f 	0x7f1f
+ 4ec:	0000001c 	0x1c
+ 4f0:	00000480 	sll	zero,zero,0x12
+ 4f4:	bfc32c05 	cache	0x3,11269(s8)
+ 4f8:	00000093 	0x93
+ 4fc:	0e040e42 	jal	8103908 <BANK_SPACE+0x80c3908>
+ 500:	11200e08 	beqz	t1,3d24 <SROM_STUB_ADDR_MDY+0x224>
+ 504:	1f117e10 	0x1f117e10
+ 508:	0000007f 	0x7f
+Disassembly of section .debug_pubnames:
+
+00000000 <.debug_pubnames>:
+   0:	000000d0 	0xd0
+   4:	00000002 	srl	zero,zero,0x0
+   8:	04d80000 	0x4d80000
+   c:	02180000 	0x2180000
+  10:	6c660000 	0x6c660000
+  14:	5f687375 	0x5f687375
+  18:	00637472 	tlt	v1,v1,0x1d1
+  1c:	00000231 	tgeu	zero,zero,0x8
+  20:	5f75636d 	0x5f75636d
+  24:	65746e65 	0x65746e65
+  28:	6c735f72 	0x6c735f72
+  2c:	5f706565 	0x5f706565
+  30:	53003453 	beqzl	t8,d180 <SROM_FS_ADDR+0x1180>
+  34:	69000002 	0x69000002
+  38:	73755f73 	0x73755f73
+  3c:	61635f62 	0x61635f62
+  40:	5f656c62 	0x5f656c62
+  44:	8c006e69 	lw	zero,28265(zero)
+  48:	64000002 	0x64000002
+  4c:	5f707369 	0x5f707369
+  50:	72617473 	0x72617473
+  54:	676e6974 	0x676e6974
+  58:	616f625f 	0x616f625f
+  5c:	635f6472 	0x635f6472
+  60:	69666e6f 	0x69666e6f
+  64:	02c90067 	0x2c90067
+  68:	69640000 	0x69640000
+  6c:	735f7073 	0x735f7073
+  70:	74726174 	jalx	1c985d0 <BANK_SPACE+0x1c585d0>
+  74:	5f676e69 	0x5f676e69
+  78:	75666461 	jalx	5999184 <BANK_SPACE+0x5959184>
+  7c:	6568635f 	0x6568635f
+  80:	1b006b63 	blez	t8,1ae10 <SRAM_OS_HEAP_ADDR+0x190>
+  84:	64000003 	0x64000003
+  88:	5f707369 	0x5f707369
+  8c:	72617473 	0x72617473
+  90:	676e6974 	0x676e6974
+  94:	776f6c5f 	jalx	dbdb17c <BANK_SPACE+0xdb9b17c>
+  98:	776f705f 	jalx	dbdc17c <BANK_SPACE+0xdb9c17c>
+  9c:	88007265 	lwl	zero,29285(zero)
+  a0:	64000003 	0x64000003
+  a4:	5f707369 	0x5f707369
+  a8:	72617473 	0x72617473
+  ac:	676e6974 	0x676e6974
+  b0:	6f68735f 	0x6f68735f
+  b4:	65775f77 	0x65775f77
+  b8:	6d6f636c 	0x6d6f636c
+  bc:	04340065 	0x4340065
+  c0:	69640000 	0x69640000
+  c4:	735f7073 	0x735f7073
+  c8:	74726174 	jalx	1c985d0 <BANK_SPACE+0x1c585d0>
+  cc:	00676e69 	0x676e69
+  d0:	00000000 	nop
+  d4:	00000074 	teq	zero,zero,0x1
+  d8:	04d80002 	0x4d80002
+  dc:	040b0000 	tltiu	zero,0
+  e0:	01f50000 	0x1f50000
+  e4:	65730000 	0x65730000
+  e8:	6f635f74 	0x6f635f74
+  ec:	6172746e 	0x6172746e
+  f0:	4b007473 	c2	0x1007473
+  f4:	73000002 	mul	zero,t8,zero
+  f8:	646e6174 	0x646e6174
+  fc:	735f7962 	0x735f7962
+ 100:	65657263 	0x65657263
+ 104:	02bd006e 	0x2bd006e
+ 108:	61620000 	0x61620000
+ 10c:	696c6b63 	0x696c6b63
+ 110:	5f746867 	0x5f746867
+ 114:	6f5f6e6f 	0x6f5f6e6f
+ 118:	0e006666 	jal	8019998 <BANK_SPACE+0x7fd9998>
+ 11c:	75000003 	jalx	400000c <BANK_SPACE+0x3fc000c>
+ 120:	74616470 	jalx	18591c0 <BANK_SPACE+0x18191c0>
+ 124:	63735f65 	0x63735f65
+ 128:	6e656572 	0x6e656572
+ 12c:	00036a00 	sll	t5,v1,0x8
+ 130:	766e6900 	jalx	9b9a400 <BANK_SPACE+0x9b5a400>
+ 134:	5f747265 	0x5f747265
+ 138:	66667562 	0x66667562
+ 13c:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+ 140:	72745f61 	0x72745f61
+ 144:	00736e61 	0x736e61
+ 148:	00000000 	nop
+ 14c:	00000028 	0x28
+ 150:	08e30002 	j	38c0008 <BANK_SPACE+0x3880008>
+ 154:	02490000 	0x2490000
+ 158:	017b0000 	0x17b0000
+ 15c:	636c0000 	0x636c0000
+ 160:	6e695f64 	0x6e695f64
+ 164:	cc007469 	pref	0x0,29801(zero)
+ 168:	6c000001 	0x6c000001
+ 16c:	655f6463 	0x655f6463
+ 170:	00746978 	0x746978
+ 174:	00000000 	nop
+ 178:	00000067 	0x67
+ 17c:	0b2c0002 	j	cb00008 <BANK_SPACE+0xcac0008>
+ 180:	022a0000 	0x22a0000
+ 184:	016f0000 	0x16f0000
+ 188:	636c0000 	0x636c0000
+ 18c:	65725f64 	0x65725f64
+ 190:	00746573 	tltu	v1,s4,0x195
+ 194:	00000188 	0x188
+ 198:	5f64636c 	0x5f64636c
+ 19c:	5f667562 	0x5f667562
+ 1a0:	74696e69 	jalx	1a5b9a4 <BANK_SPACE+0x1a1b9a4>
+ 1a4:	0001b500 	sll	s6,at,0x14
+ 1a8:	64636c00 	0x64636c00
+ 1ac:	6f6c635f 	0x6f6c635f
+ 1b0:	695f6b63 	0x695f6b63
+ 1b4:	0074696e 	0x74696e
+ 1b8:	000001d3 	0x1d3
+ 1bc:	5f64636c 	0x5f64636c
+ 1c0:	64726168 	0x64726168
+ 1c4:	65726177 	0x65726177
+ 1c8:	696e695f 	0x696e695f
+ 1cc:	02090074 	teq	s0,t1,0x1
+ 1d0:	636c0000 	0x636c0000
+ 1d4:	6e695f64 	0x6e695f64
+ 1d8:	625f7469 	0x625f7469
+ 1dc:	00006675 	0x6675
+ 1e0:	7f000000 	0x7f000000
+ 1e4:	02000000 	0x2000000
+ 1e8:	000d5600 	sll	t2,t5,0x18
+ 1ec:	00033c00 	sll	a3,v1,0x10
+ 1f0:	00018700 	sll	s0,at,0x1c
+ 1f4:	69727700 	0x69727700
+ 1f8:	635f6574 	0x635f6574
+ 1fc:	616d6d6f 	0x616d6d6f
+ 200:	b700646e 	0xb700646e
+ 204:	77000001 	jalx	c000004 <BANK_SPACE+0xbfc0004>
+ 208:	65746972 	0x65746972
+ 20c:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+ 210:	02030061 	0x2030061
+ 214:	65770000 	0x65770000
+ 218:	6d6f636c 	0x6d6f636c
+ 21c:	65645f65 	0x65645f65
+ 220:	5f79616c 	0x5f79616c
+ 224:	5100736d 	beqzl	t0,1cfdc <SRAM_OS_TASK_STACK_ADDR+0x13dc>
+ 228:	77000002 	jalx	c000008 <BANK_SPACE+0xbfc0008>
+ 22c:	6f636c65 	0x6f636c65
+ 230:	645f656d 	0x645f656d
+ 234:	79616c65 	0x79616c65
+ 238:	0073755f 	0x73755f
+ 23c:	00000293 	0x293
+ 240:	66667562 	0x66667562
+ 244:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+ 248:	72745f61 	0x72745f61
+ 24c:	00736e61 	0x736e61
+ 250:	000002e4 	0x2e4
+ 254:	5f746567 	0x5f746567
+ 258:	66667562 	0x66667562
+ 25c:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+ 260:	00000061 	0x61
+ 264:	006d0000 	0x6d0000
+ 268:	00020000 	sll	zero,v0,0x0
+ 26c:	00001092 	0x1092
+ 270:	000002ce 	0x2ce
+ 274:	000001aa 	0x1aa
+ 278:	5f746573 	0x5f746573
+ 27c:	5f70666d 	0x5f70666d
+ 280:	655f6f74 	0x655f6f74
+ 284:	0066696d 	0x66696d
+ 288:	000001ea 	0x1ea
+ 28c:	5f746573 	0x5f746573
+ 290:	5f70666d 	0x5f70666d
+ 294:	6c5f6f74 	0x6c5f6f74
+ 298:	29006463 	slti	zero,t0,25699
+ 29c:	73000002 	mul	zero,t8,zero
+ 2a0:	65726f74 	0x65726f74
+ 2a4:	5f65635f 	0x5f65635f
+ 2a8:	006f6967 	0x6f6967
+ 2ac:	00000245 	0x245
+ 2b0:	74736572 	jalx	1cd95c8 <BANK_SPACE+0x1c995c8>
+ 2b4:	5f65726f 	0x5f65726f
+ 2b8:	675f6563 	0x675f6563
+ 2bc:	63006f69 	0x63006f69
+ 2c0:	63000002 	0x63000002
+ 2c4:	72746e6f 	0x72746e6f
+ 2c8:	656c6c6f 	0x656c6c6f
+ 2cc:	6e695f72 	0x6e695f72
+ 2d0:	00007469 	0x7469
+ 2d4:	4b000000 	c2	0x1000000
+ 2d8:	02000000 	0x2000000
+ 2dc:	00136000 	sll	t4,s3,0x0
+ 2e0:	0002a500 	sll	s4,v0,0x14
+ 2e4:	00019e00 	sll	s3,at,0x18
+ 2e8:	616d6400 	0x616d6400
+ 2ec:	6174735f 	0x6174735f
+ 2f0:	745f7472 	jalx	17dd1c8 <BANK_SPACE+0x179d1c8>
+ 2f4:	736e6172 	0x736e6172
+ 2f8:	0001f800 	sll	ra,at,0x0
+ 2fc:	616d6400 	0x616d6400
+ 300:	7465735f 	jalx	195cd7c <BANK_SPACE+0x191cd7c>
+ 304:	756f635f 	jalx	5bd8d7c <BANK_SPACE+0x5b98d7c>
+ 308:	7265746e 	0x7265746e
+ 30c:	00025300 	sll	t2,v0,0xc
+ 310:	616d6400 	0x616d6400
+ 314:	7465735f 	jalx	195cd7c <BANK_SPACE+0x191cd7c>
+ 318:	6372735f 	0x6372735f
+ 31c:	6464615f 	0x6464615f
+ 320:	00000072 	tlt	zero,zero,0x1
+ 324:	007d0000 	0x7d0000
+ 328:	00020000 	sll	zero,v0,0x0
+ 32c:	00001605 	0x1605
+ 330:	000003e2 	0x3e2
+ 334:	00000331 	tgeu	zero,zero,0xc
+ 338:	5f64636c 	0x5f64636c
+ 33c:	77617264 	jalx	d85c990 <BANK_SPACE+0xd81c990>
+ 340:	646f6d5f 	0x646f6d5f
+ 344:	034d0065 	0x34d0065
+ 348:	65720000 	0x65720000
+ 34c:	5f746e65 	0x5f746e65
+ 350:	67616c66 	0x67616c66
+ 354:	00036600 	sll	t4,v1,0x18
+ 358:	71726900 	0x71726900
+ 35c:	6174735f 	0x6174735f
+ 360:	00737574 	teq	v1,s3,0x1d5
+ 364:	0000037f 	0x37f
+ 368:	746e6f63 	jalx	1b9bd8c <BANK_SPACE+0x1b5bd8c>
+ 36c:	74736172 	jalx	1cd85c8 <BANK_SPACE+0x1c985c8>
+ 370:	6172675f 	0x6172675f
+ 374:	9c006564 	0x9c006564
+ 378:	64000003 	0x64000003
+ 37c:	635f616d 	0x635f616d
+ 380:	006e6168 	0x6e6168
+ 384:	000003ae 	0x3ae
+ 388:	5f636970 	0x5f636970
+ 38c:	65646f6d 	0x65646f6d
+ 390:	0003c500 	sll	t8,v1,0x14
+ 394:	64636c00 	0x64636c00
+ 398:	6972645f 	0x6972645f
+ 39c:	5f726576 	0x5f726576
+ 3a0:	0000706f 	0x706f
+ 3a4:	4b000000 	c2	0x1000000
+ 3a8:	02000000 	0x2000000
+ 3ac:	0019e700 	sll	gp,t9,0x1c
+ 3b0:	00023c00 	sll	a3,v0,0x10
+ 3b4:	0000fd00 	sll	ra,zero,0x14
+ 3b8:	6f747300 	0x6f747300
+ 3bc:	635f6572 	0x635f6572
+ 3c0:	01100065 	0x1100065
+ 3c4:	65720000 	0x65720000
+ 3c8:	726f7473 	0x726f7473
+ 3cc:	65635f65 	0x65635f65
+ 3d0:	00012300 	sll	a0,at,0xc
+ 3d4:	74657300 	jalx	195cc00 <BANK_SPACE+0x191cc00>
+ 3d8:	6e69775f 	0x6e69775f
+ 3dc:	00776f64 	0x776f64
+ 3e0:	000001c7 	0x1c7
+ 3e4:	5f746573 	0x5f746573
+ 3e8:	77617264 	jalx	d85c990 <BANK_SPACE+0xd81c990>
+ 3ec:	646f6d5f 	0x646f6d5f
+ 3f0:	00000065 	0x65
+	...
+Disassembly of section .debug_aranges:
+
+00000000 <.debug_aranges>:
+   0:	00000024 	and	zero,zero,zero
+   4:	00000002 	srl	zero,zero,0x0
+   8:	00040000 	sll	zero,a0,0x0
+   c:	00000000 	nop
+  10:	bfc3206c 	cache	0x3,8300(s8)
+  14:	000002b4 	teq	zero,zero,0xa
+  18:	bfc32001 	cache	0x3,8193(s8)
+  1c:	0000005f 	0x5f
+	...
+  28:	0000001c 	0x1c
+  2c:	04d80002 	0x4d80002
+  30:	00040000 	sll	zero,a0,0x0
+  34:	00000000 	nop
+  38:	bfc32320 	cache	0x3,8992(s8)
+  3c:	0000023c 	0x23c
+	...
+  48:	0000001c 	0x1c
+  4c:	08e30002 	j	38c0008 <BANK_SPACE+0x3880008>
+  50:	00040000 	sll	zero,a0,0x0
+	...
+  5c:	0000003a 	0x3a
+	...
+  68:	0000001c 	0x1c
+  6c:	0b2c0002 	j	cb00008 <BANK_SPACE+0xcac0008>
+  70:	00040000 	sll	zero,a0,0x0
+  74:	00000000 	nop
+  78:	bfc3255c 	cache	0x3,9564(s8)
+  7c:	000001c4 	0x1c4
+	...
+  88:	0000001c 	0x1c
+  8c:	0d560002 	jal	5580008 <BANK_SPACE+0x5540008>
+  90:	00040000 	sll	zero,a0,0x0
+  94:	00000000 	nop
+  98:	bfc3278c 	cache	0x3,10124(s8)
+  9c:	000001c4 	0x1c4
+	...
+  a8:	0000001c 	0x1c
+  ac:	10920002 	beq	a0,s2,b8 <SRAM_CARD_DATA_SIZE+0x38>
+  b0:	00040000 	sll	zero,a0,0x0
+  b4:	00000000 	nop
+  b8:	bfc32950 	cache	0x3,10576(s8)
+  bc:	00000194 	0x194
+	...
+  c8:	0000001c 	0x1c
+  cc:	13600002 	beqz	k1,d8 <SRAM_CARD_DATA_SIZE+0x58>
+  d0:	00040000 	sll	zero,a0,0x0
+	...
+  dc:	000000c4 	0xc4
+	...
+  e8:	0000001c 	0x1c
+  ec:	19e70002 	0x19e70002
+  f0:	00040000 	sll	zero,a0,0x0
+  f4:	00000000 	nop
+  f8:	bfc32ae4 	cache	0x3,10980(s8)
+  fc:	000001cc 	syscall	0x7
+	...
+ 108:	0000001c 	0x1c
+ 10c:	1c230002 	0x1c230002
+ 110:	00040000 	sll	zero,a0,0x0
+ 114:	00000000 	nop
+ 118:	bfc32cb0 	cache	0x3,11440(s8)
+ 11c:	00000004 	sllv	zero,zero,zero
+	...
+Disassembly of section .debug_str:
+
+00000000 <.debug_str>:
+   0:	72616863 	0x72616863
+   4:	6d5f6567 	0x6d5f6567
+   8:	0065646f 	0x65646f
+   c:	676e6f6c 	0x676e6f6c
+  10:	736e7520 	0x736e7520
+  14:	656e6769 	0x656e6769
+  18:	6e692064 	0x6e692064
+  1c:	64610074 	0x64610074
+  20:	6c5f7566 	0x6c5f7566
+  24:	636e7561 	0x636e7561
+  28:	756e0068 	jalx	5b801a0 <BANK_SPACE+0x5b401a0>
+  2c:	00326c6c 	0x326c6c
+  30:	6c6c756e 	0x6c6c756e
+  34:	6f6c0033 	0x6f6c0033
+  38:	7520676e 	jalx	4819db8 <BANK_SPACE+0x47d9db8>
+  3c:	6769736e 	0x6769736e
+  40:	2064656e 	addi	a0,v1,25966
+  44:	00746e69 	0x746e69
+  48:	676e6f6c 	0x676e6f6c
+  4c:	736e7520 	0x736e7520
+  50:	656e6769 	0x656e6769
+  54:	6e692064 	0x6e692064
+  58:	6f6c0074 	0x6f6c0074
+  5c:	7520676e 	jalx	4819db8 <BANK_SPACE+0x47d9db8>
+  60:	6769736e 	0x6769736e
+  64:	2064656e 	addi	a0,v1,25966
+  68:	00746e69 	0x746e69
+  6c:	5f786970 	0x5f786970
+  70:	00746e63 	0x746e63
+  74:	676e6f6c 	0x676e6f6c
+  78:	736e7520 	0x736e7520
+  7c:	656e6769 	0x656e6769
+  80:	6e692064 	0x6e692064
+  84:	666d0074 	0x666d0074
+  88:	74635f74 	jalx	18d7dd0 <BANK_SPACE+0x1897dd0>
+  8c:	645f316c 	0x645f316c
+  90:	00617461 	0x617461
+  94:	676e6f6c 	0x676e6f6c
+  98:	736e7520 	0x736e7520
+  9c:	656e6769 	0x656e6769
+  a0:	6e692064 	0x6e692064
+  a4:	666d0074 	0x666d0074
+  a8:	74635f74 	jalx	18d7dd0 <BANK_SPACE+0x1897dd0>
+  ac:	645f306c 	0x645f306c
+  b0:	00617461 	0x617461
+  b4:	676e6f6c 	0x676e6f6c
+  b8:	736e7520 	0x736e7520
+  bc:	656e6769 	0x656e6769
+  c0:	6e692064 	0x6e692064
+  c4:	6f6c0074 	0x6f6c0074
+  c8:	7520676e 	jalx	4819db8 <BANK_SPACE+0x47d9db8>
+  cc:	6769736e 	0x6769736e
+  d0:	2064656e 	addi	a0,v1,25966
+  d4:	00746e69 	0x746e69
+  d8:	5f616d64 	0x5f616d64
+  dc:	6e616863 	0x6e616863
+  e0:	64697700 	0x64697700
+  e4:	73006874 	0x73006874
+  e8:	645f7465 	0x645f7465
+  ec:	5f776172 	0x5f776172
+  f0:	65646f6d 	0x65646f6d
+  f4:	74657300 	jalx	195cc00 <BANK_SPACE+0x191cc00>
+  f8:	6e69775f 	0x6e69775f
+  fc:	00776f64 	0x776f64
+ 100:	69736e75 	0x69736e75
+ 104:	64656e67 	0x64656e67
+ 108:	61686320 	0x61686320
+ 10c:	5f780072 	0x5f780072
+ 110:	72617473 	0x72617473
+ 114:	69750074 	0x69750074
+ 118:	0038746e 	0x38746e
+ 11c:	6e655f79 	0x6e655f79
+ 120:	5f780064 	0x5f780064
+ 124:	00646e65 	0x646e65
+ 128:	62756f64 	0x62756f64
+ 12c:	7700656c 	jalx	c0195b0 <BANK_SPACE+0xbfd95b0>
+ 130:	725f6e69 	0x725f6e69
+ 134:	6f696765 	0x6f696765
+ 138:	4e49006e 	c3	0x49006e
+ 13c:	00553854 	0x553854
+ 140:	676e6f6c 	0x676e6f6c
+ 144:	6e6f6c20 	0x6e6f6c20
+ 148:	6e692067 	0x6e692067
+ 14c:	5f790074 	0x5f790074
+ 150:	72617473 	0x72617473
+ 154:	756e0074 	jalx	5b801d0 <BANK_SPACE+0x5b401d0>
+ 158:	00326c6c 	0x326c6c
+ 15c:	6c6c756e 	0x6c6c756e
+ 160:	632f0033 	0x632f0033
+ 164:	72646779 	0x72646779
+ 168:	2f657669 	sltiu	a1,k1,30313
+ 16c:	6f532f66 	0x6f532f66
+ 170:	65737275 	0x65737275
+ 174:	646f435f 	0x646f435f
+ 178:	31352f65 	andi	s5,t1,0x2f65
+ 17c:	4d2f3631 	0x4d2f3631
+ 180:	322d3350 	andi	t5,s1,0x3350
+ 184:	2f373631 	sltiu	s7,t9,13873
+ 188:	31325355 	andi	s2,t1,0x5355
+ 18c:	632f4136 	0x632f4136
+ 190:	2f657361 	sltiu	a1,k1,29537
+ 194:	2f767264 	sltiu	s6,k1,29284
+ 198:	636c6577 	0x636c6577
+ 19c:	00656d6f 	0x656d6f
+ 1a0:	6e656572 	0x6e656572
+ 1a4:	6c665f74 	0x6c665f74
+ 1a8:	72006761 	0x72006761
+ 1ac:	6f696765 	0x6f696765
+ 1b0:	00745f6e 	0x745f6e
+ 1b4:	5f64636c 	0x5f64636c
+ 1b8:	77617264 	jalx	d85c990 <BANK_SPACE+0xd81c990>
+ 1bc:	646f6d5f 	0x646f6d5f
+ 1c0:	6f6c0065 	0x6f6c0065
+ 1c4:	6c20676e 	0x6c20676e
+ 1c8:	20676e6f 	addi	a3,v1,28271
+ 1cc:	69736e75 	0x69736e75
+ 1d0:	64656e67 	0x64656e67
+ 1d4:	746e6920 	jalx	1b9a480 <BANK_SPACE+0x1b5a480>
+ 1d8:	69656800 	0x69656800
+ 1dc:	00746867 	0x746867
+ 1e0:	61746164 	0x61746164
+ 1e4:	646f6d5f 	0x646f6d5f
+ 1e8:	65720065 	0x65720065
+ 1ec:	726f7473 	0x726f7473
+ 1f0:	65635f65 	0x65635f65
+ 1f4:	63697000 	0x63697000
+ 1f8:	646f6d5f 	0x646f6d5f
+ 1fc:	68730065 	0x68730065
+ 200:	2074726f 	addi	s4,v1,29295
+ 204:	00746e69 	0x746e69
+ 208:	64726f77 	0x64726f77
+ 20c:	7461645f 	jalx	185917c <BANK_SPACE+0x181917c>
+ 210:	5f770061 	0x5f770061
+ 214:	68635f68 	0x68635f68
+ 218:	65676e61 	0x65676e61
+ 21c:	616c665f 	0x616c665f
+ 220:	2f2e0067 	sltiu	t6,t9,103
+ 224:	2e2f2e2e 	sltiu	t7,s1,11822
+ 228:	72642f2e 	0x72642f2e
+ 22c:	636c2f76 	0x636c2f76
+ 230:	4c495f64 	0x4c495f64
+ 234:	34333949 	ori	s3,at,0x3949
+ 238:	324f2f31 	andi	t7,s2,0x2f31
+ 23c:	6f63722f 	0x6f63722f
+ 240:	6c5f6564 	0x6c5f6564
+ 244:	665f6463 	0x665f6463
+ 248:	74636e75 	jalx	18db9d4 <BANK_SPACE+0x189b9d4>
+ 24c:	736e6f69 	0x736e6f69
+ 250:	632e335f 	0x632e335f
+ 254:	6f687300 	0x6f687300
+ 258:	75207472 	jalx	481d1c8 <BANK_SPACE+0x47dd1c8>
+ 25c:	6769736e 	0x6769736e
+ 260:	2064656e 	addi	a0,v1,25966
+ 264:	00746e69 	0x746e69
+ 268:	616f6c66 	0x616f6c66
+ 26c:	69750074 	0x69750074
+ 270:	3631746e 	ori	s1,s1,0x746e
+ 274:	554e4700 	bnel	t2,t6,11e78 <SRAM_RAM0_RESEVER2_ADDR+0x178>
+ 278:	33204320 	andi	zero,t9,0x4320
+ 27c:	342e342e 	ori	t6,at,0x342e
+ 280:	70696d20 	0x70696d20
+ 284:	65647373 	0x65647373
+ 288:	302e362d 	andi	t6,at,0x362d
+ 28c:	31302e36 	andi	s0,t1,0x2e36
+ 290:	3030322d 	andi	s0,at,0x322d
+ 294:	32343037 	andi	s4,s1,0x3037
+ 298:	Address 0x298 is out of bounds.
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	43434700 	c0	0x1434700
+   4:	4728203a 	c1	0x128203a
+   8:	2029554e 	addi	t1,at,21838
+   c:	2e342e33 	sltiu	s4,s1,11827
+  10:	696d2034 	0x696d2034
+  14:	64737370 	0x64737370
+  18:	2e362d65 	sltiu	s6,s1,11621
+  1c:	302e3630 	andi	t6,at,0x3630
+  20:	30322d31 	andi	s2,at,0x2d31
+  24:	34303730 	ori	s0,at,0x3730
+  28:	00003032 	tlt	zero,zero,0xc0
+  2c:	3a434347 	xori	v1,s2,0x4347
+  30:	4e472820 	c3	0x472820
+  34:	33202955 	andi	zero,t9,0x2955
+  38:	342e342e 	ori	t6,at,0x342e
+  3c:	70696d20 	0x70696d20
+  40:	65647373 	0x65647373
+  44:	302e362d 	andi	t6,at,0x362d
+  48:	31302e36 	andi	s0,t1,0x2e36
+  4c:	3030322d 	andi	s0,at,0x322d
+  50:	32343037 	andi	s4,s1,0x3037
+  54:	47000030 	c1	0x1000030
+  58:	203a4343 	addi	k0,at,17219
+  5c:	554e4728 	bnel	t2,t6,11d00 <SRAM_RAM0_RESEVER2_ADDR>
+  60:	2e332029 	sltiu	s3,s1,8233
+  64:	20342e34 	addi	s4,at,11828
+  68:	7370696d 	0x7370696d
+  6c:	2d656473 	sltiu	a1,t3,25715
+  70:	36302e36 	ori	s0,s1,0x2e36
+  74:	2d31302e 	sltiu	s1,t1,12334
+  78:	37303032 	ori	s0,t9,0x3032
+  7c:	30323430 	andi	s2,at,0x3430
+  80:	43470000 	c0	0x1470000
+  84:	28203a43 	slti	zero,at,14915
+  88:	29554e47 	slti	s5,t2,20039
+  8c:	342e3320 	ori	t6,at,0x3320
+  90:	6d20342e 	0x6d20342e
+  94:	73737069 	0x73737069
+  98:	362d6564 	ori	t5,s1,0x6564
+  9c:	2e36302e 	sltiu	s6,s1,12334
+  a0:	322d3130 	andi	t5,s1,0x3130
+  a4:	30373030 	andi	s7,at,0x3030
+  a8:	00303234 	teq	at,s0,0xc8
+  ac:	43434700 	c0	0x1434700
+  b0:	4728203a 	c1	0x128203a
+  b4:	2029554e 	addi	t1,at,21838
+  b8:	2e342e33 	sltiu	s4,s1,11827
+  bc:	696d2034 	0x696d2034
+  c0:	64737370 	0x64737370
+  c4:	2e362d65 	sltiu	s6,s1,11621
+  c8:	302e3630 	andi	t6,at,0x3630
+  cc:	30322d31 	andi	s2,at,0x2d31
+  d0:	34303730 	ori	s0,at,0x3730
+  d4:	00003032 	tlt	zero,zero,0xc0
+  d8:	3a434347 	xori	v1,s2,0x4347
+  dc:	4e472820 	c3	0x472820
+  e0:	33202955 	andi	zero,t9,0x2955
+  e4:	342e342e 	ori	t6,at,0x342e
+  e8:	70696d20 	0x70696d20
+  ec:	65647373 	0x65647373
+  f0:	302e362d 	andi	t6,at,0x362d
+  f4:	31302e36 	andi	s0,t1,0x2e36
+  f8:	3030322d 	andi	s0,at,0x322d
+  fc:	32343037 	andi	s4,s1,0x3037
+ 100:	47000030 	c1	0x1000030
+ 104:	203a4343 	addi	k0,at,17219
+ 108:	554e4728 	bnel	t2,t6,11dac <SRAM_RAM0_RESEVER2_ADDR+0xac>
+ 10c:	2e332029 	sltiu	s3,s1,8233
+ 110:	20342e34 	addi	s4,at,11828
+ 114:	7370696d 	0x7370696d
+ 118:	2d656473 	sltiu	a1,t3,25715
+ 11c:	36302e36 	ori	s0,s1,0x2e36
+ 120:	2d31302e 	sltiu	s1,t1,12334
+ 124:	37303032 	ori	s0,t9,0x3032
+ 128:	30323430 	andi	s2,at,0x3430
+ 12c:	43470000 	c0	0x1470000
+ 130:	28203a43 	slti	zero,at,14915
+ 134:	29554e47 	slti	s5,t2,20039
+ 138:	342e3320 	ori	t6,at,0x3320
+ 13c:	6d20342e 	0x6d20342e
+ 140:	73737069 	0x73737069
+ 144:	362d6564 	ori	t5,s1,0x6564
+ 148:	2e36302e 	sltiu	s6,s1,12334
+ 14c:	322d3130 	andi	t5,s1,0x3130
+ 150:	30373030 	andi	s7,at,0x3030
+ 154:	00303234 	teq	at,s0,0xc8
+ 158:	43434700 	c0	0x1434700
+ 15c:	4728203a 	c1	0x128203a
+ 160:	2029554e 	addi	t1,at,21838
+ 164:	2e342e33 	sltiu	s4,s1,11827
+ 168:	696d2034 	0x696d2034
+ 16c:	64737370 	0x64737370
+ 170:	2e362d65 	sltiu	s6,s1,11621
+ 174:	302e3630 	andi	t6,at,0x3630
+ 178:	30322d31 	andi	s2,at,0x2d31
+ 17c:	34303730 	ori	s0,at,0x3730
+ 180:	Address 0x180 is out of bounds.
+

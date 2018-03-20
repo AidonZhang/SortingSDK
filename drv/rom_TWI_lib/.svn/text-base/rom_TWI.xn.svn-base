@@ -1,0 +1,17 @@
+INPUT(link_base.xn)
+
+RAM_TEXT_ADDR = RCODE_ADDR_BASE + SRAM_TWI_ADDR_MDY;
+RAM_TEXT_SIZE = SRAM_TWI_SIZE_MDY;
+
+OUTPUT_ARCH(mips)
+
+SECTIONS
+{
+    
+    .rom RAM_TEXT_ADDR :
+    {
+        rom_TWI.o(.text .rodata)
+        . = RAM_TEXT_SIZE;
+    }
+    
+}

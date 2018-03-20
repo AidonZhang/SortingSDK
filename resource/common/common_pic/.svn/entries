@@ -1,0 +1,67 @@
+10
+
+dir
+2603
+http://srv-fw:8080/SVN2/GL5116_MP3/trunk/US216A/case/resource/common/common_pic
+http://srv-fw:8080/SVN2/GL5116_MP3
+
+
+
+2017-05-24T01:22:31.586780Z
+2384
+ACTIONS\x5cmikeyang
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b204a87-3f64-b84e-ba30-7097e8bfba96
+
+background
+dir
+
+dialog
+dir
+
+screen
+dir
+
+parameter
+dir
+
+charging
+dir
+
+delete
+dir
+
+headbar
+dir
+
+lock
+dir
+
+list
+dir
+
+volume_menu
+dir
+
+low_power
+dir
+
+usb_menu
+dir
+
+shutoff
+dir
+

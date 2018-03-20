@@ -1,0 +1,27 @@
+//蓝牙属性配置项
+VendorID=0x00;           //该值需要统一进行安排，每个方案商一个值 4bit
+CardNo=0x01;             //该值表示卡的编号，用于并行测试或量产 4bit
+ProductStartNo=0x0001;   //起始地址号
+ProductName=ACTIONS;     //用于并行测试或量产
+BurnBTAddrType=0;        //蓝牙地址修改方式 0 range 1 fixed
+ 
+//自动化测试配置项
+AudioPlayTime=2;         //蓝牙自动播放时间设定2-10s
+TransmitPairedAddr=0x005875050607; //待回连发射器蓝牙设备地址  
+
+//测试应用配置项
+TestBT=0;                //是否支持BT测试 1支持 0 不支持
+TestMic=0;               //是否支持MIC测试 1支持 0 不支持
+TestLinein=0;            //是否支持LineIn测试 1支持 0 不支持
+TestFm=0;                //是否支持Fm测试 1支持 0 不支持
+TestIR=0;                //是否支持IR测试 1 支持 0 不支持
+TestUhost=0;             //是否支持Uhost测试 1支持 0 不支持
+TestGPIO=0;              //是否支持GPIO测试 1支持 0 不支持
+TestPinA=0x7800000;      //测试的A组GPIO值
+TestPinB=0x0;            //测试的B组GPIO值
+TestKey=0;               //是否支持按键测试 1支持 0 不支持
+TestMicModule=0;         //是否支持MIC模组测试 1支持 0 不支持
+TestMicTime=10;			 //测试MIC模组的时间 秒单位
+
+//测试模式配置项
+TestMode=0;              //测试模式 0模组测试 1半成品测试 2成品测试 3半成品测试但成品测试为无卡无U盘方案

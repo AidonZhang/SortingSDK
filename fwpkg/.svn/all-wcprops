@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/SVN2/GL5116_MP3/!svn/ver/2600/trunk/US216A/case/fwpkg
+END
+spk_comp.dat
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/spk_comp.dat
+END
+build_all_mcg.bat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1109/trunk/US216A/case/fwpkg/build_all_mcg.bat
+END
+welcome.res
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/fwpkg/welcome.res
+END
+US216A_card.fw
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/US216A_card.fw
+END
+config.spc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/config.spc
+END
+buildfw_card.bat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/389/trunk/US216A/case/fwpkg/buildfw_card.bat
+END
+US216A_card.HEX
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/US216A_card.HEX
+END
+E.fw
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/SVN2/GL5116_MP3/!svn/ver/1465/trunk/US216A/case/fwpkg/E.fw
+END
+US216A_nor_disable_norboot.fw
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/447/trunk/US216A/case/fwpkg/US216A_nor_disable_norboot.fw
+END
+alarm1.wma
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/alarm1.wma
+END
+legal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/651/trunk/US216A/case/fwpkg/legal.txt
+END
+coeffi.bin
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/1666/trunk/US216A/case/fwpkg/coeffi.bin
+END
+Gen_buildfw.exe
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/Gen_buildfw.exe
+END
+E_normal.fw
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/1465/trunk/US216A/case/fwpkg/E_normal.fw
+END
+US216A_card.FWU
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/US216A_card.FWU
+END
+alarm1.mp3
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/alarm1.mp3
+END
+m_type.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/1879/trunk/US216A/case/fwpkg/m_type.txt
+END
+buildAFI_card.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/444/trunk/US216A/case/fwpkg/buildAFI_card.bat
+END
+ACT_GEN_BTATTR.CFG
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/ACT_GEN_BTATTR.CFG
+END

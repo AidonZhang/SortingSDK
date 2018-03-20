@@ -1,0 +1,2585 @@
+Archive member included because of file (symbol)
+
+./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+                              (audio_device_op_entry)
+./../../../psp_rel/lib/api.a(key_op_entry.o)
+                              (key_op_entry)
+./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+                              (lcd_op_entry)
+./../../../psp_rel/lib/api.a(libc_op_entry.o)
+                              ./obj/main_setting.o (libc_op_entry)
+./../../../psp_rel/lib/api.a(sys_op_entry.o)
+                              ./../../lib/app_timer_rcode.o (sys_op_entry)
+./../../../psp_rel/lib/api.a(ui_op_entry.o)
+                              ./obj/main_setting.o (ui_op_entry)
+./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+                              ./obj/main_setting.o (vfs_op_entry)
+./../../../psp_rel/lib/api.a(base_op_entry.o)
+                              (base_op_entry)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD ./../../../psp_rel/include/link_base.xn
+                0x0000000000000000                DRV_GROUP_STG_BASE = 0x0
+                0x0000000000000001                DRV_GROUP_STG_CARD = 0x1
+                0x0000000000000002                DRV_GROUP_STG_UHOST = 0x2
+                0x0000000000000003                DRV_GROUP_FAT32 = 0x3
+                0x0000000000000004                DRV_GROUP_EXFAT = 0x4
+                0x0000000000000005                DRV_GROUP_UD = 0x5
+                0x0000000000000006                DRV_GROUP_UI = 0x6
+                0x0000000000000007                DRV_GROUP_LCD = 0x7
+                0x0000000000000008                DRV_GROUP_FM = 0x8
+                0x0000000000000009                DRV_GROUP_KEY = 0x9
+                0x000000000000000a                DRV_GROUP_CCD = 0xa
+                0x000000000000000b                DRV_GROUP_I2C = 0xb
+                0x000000000000000c                DRV_GROUP_AUDIO_DEVICE = 0xc
+                0x000000000000000d                DRV_GROUP_TTS = 0xd
+                0x000000000000000e                DRV_GROUP_BT = 0xe
+                0x000000000000000f                DRV_GROUP_SYS = 0xf
+                0x000000000003ffff                SRAM_SIZE_MASK = 0x3ffff
+                0x000000009fc00000                RDATA_ADDR_BASE = 0x9fc00000
+                0x00000000bfc00000                RCODE_ADDR_BASE = 0xbfc00000
+                0x0000000000000001                KERNEL_BANK_A = 0x1
+                0x0000000000000002                KERNEL_BANK_B = 0x2
+                0x0000000000000003                KERNEL_BANK_C = 0x3
+                0x0000000000040000                BANK_SPACE = 0x40000
+                0x0000000000000000                FRONT_AP = 0x0
+                0x0000000000000001                BACK_AP = 0x1
+                0x0000000000000002                PROCESS_MANAGER_AP = 0x2
+                0x0000000000000000                FRONT_CODEC = 0x0
+                0x0000000000000001                BACK_CODEC = 0x1
+                0x0000000000000040                AP_BANK_FRONT_CONTROL_1 = 0x40
+                0x0000000000000048                AP_BANK_FRONT_UI_1 = 0x48
+                0x0000000000000050                AP_BANK_FRONT_BASAL = 0x50
+                0x0000000000000058                AP_BANK_FRONT_CODEC = 0x58
+                0x0000000000000060                AP_BANK_BACK_CONTROL_1 = 0x60
+                0x0000000000000068                AP_BANK_BACK_BASAL = 0x68
+                0x0000000000000070                AP_BANK_BACK_CODEC = 0x70
+                0x0000000000000078                AP_BANK_FRONT_ENHANCED_1 = 0x78
+                0x0000000000000071                AP_BANK_FRONT_ENHANCED_2 = 0x71
+                0x000000000000007a                AP_BANK_BACK_ENHANCED_1 = 0x7a
+                0x000000000000007b                AP_BANK_BACK_ENHANCED_2 = 0x7b
+                0x0000000000000072                AP_BANK_BTENGINE_CONTROL_1 = 0x72
+                0x0000000000000073                AP_BANK_BTENGINE_LIB_1 = 0x73
+                0x0000000000000074                AP_BANK_BTENGINE_LIB_2 = 0x74
+                0x0000000000000075                AP_BANK_BTENGINE_EXTEND_1 = 0x75
+                0x0000000000000076                AP_BANK_BTENGINE_EXTEND_2 = 0x76
+                0x0000000000000077                AP_BANK_BTENGINE_EXTEND_3 = 0x77
+                0x000000000000007c                AP_BANK_BTENGINE_EXTEND_4 = 0x7c
+                0x0000000000000079                AP_BANK_BTENGINE_EXTEND_5 = 0x79
+                0x000000000000007f                AP_BANK_MANAGER = 0x7f
+                0x0000000000000041                AP_BANK_AUTOTEST = 0x41
+                0x0000000000000000                SROM_BROM_ADDR = 0x0
+                0x0000000000002600                SROM_BROM_SIZE = 0x2600
+                0x0000000000002600                SROM_SPINOR_ADDR = (SROM_BROM_ADDR + SROM_BROM_SIZE)
+                0x0000000000000c00                SROM_SPINOR_SIZE = 0xc00
+                0x0000000000003200                SROM_TWI_ADDR = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE)
+                0x0000000000000700                SROM_TWI_SIZE = 0x700
+                0x0000000000003900                SROM_STUB_ADDR = (SROM_TWI_ADDR + SROM_TWI_SIZE)
+                0x0000000000000700                SROM_STUB_SIZE = 0x700
+                0x0000000000000e00                SROM_SPINOR_SIZE_MDY = 0xe00
+                0x0000000000003400                SROM_TWI_ADDR_MDY = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE_MDY)
+                0x0000000000000700                SROM_TWI_SIZE_MDY = 0x700
+                0x0000000000003b00                SROM_STUB_ADDR_MDY = (SROM_TWI_ADDR_MDY + SROM_TWI_SIZE_MDY)
+                0x0000000000000500                SROM_STUB_SIZE_MDY = 0x500
+                0x0000000000004000                SROM_KERNEL_ADDR = (SROM_STUB_ADDR + SROM_STUB_SIZE)
+                0x0000000000004000                SROM_KERNEL_SIZE = 0x4000
+                0x000000000000c000                SROM_FS_ADDR = 0xc000
+                0x0000000000001c00                SROM_FS_SIZE = 0x1c00
+                0x000000000000dc00                SROM_SPINOR1_ADDR = (SROM_FS_ADDR + SROM_FS_SIZE)
+                0x0000000000000400                SROM_SPINOR1_SIZE = 0x400
+                0x0000000000008000                SRAM_OS_RCODE_ADDR = 0x8000
+                0x0000000000000c00                SRAM_OS_RCODE_SIZE = 0xc00
+                0x0000000000008c00                SRAM_SPINOR_RCODE_ADDR = 0x8c00
+                0x0000000000000400                SRAM_SPINOR_RCODE_SIZE = 0x400
+                0x0000000000009000                SRAM_BANK_A_ADDR = 0x9000
+                0x0000000000000400                SRAM_BANK_A_SIZE = 0x400
+                0x0000000000009400                SRAM_BANK_B_ADDR = 0x9400
+                0x0000000000000800                SRAM_BANK_B_SIZE = 0x800
+                0x0000000000009c00                SRAM_UI_RCODE1_ADDR = 0x9c00
+                0x0000000000000300                SRAM_UI_RCODE1_SIZE = 0x300
+                0x0000000000009f00                SRAM_AUDIO_GLOBAL_DATA_ADDR = 0x9f00
+                0x0000000000000060                SRAM_AUDIO_GLOBAL_DATA_SIZE = 0x60
+                0x0000000000009f60                SRAM_UHOST_GLOBAL_DATA_ADDR = 0x9f60
+                0x0000000000000010                SRAM_UHOST_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f70                SRAM_CARD_GLOBAL_DATA_ADDR = 0x9f70
+                0x0000000000000010                SRAM_CARD_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f80                SRAM_SYS_SHARE_DATA_ADDR = 0x9f80
+                0x0000000000000040                SRAM_SYS_SHARE_DATA_SIZE = 0x40
+                0x0000000000009fc0                SRAM_RAM6_CCD_GLOBAL_DATA_ADDR = 0x9fc0
+                0x0000000000000020                SRAM_RAM6_CCD_GLOBAL_DATA_SIZE = 0x20
+                0x0000000000009fe0                SRAM_RAM6_RESEVER_ADDR = 0x9fe0
+                0x0000000000000020                SRAM_RAM6_RESEVER_SIZE = 0x20
+                0x000000000000a000                SRAM_LCD_RCODE_ADDR = 0xa000
+                0x0000000000000800                SRAM_LCD_RCODE_SIZE = 0x800
+                0x000000000000a800                SRAM_UI_RCODE2_ADDR = 0xa800
+                0x0000000000001000                SRAM_UI_RCODE2_SIZE = 0x1000
+                0x000000000000b800                SRAM_LCD_BUFFER_ADDR = 0xb800
+                0x0000000000000400                SRAM_LCD_BUFFER_SIZE = 0x400
+                0x000000000000bc00                SRAM_UI_DATA_ADDR = 0xbc00
+                0x0000000000000400                SRAM_UI_DATA_SIZE = 0x400
+                0x0000000000010000                SRAM_KEY_MESSAGE_RCODE_ADDR = 0x10000
+                0x0000000000000a00                SRAM_KEY_MESSAGE_RCODE_SIZE = 0xa00
+                0x0000000000010a00                SRAM_RAM0_RESEVER1_ADDR = 0x10a00
+                0x0000000000000200                SRAM_RAM0_RESEVER1_SIZE = 0x200
+                0x0000000000010c00                SRAM_AP_FRONT_BASAL_RCODE_ADDR = 0x10c00
+                0x0000000000000100                SRAM_AP_FRONT_BASAL_RCODE_SIZE = 0x100
+                0x0000000000010d00                SRAM_AP_BANK_BACK_CONTROL_ADDR = 0x10d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_CONTROL_SIZE = 0x800
+                0x0000000000011500                SRAM_AP_BACK_RCODE_ADDR = 0x11500
+                0x0000000000000800                SRAM_AP_BACK_RCODE_SIZE = 0x800
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_ADDR = 0x0
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_SIZE = 0x0
+                0x0000000000011d00                SRAM_RAM0_RESEVER2_ADDR = 0x11d00
+                0x0000000000000800                SRAM_RAM0_RESEVER2_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_BASAL_ADDR = 0x12500
+                0x0000000000000800                SRAM_AP_BANK_FRONT_BASAL_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_ENHANCED_2_ADDR = SRAM_AP_BANK_FRONT_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_2_SIZE = SRAM_AP_BANK_FRONT_BASAL_SIZE
+                0x0000000000012d00                SRAM_AP_BANK_BACK_BASAL_ADDR = 0x12d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_BASAL_SIZE = 0x800
+                0x0000000000012d00                SRAM_AP_BANK_BACK_ENHANCED_1_ADDR = SRAM_AP_BANK_BACK_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_1_SIZE = SRAM_AP_BANK_BACK_BASAL_SIZE
+                0x0000000000013500                SRAM_AP_BACK_BASAL_RCODE_ADDR = 0x13500
+                0x0000000000000800                SRAM_AP_BACK_BASAL_RCODE_SIZE = 0x800
+                0x0000000000013d00                SRAM_KERNEL_BSS_ADDR = 0x13d00
+                0x00000000000000e0                SRAM_KERNEL_BSS_SIZE = 0xe0
+                0x0000000000013de0                SRAM_AP_MANAGER_ADDR = 0x13de0
+                0x0000000000000200                SRAM_AP_MANAGER_SIZE = 0x200
+                0x0000000000013fc0                SRAM_IRQ_DSP_PRINT_TEMP_ADDR = 0x13fc0
+                0x0000000000000020                SRAM_IRQ_DSP_PRINT_TEMP_SIZE = 0x20
+                0x0000000000013fe0                SRAM_IRQ_PRINT_BUFFER_ADDR = 0x13fe0
+                0x0000000000000110                SRAM_IRQ_PRINT_BUFFER_SIZE = 0x110
+                0x00000000000140f0                SRAM_DSP_PRINT_BUFFER_ADDR = 0x140f0
+                0x0000000000000110                SRAM_DSP_PRINT_BUFFER_SIZE = 0x110
+                0x0000000000014200                SRAM_LCD_DATA_ADDR = 0x14200
+                0x0000000000000100                SRAM_LCD_DATA_SIZE = 0x100
+                0x0000000000014300                SRAM_KEY_MESSAGE_DATA_ADDR = 0x14300
+                0x0000000000000100                SRAM_KEY_MESSAGE_DATA_SIZE = 0x100
+                0x0000000000014400                SRAM_AP_BANK_FRONT_UI_ADDR = 0x14400
+                0x0000000000000800                SRAM_AP_BANK_FRONT_UI_SIZE = 0x800
+                0x0000000000014c00                SRAM_AP_BANK_FRONT_CONTROL_ADDR = 0x14c00
+                0x0000000000000800                SRAM_AP_BANK_FRONT_CONTROL_SIZE = 0x800
+                0x0000000000015400                SRAM_AP_FRONT_DATA_ADDR = 0x15400
+                0x0000000000000800                SRAM_AP_FRONT_DATA_SIZE = 0x800
+                0x0000000000015c00                SRAM_AP_BACK_DATA_ADDR = 0x15c00
+                0x0000000000000600                SRAM_AP_BACK_DATA_SIZE = 0x600
+                0x0000000000016200                SRAM_AP_BANK_MANAGER_ADDR = 0x16200
+                0x0000000000000200                SRAM_AP_BANK_MANAGER_SIZE = 0x200
+                0x0000000000016400                SRAM_AP_FRONT_RCODE_ADDR = 0x16400
+                0x0000000000000800                SRAM_AP_FRONT_RCODE_SIZE = 0x800
+                0x0000000000016c00                SRAM_FS_RCODE_ADDR = 0x16c00
+                0x0000000000000800                SRAM_FS_RCODE_SIZE = 0x800
+                0x0000000000017400                SRAM_UI_RCODE3_ADDR = 0x17400
+                0x0000000000000c00                SRAM_UI_RCODE3_SIZE = 0xc00
+                0x0000000000017400                SRAM_CARD_UD_RCODE_ADDR = 0x17400
+                0x0000000000000c00                SRAM_CARD_UD_RCODE_SIZE = 0xc00
+                0x0000000000017400                SRAM_UHOST_UD_RCODE_ADDR = SRAM_CARD_UD_RCODE_ADDR
+                0x0000000000000c00                SRAM_UHOST_UD_RCODE_SIZE = SRAM_CARD_UD_RCODE_SIZE
+                0x0000000000018000                SRAM_FS_DATA_ADDR = 0x18000
+                0x0000000000000300                SRAM_FS_DATA_SIZE = 0x300
+                0x0000000000018300                SRAM_FS_BUF_ADDR = 0x18300
+                0x0000000000000a00                SRAM_FS_BUF_SIZE = 0xa00
+                0x0000000000018d00                SRAM_CARD_UD_CACHE_ADDR = 0x18d00
+                0x0000000000000800                SRAM_CARD_UD_CACHE_SIZE = 0x800
+                0x0000000000018d00                SRAM_UHOST_UD_CACHE_ADDR = SRAM_CARD_UD_CACHE_ADDR
+                0x0000000000000800                SRAM_UHOST_UD_CACHE_SIZE = SRAM_CARD_UD_CACHE_SIZE
+                0x0000000000019500                SRAM_CARD_DATA_ADDR = 0x19500
+                0x0000000000000080                SRAM_CARD_DATA_SIZE = 0x80
+                0x0000000000019500                SRAM_UHOST_DATA_ADDR = SRAM_CARD_DATA_ADDR
+                0x0000000000000080                SRAM_UHOST_DATA_SIZE = SRAM_CARD_DATA_SIZE
+                0x0000000000019580                SRAM_KERNEL_XSYS_ADDR = 0x19580
+                0x0000000000000800                SRAM_KERNEL_XSYS_SIZE = 0x800
+                0x0000000000019d80                SRAM_BANK_C_ADDR = 0x19d80
+                0x0000000000000400                SRAM_BANK_C_SIZE = 0x400
+                0x000000000001a180                SRAM_APPLIB_GLOBAL_DATA_ADDR = 0x1a180
+                0x0000000000000100                SRAM_APPLIB_GLOBAL_DATA_SIZE = 0x100
+                0x000000000001a280                SRAM_APPLIB_DATA_ADDR = 0x1a280
+                0x0000000000000100                SRAM_APPLIB_DATA_SIZE = 0x100
+                0x000000000001a380                SRAM_RAM1_RESEVER1_ADDR = 0x1a380
+                0x0000000000000080                SRAM_RAM1_RESEVER1_SIZE = 0x80
+                0x000000000001a400                SRAM_OS_DATA_ADDR = 0x1a400
+                0x0000000000000880                SRAM_OS_DATA_SIZE = 0x880
+                0x000000000001ac80                SRAM_OS_HEAP_ADDR = 0x1ac80
+                0x0000000000000580                SRAM_OS_HEAP_SIZE = 0x580
+                0x000000000001b200                SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR = 0x1b200
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE = 0x800
+                0x000000000001b200                SRAM_FM_DRV_RCODE_ADDR = SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR
+                0x0000000000000800                SRAM_FM_DRV_RCODE_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE
+                0x000000000001ba00                SRAM_OS_SD_SWAP_BUF_ADDR = 0x1ba00
+                0x0000000000000200                SRAM_OS_SD_SWAP_BUF_SIZE = 0x200
+                0x000000000001bc00                SRAM_OS_TASK_STACK_ADDR = 0x1bc00
+                0x0000000000001a00                SRAM_OS_TASK_STACK_SIZE = 0x1a00
+                0x000000000001d600                SRAM_OS_SYS_STACK_ADDR = 0x1d600
+                0x0000000000000400                SRAM_OS_SYS_STACK_SIZE = 0x400
+                0x000000000001da00                SRAM_RAM1_RESEVER2_ADDR = 0x1da00
+                0x0000000000000600                SRAM_RAM1_RESEVER1_SIZE = 0x600
+                0x0000000000027000                SRAM_AP_BACK_CODEC_RCODE_ADDR = 0x27000
+                0x0000000000001000                SRAM_AP_BACK_CODEC_RCODE_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_CODEC_ADDR = 0x28000
+                0x0000000000001000                SRAM_AP_BANK_BACK_CODEC_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_ENHANCED_2_ADDR = 0x28000
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_2_SIZE = 0x800
+                0x0000000000030000                SRAM_AP_USB_DEVICE_RCODE_ADDR = 0x30000
+                0x0000000000004000                SRAM_AP_USB_DEVICE_RCODE_SIZE = 0x4000
+                0x0000000000038000                SRAM_TWI_ADDR_MDY = 0x38000
+                0x0000000000000700                SRAM_TWI_SIZE_MDY = SROM_TWI_SIZE_MDY
+                0x0000000000040000                SRAM_INVALID_RCODE_ADDR = 0x40000
+                0x0000000000000000                AP_INDEX = FRONT_AP
+                0x0000000000016400                SRAM_TEXT_ADDR = SRAM_AP_FRONT_RCODE_ADDR
+                0x0000000000015400                SRAM_DATA_ADDR = SRAM_AP_FRONT_DATA_ADDR
+                0x00000000bfc16400                RCODE_TEXT_ADDR = (RCODE_ADDR_BASE + SRAM_TEXT_ADDR)
+                0x000000009fc15400                RDATA_DATA_ADDR = (RDATA_ADDR_BASE + SRAM_DATA_ADDR)
+                0x0000000040014c00                BANK_CONTROL_1_ADDR_BASE = ((AP_BANK_FRONT_CONTROL_1 << 0x18) + SRAM_AP_BANK_FRONT_CONTROL_ADDR)
+                0x0000000048014400                BANK_UI_1_ADDR_BASE = ((AP_BANK_FRONT_UI_1 << 0x18) + SRAM_AP_BANK_FRONT_UI_ADDR)
+                0x000000007801b200                BANK_ENHANCED_1_ADDR_BASE = ((AP_BANK_FRONT_ENHANCED_1 << 0x18) + SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR)
+                0x000000007101b200                BANK_ENHANCED_2_ADDR_BASE = ((AP_BANK_FRONT_ENHANCED_2 << 0x18) + SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR)
+                0x0000000000000800                BANK_CONTROL_SIZE = SRAM_AP_BANK_FRONT_CONTROL_SIZE
+                0x0000000000000800                BANK_UI_SIZE = SRAM_AP_BANK_FRONT_UI_SIZE
+                0x0000000000000600                BANK_UI_RESERVE_SIZE = (SRAM_AP_BANK_FRONT_UI_SIZE - 0x200)
+                0x0000000000000800                BANK_ENHANCED1_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE
+                0x0000000000000800                BANK_ENHANCED2_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_2_SIZE
+                0x0000000000040000                AP_BANK_SPACE = BANK_SPACE
+                0x000000009fc1a180                . = 0x9fc1a180
+
+APP_GLOBE_DATA  0x000000009fc1a180      0x100
+ applib_globe_data.o(.bss)
+ .bss           0x000000009fc1a180       0x6c ./../../lib/applib_globe_data.o
+                0x000000009fc1a180                g_sys_counter
+                0x000000009fc1a194                g_app_info_vector
+                0x000000009fc1a1e8                g_sys_shutdown_time
+                0x000000009fc1a1dc                g_keytone_infor
+                0x000000009fc1a190                config_fp
+                0x000000009fc1a1b8                g_app_info_state
+                0x000000009fc1a1e5                g_sys_time_second
+                0x000000009fc1a1d0                g_app_last_state
+                0x000000009fc1a280                . = 0x100
+ *fill*         0x000000009fc1a1ec       0x94 00
+
+.text           0x00000000bfc16400      0x190
+ api.a(.text)
+ app_timer_rcode.o(.text)
+ .text          0x00000000bfc16400       0xbc ./../../lib/app_timer_rcode.o
+                0x00000000bfc16401                handle_timers
+ message_rcode.o(.text)
+ .text          0x00000000bfc164bc       0xb4 ./../../lib/message_rcode.o
+                0x00000000bfc164bd                get_gui_msg
+                0x00000000bfc16529                get_app_msg
+                0x00000000bfc164f5                get_sys_msg
+ .text          0x00000000bfc16570        0x4 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+                0x00000000bfc16571                audio_device_op_entry
+ .text          0x00000000bfc16574        0x4 ./../../../psp_rel/lib/api.a(key_op_entry.o)
+                0x00000000bfc16575                key_op_entry
+ .text          0x00000000bfc16578        0x4 ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+                0x00000000bfc16579                lcd_op_entry
+ .text          0x00000000bfc1657c        0x4 ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+                0x00000000bfc1657d                libc_op_entry
+ .text          0x00000000bfc16580        0x4 ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+                0x00000000bfc16581                sys_op_entry
+ .text          0x00000000bfc16584        0x4 ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+                0x00000000bfc16585                ui_op_entry
+ .text          0x00000000bfc16588        0x4 ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+                0x00000000bfc16589                vfs_op_entry
+ .text          0x00000000bfc1658c        0x4 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+                0x00000000bfc1658d                base_op_entry
+
+.data           0x000000009fc15400        0x8 load address 0x00000000bfc16590
+ *.o(.data)
+ .data          0x000000009fc15400        0x8 ./obj/main_setting.o
+                0x000000009fc15404                prio
+                0x000000009fc15400                ptos
+
+.bss            0x000000009fc15408      0x4a4
+ main_setting.o(.bss)
+ .bss           0x000000009fc15408      0x13c ./obj/main_setting.o
+                0x000000009fc154f4                playlist_exist_flag
+                0x000000009fc154a0                SN_buffer
+                0x000000009fc15408                g_setting_vars
+                0x000000009fc154f5                date_dd_location
+                0x000000009fc154f8                g_vfs_mount_id
+                0x000000009fc154fc                need_quit_ap_flag
+                0x000000009fc154fd                set_language_id_argv
+                0x000000009fc15500                setting_app_timer_vector
+                0x000000009fc154f0                time
+                0x000000009fc154f6                date_mm_location
+                0x000000009fc154f3                music_exist_flag
+                0x000000009fc154e4                menu_com
+                0x000000009fc15540                current_disk
+                0x000000009fc1543c                string_buffer
+                0x000000009fc1542c                style
+                0x000000009fc154ec                date
+                0x000000009fc154f7                date_yy_location
+                0x000000009fc15430                textbox_param
+ menu_callback_sound_setting2.o(.bss)
+ .bss           0x000000009fc15544       0x90 ./obj/menu_callback_sound_setting2.o
+                0x000000009fc15544                s_param_com
+                0x000000009fc1555c                s_param_item
+                0x000000009fc1554c                s_param_private
+ applib_app_data.o(.bss)
+ .bss           0x000000009fc155d4       0x18 ./../../lib/applib_app_data.o
+                0x000000009fc155e0                g_this_app_msg_dispatch
+                0x000000009fc155e4                g_app_timer_vector
+                0x000000009fc155d4                g_app_timer_count
+                0x000000009fc155d8                g_this_app_info
+                0x000000009fc155dc                thread_mutex
+                0x000000009fc155e8                g_this_app_timer_tag
+ common_ui_data.o(.bss)
+ .bss           0x000000009fc155ec      0x18c ./../../lib/common_ui_data.o
+                0x000000009fc1573d                g_icon_id
+                0x000000009fc156a0                g_menu_items
+                0x000000009fc1576c                g_anm_callback
+                0x000000009fc15775                g_anm_direction
+                0x000000009fc155f2                g_gui_direct
+                0x000000009fc15744                this_headbar_style
+                0x000000009fc1575f                g_ss_last_time
+                0x000000009fc15774                g_anm_index
+                0x000000009fc15761                g_ss_delay_flag
+                0x000000009fc15654                dir_menu_title
+                0x000000009fc15770                g_anm_sty_infor
+                0x000000009fc15740                g_headbar_update
+                0x000000009fc1572c                g_back_to_parent_func
+                0x000000009fc155f1                sys_status_timer_id
+                0x000000009fc15754                g_ss_mode_backup
+                0x000000009fc15734                usb_selecting_state
+                0x000000009fc15730                g_back_to_parant_arg
+                0x000000009fc15764                g_com_paint_cb
+                0x000000009fc155ec                sys_comval
+                0x000000009fc1575d                g_ss_album_art_phase
+                0x000000009fc15758                g_ss_clk_backup
+                0x000000009fc1575e                g_ss_last_date
+                0x000000009fc15751                this_headbar_mode
+                0x000000009fc15755                g_ss_icon_backup
+                0x000000009fc15738                volume_value_last
+                0x000000009fc15752                g_so_time
+                0x000000009fc15660                dir_control
+                0x000000009fc15736                g_usb_timer_id
+                0x000000009fc15756                g_ss_timer_id
+                0x000000009fc15735                g_usb_auto_select
+                0x000000009fc155f0                sys_counter_timer_id
+                0x000000009fc1573f                g_battery_value
+                0x000000009fc155f4                g_dir_browser
+                0x000000009fc15678                last_dir_control
+                0x000000009fc1573a                volume_enter_forbidden
+                0x000000009fc1575c                g_ss_mode
+                0x000000009fc15750                this_headbar_icon_id
+                0x000000009fc1573e                g_sys_minute
+                0x000000009fc15692                line_cnt
+                0x000000009fc15600                g_file_list
+                0x000000009fc15690                speed_control
+                0x000000009fc1573c                g_battery_display
+                0x000000009fc15760                g_ss_vip_event
+                0x000000009fc15753                g_ss_tag_backup
+                0x000000009fc15762                g_kl_time_is_up
+                0x000000009fc1573b                g_vol_time_up_flag
+                0x000000009fc15694                g_menu_title
+ common_func_data.o(.bss)
+ .bss           0x000000009fc15778       0x18 ./../../lib/common_func_data.o
+                0x000000009fc15781                menu_history_valid
+                0x000000009fc15784                dir_history_addr
+                0x000000009fc1577c                confmenu_offset
+                0x000000009fc1578d                g_keytone_backup
+                0x000000009fc15778                confmenu_fp
+                0x000000009fc1578c                this_filter_key_value
+                0x000000009fc15788                menu_history_addr
+                0x000000009fc15780                dir_history_valid
+ eh_bs_rdata.o(.bss)
+ .bss           0x000000009fc15790       0x34 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+                0x000000009fc15796                bs_file_total
+                0x000000009fc1579c                list_layer_no
+                0x000000009fc15798                bs_uspl_cur
+                0x000000009fc157b4                g_bs_dir_loc
+                0x000000009fc15794                bs_dir_total
+                0x000000009fc15792                bs_select_fileno
+                0x000000009fc157a4                plist_cur_tree
+                0x000000009fc15790                bs_select_listno
+ eh_rdata.o(.bss)
+ .bss           0x000000009fc157c4       0x88 ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+                0x000000009fc15810                plist_list_layerno
+                0x000000009fc157cc                file_total
+                0x000000009fc1582a                dir_total
+                0x000000009fc1580a                plist_file_total
+                0x000000009fc157ea                write_data_flag
+                0x000000009fc157f4                plist_item_info
+                0x000000009fc157d8                obj_handle
+                0x000000009fc1581e                plist_layer_offset
+                0x000000009fc157c5                fsel_module_type
+                0x000000009fc15832                dirlist_cur_file_folder_index
+                0x000000009fc157f2                uspl_file_offset
+                0x000000009fc157d4                root_dir
+                0x000000009fc15828                m3u_curlist_index
+                0x000000009fc15808                plist_type_selector
+                0x000000009fc15838                dirlist_index_tbl
+                0x000000009fc157f0                uspl_last_offset
+                0x000000009fc1582c                dirlist_first_offset
+                0x000000009fc157e8                save_read_offset
+                0x000000009fc15834                dirlist_layer_offset
+                0x000000009fc1581a                plist_start_file_index
+                0x000000009fc157ee                uspl_first_offset
+                0x000000009fc157e0                fsel_init_val
+                0x000000009fc157dc                vfs_mount
+                0x000000009fc157d0                cur_ext_name
+                0x000000009fc1581c                plist_cur_file_index
+                0x000000009fc157ca                file_no
+                0x000000009fc157ec                uspl_file_total
+                0x000000009fc157c8                shuffle_sw
+                0x000000009fc15830                dirlist_file_offset
+                0x000000009fc15818                plist_start_sort_index
+                0x000000009fc157c4                loop_flag
+                0x000000009fc157c7                dir_layer
+                0x000000009fc1580c                plist_info_offset
+                0x000000009fc157d6                obj_open_mode
+                0x000000009fc157d7                obj_open_type
+                0x000000009fc15820                lib_pfile_offset
+                0x000000009fc1582e                dirlist_file_index_offset
+                0x000000009fc157c6                fsel_error
+                0x000000009fc157ce                g_file_index
+ eh_fsel_rdata.o(.bss)
+ .bss           0x000000009fc1584c       0x60 ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+                0x000000009fc158a9                cur_save_next_count
+                0x000000009fc15858                member_map
+                0x000000009fc15880                filtrate_shuffle_no
+                0x000000009fc1587d                cur_group
+                0x000000009fc158a4                cur_save_pt
+                0x000000009fc1587b                member_max
+                0x000000009fc1587c                use_member_flag
+                0x000000009fc15850                group_map
+                0x000000009fc158a8                cur_save_prev_count
+                0x000000009fc1587e                cur_member
+                0x000000009fc1587a                group_max
+                0x000000009fc15878                member_avg
+                0x000000009fc158a6                dir_no
+                0x000000009fc15879                member_avg_group
+                0x000000009fc158aa                cur_overturn_flag
+                0x000000009fc1584c                shuffle_total
+                0x000000009fc15884                play_num_list
+ *(.sbss)
+ *(.common)
+ *(common)
+                0x0000000040014c00                . = BANK_CONTROL_1_ADDR_BASE
+                0x0000000000014c00                OFFSET = (. & 0x3ffff)
+
+BANK_CONTROL_1_0
+                0x0000000040014c00      0x800
+ ctor.o(.text .rodata .xdata)
+ .text          0x0000000040014c00       0xcc ./../../../psp_rel/lib/ctor.o
+                0x0000000040014c01                process_start
+                0x0000000040014c31                __start
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040014ccc      0x734 00
+                0x0000000040054400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_1
+                0x0000000040054c00      0x800
+ main_setting.o(.text .rodata .xdata)
+ .text          0x0000000040054c00      0x640 ./obj/main_setting.o
+                0x0000000040054ce1                read_var
+                0x0000000040054e35                setting_menu_func
+                0x0000000040054d79                setting_callback
+                0x0000000040054e65                music_file_init
+                0x00000000400551a1                main
+                0x0000000040055059                setting_app_deinit
+                0x0000000040054ee9                music_get_filepath0
+                0x0000000040054f25                setting_app_init
+                0x0000000040054c65                check_plist_exit
+ .rodata        0x0000000040055240       0xac ./obj/main_setting.o
+                0x00000000400552d4                card_drv_name
+                0x0000000040055240                theme_setting_res
+                0x0000000040055284                themes_com
+                0x00000000400552c8                flash_drv_name
+                0x00000000400552e0                mplist_name
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x00000000400552ec      0x114 00
+                0x0000000040094400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_2
+                0x0000000040094c00      0x800
+ menu_callback_display_setting.o(.text .rodata .xdata)
+ .text          0x0000000040094c00      0x288 ./obj/menu_callback_display_setting.o
+                0x0000000040094e35                set_screen_saver_off_callback
+                0x0000000040094db5                set_light_time_30s_callback
+                0x0000000040094d7d                set_light_time_10s_callback
+                0x0000000040094d29                get_backlight_timer_option_callback
+                0x0000000040094dd1                set_light_time_always_callback
+                0x0000000040094d99                set_light_time_20s_callback
+                0x0000000040094ded                get_screen_saver_option_callback
+                0x0000000040094c29                set_brightness_callback
+                0x0000000040094e51                set_screen_saver_clock_callback
+                0x0000000040094c01                set_lightness_callback
+                0x0000000040094e6d                set_screen_off_callback
+ .rodata        0x0000000040094e88       0x14 ./obj/menu_callback_display_setting.o
+                0x0000000040094e88                backlight_timer_text_table
+                0x0000000040094e90                screen_saver_mode_text_table
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040094e9c      0x564 00
+                0x00000000400d4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_3
+                0x00000000400d4c00      0x800
+ menu_callback_language.o(.text .rodata .xdata)
+ .text          0x00000000400d4c00      0x654 ./obj/menu_callback_language.o
+                0x00000000400d4e65                set_spanish_callback
+                0x00000000400d4e05                set_italian_callback
+                0x00000000400d5015                set_hungarian_callback
+                0x00000000400d5045                set_romanian_callback
+                0x00000000400d50d5                set_slovenian_callback
+                0x00000000400d51f5                set_finnish_callback
+                0x00000000400d4d45                set_japanese_callback
+                0x00000000400d5225                set_indonesian_callback
+                0x00000000400d5105                set_greek_callback
+                0x00000000400d50a5                set_croatian_callback
+                0x00000000400d5135                set_norwegian_callback
+                0x00000000400d4e35                set_dutch_callback
+                0x00000000400d4da5                set_french_callback
+                0x00000000400d4f25                set_poland_callback
+                0x00000000400d51c5                set_slovak_callback
+                0x00000000400d4f55                set_russian_callback
+                0x00000000400d4ef5                set_denish_callback
+                0x00000000400d4cb5                set_simplified_chinese_callback
+                0x00000000400d5195                set_portuguese_brazilian_callback
+                0x00000000400d5165                set_portuguese_european_callback
+                0x00000000400d4fe5                set_thai_callback
+                0x00000000400d4c1d                get_language_id_callback
+                0x00000000400d4ce5                set_english_callback
+                0x00000000400d4e95                set_swedish_callback
+                0x00000000400d4f85                set_turkey_callback
+                0x00000000400d4d15                set_trad_chinese_callback
+                0x00000000400d4d75                set_korean_callback
+                0x00000000400d4ec5                set_czech_callback
+                0x00000000400d4c01                set_language_id_back2parent
+                0x00000000400d4fb5                set_hebrew_callback
+                0x00000000400d4dd5                set_germany_callback
+                0x00000000400d5075                set_arabic_callback
+ .rodata        0x00000000400d5254       0x38 ./obj/menu_callback_language.o
+                0x00000000400d5254                language_text_table
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x00000000400d528c      0x174 00
+                0x0000000040114400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_4
+                0x0000000040114c00      0x800
+ menu_callback_others.o(.text .rodata .xdata)
+ .text          0x0000000040114c00      0x734 ./obj/menu_callback_others.o
+                0x0000000040114f71                get_information_entry
+                0x0000000040114d81                adjust_min_time
+                0x0000000040114ec5                get_pc_connect_information_id_callback
+                0x000000004011525d                show_music_type_callback
+                0x0000000040115291                show_legal_information_callback
+                0x00000000401150a9                show_disk_information_callback
+                0x00000000401152c5                show_SN_code_callback
+                0x0000000040114f09                set_storage_msc_callback
+                0x0000000040114c01                get_shut_down_entry
+                0x0000000040114d4d                shut_down_timer_off_callback
+                0x0000000040114da5                shut_down_time_adjust_callback
+                0x0000000040114fc5                show_player_information_callback
+                0x0000000040114f51                explain_msc_callback
+                0x0000000040114f61                explain_mtp_callback
+                0x0000000040114f2d                set_storage_mtp_callback
+ .rodata        0x0000000040115334       0x18 ./obj/menu_callback_others.o
+                0x0000000040115334                legal_file
+                0x0000000040115340                music_type_file
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x000000004011534c       0xb4 00
+                0x0000000040154400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_5
+                0x0000000040154c00      0x800
+ menu_callback_play_mode.o(.text .rodata .xdata)
+ .text          0x0000000040154c00      0x630 ./obj/menu_callback_play_mode.o
+                0x0000000040154c01                option_callback
+                0x0000000040154e65                set_music_from_artist_callback
+                0x0000000040154c3d                music_get_playmode
+                0x0000000040155161                set_music_shuffle_off_callback
+                0x00000000401550e5                set_music_intro_callback
+                0x0000000040154da5                set_music_source_to_engine
+                0x00000000401550bd                set_music_repeat_all_callback
+                0x000000004015510d                get_music_shuflle_option
+                0x00000000401551d1                restore_factory_setting_for_music
+                0x0000000040154e11                set_music_from_all_songs_callback
+                0x0000000040154d11                music_get_filepath
+                0x0000000040155199                set_music_shuffle_on_callback
+                0x0000000040154ff1                get_music_repeat_mode_id_callback
+                0x0000000040154f6d                set_music_from_genre_callback
+                0x0000000040154cd5                switch_play_mode
+                0x0000000040154d5d                music_change_filepath
+                0x000000004015506d                set_music_repeat_off_callback
+                0x0000000040154ee9                set_music_from_album_callback
+                0x0000000040155095                set_music_repeat_one_callback
+                0x0000000040154c89                music_set_playmode
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040155230      0x1d0 00
+                0x0000000040194400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_6
+                0x0000000040194c00      0x800
+ menu_callback_time_setting.o(.text .rodata .xdata)
+ .text          0x0000000040194c00      0x3e4 ./obj/menu_callback_time_setting.o
+                0x0000000040194c45                set_time_format_12h_callback
+                0x0000000040194c61                set_time_format_24h_callback
+                0x0000000040194c01                get_time_format_callback
+                0x0000000040194ce5                set_time_callback
+                0x0000000040194c7d                ampm_adjust_func
+ .rodata        0x0000000040194fe4        0x8 ./obj/menu_callback_time_setting.o
+                0x0000000040194fe4                am_const
+                0x0000000040194fe8                pm_const
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040194fec      0x414 00
+                0x00000000401d4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_7
+                0x00000000401d4c00      0x800
+ menu_callback_date_setting.o(.text .rodata .xdata)
+ .text          0x00000000401d4c00      0x628 ./obj/menu_callback_date_setting.o
+                0x00000000401d4c75                set_date_format_month_first_callback
+                0x00000000401d4c59                set_date_format_day_first_callback
+                0x00000000401d4c01                get_date_format_callback
+                0x00000000401d4cad                date_adjust_func
+                0x00000000401d4c91                set_date_format_year_first_callback
+                0x00000000401d4dd1                set_date_callback
+ .rodata        0x00000000401d5228        0xc ./obj/menu_callback_date_setting.o
+                0x00000000401d5228                day_table
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x00000000401d5234      0x1cc 00
+                0x0000000040214400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_8
+                0x0000000040214c00      0x800
+ menu_callback_sound_setting2.o(.text .rodata .xdata)
+ .text          0x0000000040214c00      0x10c ./obj/menu_callback_sound_setting2.o
+                0x0000000040214ce9                disable_key_tone_setting_callback
+                0x0000000040214c71                get_key_tone_setting_callback
+                0x0000000040214c01                set_volume_limit_callback
+                0x0000000040214cc5                enable_key_tone_setting_callback
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040214d0c      0x6f4 00
+                0x0000000040254400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_9
+                0x0000000040254c00      0x800
+ menu_callback_others_2.o(.text .rodata .xdata)
+ .text          0x0000000040254c00      0x608 ./obj/menu_callback_others_2.o
+                0x0000000040255055                dont_format_callback
+                0x0000000040254e45                get_format_device_entry
+                0x0000000040254cd9                deal_format
+                0x000000004025518d                get_autorun_setting_callback
+                0x0000000040254f01                format_card_callback
+                0x0000000040254ea1                format_disk_callback
+                0x00000000402551d1                disable_autorun_callback
+                0x00000000402551ed                enable_autorun_callback
+                0x0000000040254c41                _config_format_disk
+                0x0000000040255065                dialog_restore_factory_setting_callback
+ .rodata        0x0000000040255208       0x80 ./obj/menu_callback_others_2.o
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040255288      0x178 00
+                0x0000000040294400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_10
+                0x0000000040294c00      0x800
+ menu_callback_autoupgrade_setting.o(.text .rodata .xdata)
+ .text          0x0000000040294c00      0x1b8 ./obj/menu_callback_autoupgrade_setting.o
+                0x0000000040294c01                ask_for_auto_upgrade
+                0x0000000040294cf9                autoupgrade_menu_entry
+ .rodata        0x0000000040294db8       0x4c ./obj/menu_callback_autoupgrade_setting.o
+                0x0000000040294db8                fw_file_name
+                0x0000000040294dd4                fw_ascfile_name
+                0x0000000040294de0                fw_real_name
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040294e04      0x5fc 00
+                0x00000000402d4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_11
+                0x00000000402d4c00      0xa2c
+ ap_cfg_menu_setting.o(.text .rodata .xdata)
+ .rodata        0x00000000402d4c00      0xa2c ./obj/ap_cfg_menu_setting.o
+                0x00000000402d4c10                entry
+                0x00000000402d4c40                item
+                0x00000000402d4c00                entrymenu
+                0x00000000402d4c30                item_head
+LOAD ./../../../psp_rel/usermodule/enhanced/case_link_xn/setting_link.xn
+LOAD ./../../../psp_rel/include/link_base.xn
+                0x0000000000000000                DRV_GROUP_STG_BASE = 0x0
+                0x0000000000000001                DRV_GROUP_STG_CARD = 0x1
+                0x0000000000000002                DRV_GROUP_STG_UHOST = 0x2
+                0x0000000000000003                DRV_GROUP_FAT32 = 0x3
+                0x0000000000000004                DRV_GROUP_EXFAT = 0x4
+                0x0000000000000005                DRV_GROUP_UD = 0x5
+                0x0000000000000006                DRV_GROUP_UI = 0x6
+                0x0000000000000007                DRV_GROUP_LCD = 0x7
+                0x0000000000000008                DRV_GROUP_FM = 0x8
+                0x0000000000000009                DRV_GROUP_KEY = 0x9
+                0x000000000000000a                DRV_GROUP_CCD = 0xa
+                0x000000000000000b                DRV_GROUP_I2C = 0xb
+                0x000000000000000c                DRV_GROUP_AUDIO_DEVICE = 0xc
+                0x000000000000000d                DRV_GROUP_TTS = 0xd
+                0x000000000000000e                DRV_GROUP_BT = 0xe
+                0x000000000000000f                DRV_GROUP_SYS = 0xf
+                0x000000000003ffff                SRAM_SIZE_MASK = 0x3ffff
+                0x000000009fc00000                RDATA_ADDR_BASE = 0x9fc00000
+                0x00000000bfc00000                RCODE_ADDR_BASE = 0xbfc00000
+                0x0000000000000001                KERNEL_BANK_A = 0x1
+                0x0000000000000002                KERNEL_BANK_B = 0x2
+                0x0000000000000003                KERNEL_BANK_C = 0x3
+                0x0000000000040000                BANK_SPACE = 0x40000
+                0x0000000000000000                FRONT_AP = 0x0
+                0x0000000000000001                BACK_AP = 0x1
+                0x0000000000000002                PROCESS_MANAGER_AP = 0x2
+                0x0000000000000000                FRONT_CODEC = 0x0
+                0x0000000000000001                BACK_CODEC = 0x1
+                0x0000000000000040                AP_BANK_FRONT_CONTROL_1 = 0x40
+                0x0000000000000048                AP_BANK_FRONT_UI_1 = 0x48
+                0x0000000000000050                AP_BANK_FRONT_BASAL = 0x50
+                0x0000000000000058                AP_BANK_FRONT_CODEC = 0x58
+                0x0000000000000060                AP_BANK_BACK_CONTROL_1 = 0x60
+                0x0000000000000068                AP_BANK_BACK_BASAL = 0x68
+                0x0000000000000070                AP_BANK_BACK_CODEC = 0x70
+                0x0000000000000078                AP_BANK_FRONT_ENHANCED_1 = 0x78
+                0x0000000000000071                AP_BANK_FRONT_ENHANCED_2 = 0x71
+                0x000000000000007a                AP_BANK_BACK_ENHANCED_1 = 0x7a
+                0x000000000000007b                AP_BANK_BACK_ENHANCED_2 = 0x7b
+                0x0000000000000072                AP_BANK_BTENGINE_CONTROL_1 = 0x72
+                0x0000000000000073                AP_BANK_BTENGINE_LIB_1 = 0x73
+                0x0000000000000074                AP_BANK_BTENGINE_LIB_2 = 0x74
+                0x0000000000000075                AP_BANK_BTENGINE_EXTEND_1 = 0x75
+                0x0000000000000076                AP_BANK_BTENGINE_EXTEND_2 = 0x76
+                0x0000000000000077                AP_BANK_BTENGINE_EXTEND_3 = 0x77
+                0x000000000000007c                AP_BANK_BTENGINE_EXTEND_4 = 0x7c
+                0x0000000000000079                AP_BANK_BTENGINE_EXTEND_5 = 0x79
+                0x000000000000007f                AP_BANK_MANAGER = 0x7f
+                0x0000000000000041                AP_BANK_AUTOTEST = 0x41
+                0x0000000000000000                SROM_BROM_ADDR = 0x0
+                0x0000000000002600                SROM_BROM_SIZE = 0x2600
+                0x0000000000002600                SROM_SPINOR_ADDR = (SROM_BROM_ADDR + SROM_BROM_SIZE)
+                0x0000000000000c00                SROM_SPINOR_SIZE = 0xc00
+                0x0000000000003200                SROM_TWI_ADDR = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE)
+                0x0000000000000700                SROM_TWI_SIZE = 0x700
+                0x0000000000003900                SROM_STUB_ADDR = (SROM_TWI_ADDR + SROM_TWI_SIZE)
+                0x0000000000000700                SROM_STUB_SIZE = 0x700
+                0x0000000000000e00                SROM_SPINOR_SIZE_MDY = 0xe00
+                0x0000000000003400                SROM_TWI_ADDR_MDY = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE_MDY)
+                0x0000000000000700                SROM_TWI_SIZE_MDY = 0x700
+                0x0000000000003b00                SROM_STUB_ADDR_MDY = (SROM_TWI_ADDR_MDY + SROM_TWI_SIZE_MDY)
+                0x0000000000000500                SROM_STUB_SIZE_MDY = 0x500
+                0x0000000000004000                SROM_KERNEL_ADDR = (SROM_STUB_ADDR + SROM_STUB_SIZE)
+                0x0000000000004000                SROM_KERNEL_SIZE = 0x4000
+                0x000000000000c000                SROM_FS_ADDR = 0xc000
+                0x0000000000001c00                SROM_FS_SIZE = 0x1c00
+                0x000000000000dc00                SROM_SPINOR1_ADDR = (SROM_FS_ADDR + SROM_FS_SIZE)
+                0x0000000000000400                SROM_SPINOR1_SIZE = 0x400
+                0x0000000000008000                SRAM_OS_RCODE_ADDR = 0x8000
+                0x0000000000000c00                SRAM_OS_RCODE_SIZE = 0xc00
+                0x0000000000008c00                SRAM_SPINOR_RCODE_ADDR = 0x8c00
+                0x0000000000000400                SRAM_SPINOR_RCODE_SIZE = 0x400
+                0x0000000000009000                SRAM_BANK_A_ADDR = 0x9000
+                0x0000000000000400                SRAM_BANK_A_SIZE = 0x400
+                0x0000000000009400                SRAM_BANK_B_ADDR = 0x9400
+                0x0000000000000800                SRAM_BANK_B_SIZE = 0x800
+                0x0000000000009c00                SRAM_UI_RCODE1_ADDR = 0x9c00
+                0x0000000000000300                SRAM_UI_RCODE1_SIZE = 0x300
+                0x0000000000009f00                SRAM_AUDIO_GLOBAL_DATA_ADDR = 0x9f00
+                0x0000000000000060                SRAM_AUDIO_GLOBAL_DATA_SIZE = 0x60
+                0x0000000000009f60                SRAM_UHOST_GLOBAL_DATA_ADDR = 0x9f60
+                0x0000000000000010                SRAM_UHOST_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f70                SRAM_CARD_GLOBAL_DATA_ADDR = 0x9f70
+                0x0000000000000010                SRAM_CARD_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f80                SRAM_SYS_SHARE_DATA_ADDR = 0x9f80
+                0x0000000000000040                SRAM_SYS_SHARE_DATA_SIZE = 0x40
+                0x0000000000009fc0                SRAM_RAM6_CCD_GLOBAL_DATA_ADDR = 0x9fc0
+                0x0000000000000020                SRAM_RAM6_CCD_GLOBAL_DATA_SIZE = 0x20
+                0x0000000000009fe0                SRAM_RAM6_RESEVER_ADDR = 0x9fe0
+                0x0000000000000020                SRAM_RAM6_RESEVER_SIZE = 0x20
+                0x000000000000a000                SRAM_LCD_RCODE_ADDR = 0xa000
+                0x0000000000000800                SRAM_LCD_RCODE_SIZE = 0x800
+                0x000000000000a800                SRAM_UI_RCODE2_ADDR = 0xa800
+                0x0000000000001000                SRAM_UI_RCODE2_SIZE = 0x1000
+                0x000000000000b800                SRAM_LCD_BUFFER_ADDR = 0xb800
+                0x0000000000000400                SRAM_LCD_BUFFER_SIZE = 0x400
+                0x000000000000bc00                SRAM_UI_DATA_ADDR = 0xbc00
+                0x0000000000000400                SRAM_UI_DATA_SIZE = 0x400
+                0x0000000000010000                SRAM_KEY_MESSAGE_RCODE_ADDR = 0x10000
+                0x0000000000000a00                SRAM_KEY_MESSAGE_RCODE_SIZE = 0xa00
+                0x0000000000010a00                SRAM_RAM0_RESEVER1_ADDR = 0x10a00
+                0x0000000000000200                SRAM_RAM0_RESEVER1_SIZE = 0x200
+                0x0000000000010c00                SRAM_AP_FRONT_BASAL_RCODE_ADDR = 0x10c00
+                0x0000000000000100                SRAM_AP_FRONT_BASAL_RCODE_SIZE = 0x100
+                0x0000000000010d00                SRAM_AP_BANK_BACK_CONTROL_ADDR = 0x10d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_CONTROL_SIZE = 0x800
+                0x0000000000011500                SRAM_AP_BACK_RCODE_ADDR = 0x11500
+                0x0000000000000800                SRAM_AP_BACK_RCODE_SIZE = 0x800
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_ADDR = 0x0
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_SIZE = 0x0
+                0x0000000000011d00                SRAM_RAM0_RESEVER2_ADDR = 0x11d00
+                0x0000000000000800                SRAM_RAM0_RESEVER2_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_BASAL_ADDR = 0x12500
+                0x0000000000000800                SRAM_AP_BANK_FRONT_BASAL_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_ENHANCED_2_ADDR = SRAM_AP_BANK_FRONT_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_2_SIZE = SRAM_AP_BANK_FRONT_BASAL_SIZE
+                0x0000000000012d00                SRAM_AP_BANK_BACK_BASAL_ADDR = 0x12d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_BASAL_SIZE = 0x800
+                0x0000000000012d00                SRAM_AP_BANK_BACK_ENHANCED_1_ADDR = SRAM_AP_BANK_BACK_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_1_SIZE = SRAM_AP_BANK_BACK_BASAL_SIZE
+                0x0000000000013500                SRAM_AP_BACK_BASAL_RCODE_ADDR = 0x13500
+                0x0000000000000800                SRAM_AP_BACK_BASAL_RCODE_SIZE = 0x800
+                0x0000000000013d00                SRAM_KERNEL_BSS_ADDR = 0x13d00
+                0x00000000000000e0                SRAM_KERNEL_BSS_SIZE = 0xe0
+                0x0000000000013de0                SRAM_AP_MANAGER_ADDR = 0x13de0
+                0x0000000000000200                SRAM_AP_MANAGER_SIZE = 0x200
+                0x0000000000013fc0                SRAM_IRQ_DSP_PRINT_TEMP_ADDR = 0x13fc0
+                0x0000000000000020                SRAM_IRQ_DSP_PRINT_TEMP_SIZE = 0x20
+                0x0000000000013fe0                SRAM_IRQ_PRINT_BUFFER_ADDR = 0x13fe0
+                0x0000000000000110                SRAM_IRQ_PRINT_BUFFER_SIZE = 0x110
+                0x00000000000140f0                SRAM_DSP_PRINT_BUFFER_ADDR = 0x140f0
+                0x0000000000000110                SRAM_DSP_PRINT_BUFFER_SIZE = 0x110
+                0x0000000000014200                SRAM_LCD_DATA_ADDR = 0x14200
+                0x0000000000000100                SRAM_LCD_DATA_SIZE = 0x100
+                0x0000000000014300                SRAM_KEY_MESSAGE_DATA_ADDR = 0x14300
+                0x0000000000000100                SRAM_KEY_MESSAGE_DATA_SIZE = 0x100
+                0x0000000000014400                SRAM_AP_BANK_FRONT_UI_ADDR = 0x14400
+                0x0000000000000800                SRAM_AP_BANK_FRONT_UI_SIZE = 0x800
+                0x0000000000014c00                SRAM_AP_BANK_FRONT_CONTROL_ADDR = 0x14c00
+                0x0000000000000800                SRAM_AP_BANK_FRONT_CONTROL_SIZE = 0x800
+                0x0000000000015400                SRAM_AP_FRONT_DATA_ADDR = 0x15400
+                0x0000000000000800                SRAM_AP_FRONT_DATA_SIZE = 0x800
+                0x0000000000015c00                SRAM_AP_BACK_DATA_ADDR = 0x15c00
+                0x0000000000000600                SRAM_AP_BACK_DATA_SIZE = 0x600
+                0x0000000000016200                SRAM_AP_BANK_MANAGER_ADDR = 0x16200
+                0x0000000000000200                SRAM_AP_BANK_MANAGER_SIZE = 0x200
+                0x0000000000016400                SRAM_AP_FRONT_RCODE_ADDR = 0x16400
+                0x0000000000000800                SRAM_AP_FRONT_RCODE_SIZE = 0x800
+                0x0000000000016c00                SRAM_FS_RCODE_ADDR = 0x16c00
+                0x0000000000000800                SRAM_FS_RCODE_SIZE = 0x800
+                0x0000000000017400                SRAM_UI_RCODE3_ADDR = 0x17400
+                0x0000000000000c00                SRAM_UI_RCODE3_SIZE = 0xc00
+                0x0000000000017400                SRAM_CARD_UD_RCODE_ADDR = 0x17400
+                0x0000000000000c00                SRAM_CARD_UD_RCODE_SIZE = 0xc00
+                0x0000000000017400                SRAM_UHOST_UD_RCODE_ADDR = SRAM_CARD_UD_RCODE_ADDR
+                0x0000000000000c00                SRAM_UHOST_UD_RCODE_SIZE = SRAM_CARD_UD_RCODE_SIZE
+                0x0000000000018000                SRAM_FS_DATA_ADDR = 0x18000
+                0x0000000000000300                SRAM_FS_DATA_SIZE = 0x300
+                0x0000000000018300                SRAM_FS_BUF_ADDR = 0x18300
+                0x0000000000000a00                SRAM_FS_BUF_SIZE = 0xa00
+                0x0000000000018d00                SRAM_CARD_UD_CACHE_ADDR = 0x18d00
+                0x0000000000000800                SRAM_CARD_UD_CACHE_SIZE = 0x800
+                0x0000000000018d00                SRAM_UHOST_UD_CACHE_ADDR = SRAM_CARD_UD_CACHE_ADDR
+                0x0000000000000800                SRAM_UHOST_UD_CACHE_SIZE = SRAM_CARD_UD_CACHE_SIZE
+                0x0000000000019500                SRAM_CARD_DATA_ADDR = 0x19500
+                0x0000000000000080                SRAM_CARD_DATA_SIZE = 0x80
+                0x0000000000019500                SRAM_UHOST_DATA_ADDR = SRAM_CARD_DATA_ADDR
+                0x0000000000000080                SRAM_UHOST_DATA_SIZE = SRAM_CARD_DATA_SIZE
+                0x0000000000019580                SRAM_KERNEL_XSYS_ADDR = 0x19580
+                0x0000000000000800                SRAM_KERNEL_XSYS_SIZE = 0x800
+                0x0000000000019d80                SRAM_BANK_C_ADDR = 0x19d80
+                0x0000000000000400                SRAM_BANK_C_SIZE = 0x400
+                0x000000000001a180                SRAM_APPLIB_GLOBAL_DATA_ADDR = 0x1a180
+                0x0000000000000100                SRAM_APPLIB_GLOBAL_DATA_SIZE = 0x100
+                0x000000000001a280                SRAM_APPLIB_DATA_ADDR = 0x1a280
+                0x0000000000000100                SRAM_APPLIB_DATA_SIZE = 0x100
+                0x000000000001a380                SRAM_RAM1_RESEVER1_ADDR = 0x1a380
+                0x0000000000000080                SRAM_RAM1_RESEVER1_SIZE = 0x80
+                0x000000000001a400                SRAM_OS_DATA_ADDR = 0x1a400
+                0x0000000000000880                SRAM_OS_DATA_SIZE = 0x880
+                0x000000000001ac80                SRAM_OS_HEAP_ADDR = 0x1ac80
+                0x0000000000000580                SRAM_OS_HEAP_SIZE = 0x580
+                0x000000000001b200                SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR = 0x1b200
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE = 0x800
+                0x000000000001b200                SRAM_FM_DRV_RCODE_ADDR = SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR
+                0x0000000000000800                SRAM_FM_DRV_RCODE_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE
+                0x000000000001ba00                SRAM_OS_SD_SWAP_BUF_ADDR = 0x1ba00
+                0x0000000000000200                SRAM_OS_SD_SWAP_BUF_SIZE = 0x200
+                0x000000000001bc00                SRAM_OS_TASK_STACK_ADDR = 0x1bc00
+                0x0000000000001a00                SRAM_OS_TASK_STACK_SIZE = 0x1a00
+                0x000000000001d600                SRAM_OS_SYS_STACK_ADDR = 0x1d600
+                0x0000000000000400                SRAM_OS_SYS_STACK_SIZE = 0x400
+                0x000000000001da00                SRAM_RAM1_RESEVER2_ADDR = 0x1da00
+                0x0000000000000600                SRAM_RAM1_RESEVER1_SIZE = 0x600
+                0x0000000000027000                SRAM_AP_BACK_CODEC_RCODE_ADDR = 0x27000
+                0x0000000000001000                SRAM_AP_BACK_CODEC_RCODE_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_CODEC_ADDR = 0x28000
+                0x0000000000001000                SRAM_AP_BANK_BACK_CODEC_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_ENHANCED_2_ADDR = 0x28000
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_2_SIZE = 0x800
+                0x0000000000030000                SRAM_AP_USB_DEVICE_RCODE_ADDR = 0x30000
+                0x0000000000004000                SRAM_AP_USB_DEVICE_RCODE_SIZE = 0x4000
+                0x0000000000038000                SRAM_TWI_ADDR_MDY = 0x38000
+                0x0000000000000700                SRAM_TWI_SIZE_MDY = SROM_TWI_SIZE_MDY
+                0x0000000000040000                SRAM_INVALID_RCODE_ADDR = 0x40000
+                0x0000000000000000                AP_INDEX = FRONT_AP
+                0x0000000040014c00                BANK_CONTROL_1_ADDR_BASE = ((AP_BANK_FRONT_CONTROL_1 << 0x18) + SRAM_AP_BANK_FRONT_CONTROL_ADDR)
+                0x0000000048014400                BANK_UI_1_ADDR_BASE = ((AP_BANK_FRONT_UI_1 << 0x18) + SRAM_AP_BANK_FRONT_UI_ADDR)
+                0x000000007801b200                BANK_FRONT_ENHANCED_1_ADDR_BASE = ((AP_BANK_FRONT_ENHANCED_1 << 0x18) + SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR)
+                0x0000000071012500                BANK_FRONT_ENHANCED_2_ADDR_BASE = ((AP_BANK_FRONT_ENHANCED_2 << 0x18) + SRAM_AP_BANK_FRONT_ENHANCED_2_ADDR)
+                0x000000007a012d00                BANK_BACK_ENHANCED_1_ADDR_BASE = ((AP_BANK_BACK_ENHANCED_1 << 0x18) + SRAM_AP_BANK_BACK_ENHANCED_1_ADDR)
+                0x000000007b028000                BANK_BACK_ENHANCED_2_ADDR_BASE = ((AP_BANK_BACK_ENHANCED_2 << 0x18) + SRAM_AP_BANK_BACK_ENHANCED_2_ADDR)
+                0x0000000000000800                BANK_CONTROL_SIZE = SRAM_AP_BANK_FRONT_CONTROL_SIZE
+                0x0000000000000800                BANK_UI_SIZE = SRAM_AP_BANK_FRONT_UI_SIZE
+                0x0000000000000800                BANK_FRONT_ENHANCED1_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE
+                0x0000000000000800                BANK_FRONT_ENHANCED2_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_2_SIZE
+                0x0000000000000800                BANK_BACK_ENHANCED1_SIZE = SRAM_AP_BANK_BACK_ENHANCED_1_SIZE
+                0x0000000000000800                BANK_BACK_ENHANCED2_SIZE = SRAM_AP_BANK_BACK_ENHANCED_2_SIZE
+                0x0000000000040000                AP_BANK_SPACE = BANK_SPACE
+                0x000000007801b200                . = BANK_FRONT_ENHANCED_1_ADDR_BASE
+                0x000000000001b200                OFFSET = (. & 0x3ffff)
+
+BANK_FRONT_ENHANCED_COMM_1_0
+                0x000000007801b200      0x800
+ eh_module.o(.text .rodata .xdata)
+ .text          0x000000007801b200      0x4f8 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+                0x000000007801b299                set_fileindex
+                0x000000007801b219                select_dir_or_dirlist
+                0x000000007801b5d1                fsel_exit
+                0x000000007801b281                get_fileindex
+                0x000000007801b6e1                fsel_get_error
+                0x000000007801b2f5                fsel_init
+                0x000000007801b2b1                set_dirlist_file_index_tbl
+                0x000000007801b2d5                get_dirlist_file_index_tbl
+                0x000000007801b201                get_current_disk
+ .rodata        0x000000007801b6f8       0x30 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .xdata         0x000000007801b728      0x204 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+                0x000000007801b72c                temp_module_buf
+                0x0000000000000800                . = BANK_FRONT_ENHANCED1_SIZE
+ *fill*         0x000000007801b92c       0xd4 00
+LOAD ./../common/common_front_no_selector.xn
+LOAD ./../../../psp_rel/include/link_base.xn
+                0x0000000000000000                DRV_GROUP_STG_BASE = 0x0
+                0x0000000000000001                DRV_GROUP_STG_CARD = 0x1
+                0x0000000000000002                DRV_GROUP_STG_UHOST = 0x2
+                0x0000000000000003                DRV_GROUP_FAT32 = 0x3
+                0x0000000000000004                DRV_GROUP_EXFAT = 0x4
+                0x0000000000000005                DRV_GROUP_UD = 0x5
+                0x0000000000000006                DRV_GROUP_UI = 0x6
+                0x0000000000000007                DRV_GROUP_LCD = 0x7
+                0x0000000000000008                DRV_GROUP_FM = 0x8
+                0x0000000000000009                DRV_GROUP_KEY = 0x9
+                0x000000000000000a                DRV_GROUP_CCD = 0xa
+                0x000000000000000b                DRV_GROUP_I2C = 0xb
+                0x000000000000000c                DRV_GROUP_AUDIO_DEVICE = 0xc
+                0x000000000000000d                DRV_GROUP_TTS = 0xd
+                0x000000000000000e                DRV_GROUP_BT = 0xe
+                0x000000000000000f                DRV_GROUP_SYS = 0xf
+                0x000000000003ffff                SRAM_SIZE_MASK = 0x3ffff
+                0x000000009fc00000                RDATA_ADDR_BASE = 0x9fc00000
+                0x00000000bfc00000                RCODE_ADDR_BASE = 0xbfc00000
+                0x0000000000000001                KERNEL_BANK_A = 0x1
+                0x0000000000000002                KERNEL_BANK_B = 0x2
+                0x0000000000000003                KERNEL_BANK_C = 0x3
+                0x0000000000040000                BANK_SPACE = 0x40000
+                0x0000000000000000                FRONT_AP = 0x0
+                0x0000000000000001                BACK_AP = 0x1
+                0x0000000000000002                PROCESS_MANAGER_AP = 0x2
+                0x0000000000000000                FRONT_CODEC = 0x0
+                0x0000000000000001                BACK_CODEC = 0x1
+                0x0000000000000040                AP_BANK_FRONT_CONTROL_1 = 0x40
+                0x0000000000000048                AP_BANK_FRONT_UI_1 = 0x48
+                0x0000000000000050                AP_BANK_FRONT_BASAL = 0x50
+                0x0000000000000058                AP_BANK_FRONT_CODEC = 0x58
+                0x0000000000000060                AP_BANK_BACK_CONTROL_1 = 0x60
+                0x0000000000000068                AP_BANK_BACK_BASAL = 0x68
+                0x0000000000000070                AP_BANK_BACK_CODEC = 0x70
+                0x0000000000000078                AP_BANK_FRONT_ENHANCED_1 = 0x78
+                0x0000000000000071                AP_BANK_FRONT_ENHANCED_2 = 0x71
+                0x000000000000007a                AP_BANK_BACK_ENHANCED_1 = 0x7a
+                0x000000000000007b                AP_BANK_BACK_ENHANCED_2 = 0x7b
+                0x0000000000000072                AP_BANK_BTENGINE_CONTROL_1 = 0x72
+                0x0000000000000073                AP_BANK_BTENGINE_LIB_1 = 0x73
+                0x0000000000000074                AP_BANK_BTENGINE_LIB_2 = 0x74
+                0x0000000000000075                AP_BANK_BTENGINE_EXTEND_1 = 0x75
+                0x0000000000000076                AP_BANK_BTENGINE_EXTEND_2 = 0x76
+                0x0000000000000077                AP_BANK_BTENGINE_EXTEND_3 = 0x77
+                0x000000000000007c                AP_BANK_BTENGINE_EXTEND_4 = 0x7c
+                0x0000000000000079                AP_BANK_BTENGINE_EXTEND_5 = 0x79
+                0x000000000000007f                AP_BANK_MANAGER = 0x7f
+                0x0000000000000041                AP_BANK_AUTOTEST = 0x41
+                0x0000000000000000                SROM_BROM_ADDR = 0x0
+                0x0000000000002600                SROM_BROM_SIZE = 0x2600
+                0x0000000000002600                SROM_SPINOR_ADDR = (SROM_BROM_ADDR + SROM_BROM_SIZE)
+                0x0000000000000c00                SROM_SPINOR_SIZE = 0xc00
+                0x0000000000003200                SROM_TWI_ADDR = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE)
+                0x0000000000000700                SROM_TWI_SIZE = 0x700
+                0x0000000000003900                SROM_STUB_ADDR = (SROM_TWI_ADDR + SROM_TWI_SIZE)
+                0x0000000000000700                SROM_STUB_SIZE = 0x700
+                0x0000000000000e00                SROM_SPINOR_SIZE_MDY = 0xe00
+                0x0000000000003400                SROM_TWI_ADDR_MDY = (SROM_SPINOR_ADDR + SROM_SPINOR_SIZE_MDY)
+                0x0000000000000700                SROM_TWI_SIZE_MDY = 0x700
+                0x0000000000003b00                SROM_STUB_ADDR_MDY = (SROM_TWI_ADDR_MDY + SROM_TWI_SIZE_MDY)
+                0x0000000000000500                SROM_STUB_SIZE_MDY = 0x500
+                0x0000000000004000                SROM_KERNEL_ADDR = (SROM_STUB_ADDR + SROM_STUB_SIZE)
+                0x0000000000004000                SROM_KERNEL_SIZE = 0x4000
+                0x000000000000c000                SROM_FS_ADDR = 0xc000
+                0x0000000000001c00                SROM_FS_SIZE = 0x1c00
+                0x000000000000dc00                SROM_SPINOR1_ADDR = (SROM_FS_ADDR + SROM_FS_SIZE)
+                0x0000000000000400                SROM_SPINOR1_SIZE = 0x400
+                0x0000000000008000                SRAM_OS_RCODE_ADDR = 0x8000
+                0x0000000000000c00                SRAM_OS_RCODE_SIZE = 0xc00
+                0x0000000000008c00                SRAM_SPINOR_RCODE_ADDR = 0x8c00
+                0x0000000000000400                SRAM_SPINOR_RCODE_SIZE = 0x400
+                0x0000000000009000                SRAM_BANK_A_ADDR = 0x9000
+                0x0000000000000400                SRAM_BANK_A_SIZE = 0x400
+                0x0000000000009400                SRAM_BANK_B_ADDR = 0x9400
+                0x0000000000000800                SRAM_BANK_B_SIZE = 0x800
+                0x0000000000009c00                SRAM_UI_RCODE1_ADDR = 0x9c00
+                0x0000000000000300                SRAM_UI_RCODE1_SIZE = 0x300
+                0x0000000000009f00                SRAM_AUDIO_GLOBAL_DATA_ADDR = 0x9f00
+                0x0000000000000060                SRAM_AUDIO_GLOBAL_DATA_SIZE = 0x60
+                0x0000000000009f60                SRAM_UHOST_GLOBAL_DATA_ADDR = 0x9f60
+                0x0000000000000010                SRAM_UHOST_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f70                SRAM_CARD_GLOBAL_DATA_ADDR = 0x9f70
+                0x0000000000000010                SRAM_CARD_GLOBAL_DATA_SIZE = 0x10
+                0x0000000000009f80                SRAM_SYS_SHARE_DATA_ADDR = 0x9f80
+                0x0000000000000040                SRAM_SYS_SHARE_DATA_SIZE = 0x40
+                0x0000000000009fc0                SRAM_RAM6_CCD_GLOBAL_DATA_ADDR = 0x9fc0
+                0x0000000000000020                SRAM_RAM6_CCD_GLOBAL_DATA_SIZE = 0x20
+                0x0000000000009fe0                SRAM_RAM6_RESEVER_ADDR = 0x9fe0
+                0x0000000000000020                SRAM_RAM6_RESEVER_SIZE = 0x20
+                0x000000000000a000                SRAM_LCD_RCODE_ADDR = 0xa000
+                0x0000000000000800                SRAM_LCD_RCODE_SIZE = 0x800
+                0x000000000000a800                SRAM_UI_RCODE2_ADDR = 0xa800
+                0x0000000000001000                SRAM_UI_RCODE2_SIZE = 0x1000
+                0x000000000000b800                SRAM_LCD_BUFFER_ADDR = 0xb800
+                0x0000000000000400                SRAM_LCD_BUFFER_SIZE = 0x400
+                0x000000000000bc00                SRAM_UI_DATA_ADDR = 0xbc00
+                0x0000000000000400                SRAM_UI_DATA_SIZE = 0x400
+                0x0000000000010000                SRAM_KEY_MESSAGE_RCODE_ADDR = 0x10000
+                0x0000000000000a00                SRAM_KEY_MESSAGE_RCODE_SIZE = 0xa00
+                0x0000000000010a00                SRAM_RAM0_RESEVER1_ADDR = 0x10a00
+                0x0000000000000200                SRAM_RAM0_RESEVER1_SIZE = 0x200
+                0x0000000000010c00                SRAM_AP_FRONT_BASAL_RCODE_ADDR = 0x10c00
+                0x0000000000000100                SRAM_AP_FRONT_BASAL_RCODE_SIZE = 0x100
+                0x0000000000010d00                SRAM_AP_BANK_BACK_CONTROL_ADDR = 0x10d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_CONTROL_SIZE = 0x800
+                0x0000000000011500                SRAM_AP_BACK_RCODE_ADDR = 0x11500
+                0x0000000000000800                SRAM_AP_BACK_RCODE_SIZE = 0x800
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_ADDR = 0x0
+                0x0000000000000000                SRAM_AP_BANK_FRONT_CODEC_SIZE = 0x0
+                0x0000000000011d00                SRAM_RAM0_RESEVER2_ADDR = 0x11d00
+                0x0000000000000800                SRAM_RAM0_RESEVER2_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_BASAL_ADDR = 0x12500
+                0x0000000000000800                SRAM_AP_BANK_FRONT_BASAL_SIZE = 0x800
+                0x0000000000012500                SRAM_AP_BANK_FRONT_ENHANCED_2_ADDR = SRAM_AP_BANK_FRONT_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_2_SIZE = SRAM_AP_BANK_FRONT_BASAL_SIZE
+                0x0000000000012d00                SRAM_AP_BANK_BACK_BASAL_ADDR = 0x12d00
+                0x0000000000000800                SRAM_AP_BANK_BACK_BASAL_SIZE = 0x800
+                0x0000000000012d00                SRAM_AP_BANK_BACK_ENHANCED_1_ADDR = SRAM_AP_BANK_BACK_BASAL_ADDR
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_1_SIZE = SRAM_AP_BANK_BACK_BASAL_SIZE
+                0x0000000000013500                SRAM_AP_BACK_BASAL_RCODE_ADDR = 0x13500
+                0x0000000000000800                SRAM_AP_BACK_BASAL_RCODE_SIZE = 0x800
+                0x0000000000013d00                SRAM_KERNEL_BSS_ADDR = 0x13d00
+                0x00000000000000e0                SRAM_KERNEL_BSS_SIZE = 0xe0
+                0x0000000000013de0                SRAM_AP_MANAGER_ADDR = 0x13de0
+                0x0000000000000200                SRAM_AP_MANAGER_SIZE = 0x200
+                0x0000000000013fc0                SRAM_IRQ_DSP_PRINT_TEMP_ADDR = 0x13fc0
+                0x0000000000000020                SRAM_IRQ_DSP_PRINT_TEMP_SIZE = 0x20
+                0x0000000000013fe0                SRAM_IRQ_PRINT_BUFFER_ADDR = 0x13fe0
+                0x0000000000000110                SRAM_IRQ_PRINT_BUFFER_SIZE = 0x110
+                0x00000000000140f0                SRAM_DSP_PRINT_BUFFER_ADDR = 0x140f0
+                0x0000000000000110                SRAM_DSP_PRINT_BUFFER_SIZE = 0x110
+                0x0000000000014200                SRAM_LCD_DATA_ADDR = 0x14200
+                0x0000000000000100                SRAM_LCD_DATA_SIZE = 0x100
+                0x0000000000014300                SRAM_KEY_MESSAGE_DATA_ADDR = 0x14300
+                0x0000000000000100                SRAM_KEY_MESSAGE_DATA_SIZE = 0x100
+                0x0000000000014400                SRAM_AP_BANK_FRONT_UI_ADDR = 0x14400
+                0x0000000000000800                SRAM_AP_BANK_FRONT_UI_SIZE = 0x800
+                0x0000000000014c00                SRAM_AP_BANK_FRONT_CONTROL_ADDR = 0x14c00
+                0x0000000000000800                SRAM_AP_BANK_FRONT_CONTROL_SIZE = 0x800
+                0x0000000000015400                SRAM_AP_FRONT_DATA_ADDR = 0x15400
+                0x0000000000000800                SRAM_AP_FRONT_DATA_SIZE = 0x800
+                0x0000000000015c00                SRAM_AP_BACK_DATA_ADDR = 0x15c00
+                0x0000000000000600                SRAM_AP_BACK_DATA_SIZE = 0x600
+                0x0000000000016200                SRAM_AP_BANK_MANAGER_ADDR = 0x16200
+                0x0000000000000200                SRAM_AP_BANK_MANAGER_SIZE = 0x200
+                0x0000000000016400                SRAM_AP_FRONT_RCODE_ADDR = 0x16400
+                0x0000000000000800                SRAM_AP_FRONT_RCODE_SIZE = 0x800
+                0x0000000000016c00                SRAM_FS_RCODE_ADDR = 0x16c00
+                0x0000000000000800                SRAM_FS_RCODE_SIZE = 0x800
+                0x0000000000017400                SRAM_UI_RCODE3_ADDR = 0x17400
+                0x0000000000000c00                SRAM_UI_RCODE3_SIZE = 0xc00
+                0x0000000000017400                SRAM_CARD_UD_RCODE_ADDR = 0x17400
+                0x0000000000000c00                SRAM_CARD_UD_RCODE_SIZE = 0xc00
+                0x0000000000017400                SRAM_UHOST_UD_RCODE_ADDR = SRAM_CARD_UD_RCODE_ADDR
+                0x0000000000000c00                SRAM_UHOST_UD_RCODE_SIZE = SRAM_CARD_UD_RCODE_SIZE
+                0x0000000000018000                SRAM_FS_DATA_ADDR = 0x18000
+                0x0000000000000300                SRAM_FS_DATA_SIZE = 0x300
+                0x0000000000018300                SRAM_FS_BUF_ADDR = 0x18300
+                0x0000000000000a00                SRAM_FS_BUF_SIZE = 0xa00
+                0x0000000000018d00                SRAM_CARD_UD_CACHE_ADDR = 0x18d00
+                0x0000000000000800                SRAM_CARD_UD_CACHE_SIZE = 0x800
+                0x0000000000018d00                SRAM_UHOST_UD_CACHE_ADDR = SRAM_CARD_UD_CACHE_ADDR
+                0x0000000000000800                SRAM_UHOST_UD_CACHE_SIZE = SRAM_CARD_UD_CACHE_SIZE
+                0x0000000000019500                SRAM_CARD_DATA_ADDR = 0x19500
+                0x0000000000000080                SRAM_CARD_DATA_SIZE = 0x80
+                0x0000000000019500                SRAM_UHOST_DATA_ADDR = SRAM_CARD_DATA_ADDR
+                0x0000000000000080                SRAM_UHOST_DATA_SIZE = SRAM_CARD_DATA_SIZE
+                0x0000000000019580                SRAM_KERNEL_XSYS_ADDR = 0x19580
+                0x0000000000000800                SRAM_KERNEL_XSYS_SIZE = 0x800
+                0x0000000000019d80                SRAM_BANK_C_ADDR = 0x19d80
+                0x0000000000000400                SRAM_BANK_C_SIZE = 0x400
+                0x000000000001a180                SRAM_APPLIB_GLOBAL_DATA_ADDR = 0x1a180
+                0x0000000000000100                SRAM_APPLIB_GLOBAL_DATA_SIZE = 0x100
+                0x000000000001a280                SRAM_APPLIB_DATA_ADDR = 0x1a280
+                0x0000000000000100                SRAM_APPLIB_DATA_SIZE = 0x100
+                0x000000000001a380                SRAM_RAM1_RESEVER1_ADDR = 0x1a380
+                0x0000000000000080                SRAM_RAM1_RESEVER1_SIZE = 0x80
+                0x000000000001a400                SRAM_OS_DATA_ADDR = 0x1a400
+                0x0000000000000880                SRAM_OS_DATA_SIZE = 0x880
+                0x000000000001ac80                SRAM_OS_HEAP_ADDR = 0x1ac80
+                0x0000000000000580                SRAM_OS_HEAP_SIZE = 0x580
+                0x000000000001b200                SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR = 0x1b200
+                0x0000000000000800                SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE = 0x800
+                0x000000000001b200                SRAM_FM_DRV_RCODE_ADDR = SRAM_AP_BANK_FRONT_ENHANCED_1_ADDR
+                0x0000000000000800                SRAM_FM_DRV_RCODE_SIZE = SRAM_AP_BANK_FRONT_ENHANCED_1_SIZE
+                0x000000000001ba00                SRAM_OS_SD_SWAP_BUF_ADDR = 0x1ba00
+                0x0000000000000200                SRAM_OS_SD_SWAP_BUF_SIZE = 0x200
+                0x000000000001bc00                SRAM_OS_TASK_STACK_ADDR = 0x1bc00
+                0x0000000000001a00                SRAM_OS_TASK_STACK_SIZE = 0x1a00
+                0x000000000001d600                SRAM_OS_SYS_STACK_ADDR = 0x1d600
+                0x0000000000000400                SRAM_OS_SYS_STACK_SIZE = 0x400
+                0x000000000001da00                SRAM_RAM1_RESEVER2_ADDR = 0x1da00
+                0x0000000000000600                SRAM_RAM1_RESEVER1_SIZE = 0x600
+                0x0000000000027000                SRAM_AP_BACK_CODEC_RCODE_ADDR = 0x27000
+                0x0000000000001000                SRAM_AP_BACK_CODEC_RCODE_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_CODEC_ADDR = 0x28000
+                0x0000000000001000                SRAM_AP_BANK_BACK_CODEC_SIZE = 0x1000
+                0x0000000000028000                SRAM_AP_BANK_BACK_ENHANCED_2_ADDR = 0x28000
+                0x0000000000000800                SRAM_AP_BANK_BACK_ENHANCED_2_SIZE = 0x800
+                0x0000000000030000                SRAM_AP_USB_DEVICE_RCODE_ADDR = 0x30000
+                0x0000000000004000                SRAM_AP_USB_DEVICE_RCODE_SIZE = 0x4000
+                0x0000000000038000                SRAM_TWI_ADDR_MDY = 0x38000
+                0x0000000000000700                SRAM_TWI_SIZE_MDY = SROM_TWI_SIZE_MDY
+                0x0000000000040000                SRAM_INVALID_RCODE_ADDR = 0x40000
+                0x0000000000016400                SRAM_TEXT_ADDR = SRAM_AP_FRONT_RCODE_ADDR
+                0x0000000000015400                SRAM_DATA_ADDR = SRAM_AP_FRONT_DATA_ADDR
+                0x00000000bfc16400                RCODE_TEXT_ADDR = (RCODE_ADDR_BASE + SRAM_TEXT_ADDR)
+                0x000000009fc15400                RDATA_DATA_ADDR = (RDATA_ADDR_BASE + SRAM_DATA_ADDR)
+                0x0000000040014c00                BANK_CONTROL_1_ADDR_BASE = ((AP_BANK_FRONT_CONTROL_1 << 0x18) + SRAM_AP_BANK_FRONT_CONTROL_ADDR)
+                0x0000000048014400                BANK_UI_1_ADDR_BASE = ((AP_BANK_FRONT_UI_1 << 0x18) + SRAM_AP_BANK_FRONT_UI_ADDR)
+                0x0000000000000800                BANK_CONTROL_SIZE = SRAM_AP_BANK_FRONT_CONTROL_SIZE
+                0x0000000000000800                BANK_UI_SIZE = SRAM_AP_BANK_FRONT_UI_SIZE
+                0x0000000000000600                BANK_UI_RESERVE_SIZE = (SRAM_AP_BANK_FRONT_UI_SIZE - 0x200)
+                0x0000000000040000                AP_BANK_SPACE = BANK_SPACE
+LOAD ./../../../psp_rel/lib/api.a
+OUTPUT(ap_setting.exe elf32-tradlittlemips)
+                0x0000000078054400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_FRONT_ENHANCED_FUNC_1_0
+                0x000000007805b200      0x800
+ eh_change_location.o(.text .rodata .xdata)
+ .text          0x000000007805b200      0x298 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+                0x000000007805b2dd                chg_get_object_index
+                0x000000007805b371                fsel_change_filepath
+                0x000000007805b265                chg_read_tree_data
+ .rodata        0x000000007805b498       0x30 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .xdata         0x000000007805b4c8      0x208 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+                0x000000007805b4d0                change_temp_buffer
+                0x000000007805b4cc                change_file_total
+                0x000000007805b4c8                change_object_handle
+                0x0000000000000800                . = BANK_FRONT_ENHANCED1_SIZE
+ *fill*         0x000000007805b6d0      0x330 00
+                0x0000000078094400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+                0x0000000071012500                . = BANK_FRONT_ENHANCED_2_ADDR_BASE
+                0x0000000000012500                OFFSET = (. & 0x3ffff)
+
+BANK_FRONT_ENHANCED_COMM_2_0
+                0x0000000071012500      0x800
+ eh_module_sub.o(.text .rodata .xdata)
+ .text          0x0000000071012500      0x620 ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+                0x0000000071012951                mod_open_playlist
+                0x00000000710125f9                mod_open_userpl
+ .rodata        0x0000000071012b20       0xa8 ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+                0x0000000000000800                . = BANK_FRONT_ENHANCED2_SIZE
+ *fill*         0x0000000071012bc8      0x138 00
+                0x0000000071054400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_FRONT_ENHANCED_FUNC_2_1
+                0x0000000071052500      0x800
+ eh_change_location_sub.o(.text .rodata .xdata)
+ .text          0x0000000071052500      0x578 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+                0x0000000071052501                chg_change_filepath_sub
+ .xdata         0x0000000071052a78       0x24 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+                0x0000000000000800                . = BANK_FRONT_ENHANCED2_SIZE
+ *fill*         0x0000000071052a9c      0x264 00
+                0x0000000048414400                XDATA_BASE = (BANK_UI_1_ADDR_BASE + (AP_BANK_SPACE * 0x10))
+
+.XDATA_BANK_UI_STR_BUFFER
+                0x0000000048414400      0x200
+ common_ui_data.o(.xdata)
+ .xdata         0x0000000048414400      0x1c8 ./../../lib/common_ui_data.o
+                0x00000000484144c0                com_name_buffer
+                0x00000000484145b0                g_aufm_temp
+                0x00000000484144f4                g_alarm_temp
+                0x0000000048414400                com_str_buffer
+                0x0000000048414600                . = 0x200
+ *fill*         0x00000000484145c8       0x38 00
+                0x0000000040c14c00                . = (BANK_CONTROL_1_ADDR_BASE + (AP_BANK_SPACE * 0x30))
+                0x0000000000014c00                OFFSET = (. & 0x3ffff)
+
+BANK_CONTROL_1_48
+                0x0000000040c14c00      0x800
+ ui_menulist.o(.text .rodata .xdata)
+ .text          0x0000000040c14c00      0x4a8 ./../../lib/ui_menulist.o
+                0x0000000040c14f31                menulist_msg_deal
+                0x0000000040c14c01                gui_menulist
+                0x0000000040c15045                load_confmenu_item_data
+ .xdata         0x0000000040c150a8       0x70 ./../../lib/ui_menulist.o
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040c15118      0x2e8 00
+                0x0000000040c54400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_49
+                0x0000000040c54c00      0x800
+ ui_menulist2.o(.text .rodata .xdata)
+ .text          0x0000000040c54c00      0x780 ./../../lib/ui_menulist2.o
+                0x0000000040c55069                re_redraw_currentdir
+                0x0000000040c54ecd                re_enter_currentdir
+                0x0000000040c54d89                load_confmenu_title_data
+                0x0000000040c54c8d                init_menulist_param
+                0x0000000040c55171                read_history_item_menu
+                0x0000000040c54db9                enter_newest_menulist
+                0x0000000040c55119                write_history_item_menu
+                0x0000000040c55255                init_ml_control
+                0x0000000040c54d11                load_conf_title
+                0x0000000040c55219                read_next_layer_history
+ .xdata         0x0000000040c55380       0x70 ./../../lib/ui_menulist2.o
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040c553f0       0x10 00
+                0x0000000040c94400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_50
+                0x0000000040c94c00      0x800
+ ui_menulist_simple.o(.text .rodata .xdata)
+ .text          0x0000000040c94c00      0x4e8 ./../../lib/ui_menulist_simple.o
+                0x0000000040c94c01                menulist_simple_msg_deal
+                0x0000000040c94d99                gui_menulist_simple
+ .xdata         0x0000000040c950e8       0x70 ./../../lib/ui_menulist_simple.o
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040c95158      0x2a8 00
+                0x0000000040cd4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+                0x0000000040d14400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+                0x0000000040d54400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_53
+                0x0000000040d54c00      0x800
+ ui_parameter.o(.text .rodata .xdata)
+ .text          0x0000000040d54c00      0x598 ./../../lib/ui_parameter.o
+                0x0000000040d54d81                parambox_msg_deal
+                0x0000000040d54c01                parambox_value_inc
+                0x0000000040d54f2d                gui_set_parameter
+                0x0000000040d54cc1                parambox_value_dec
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040d55198      0x268 00
+                0x0000000040d94400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_54
+                0x0000000040d94c00      0x800
+ ui_textread.o(.text .rodata .xdata)
+ .text          0x0000000040d94c00      0x4b0 ./../../lib/ui_textread.o
+                0x0000000040d94d85                gui_text_read
+                0x0000000040d94c01                textread_msg_deal
+ .xdata         0x0000000040d950b0      0x2a0 ./../../lib/ui_textread.o
+                0x0000000040d950f2                g_file_offset_bk
+                0x0000000040d95338                text_file
+                0x0000000040d950f6                g_need_draw
+                0x0000000040d950f4                g_page_index
+                0x0000000040d950f8                text_decode
+                0x0000000040d950f0                g_file_offset
+                0x0000000040d950f5                g_text_end_flag
+                0x0000000040d950b0                g_offset_history
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040d95350       0xb0 00
+                0x0000000040dd4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_CONTROL_1_55
+                0x0000000040dd4c00      0x800
+ setting_comval.o(.text .rodata .xdata)
+ .text          0x0000000040dd4c00      0x1cc ./../../lib/setting_comval.o
+                0x0000000040dd4d21                com_get_default_dae
+                0x0000000040dd4c01                com_get_default_setting
+                0x0000000000000800                . = BANK_CONTROL_SIZE
+ *fill*         0x0000000040dd4dcc      0x634 00
+                0x0000000048414400                . = (BANK_UI_1_ADDR_BASE + (AP_BANK_SPACE * 0x10))
+                0x0000000000014400                OFFSET = (. & 0x3ffff)
+                0x0000000048414600                . = (. + 0x200)
+
+BANK_UI_1_16    0x0000000048414600      0x600
+ app_manager_bank.o(.text .rodata .xdata)
+ .text          0x0000000048414600      0x1c4 ./../../lib/app_manager_bank.o
+                0x0000000048414601                applib_init
+                0x00000000484146f9                applib_quit
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000484147c4      0x43c 00
+                0x0000000048454600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_17    0x0000000048454600      0x600
+ app_timer_bank.o(.text .rodata .xdata)
+ .text          0x0000000048454600      0x1ac ./../../lib/app_timer_bank.o
+                0x00000000484546f5                restart_app_timer
+                0x0000000048454601                set_app_timer
+                0x0000000048454679                modify_app_timer
+                0x000000004845473d                kill_app_timer
+                0x00000000484546c5                stop_app_timer
+                0x000000004845476d                init_app_timers
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000484547ac      0x454 00
+                0x0000000048494600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_18    0x0000000048494600      0x600
+ message_bank_init.o(.text .rodata .xdata)
+ .text          0x0000000048494600       0x40 ./../../lib/message_bank_init.o
+                0x0000000048494601                applib_message_init
+ message_bank_send.o(.text .rodata .xdata)
+ .text          0x0000000048494640      0x170 ./../../lib/message_bank_send.o
+                0x0000000048494679                send_sync_msg
+                0x0000000048494759                send_async_msg
+                0x0000000048494799                reply_sync_msg
+ message_bank_broadcast.o(.text .rodata .xdata)
+ .text          0x00000000484947b0       0x74 ./../../lib/message_bank_broadcast.o
+                0x00000000484947e9                broadcast_msg_sys
+                0x00000000484947b1                broadcast_msg
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048494824      0x3dc 00
+                0x00000000484d4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_19    0x00000000484d4600      0x600
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000484d4600      0x600 00
+                0x0000000048514600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_20    0x0000000048514600      0x600
+ common_config.o(.text .rodata .xdata)
+ .text          0x0000000048514600      0x11c ./../../lib/common_config.o
+                0x00000000485146bd                com_get_config_default
+                0x0000000048514601                com_open_config_file
+                0x000000004851464d                com_get_config_struct
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x000000004851471c      0x4e4 00
+                0x0000000048554600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_21    0x0000000048554600      0x600
+ common_msgmap_data.o(.text .rodata .xdata)
+ .rodata        0x0000000048554600      0x1ac ./../../lib/common_msgmap_data.o
+                0x00000000485546d8                textread_key_map_list
+                0x000000004855466c                keylock_list
+                0x000000004855475c                limit_key_map_list
+                0x0000000048554788                key_shortcut_list
+                0x0000000048554684                menulist_key_map_list
+                0x00000000485546f8                usbconnect_key_map_list
+                0x0000000048554618                dialog_key_map_list
+                0x00000000485546cc                shutoff_key_map_list
+                0x0000000048554730                volume_key_map_list
+                0x00000000485546a8                parameter_key_map_list
+                0x0000000048554600                delete_key_map_list
+                0x000000004855463c                directory_key_map_list
+ common_msgmap.o(.text .rodata .xdata)
+ .text          0x00000000485547ac       0xb4 ./../../lib/common_msgmap.o
+                0x00000000485547ad                com_key_mapping
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048554860      0x3a0 00
+                0x0000000048594400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_UI_1_22    0x0000000048594400      0x800
+ common_confmenu.o(.text .rodata .xdata)
+ .text          0x0000000048594400      0x2c0 ./../../lib/common_confmenu.o
+                0x0000000048594511                com_get_confmenu_item
+                0x0000000048594575                com_get_confmenu_active
+                0x0000000048594401                com_open_confmenu_file
+                0x000000004859446d                com_close_confmenu_file
+                0x0000000048594611                com_get_menu_active
+                0x00000000485944a9                com_get_confmenu_title
+                0x0000000000000800                . = BANK_UI_SIZE
+ *fill*         0x00000000485946c0      0x540 00
+                0x00000000485d4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_UI_1_23    0x00000000485d4400      0x800
+ common_history.o(.text .rodata .xdata)
+ .text          0x00000000485d4400      0x4d4 ./../../lib/common_history.o
+                0x00000000485d4401                com_get_history_item
+                0x00000000485d47c1                com_clear_app_history
+                0x00000000485d455d                com_set_history_item
+                0x00000000485d45d9                com_update_path_history
+                0x00000000485d4735                com_clear_all_history
+ .xdata         0x00000000485d48d4      0x200 ./../../lib/common_history.o
+                0x00000000485d48d4                history_buf
+                0x0000000000000800                . = BANK_UI_SIZE
+ *fill*         0x00000000485d4ad4      0x12c 00
+                0x0000000048614600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_24    0x0000000048614600      0x600
+ common_string.o(.text .rodata .xdata)
+ .text          0x0000000048614600      0x498 ./../../lib/common_string.o
+                0x0000000048614601                com_string_format
+ .xdata         0x0000000048614a98      0x140 ./../../lib/common_string.o
+                0x0000000048614a98                pattern_buf
+                0x0000000048614b58                sub_buf
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048614bd8       0x28 00
+                0x0000000048654600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_25    0x0000000048654600      0x600
+ common_string2.o(.text .rodata .xdata)
+ .text          0x0000000048654600      0x468 ./../../lib/common_string2.o
+                0x0000000048654695                com_ansi_to_unicode
+                0x0000000048654885                com_dump_debug
+                0x0000000048654721                com_ellipsis_to_longname
+                0x0000000048654601                com_dot_to_shortname
+                0x00000000486547bd                itoa_hex
+ .xdata         0x0000000048654a68       0x34 ./../../lib/common_string2.o
+                0x0000000048654a68                tmp_buffer
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048654a9c      0x164 00
+                0x0000000048694600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_26    0x0000000048694600      0x600
+ common_key.o(.text .rodata .xdata)
+ .text          0x0000000048694600      0x298 ./../../lib/common_key.o
+                0x0000000048694601                com_gui_msg_hook
+                0x000000004869487d                com_filter_key_hold
+ common_msg.o(.text .rodata .xdata)
+ .text          0x0000000048694898      0x2e4 ./../../lib/common_msg.o
+                0x0000000048694899                com_app_msg_hook
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048694b7c       0x84 00
+                0x00000000486d4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_27    0x00000000486d4600      0x600
+ common_sound.o(.text .rodata .xdata)
+ .text          0x00000000486d4600      0x444 ./../../lib/common_sound.o
+                0x00000000486d4601                com_set_sound_keytone
+                0x00000000486d4761                com_set_sound_volume
+                0x00000000486d483d                com_set_sound_out
+                0x00000000486d49d9                com_set_sound_record
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000486d4a44      0x1bc 00
+                0x0000000048714600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_28    0x0000000048714600      0x600
+ common_phy_volume_deal.o(.text .rodata .xdata)
+ .text          0x0000000048714600       0x38 ./../../lib/common_phy_volume_deal.o
+                0x0000000048714601                com_set_phy_volume
+ common_phy_volume_table.o(.text .rodata .xdata)
+ .rodata        0x0000000048714638      0x100 ./../../lib/common_phy_volume_table.o
+                0x0000000048714638                g_hard_volume_table
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048714738      0x4c8 00
+                0x0000000048754400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+                0x0000000048794400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_UI_1_30    0x0000000048794400      0x800
+ ui_menulist_sub.o(.text .rodata .xdata)
+ .text          0x0000000048794400      0x490 ./../../lib/ui_menulist_sub.o
+                0x0000000048794401                menulist_select_next
+                0x000000004879451d                menulist_select_prev
+                0x000000004879463d                update_menulist_private
+                0x0000000000000800                . = BANK_UI_SIZE
+ *fill*         0x0000000048794890      0x370 00
+                0x00000000487d4400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_UI_1_31    0x00000000487d4400      0x800
+ ui_menulist_sub2.o(.text .rodata .xdata)
+ .text          0x00000000487d4400      0x568 ./../../lib/ui_menulist_sub2.o
+                0x00000000487d4401                __init_action_title
+                0x00000000487d44b1                menulist_msg_deal_gui
+                0x0000000000000800                . = BANK_UI_SIZE
+ *fill*         0x00000000487d4968      0x298 00
+                0x0000000048814400                . = (((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET)
+
+BANK_UI_1_32    0x0000000048814400      0x800
+ ui_textread_dec.o(.text .rodata .xdata)
+ .text          0x0000000048814400      0x4b4 ./../../lib/ui_textread_dec.o
+                0x00000000488146a1                text_decode_one_page
+ ui_textread_sub.o(.text .rodata .xdata)
+ .text          0x00000000488148b4       0xe0 ./../../lib/ui_textread_sub.o
+                0x000000004881493d                show_text_line
+                0x00000000488148f9                sd_fread_sector
+                0x00000000488148b5                sd_fseek_sector
+ .rodata        0x0000000048814994       0x18 ./../../lib/ui_textread_sub.o
+                0x0000000048814994                row_pos_x
+                0x0000000048814998                row_pos_y
+                0x0000000000000800                . = BANK_UI_SIZE
+ *fill*         0x00000000488149ac      0x254 00
+                0x0000000048854600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_33    0x0000000048854600      0x600
+ ui_headbar.o(.text .rodata .xdata)
+ .text          0x0000000048854600      0x448 ./../../lib/ui_headbar.o
+                0x0000000048854601                gui_set_headbar_mode
+                0x00000000488546bd                gui_headbar
+                0x0000000048854695                gui_get_headbar_mode
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048854a48      0x1b8 00
+                0x0000000048894600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+                0x00000000488d4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+                0x0000000048914600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_36    0x0000000048914600      0x600
+ ui_keylock.o(.text .rodata .xdata)
+ .text          0x0000000048914600      0x418 ./../../lib/ui_keylock.o
+                0x0000000048914715                gui_keylock
+                0x0000000048914601                keylock_msg_deal
+                0x0000000048914701                keylock_handle
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048914a18      0x1e8 00
+                0x0000000048954600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_37    0x0000000048954600      0x600
+ ui_shutoff.o(.text .rodata .xdata)
+ .text          0x0000000048954600      0x2ac ./../../lib/ui_shutoff.o
+                0x000000004895465d                gui_shut_off
+                0x0000000048954639                timer_shutoff_handle
+                0x0000000048954601                show_shutoff_time
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000489548ac      0x354 00
+                0x0000000048994600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_38    0x0000000048994600      0x600
+ ui_screensave.o(.text .rodata .xdata)
+ .text          0x0000000048994600      0x3f0 ./../../lib/ui_screensave.o
+                0x0000000048994815                gui_screen_save_exit
+                0x0000000048994601                gui_screen_save_enter
+                0x000000004899499d                play_albumart_save
+                0x00000000489949a9                play_albumart_save_init
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000489949f0      0x210 00
+                0x00000000489d4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_39    0x00000000489d4600      0x600
+ ui_screensave_sub.o(.text .rodata .xdata)
+ .text          0x00000000489d4600      0x278 ./../../lib/ui_screensave_sub.o
+                0x00000000489d4601                draw_digit_clock
+                0x00000000489d4811                digit_clock_handle
+                0x00000000489d4825                album_art_handle
+ .rodata        0x00000000489d4878       0x18 ./../../lib/ui_screensave_sub.o
+                0x00000000489d4878                album_art_x
+                0x00000000489d4884                album_art_y
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x00000000489d4890      0x370 00
+                0x0000000048a14600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_40    0x0000000048a14600      0x600
+ ui_animation.o(.text .rodata .xdata)
+ .text          0x0000000048a14600      0x2d8 ./../../lib/ui_animation.o
+                0x0000000048a147b1                gui_logo
+                0x0000000048a14601                gui_animation
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048a148d8      0x328 00
+                0x0000000048a54600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_41    0x0000000048a54600      0x600
+ ui_volumebar.o(.text .rodata .xdata)
+ .text          0x0000000048a54600      0x55c ./../../lib/ui_volumebar.o
+                0x0000000048a54981                gui_volumebar
+                0x0000000048a54849                ui_set_parameter_volume
+                0x0000000048a54601                timeup_func_proc
+                0x0000000048a54615                volumebar_msg_deal
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048a54b5c       0xa4 00
+                0x0000000048a94600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_42    0x0000000048a94600      0x600
+ ui_volumebar_sub.o(.text .rodata .xdata)
+ .text          0x0000000048a94600      0x30c ./../../lib/ui_volumebar_sub.o
+                0x0000000048a94651                show_volumebar_ui
+                0x0000000048a94601                show_volume_extra
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048a9490c      0x2f4 00
+                0x0000000048ad4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_43    0x0000000048ad4600      0x600
+ ui_dialog.o(.text .rodata .xdata)
+ .text          0x0000000048ad4600      0x488 ./../../lib/ui_dialog.o
+                0x0000000048ad47b1                gui_dialog
+                0x0000000048ad4601                dialog_msg_deal
+                0x0000000048ad4a2d                gui_dialog_msg
+ .rodata        0x0000000048ad4a88       0x54 ./../../lib/ui_dialog.o
+                0x0000000048ad4a88                button_list
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048ad4adc      0x124 00
+                0x0000000048b14600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_44    0x0000000048b14600      0x600
+ ui_usbconnect.o(.text .rodata .xdata)
+ .text          0x0000000048b14600      0x51c ./../../lib/ui_usbconnect.o
+                0x0000000048b14665                usbconnect_msg_deal
+                0x0000000048b14641                clear_usb_time
+                0x0000000048b14929                gui_usbconnect
+                0x0000000048b14601                timer_usb_handle
+                0x0000000048b1482d                ui_dialog_usbconnect
+ .rodata        0x0000000048b14b1c       0x14 ./../../lib/ui_usbconnect.o
+                0x0000000048b14b20                usb_result
+                0x0000000048b14b24                style_usb_time
+                0x0000000048b14b1c                usb_buttons
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048b14b30       0xd0 00
+                0x0000000048b54600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_45    0x0000000048b54600      0x600
+ miscellaneous.o(.text .rodata .xdata)
+ .text          0x0000000048b54600       0xa8 ./../../lib/miscellaneous.o
+                0x0000000048b54601                com_set_contrast
+                0x0000000048b5463d                com_set_gui_direction
+                0x0000000048b54679                com_get_gui_direction
+                0x0000000048b54691                com_set_sys_comval
+ .rodata        0x0000000048b546a8        0xc ./../../lib/miscellaneous.o
+                0x0000000048b546a8                lightness_map_data
+ app_sleep.o(.text .rodata .xdata)
+ .text          0x0000000048b546b4       0x84 ./../../lib/app_sleep.o
+                0x0000000048b546b5                com_app_sleep
+ sys_timer.o(.text .rodata .xdata)
+ .text          0x0000000048b54738      0x104 ./../../lib/sys_timer.o
+                0x0000000048b54811                sys_timer_exit
+                0x0000000048b54739                sys_timer_init
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048b5483c      0x3c4 00
+                0x0000000048b94600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_46    0x0000000048b94600      0x600
+ sys_counter.o(.text .rodata .xdata)
+ .text          0x0000000048b94600      0x2d4 ./../../lib/sys_counter.o
+                0x0000000048b948d1                peripheral_detect_handle
+                0x0000000048b94881                sys_status_handle
+                0x0000000048b94601                sys_counter_handle
+ common_charge.o(.text .rodata .xdata)
+ .text          0x0000000048b948d4      0x18c ./../../lib/common_charge.o
+                0x0000000048b948d5                com_battery_charge_change_deal
+                0x0000000048b94939                com_battery_charge_deal
+ ui_headbar_handle.o(.text .rodata .xdata)
+ .text          0x0000000048b94a60       0xd4 ./../../lib/ui_headbar_handle.o
+                0x0000000048b94a61                gui_headbar_handle
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048b94b34       0xcc 00
+                0x0000000048bd4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_47    0x0000000048bd4600      0x600
+ message_box.o(.text .rodata .xdata)
+ .text          0x0000000048bd4600      0x500 ./../../lib/message_box.o
+                0x0000000048bd4601                com_message_box
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048bd4b00      0x100 00
+                0x0000000048c14600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_48    0x0000000048c14600      0x600
+ alarm_msg_dispatch.o(.text .rodata .xdata)
+ .text          0x0000000048c14600      0x47c ./../../lib/alarm_msg_dispatch.o
+                0x0000000048c14601                com_alarm_msg_dispatch
+                0x0000000048c14881                ap_alarm_init
+                0x0000000048c149ad                set_timer_msg
+                0x0000000048c14921                CompareAndSet_timer_flag
+                0x0000000048c147ad                ap_fmautorecord_init
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048c14a7c      0x184 00
+                0x0000000048c54600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_49    0x0000000048c54600      0x600
+ alarm_msg_dispatch2.o(.text .rodata .xdata)
+ .text          0x0000000048c54600      0x274 ./../../lib/alarm_msg_dispatch2.o
+                0x0000000048c54601                __get_weekofday
+                0x0000000048c546bd                compare_curtime
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048c54874      0x38c 00
+                0x0000000048c94600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_50    0x0000000048c94600      0x600
+ antenna_detect.o(.text .rodata .xdata)
+ .text          0x0000000048c94600       0xf0 ./../../lib/antenna_detect.o
+                0x0000000048c94601                fm_set_mute
+                0x0000000048c9465d                deal_antenna_detect
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048c946f0      0x510 00
+                0x0000000048cd4600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_51    0x0000000048cd4600      0x600
+ common_setdae_init.o(.text .rodata .xdata)
+ .text          0x0000000048cd4600      0x27c ./../../lib/common_setdae_init.o
+                0x0000000048cd4601                com_inner_load_mdrc_param
+                0x0000000048cd4745                com_load_mdrc_config
+                0x0000000048cd47dd                com_reset_dae_config
+                0x0000000048cd4829                com_init_dae_config
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048cd487c      0x384 00
+                0x0000000048d14600                . = ((((. + AP_BANK_SPACE) & ~ ((AP_BANK_SPACE - 0x1))) + OFFSET) + 0x200)
+
+BANK_UI_1_52    0x0000000048d14600      0x600
+ common_keytone_play.o(.text .rodata .xdata)
+ .text          0x0000000048d14600      0x3d0 ./../../lib/common_keytone_play.o
+                0x0000000048d149ad                com_start_key_tone
+                0x0000000048d148d9                keytone_set_dac_chan
+                0x0000000048d148a5                keytone_play_thread
+                0x0000000048d14601                keytone_init_set
+                0x0000000048d147ad                keytone_play_loop
+                0x0000000048d14635                keytone_send_to_asrc
+                0x0000000048d14971                keytone_fifo_in
+                0x0000000048d14911                keytone_set_dac_sample
+                0x0000000048d14721                keytone_play_frame
+                0x0000000048d1494d                keytone_play_deal
+                0x0000000048d1491d                keytone_fifo_out
+                0x0000000048d14995                keytone_play
+ .rodata        0x0000000048d149d0        0xc ./../../lib/common_keytone_play.o
+                0x0000000048d149d0                g_keytone_file
+ .xdata         0x0000000048d149dc      0x200 ./../../lib/common_keytone_play.o
+                0x0000000048d149dc                g_bitstream_buffer
+                0x0000000000000600                . = BANK_UI_RESERVE_SIZE
+ *fill*         0x0000000048d14bdc       0x24 00
+
+.rel.dyn
+
+.reginfo        0x0000000000000000       0x18
+ .reginfo       0x0000000000000000       0x18 ./../../lib/applib_globe_data.o
+
+.pdr            0x0000000000000000     0x3000
+ .pdr           0x0000000000000000       0x20 ./../../lib/app_timer_rcode.o
+ .pdr           0x0000000000000020       0x60 ./../../lib/message_rcode.o
+ .pdr           0x0000000000000080      0x180 ./obj/main_setting.o
+ .pdr           0x0000000000000200       0x80 ./obj/menu_callback_sound_setting2.o
+ .pdr           0x0000000000000280       0x40 ./../../../psp_rel/lib/ctor.o
+ .pdr           0x00000000000002c0      0x160 ./obj/menu_callback_display_setting.o
+ .pdr           0x0000000000000420      0x420 ./obj/menu_callback_language.o
+ .pdr           0x0000000000000840      0x1e0 ./obj/menu_callback_others.o
+ .pdr           0x0000000000000a20      0x280 ./obj/menu_callback_play_mode.o
+ .pdr           0x0000000000000ca0       0xa0 ./obj/menu_callback_time_setting.o
+ .pdr           0x0000000000000d40       0xc0 ./obj/menu_callback_date_setting.o
+ .pdr           0x0000000000000e00      0x160 ./obj/menu_callback_others_2.o
+ .pdr           0x0000000000000f60       0x80 ./obj/menu_callback_autoupgrade_setting.o
+ .pdr           0x0000000000000fe0      0x140 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .pdr           0x0000000000001120       0x20 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+ .pdr           0x0000000000001140       0x20 ./../../../psp_rel/lib/api.a(key_op_entry.o)
+ .pdr           0x0000000000001160       0x20 ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+ .pdr           0x0000000000001180       0x20 ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+ .pdr           0x00000000000011a0       0x20 ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+ .pdr           0x00000000000011c0       0x20 ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+ .pdr           0x00000000000011e0       0x20 ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+ .pdr           0x0000000000001200       0x20 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+ .pdr           0x0000000000001220       0x80 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .pdr           0x00000000000012a0       0xa0 ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .pdr           0x0000000000001340       0x80 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .pdr           0x00000000000013c0       0xe0 ./../../lib/ui_menulist.o
+ .pdr           0x00000000000014a0      0x160 ./../../lib/ui_menulist2.o
+ .pdr           0x0000000000001600      0x120 ./../../lib/ui_menulist_simple.o
+ .pdr           0x0000000000001720       0xc0 ./../../lib/ui_parameter.o
+ .pdr           0x00000000000017e0       0x80 ./../../lib/ui_textread.o
+ .pdr           0x0000000000001860       0x40 ./../../lib/setting_comval.o
+ .pdr           0x00000000000018a0       0x40 ./../../lib/app_manager_bank.o
+ .pdr           0x00000000000018e0       0xc0 ./../../lib/app_timer_bank.o
+ .pdr           0x00000000000019a0       0x20 ./../../lib/message_bank_init.o
+ .pdr           0x00000000000019c0       0x80 ./../../lib/message_bank_send.o
+ .pdr           0x0000000000001a40       0x40 ./../../lib/message_bank_broadcast.o
+ .pdr           0x0000000000001a80       0x60 ./../../lib/common_config.o
+ .pdr           0x0000000000001ae0       0x20 ./../../lib/common_msgmap.o
+ .pdr           0x0000000000001b00       0xc0 ./../../lib/common_confmenu.o
+ .pdr           0x0000000000001bc0       0xc0 ./../../lib/common_history.o
+ .pdr           0x0000000000001c80       0x40 ./../../lib/common_string.o
+ .pdr           0x0000000000001cc0       0xa0 ./../../lib/common_string2.o
+ .pdr           0x0000000000001d60      0x160 ./../../lib/common_key.o
+ .pdr           0x0000000000001ec0      0x140 ./../../lib/common_msg.o
+ .pdr           0x0000000000002000      0x140 ./../../lib/common_sound.o
+ .pdr           0x0000000000002140       0x20 ./../../lib/common_phy_volume_deal.o
+ .pdr           0x0000000000002160       0x60 ./../../lib/ui_menulist_sub.o
+ .pdr           0x00000000000021c0       0x60 ./../../lib/ui_menulist_sub2.o
+ .pdr           0x0000000000002220       0x60 ./../../lib/ui_textread_dec.o
+ .pdr           0x0000000000002280       0x60 ./../../lib/ui_textread_sub.o
+ .pdr           0x00000000000022e0       0xc0 ./../../lib/ui_headbar.o
+ .pdr           0x00000000000023a0       0xe0 ./../../lib/ui_keylock.o
+ .pdr           0x0000000000002480       0xa0 ./../../lib/ui_shutoff.o
+ .pdr           0x0000000000002520      0x180 ./../../lib/ui_screensave.o
+ .pdr           0x00000000000026a0       0xa0 ./../../lib/ui_screensave_sub.o
+ .pdr           0x0000000000002740       0xa0 ./../../lib/ui_animation.o
+ .pdr           0x00000000000027e0       0xc0 ./../../lib/ui_volumebar.o
+ .pdr           0x00000000000028a0       0x40 ./../../lib/ui_volumebar_sub.o
+ .pdr           0x00000000000028e0       0xa0 ./../../lib/ui_dialog.o
+ .pdr           0x0000000000002980       0xe0 ./../../lib/ui_usbconnect.o
+ .pdr           0x0000000000002a60       0x80 ./../../lib/miscellaneous.o
+ .pdr           0x0000000000002ae0       0x20 ./../../lib/app_sleep.o
+ .pdr           0x0000000000002b00       0x80 ./../../lib/sys_timer.o
+ .pdr           0x0000000000002b80       0x60 ./../../lib/sys_counter.o
+ .pdr           0x0000000000002be0       0x40 ./../../lib/common_charge.o
+ .pdr           0x0000000000002c20       0x20 ./../../lib/ui_headbar_handle.o
+ .pdr           0x0000000000002c40       0x80 ./../../lib/message_box.o
+ .pdr           0x0000000000002cc0       0xa0 ./../../lib/alarm_msg_dispatch.o
+ .pdr           0x0000000000002d60       0x40 ./../../lib/alarm_msg_dispatch2.o
+ .pdr           0x0000000000002da0       0x60 ./../../lib/antenna_detect.o
+ .pdr           0x0000000000002e00       0x80 ./../../lib/common_setdae_init.o
+ .pdr           0x0000000000002e80      0x180 ./../../lib/common_keytone_play.o
+
+.mdebug.abi32   0x0000000000000000        0x0
+
+.debug_abbrev   0x0000000000000000     0x6afc
+ .debug_abbrev  0x0000000000000000       0xcf ./../../lib/applib_globe_data.o
+ .debug_abbrev  0x00000000000000cf       0xe6 ./../../lib/app_timer_rcode.o
+ .debug_abbrev  0x00000000000001b5      0x16d ./../../lib/message_rcode.o
+ .debug_abbrev  0x0000000000000322      0x245 ./obj/main_setting.o
+ .debug_abbrev  0x0000000000000567      0x1a9 ./obj/menu_callback_sound_setting2.o
+ .debug_abbrev  0x0000000000000710      0x110 ./../../lib/applib_app_data.o
+ .debug_abbrev  0x0000000000000820      0x146 ./../../lib/common_ui_data.o
+ .debug_abbrev  0x0000000000000966       0xb9 ./../../lib/common_func_data.o
+ .debug_abbrev  0x0000000000000a1f       0x83 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .debug_abbrev  0x0000000000000aa2       0xc2 ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .debug_abbrev  0x0000000000000b64       0x5a ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .debug_abbrev  0x0000000000000bbe       0xac ./../../../psp_rel/lib/ctor.o
+ .debug_abbrev  0x0000000000000c6a      0x1f6 ./obj/menu_callback_display_setting.o
+ .debug_abbrev  0x0000000000000e60      0x1ba ./obj/menu_callback_language.o
+ .debug_abbrev  0x000000000000101a      0x1f6 ./obj/menu_callback_others.o
+ .debug_abbrev  0x0000000000001210      0x214 ./obj/menu_callback_play_mode.o
+ .debug_abbrev  0x0000000000001424      0x1a1 ./obj/menu_callback_time_setting.o
+ .debug_abbrev  0x00000000000015c5      0x187 ./obj/menu_callback_date_setting.o
+ .debug_abbrev  0x000000000000174c      0x1fd ./obj/menu_callback_others_2.o
+ .debug_abbrev  0x0000000000001949      0x1b5 ./obj/menu_callback_autoupgrade_setting.o
+ .debug_abbrev  0x0000000000001afe      0x10e ./obj/ap_cfg_menu_setting.o
+ .debug_abbrev  0x0000000000001c0c      0x1a5 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_abbrev  0x0000000000001db1       0x14 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+ .debug_abbrev  0x0000000000001dc5       0x14 ./../../../psp_rel/lib/api.a(key_op_entry.o)
+ .debug_abbrev  0x0000000000001dd9       0x14 ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+ .debug_abbrev  0x0000000000001ded       0x14 ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+ .debug_abbrev  0x0000000000001e01       0x14 ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+ .debug_abbrev  0x0000000000001e15       0x14 ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+ .debug_abbrev  0x0000000000001e29       0x14 ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+ .debug_abbrev  0x0000000000001e3d       0x14 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+ .debug_abbrev  0x0000000000001e51      0x15f ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_abbrev  0x0000000000001fb0      0x1bb ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_abbrev  0x000000000000216b      0x182 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_abbrev  0x00000000000022ed      0x237 ./../../lib/ui_menulist.o
+ .debug_abbrev  0x0000000000002524      0x1f7 ./../../lib/ui_menulist2.o
+ .debug_abbrev  0x000000000000271b      0x202 ./../../lib/ui_menulist_simple.o
+ .debug_abbrev  0x000000000000291d      0x24c ./../../lib/ui_parameter.o
+ .debug_abbrev  0x0000000000002b69      0x1f8 ./../../lib/ui_textread.o
+ .debug_abbrev  0x0000000000002d61      0x10b ./../../lib/setting_comval.o
+ .debug_abbrev  0x0000000000002e6c      0x15f ./../../lib/app_manager_bank.o
+ .debug_abbrev  0x0000000000002fcb      0x198 ./../../lib/app_timer_bank.o
+ .debug_abbrev  0x0000000000003163      0x12f ./../../lib/message_bank_init.o
+ .debug_abbrev  0x0000000000003292      0x14b ./../../lib/message_bank_send.o
+ .debug_abbrev  0x00000000000033dd      0x100 ./../../lib/message_bank_broadcast.o
+ .debug_abbrev  0x00000000000034dd       0xf5 ./../../lib/common_config.o
+ .debug_abbrev  0x00000000000035d2       0xde ./../../lib/common_msgmap_data.o
+ .debug_abbrev  0x00000000000036b0      0x11b ./../../lib/common_msgmap.o
+ .debug_abbrev  0x00000000000037cb      0x15a ./../../lib/common_confmenu.o
+ .debug_abbrev  0x0000000000003925      0x156 ./../../lib/common_history.o
+ .debug_abbrev  0x0000000000003a7b      0x13f ./../../lib/common_string.o
+ .debug_abbrev  0x0000000000003bba      0x121 ./../../lib/common_string2.o
+ .debug_abbrev  0x0000000000003cdb      0x1c4 ./../../lib/common_key.o
+ .debug_abbrev  0x0000000000003e9f      0x182 ./../../lib/common_msg.o
+ .debug_abbrev  0x0000000000004021      0x1e2 ./../../lib/common_sound.o
+ .debug_abbrev  0x0000000000004203       0xe4 ./../../lib/common_phy_volume_deal.o
+ .debug_abbrev  0x00000000000042e7       0xaa ./../../lib/common_phy_volume_table.o
+ .debug_abbrev  0x0000000000004391      0x170 ./../../lib/ui_menulist_sub.o
+ .debug_abbrev  0x0000000000004501      0x184 ./../../lib/ui_menulist_sub2.o
+ .debug_abbrev  0x0000000000004685      0x1b9 ./../../lib/ui_textread_dec.o
+ .debug_abbrev  0x000000000000483e      0x13e ./../../lib/ui_textread_sub.o
+ .debug_abbrev  0x000000000000497c      0x19a ./../../lib/ui_headbar.o
+ .debug_abbrev  0x0000000000004b16      0x1ec ./../../lib/ui_keylock.o
+ .debug_abbrev  0x0000000000004d02      0x1fd ./../../lib/ui_shutoff.o
+ .debug_abbrev  0x0000000000004eff      0x1af ./../../lib/ui_screensave.o
+ .debug_abbrev  0x00000000000050ae      0x165 ./../../lib/ui_screensave_sub.o
+ .debug_abbrev  0x0000000000005213      0x1e7 ./../../lib/ui_animation.o
+ .debug_abbrev  0x00000000000053fa      0x219 ./../../lib/ui_volumebar.o
+ .debug_abbrev  0x0000000000005613      0x173 ./../../lib/ui_volumebar_sub.o
+ .debug_abbrev  0x0000000000005786      0x219 ./../../lib/ui_dialog.o
+ .debug_abbrev  0x000000000000599f      0x208 ./../../lib/ui_usbconnect.o
+ .debug_abbrev  0x0000000000005ba7      0x147 ./../../lib/miscellaneous.o
+ .debug_abbrev  0x0000000000005cee      0x11d ./../../lib/app_sleep.o
+ .debug_abbrev  0x0000000000005e0b      0x116 ./../../lib/sys_timer.o
+ .debug_abbrev  0x0000000000005f21      0x15d ./../../lib/sys_counter.o
+ .debug_abbrev  0x000000000000607e       0xdd ./../../lib/common_charge.o
+ .debug_abbrev  0x000000000000615b      0x114 ./../../lib/ui_headbar_handle.o
+ .debug_abbrev  0x000000000000626f      0x19c ./../../lib/message_box.o
+ .debug_abbrev  0x000000000000640b      0x1a1 ./../../lib/alarm_msg_dispatch.o
+ .debug_abbrev  0x00000000000065ac       0xe6 ./../../lib/alarm_msg_dispatch2.o
+ .debug_abbrev  0x0000000000006692      0x150 ./../../lib/antenna_detect.o
+ .debug_abbrev  0x00000000000067e2      0x12c ./../../lib/common_setdae_init.o
+ .debug_abbrev  0x000000000000690e      0x1ee ./../../lib/common_keytone_play.o
+
+.debug_info     0x0000000000000000    0x73722
+ .debug_info    0x0000000000000000      0x954 ./../../lib/applib_globe_data.o
+ .debug_info    0x0000000000000954      0x3f8 ./../../lib/app_timer_rcode.o
+ .debug_info    0x0000000000000d4c      0xefa ./../../lib/message_rcode.o
+ .debug_info    0x0000000000001c46     0x29e9 ./obj/main_setting.o
+ .debug_info    0x000000000000462f     0x1f08 ./obj/menu_callback_sound_setting2.o
+ .debug_info    0x0000000000006537     0x1859 ./../../lib/applib_app_data.o
+ .debug_info    0x0000000000007d90     0x2e68 ./../../lib/common_ui_data.o
+ .debug_info    0x000000000000abf8      0x6a0 ./../../lib/common_func_data.o
+ .debug_info    0x000000000000b298      0x3f8 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .debug_info    0x000000000000b690      0xa65 ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .debug_info    0x000000000000c0f5      0x3ae ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .debug_info    0x000000000000c4a3      0x326 ./../../../psp_rel/lib/ctor.o
+ .debug_info    0x000000000000c7c9     0x2188 ./obj/menu_callback_display_setting.o
+ .debug_info    0x000000000000e951     0x20ae ./obj/menu_callback_language.o
+ .debug_info    0x00000000000109ff     0x2704 ./obj/menu_callback_others.o
+ .debug_info    0x0000000000013103     0x27ec ./obj/menu_callback_play_mode.o
+ .debug_info    0x00000000000158ef     0x2612 ./obj/menu_callback_time_setting.o
+ .debug_info    0x0000000000017f01     0x1eee ./obj/menu_callback_date_setting.o
+ .debug_info    0x0000000000019def     0x25d8 ./obj/menu_callback_others_2.o
+ .debug_info    0x000000000001c3c7     0x1c8b ./obj/menu_callback_autoupgrade_setting.o
+ .debug_info    0x000000000001e052     0x1670 ./obj/ap_cfg_menu_setting.o
+ .debug_info    0x000000000001f6c2      0x888 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_info    0x000000000001ff4a       0x67 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+ .debug_info    0x000000000001ffb1       0x5e ./../../../psp_rel/lib/api.a(key_op_entry.o)
+ .debug_info    0x000000000002000f       0x5e ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+ .debug_info    0x000000000002006d       0x5f ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+ .debug_info    0x00000000000200cc       0x5e ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+ .debug_info    0x000000000002012a       0x5d ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+ .debug_info    0x0000000000020187       0x5e ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+ .debug_info    0x00000000000201e5       0x88 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+ .debug_info    0x000000000002026d      0xa47 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_info    0x0000000000020cb4      0xbbd ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_info    0x0000000000021871      0xaba ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_info    0x000000000002232b     0x40fe ./../../lib/ui_menulist.o
+ .debug_info    0x0000000000026429     0x2276 ./../../lib/ui_menulist2.o
+ .debug_info    0x000000000002869f     0x3fb5 ./../../lib/ui_menulist_simple.o
+ .debug_info    0x000000000002c654     0x3d7c ./../../lib/ui_parameter.o
+ .debug_info    0x00000000000303d0     0x3dc0 ./../../lib/ui_textread.o
+ .debug_info    0x0000000000034190     0x1078 ./../../lib/setting_comval.o
+ .debug_info    0x0000000000035208      0x537 ./../../lib/app_manager_bank.o
+ .debug_info    0x000000000003573f      0x619 ./../../lib/app_timer_bank.o
+ .debug_info    0x0000000000035d58      0xa5a ./../../lib/message_bank_init.o
+ .debug_info    0x00000000000367b2      0x693 ./../../lib/message_bank_send.o
+ .debug_info    0x0000000000036e45      0x48f ./../../lib/message_bank_broadcast.o
+ .debug_info    0x00000000000372d4      0x499 ./../../lib/common_config.o
+ .debug_info    0x000000000003776d     0x2365 ./../../lib/common_msgmap_data.o
+ .debug_info    0x0000000000039ad2     0x22d0 ./../../lib/common_msgmap.o
+ .debug_info    0x000000000003bda2     0x18b0 ./../../lib/common_confmenu.o
+ .debug_info    0x000000000003d652      0x91e ./../../lib/common_history.o
+ .debug_info    0x000000000003df70      0x7f1 ./../../lib/common_string.o
+ .debug_info    0x000000000003e761      0x94f ./../../lib/common_string2.o
+ .debug_info    0x000000000003f0b0     0x104e ./../../lib/common_key.o
+ .debug_info    0x00000000000400fe     0x28e1 ./../../lib/common_msg.o
+ .debug_info    0x00000000000429df      0xa20 ./../../lib/common_sound.o
+ .debug_info    0x00000000000433ff      0x395 ./../../lib/common_phy_volume_deal.o
+ .debug_info    0x0000000000043794      0x33c ./../../lib/common_phy_volume_table.o
+ .debug_info    0x0000000000043ad0     0x1e96 ./../../lib/ui_menulist_sub.o
+ .debug_info    0x0000000000045966     0x3596 ./../../lib/ui_menulist_sub2.o
+ .debug_info    0x0000000000048efc      0xb45 ./../../lib/ui_textread_dec.o
+ .debug_info    0x0000000000049a41      0x88a ./../../lib/ui_textread_sub.o
+ .debug_info    0x000000000004a2cb     0x1e39 ./../../lib/ui_headbar.o
+ .debug_info    0x000000000004c104     0x3a76 ./../../lib/ui_keylock.o
+ .debug_info    0x000000000004fb7a     0x3801 ./../../lib/ui_shutoff.o
+ .debug_info    0x000000000005337b     0x2076 ./../../lib/ui_screensave.o
+ .debug_info    0x00000000000553f1      0xd84 ./../../lib/ui_screensave_sub.o
+ .debug_info    0x0000000000056175     0x372d ./../../lib/ui_animation.o
+ .debug_info    0x00000000000598a2     0x3f76 ./../../lib/ui_volumebar.o
+ .debug_info    0x000000000005d818      0xf69 ./../../lib/ui_volumebar_sub.o
+ .debug_info    0x000000000005e781     0x3b4d ./../../lib/ui_dialog.o
+ .debug_info    0x00000000000622ce     0x3c92 ./../../lib/ui_usbconnect.o
+ .debug_info    0x0000000000065f60      0x93b ./../../lib/miscellaneous.o
+ .debug_info    0x000000000006689b     0x31d0 ./../../lib/app_sleep.o
+ .debug_info    0x0000000000069a6b      0x76d ./../../lib/sys_timer.o
+ .debug_info    0x000000000006a1d8      0x7d0 ./../../lib/sys_counter.o
+ .debug_info    0x000000000006a9a8      0x79a ./../../lib/common_charge.o
+ .debug_info    0x000000000006b142      0x544 ./../../lib/ui_headbar_handle.o
+ .debug_info    0x000000000006b686     0x36e9 ./../../lib/message_box.o
+ .debug_info    0x000000000006ed6f     0x1e88 ./../../lib/alarm_msg_dispatch.o
+ .debug_info    0x0000000000070bf7      0x73a ./../../lib/alarm_msg_dispatch2.o
+ .debug_info    0x0000000000071331      0xae5 ./../../lib/antenna_detect.o
+ .debug_info    0x0000000000071e16      0xf9d ./../../lib/common_setdae_init.o
+ .debug_info    0x0000000000072db3      0x96f ./../../lib/common_keytone_play.o
+
+.debug_line     0x0000000000000000     0x66e0
+ .debug_line    0x0000000000000000       0xdd ./../../lib/applib_globe_data.o
+ .debug_line    0x00000000000000dd       0xce ./../../lib/app_timer_rcode.o
+ .debug_line    0x00000000000001ab      0x10d ./../../lib/message_rcode.o
+ .debug_line    0x00000000000002b8      0x225 ./obj/main_setting.o
+ .debug_line    0x00000000000004dd      0x143 ./obj/menu_callback_sound_setting2.o
+ .debug_line    0x0000000000000620       0xd4 ./../../lib/applib_app_data.o
+ .debug_line    0x00000000000006f4      0x14c ./../../lib/common_ui_data.o
+ .debug_line    0x0000000000000840       0xbb ./../../lib/common_func_data.o
+ .debug_line    0x00000000000008fb       0x93 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .debug_line    0x000000000000098e       0xea ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .debug_line    0x0000000000000a78       0x89 ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .debug_line    0x0000000000000b01       0xcf ./../../../psp_rel/lib/ctor.o
+ .debug_line    0x0000000000000bd0      0x18a ./obj/menu_callback_display_setting.o
+ .debug_line    0x0000000000000d5a      0x1f8 ./obj/menu_callback_language.o
+ .debug_line    0x0000000000000f52      0x221 ./obj/menu_callback_others.o
+ .debug_line    0x0000000000001173      0x244 ./obj/menu_callback_play_mode.o
+ .debug_line    0x00000000000013b7      0x1d6 ./obj/menu_callback_time_setting.o
+ .debug_line    0x000000000000158d      0x1bc ./obj/menu_callback_date_setting.o
+ .debug_line    0x0000000000001749      0x22e ./obj/menu_callback_others_2.o
+ .debug_line    0x0000000000001977      0x16d ./obj/menu_callback_autoupgrade_setting.o
+ .debug_line    0x0000000000001ae4       0xd2 ./obj/ap_cfg_menu_setting.o
+ .debug_line    0x0000000000001bb6      0x17d ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_line    0x0000000000001d33       0x45 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+ .debug_line    0x0000000000001d78       0x3c ./../../../psp_rel/lib/api.a(key_op_entry.o)
+ .debug_line    0x0000000000001db4       0x3c ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+ .debug_line    0x0000000000001df0       0x3d ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+ .debug_line    0x0000000000001e2d       0x3c ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+ .debug_line    0x0000000000001e69       0x3b ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+ .debug_line    0x0000000000001ea4       0x3c ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+ .debug_line    0x0000000000001ee0       0x66 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+ .debug_line    0x0000000000001f46      0x17f ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_line    0x00000000000020c5      0x1ad ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_line    0x0000000000002272      0x1de ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_line    0x0000000000002450      0x1a2 ./../../lib/ui_menulist.o
+ .debug_line    0x00000000000025f2      0x1b4 ./../../lib/ui_menulist2.o
+ .debug_line    0x00000000000027a6      0x1b4 ./../../lib/ui_menulist_simple.o
+ .debug_line    0x000000000000295a      0x1c6 ./../../lib/ui_parameter.o
+ .debug_line    0x0000000000002b20      0x1bc ./../../lib/ui_textread.o
+ .debug_line    0x0000000000002cdc      0x12e ./../../lib/setting_comval.o
+ .debug_line    0x0000000000002e0a      0x115 ./../../lib/app_manager_bank.o
+ .debug_line    0x0000000000002f1f      0x131 ./../../lib/app_timer_bank.o
+ .debug_line    0x0000000000003050       0xe4 ./../../lib/message_bank_init.o
+ .debug_line    0x0000000000003134      0x11b ./../../lib/message_bank_send.o
+ .debug_line    0x000000000000324f       0xe3 ./../../lib/message_bank_broadcast.o
+ .debug_line    0x0000000000003332      0x115 ./../../lib/common_config.o
+ .debug_line    0x0000000000003447       0xde ./../../lib/common_msgmap_data.o
+ .debug_line    0x0000000000003525      0x107 ./../../lib/common_msgmap.o
+ .debug_line    0x000000000000362c      0x139 ./../../lib/common_confmenu.o
+ .debug_line    0x0000000000003765      0x163 ./../../lib/common_history.o
+ .debug_line    0x00000000000038c8      0x148 ./../../lib/common_string.o
+ .debug_line    0x0000000000003a10      0x161 ./../../lib/common_string2.o
+ .debug_line    0x0000000000003b71      0x167 ./../../lib/common_key.o
+ .debug_line    0x0000000000003cd8      0x172 ./../../lib/common_msg.o
+ .debug_line    0x0000000000003e4a      0x176 ./../../lib/common_sound.o
+ .debug_line    0x0000000000003fc0       0xe0 ./../../lib/common_phy_volume_deal.o
+ .debug_line    0x00000000000040a0       0xc1 ./../../lib/common_phy_volume_table.o
+ .debug_line    0x0000000000004161      0x184 ./../../lib/ui_menulist_sub.o
+ .debug_line    0x00000000000042e5      0x19b ./../../lib/ui_menulist_sub2.o
+ .debug_line    0x0000000000004480      0x17c ./../../lib/ui_textread_dec.o
+ .debug_line    0x00000000000045fc      0x117 ./../../lib/ui_textread_sub.o
+ .debug_line    0x0000000000004713      0x18a ./../../lib/ui_headbar.o
+ .debug_line    0x000000000000489d      0x1a3 ./../../lib/ui_keylock.o
+ .debug_line    0x0000000000004a40      0x164 ./../../lib/ui_shutoff.o
+ .debug_line    0x0000000000004ba4      0x1af ./../../lib/ui_screensave.o
+ .debug_line    0x0000000000004d53      0x157 ./../../lib/ui_screensave_sub.o
+ .debug_line    0x0000000000004eaa      0x17b ./../../lib/ui_animation.o
+ .debug_line    0x0000000000005025      0x1d5 ./../../lib/ui_volumebar.o
+ .debug_line    0x00000000000051fa      0x161 ./../../lib/ui_volumebar_sub.o
+ .debug_line    0x000000000000535b      0x19f ./../../lib/ui_dialog.o
+ .debug_line    0x00000000000054fa      0x1b3 ./../../lib/ui_usbconnect.o
+ .debug_line    0x00000000000056ad      0x109 ./../../lib/miscellaneous.o
+ .debug_line    0x00000000000057b6      0x112 ./../../lib/app_sleep.o
+ .debug_line    0x00000000000058c8      0x10f ./../../lib/sys_timer.o
+ .debug_line    0x00000000000059d7      0x1fa ./../../lib/sys_counter.o
+ .debug_line    0x0000000000005bd1      0x113 ./../../lib/common_charge.o
+ .debug_line    0x0000000000005ce4      0x172 ./../../lib/ui_headbar_handle.o
+ .debug_line    0x0000000000005e56      0x1a4 ./../../lib/message_box.o
+ .debug_line    0x0000000000005ffa      0x1a6 ./../../lib/alarm_msg_dispatch.o
+ .debug_line    0x00000000000061a0      0x12e ./../../lib/alarm_msg_dispatch2.o
+ .debug_line    0x00000000000062ce      0x121 ./../../lib/antenna_detect.o
+ .debug_line    0x00000000000063ef      0x12d ./../../lib/common_setdae_init.o
+ .debug_line    0x000000000000651c      0x1c4 ./../../lib/common_keytone_play.o
+
+.debug_pubnames
+                0x0000000000000000     0x3136
+ .debug_pubnames
+                0x0000000000000000       0xb4 ./../../lib/applib_globe_data.o
+ .debug_pubnames
+                0x00000000000000b4       0x24 ./../../lib/app_timer_rcode.o
+ .debug_pubnames
+                0x00000000000000d8       0x42 ./../../lib/message_rcode.o
+ .debug_pubnames
+                0x000000000000011a      0x276 ./obj/main_setting.o
+ .debug_pubnames
+                0x0000000000000390       0xd2 ./obj/menu_callback_sound_setting2.o
+ .debug_pubnames
+                0x0000000000000462       0x99 ./../../lib/applib_app_data.o
+ .debug_pubnames
+                0x00000000000004fb      0x3fe ./../../lib/common_ui_data.o
+ .debug_pubnames
+                0x00000000000008f9       0xbd ./../../lib/common_func_data.o
+ .debug_pubnames
+                0x00000000000009b6       0xa5 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .debug_pubnames
+                0x0000000000000a5b      0x328 ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .debug_pubnames
+                0x0000000000000d83      0x13e ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .debug_pubnames
+                0x0000000000000ec1       0x30 ./../../../psp_rel/lib/ctor.o
+ .debug_pubnames
+                0x0000000000000ef1      0x1bb ./obj/menu_callback_display_setting.o
+ .debug_pubnames
+                0x00000000000010ac      0x379 ./obj/menu_callback_language.o
+ .debug_pubnames
+                0x0000000000001425      0x1f9 ./obj/menu_callback_others.o
+ .debug_pubnames
+                0x000000000000161e      0x277 ./obj/menu_callback_play_mode.o
+ .debug_pubnames
+                0x0000000000001895       0xb6 ./obj/menu_callback_time_setting.o
+ .debug_pubnames
+                0x000000000000194b       0xe0 ./obj/menu_callback_date_setting.o
+ .debug_pubnames
+                0x0000000000001a2b      0x127 ./obj/menu_callback_others_2.o
+ .debug_pubnames
+                0x0000000000001b52       0x7c ./obj/menu_callback_autoupgrade_setting.o
+ .debug_pubnames
+                0x0000000000001bce       0x41 ./obj/ap_cfg_menu_setting.o
+ .debug_pubnames
+                0x0000000000001c0f       0xe6 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_pubnames
+                0x0000000000001cf5       0xa1 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_pubnames
+                0x0000000000001d96       0x3c ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_pubnames
+                0x0000000000001dd2       0x2e ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_pubnames
+                0x0000000000001e00       0x55 ./../../lib/ui_menulist.o
+ .debug_pubnames
+                0x0000000000001e55      0x10d ./../../lib/ui_menulist2.o
+ .debug_pubnames
+                0x0000000000001f62       0x47 ./../../lib/ui_menulist_simple.o
+ .debug_pubnames
+                0x0000000000001fa9       0x6c ./../../lib/ui_parameter.o
+ .debug_pubnames
+                0x0000000000002015       0xc9 ./../../lib/ui_textread.o
+ .debug_pubnames
+                0x00000000000020de       0x46 ./../../lib/setting_comval.o
+ .debug_pubnames
+                0x0000000000002124       0x32 ./../../lib/app_manager_bank.o
+ .debug_pubnames
+                0x0000000000002156       0x89 ./../../lib/app_timer_bank.o
+ .debug_pubnames
+                0x00000000000021df       0x2a ./../../lib/message_bank_init.o
+ .debug_pubnames
+                0x0000000000002209       0x4a ./../../lib/message_bank_send.o
+ .debug_pubnames
+                0x0000000000002253       0x3a ./../../lib/message_bank_broadcast.o
+ .debug_pubnames
+                0x000000000000228d       0x60 ./../../lib/common_config.o
+ .debug_pubnames
+                0x00000000000022ed      0x137 ./../../lib/common_msgmap_data.o
+ .debug_pubnames
+                0x0000000000002424       0x26 ./../../lib/common_msgmap.o
+ .debug_pubnames
+                0x000000000000244a       0xb2 ./../../lib/common_confmenu.o
+ .debug_pubnames
+                0x00000000000024fc       0xa4 ./../../lib/common_history.o
+ .debug_pubnames
+                0x00000000000025a0       0x44 ./../../lib/common_string.o
+ .debug_pubnames
+                0x00000000000025e4       0x8f ./../../lib/common_string2.o
+ .debug_pubnames
+                0x0000000000002673       0x3f ./../../lib/common_key.o
+ .debug_pubnames
+                0x00000000000026b2       0x27 ./../../lib/common_msg.o
+ .debug_pubnames
+                0x00000000000026d9       0x74 ./../../lib/common_sound.o
+ .debug_pubnames
+                0x000000000000274d       0x29 ./../../lib/common_phy_volume_deal.o
+ .debug_pubnames
+                0x0000000000002776       0x2a ./../../lib/common_phy_volume_table.o
+ .debug_pubnames
+                0x00000000000027a0       0x60 ./../../lib/ui_menulist_sub.o
+ .debug_pubnames
+                0x0000000000002800       0x44 ./../../lib/ui_menulist_sub2.o
+ .debug_pubnames
+                0x0000000000002844       0x2b ./../../lib/ui_textread_dec.o
+ .debug_pubnames
+                0x000000000000286f       0x69 ./../../lib/ui_textread_sub.o
+ .debug_pubnames
+                0x00000000000028d8       0x54 ./../../lib/ui_headbar.o
+ .debug_pubnames
+                0x000000000000292c       0x4a ./../../lib/ui_keylock.o
+ .debug_pubnames
+                0x0000000000002976       0x52 ./../../lib/ui_shutoff.o
+ .debug_pubnames
+                0x00000000000029c8       0x78 ./../../lib/ui_screensave.o
+ .debug_pubnames
+                0x0000000000002a40       0x73 ./../../lib/ui_screensave_sub.o
+ .debug_pubnames
+                0x0000000000002ab3       0x31 ./../../lib/ui_animation.o
+ .debug_pubnames
+                0x0000000000002ae4       0x6c ./../../lib/ui_volumebar.o
+ .debug_pubnames
+                0x0000000000002b50       0x3e ./../../lib/ui_volumebar_sub.o
+ .debug_pubnames
+                0x0000000000002b8e       0x58 ./../../lib/ui_dialog.o
+ .debug_pubnames
+                0x0000000000002be6       0xb0 ./../../lib/ui_usbconnect.o
+ .debug_pubnames
+                0x0000000000002c96       0x89 ./../../lib/miscellaneous.o
+ .debug_pubnames
+                0x0000000000002d1f       0x24 ./../../lib/app_sleep.o
+ .debug_pubnames
+                0x0000000000002d43       0x38 ./../../lib/sys_timer.o
+ .debug_pubnames
+                0x0000000000002d7b       0x5c ./../../lib/sys_counter.o
+ .debug_pubnames
+                0x0000000000002dd7       0x51 ./../../lib/common_charge.o
+ .debug_pubnames
+                0x0000000000002e28       0x29 ./../../lib/ui_headbar_handle.o
+ .debug_pubnames
+                0x0000000000002e51       0x26 ./../../lib/message_box.o
+ .debug_pubnames
+                0x0000000000002e77       0x87 ./../../lib/alarm_msg_dispatch.o
+ .debug_pubnames
+                0x0000000000002efe       0x3a ./../../lib/alarm_msg_dispatch2.o
+ .debug_pubnames
+                0x0000000000002f38       0x3a ./../../lib/antenna_detect.o
+ .debug_pubnames
+                0x0000000000002f72       0x7a ./../../lib/common_setdae_init.o
+ .debug_pubnames
+                0x0000000000002fec      0x14a ./../../lib/common_keytone_play.o
+
+.debug_str      0x0000000000000000     0x4736
+ .debug_str     0x0000000000000000       0x12 ./../../lib/applib_globe_data.o
+ .debug_str     0x0000000000000012      0x310 ./../../lib/app_timer_rcode.o
+                                        0x39c (size before relaxing)
+ .debug_str     0x0000000000000322     0x197f ./../../lib/message_rcode.o
+                                       0x1cd4 (size before relaxing)
+ .debug_str     0x0000000000001ca1       0x9e ./obj/main_setting.o
+ .debug_str     0x0000000000001d3f       0x52 ./obj/menu_callback_sound_setting2.o
+ .debug_str     0x0000000000001d91       0x12 ./../../lib/applib_app_data.o
+ .debug_str     0x0000000000001da3       0xbe ./../../lib/common_ui_data.o
+ .debug_str     0x0000000000001e61       0x12 ./../../lib/common_func_data.o
+ .debug_str     0x0000000000001e73       0x12 ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .debug_str     0x0000000000001e85       0x12 ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .debug_str     0x0000000000001e97       0x12 ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .debug_str     0x0000000000001ea9       0x12 ./../../../psp_rel/lib/ctor.o
+ .debug_str     0x0000000000001ebb       0x69 ./obj/menu_callback_display_setting.o
+ .debug_str     0x0000000000001f24       0x2b ./obj/menu_callback_language.o
+ .debug_str     0x0000000000001f4f       0xa4 ./obj/menu_callback_others.o
+ .debug_str     0x0000000000001ff3       0xdc ./obj/menu_callback_play_mode.o
+ .debug_str     0x00000000000020cf       0xb1 ./obj/menu_callback_time_setting.o
+ .debug_str     0x0000000000002180       0x34 ./obj/menu_callback_date_setting.o
+ .debug_str     0x00000000000021b4       0xd7 ./obj/menu_callback_others_2.o
+ .debug_str     0x000000000000228b       0x1b ./obj/menu_callback_autoupgrade_setting.o
+ .debug_str     0x00000000000022a6       0x24 ./obj/ap_cfg_menu_setting.o
+ .debug_str     0x00000000000022ca       0x25 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_str     0x00000000000022ef       0x41 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_str     0x0000000000002330       0x83 ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_str     0x00000000000023b3       0x8d ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_str     0x0000000000002440       0x7a ./../../lib/ui_menulist.o
+ .debug_str     0x00000000000024ba       0xb7 ./../../lib/ui_menulist2.o
+ .debug_str     0x0000000000002571       0x7a ./../../lib/ui_menulist_simple.o
+ .debug_str     0x00000000000025eb       0x55 ./../../lib/ui_parameter.o
+ .debug_str     0x0000000000002640       0x2f ./../../lib/ui_textread.o
+ .debug_str     0x000000000000266f       0x4c ./../../lib/setting_comval.o
+ .debug_str     0x00000000000026bb       0xa9 ./../../lib/app_manager_bank.o
+                                        0x4a9 (size before relaxing)
+ .debug_str     0x0000000000002764       0xf4 ./../../lib/app_timer_bank.o
+                                        0x471 (size before relaxing)
+ .debug_str     0x0000000000002858      0xc6f ./../../lib/message_bank_init.o
+                                       0x10c9 (size before relaxing)
+ .debug_str     0x00000000000034c7       0x8d ./../../lib/message_bank_send.o
+                                        0x4fc (size before relaxing)
+ .debug_str     0x0000000000003554       0x39 ./../../lib/message_bank_broadcast.o
+                                        0x402 (size before relaxing)
+ .debug_str     0x000000000000358d       0xd3 ./../../lib/common_config.o
+                                        0x3f4 (size before relaxing)
+ .debug_str     0x0000000000003660       0x12 ./../../lib/common_msgmap_data.o
+ .debug_str     0x0000000000003672       0x12 ./../../lib/common_msgmap.o
+ .debug_str     0x0000000000003684       0x2b ./../../lib/common_confmenu.o
+ .debug_str     0x00000000000036af       0x43 ./../../lib/common_history.o
+ .debug_str     0x00000000000036f2       0x1b ./../../lib/common_string.o
+ .debug_str     0x000000000000370d       0x12 ./../../lib/common_string2.o
+ .debug_str     0x000000000000371f       0x1f ./../../lib/common_key.o
+ .debug_str     0x000000000000373e       0x29 ./../../lib/common_msg.o
+ .debug_str     0x0000000000003767       0x46 ./../../lib/common_sound.o
+ .debug_str     0x00000000000037ad       0xcf ./../../lib/common_phy_volume_deal.o
+                                        0x384 (size before relaxing)
+ .debug_str     0x000000000000387c       0x1a ./../../lib/common_phy_volume_table.o
+                                        0x33e (size before relaxing)
+ .debug_str     0x0000000000003896       0x50 ./../../lib/ui_menulist_sub.o
+ .debug_str     0x00000000000038e6       0x5e ./../../lib/ui_menulist_sub2.o
+ .debug_str     0x0000000000003944       0x3b ./../../lib/ui_textread_dec.o
+ .debug_str     0x000000000000397f       0x1e ./../../lib/ui_textread_sub.o
+ .debug_str     0x000000000000399d       0x2a ./../../lib/ui_headbar.o
+ .debug_str     0x00000000000039c7       0x35 ./../../lib/ui_keylock.o
+ .debug_str     0x00000000000039fc       0x2b ./../../lib/ui_shutoff.o
+ .debug_str     0x0000000000003a27       0x12 ./../../lib/ui_screensave.o
+ .debug_str     0x0000000000003a39       0x1e ./../../lib/ui_screensave_sub.o
+ .debug_str     0x0000000000003a57       0x43 ./../../lib/ui_animation.o
+ .debug_str     0x0000000000003a9a       0x50 ./../../lib/ui_volumebar.o
+ .debug_str     0x0000000000003aea       0x4c ./../../lib/ui_volumebar_sub.o
+ .debug_str     0x0000000000003b36       0x6d ./../../lib/ui_dialog.o
+ .debug_str     0x0000000000003ba3       0x6d ./../../lib/ui_usbconnect.o
+ .debug_str     0x0000000000003c10       0x1c ./../../lib/miscellaneous.o
+ .debug_str     0x0000000000003c2c       0x12 ./../../lib/app_sleep.o
+ .debug_str     0x0000000000003c3e       0x12 ./../../lib/sys_timer.o
+ .debug_str     0x0000000000003c50      0x3db ./../../lib/sys_counter.o
+                                        0x7cd (size before relaxing)
+ .debug_str     0x000000000000402b       0x12 ./../../lib/common_charge.o
+ .debug_str     0x000000000000403d      0x33d ./../../lib/ui_headbar_handle.o
+                                        0x646 (size before relaxing)
+ .debug_str     0x000000000000437a       0x1e ./../../lib/message_box.o
+ .debug_str     0x0000000000004398       0xca ./../../lib/alarm_msg_dispatch.o
+ .debug_str     0x0000000000004462       0x12 ./../../lib/alarm_msg_dispatch2.o
+ .debug_str     0x0000000000004474       0x12 ./../../lib/antenna_detect.o
+ .debug_str     0x0000000000004486       0x3f ./../../lib/common_setdae_init.o
+ .debug_str     0x00000000000044c5      0x271 ./../../lib/common_keytone_play.o
+                                        0x745 (size before relaxing)
+
+.comment        0x0000000000000000      0xc6e
+ .comment       0x0000000000000000       0x2b ./../../lib/applib_globe_data.o
+ .comment       0x000000000000002b       0x2b ./../../lib/app_timer_rcode.o
+ .comment       0x0000000000000056       0x2b ./../../lib/message_rcode.o
+ .comment       0x0000000000000081       0x2b ./obj/main_setting.o
+ .comment       0x00000000000000ac       0x2b ./obj/menu_callback_sound_setting2.o
+ .comment       0x00000000000000d7       0x2b ./../../lib/applib_app_data.o
+ .comment       0x0000000000000102       0x2b ./../../lib/common_ui_data.o
+ .comment       0x000000000000012d       0x2b ./../../lib/common_func_data.o
+ .comment       0x0000000000000158       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_bs_rdata.o
+ .comment       0x0000000000000183       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_rdata.o
+ .comment       0x00000000000001ae       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_fsel_rdata.o
+ .comment       0x00000000000001d9       0x2b ./../../../psp_rel/lib/ctor.o
+ .comment       0x0000000000000204       0x2b ./obj/menu_callback_display_setting.o
+ .comment       0x000000000000022f       0x2b ./obj/menu_callback_language.o
+ .comment       0x000000000000025a       0x2b ./obj/menu_callback_others.o
+ .comment       0x0000000000000285       0x2b ./obj/menu_callback_play_mode.o
+ .comment       0x00000000000002b0       0x2b ./obj/menu_callback_time_setting.o
+ .comment       0x00000000000002db       0x2b ./obj/menu_callback_date_setting.o
+ .comment       0x0000000000000306       0x2b ./obj/menu_callback_others_2.o
+ .comment       0x0000000000000331       0x2b ./obj/menu_callback_autoupgrade_setting.o
+ .comment       0x000000000000035c       0x2b ./obj/ap_cfg_menu_setting.o
+ .comment       0x0000000000000387       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .comment       0x00000000000003b2       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .comment       0x00000000000003dd       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .comment       0x0000000000000408       0x2b ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .comment       0x0000000000000433       0x2b ./../../lib/ui_menulist.o
+ .comment       0x000000000000045e       0x2b ./../../lib/ui_menulist2.o
+ .comment       0x0000000000000489       0x2b ./../../lib/ui_menulist_simple.o
+ .comment       0x00000000000004b4       0x2b ./../../lib/ui_parameter.o
+ .comment       0x00000000000004df       0x2b ./../../lib/ui_textread.o
+ .comment       0x000000000000050a       0x2b ./../../lib/setting_comval.o
+ .comment       0x0000000000000535       0x2b ./../../lib/app_manager_bank.o
+ .comment       0x0000000000000560       0x2b ./../../lib/app_timer_bank.o
+ .comment       0x000000000000058b       0x2b ./../../lib/message_bank_init.o
+ .comment       0x00000000000005b6       0x2b ./../../lib/message_bank_send.o
+ .comment       0x00000000000005e1       0x2b ./../../lib/message_bank_broadcast.o
+ .comment       0x000000000000060c       0x2b ./../../lib/common_config.o
+ .comment       0x0000000000000637       0x2b ./../../lib/common_msgmap_data.o
+ .comment       0x0000000000000662       0x2b ./../../lib/common_msgmap.o
+ .comment       0x000000000000068d       0x2b ./../../lib/common_confmenu.o
+ .comment       0x00000000000006b8       0x2b ./../../lib/common_history.o
+ .comment       0x00000000000006e3       0x2b ./../../lib/common_string.o
+ .comment       0x000000000000070e       0x2b ./../../lib/common_string2.o
+ .comment       0x0000000000000739       0x2b ./../../lib/common_key.o
+ .comment       0x0000000000000764       0x2b ./../../lib/common_msg.o
+ .comment       0x000000000000078f       0x2b ./../../lib/common_sound.o
+ .comment       0x00000000000007ba       0x2b ./../../lib/common_phy_volume_deal.o
+ .comment       0x00000000000007e5       0x2b ./../../lib/common_phy_volume_table.o
+ .comment       0x0000000000000810       0x2b ./../../lib/ui_menulist_sub.o
+ .comment       0x000000000000083b       0x2b ./../../lib/ui_menulist_sub2.o
+ .comment       0x0000000000000866       0x2b ./../../lib/ui_textread_dec.o
+ .comment       0x0000000000000891       0x2b ./../../lib/ui_textread_sub.o
+ .comment       0x00000000000008bc       0x2b ./../../lib/ui_headbar.o
+ .comment       0x00000000000008e7       0x2b ./../../lib/ui_keylock.o
+ .comment       0x0000000000000912       0x2b ./../../lib/ui_shutoff.o
+ .comment       0x000000000000093d       0x2b ./../../lib/ui_screensave.o
+ .comment       0x0000000000000968       0x2b ./../../lib/ui_screensave_sub.o
+ .comment       0x0000000000000993       0x2b ./../../lib/ui_animation.o
+ .comment       0x00000000000009be       0x2b ./../../lib/ui_volumebar.o
+ .comment       0x00000000000009e9       0x2b ./../../lib/ui_volumebar_sub.o
+ .comment       0x0000000000000a14       0x2b ./../../lib/ui_dialog.o
+ .comment       0x0000000000000a3f       0x2b ./../../lib/ui_usbconnect.o
+ .comment       0x0000000000000a6a       0x2b ./../../lib/miscellaneous.o
+ .comment       0x0000000000000a95       0x2b ./../../lib/app_sleep.o
+ .comment       0x0000000000000ac0       0x2b ./../../lib/sys_timer.o
+ .comment       0x0000000000000aeb       0x2b ./../../lib/sys_counter.o
+ .comment       0x0000000000000b16       0x2b ./../../lib/common_charge.o
+ .comment       0x0000000000000b41       0x2b ./../../lib/ui_headbar_handle.o
+ .comment       0x0000000000000b6c       0x2b ./../../lib/message_box.o
+ .comment       0x0000000000000b97       0x2b ./../../lib/alarm_msg_dispatch.o
+ .comment       0x0000000000000bc2       0x2b ./../../lib/alarm_msg_dispatch2.o
+ .comment       0x0000000000000bed       0x2b ./../../lib/antenna_detect.o
+ .comment       0x0000000000000c18       0x2b ./../../lib/common_setdae_init.o
+ .comment       0x0000000000000c43       0x2b ./../../lib/common_keytone_play.o
+
+.debug_frame    0x0000000000000000     0x340c
+ .debug_frame   0x0000000000000000       0x34 ./../../lib/app_timer_rcode.o
+ .debug_frame   0x0000000000000034       0x74 ./../../lib/message_rcode.o
+ .debug_frame   0x00000000000000a8      0x1a8 ./obj/main_setting.o
+ .debug_frame   0x0000000000000250       0x98 ./obj/menu_callback_sound_setting2.o
+ .debug_frame   0x00000000000002e8       0x58 ./../../../psp_rel/lib/ctor.o
+ .debug_frame   0x0000000000000340      0x154 ./obj/menu_callback_display_setting.o
+ .debug_frame   0x0000000000000494      0x4ac ./obj/menu_callback_language.o
+ .debug_frame   0x0000000000000940      0x1f4 ./obj/menu_callback_others.o
+ .debug_frame   0x0000000000000b34      0x2d0 ./obj/menu_callback_play_mode.o
+ .debug_frame   0x0000000000000e04       0xac ./obj/menu_callback_time_setting.o
+ .debug_frame   0x0000000000000eb0       0xc0 ./obj/menu_callback_date_setting.o
+ .debug_frame   0x0000000000000f70      0x17c ./obj/menu_callback_others_2.o
+ .debug_frame   0x00000000000010ec       0x98 ./obj/menu_callback_autoupgrade_setting.o
+ .debug_frame   0x0000000000001184      0x14c ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_frame   0x00000000000012d0       0x9c ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_frame   0x000000000000136c       0xbc ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_frame   0x0000000000001428       0xa8 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_frame   0x00000000000014d0       0xf4 ./../../lib/ui_menulist.o
+ .debug_frame   0x00000000000015c4      0x198 ./../../lib/ui_menulist2.o
+ .debug_frame   0x000000000000175c      0x13c ./../../lib/ui_menulist_simple.o
+ .debug_frame   0x0000000000001898       0xd8 ./../../lib/ui_parameter.o
+ .debug_frame   0x0000000000001970       0x90 ./../../lib/ui_textread.o
+ .debug_frame   0x0000000000001a00       0x60 ./../../lib/setting_comval.o
+ .debug_frame   0x0000000000001a60       0x58 ./../../lib/app_manager_bank.o
+ .debug_frame   0x0000000000001ab8       0xa8 ./../../lib/app_timer_bank.o
+ .debug_frame   0x0000000000001b60       0x34 ./../../lib/message_bank_init.o
+ .debug_frame   0x0000000000001b94       0x80 ./../../lib/message_bank_send.o
+ .debug_frame   0x0000000000001c14       0x58 ./../../lib/message_bank_broadcast.o
+ .debug_frame   0x0000000000001c6c       0x78 ./../../lib/common_config.o
+ .debug_frame   0x0000000000001ce4       0x2c ./../../lib/common_msgmap.o
+ .debug_frame   0x0000000000001d10       0xec ./../../lib/common_confmenu.o
+ .debug_frame   0x0000000000001dfc       0xe8 ./../../lib/common_history.o
+ .debug_frame   0x0000000000001ee4       0x50 ./../../lib/common_string.o
+ .debug_frame   0x0000000000001f34       0xbc ./../../lib/common_string2.o
+ .debug_frame   0x0000000000001ff0      0x158 ./../../lib/common_key.o
+ .debug_frame   0x0000000000002148      0x130 ./../../lib/common_msg.o
+ .debug_frame   0x0000000000002278      0x148 ./../../lib/common_sound.o
+ .debug_frame   0x00000000000023c0       0x28 ./../../lib/common_phy_volume_deal.o
+ .debug_frame   0x00000000000023e8       0x6c ./../../lib/ui_menulist_sub.o
+ .debug_frame   0x0000000000002454       0x74 ./../../lib/ui_menulist_sub2.o
+ .debug_frame   0x00000000000024c8       0x74 ./../../lib/ui_textread_dec.o
+ .debug_frame   0x000000000000253c       0x7c ./../../lib/ui_textread_sub.o
+ .debug_frame   0x00000000000025b8       0xd4 ./../../lib/ui_headbar.o
+ .debug_frame   0x000000000000268c       0xe4 ./../../lib/ui_keylock.o
+ .debug_frame   0x0000000000002770       0xb4 ./../../lib/ui_shutoff.o
+ .debug_frame   0x0000000000002824      0x178 ./../../lib/ui_screensave.o
+ .debug_frame   0x000000000000299c       0xb4 ./../../lib/ui_screensave_sub.o
+ .debug_frame   0x0000000000002a50       0xb4 ./../../lib/ui_animation.o
+ .debug_frame   0x0000000000002b04       0xd0 ./../../lib/ui_volumebar.o
+ .debug_frame   0x0000000000002bd4       0x58 ./../../lib/ui_volumebar_sub.o
+ .debug_frame   0x0000000000002c2c       0xb4 ./../../lib/ui_dialog.o
+ .debug_frame   0x0000000000002ce0       0xfc ./../../lib/ui_usbconnect.o
+ .debug_frame   0x0000000000002ddc       0x90 ./../../lib/miscellaneous.o
+ .debug_frame   0x0000000000002e6c       0x34 ./../../lib/app_sleep.o
+ .debug_frame   0x0000000000002ea0       0x90 ./../../lib/sys_timer.o
+ .debug_frame   0x0000000000002f30       0x64 ./../../lib/sys_counter.o
+ .debug_frame   0x0000000000002f94       0x50 ./../../lib/common_charge.o
+ .debug_frame   0x0000000000002fe4       0x30 ./../../lib/ui_headbar_handle.o
+ .debug_frame   0x0000000000003014       0x88 ./../../lib/message_box.o
+ .debug_frame   0x000000000000309c       0xc4 ./../../lib/alarm_msg_dispatch.o
+ .debug_frame   0x0000000000003160       0x48 ./../../lib/alarm_msg_dispatch2.o
+ .debug_frame   0x00000000000031a8       0x74 ./../../lib/antenna_detect.o
+ .debug_frame   0x000000000000321c       0xa8 ./../../lib/common_setdae_init.o
+ .debug_frame   0x00000000000032c4      0x148 ./../../lib/common_keytone_play.o
+
+.debug_aranges  0x0000000000000000      0x900
+ .debug_aranges
+                0x0000000000000000       0x20 ./../../lib/app_timer_rcode.o
+ .debug_aranges
+                0x0000000000000020       0x20 ./../../lib/message_rcode.o
+ .debug_aranges
+                0x0000000000000040       0x20 ./obj/main_setting.o
+ .debug_aranges
+                0x0000000000000060       0x20 ./obj/menu_callback_sound_setting2.o
+ .debug_aranges
+                0x0000000000000080       0x20 ./../../../psp_rel/lib/ctor.o
+ .debug_aranges
+                0x00000000000000a0       0x20 ./obj/menu_callback_display_setting.o
+ .debug_aranges
+                0x00000000000000c0       0x20 ./obj/menu_callback_language.o
+ .debug_aranges
+                0x00000000000000e0       0x20 ./obj/menu_callback_others.o
+ .debug_aranges
+                0x0000000000000100       0x20 ./obj/menu_callback_play_mode.o
+ .debug_aranges
+                0x0000000000000120       0x20 ./obj/menu_callback_time_setting.o
+ .debug_aranges
+                0x0000000000000140       0x20 ./obj/menu_callback_date_setting.o
+ .debug_aranges
+                0x0000000000000160       0x20 ./obj/menu_callback_others_2.o
+ .debug_aranges
+                0x0000000000000180       0x20 ./obj/menu_callback_autoupgrade_setting.o
+ .debug_aranges
+                0x00000000000001a0       0x20 ./../../../psp_rel/lib/lib_enhanced/eh_module.o
+ .debug_aranges
+                0x00000000000001c0       0x20 ./../../../psp_rel/lib/api.a(audio_device_op_entry.o)
+ .debug_aranges
+                0x00000000000001e0       0x20 ./../../../psp_rel/lib/api.a(key_op_entry.o)
+ .debug_aranges
+                0x0000000000000200       0x20 ./../../../psp_rel/lib/api.a(lcd_op_entry.o)
+ .debug_aranges
+                0x0000000000000220       0x20 ./../../../psp_rel/lib/api.a(libc_op_entry.o)
+ .debug_aranges
+                0x0000000000000240       0x20 ./../../../psp_rel/lib/api.a(sys_op_entry.o)
+ .debug_aranges
+                0x0000000000000260       0x20 ./../../../psp_rel/lib/api.a(ui_op_entry.o)
+ .debug_aranges
+                0x0000000000000280       0x20 ./../../../psp_rel/lib/api.a(vfs_op_entry.o)
+ .debug_aranges
+                0x00000000000002a0       0x20 ./../../../psp_rel/lib/api.a(base_op_entry.o)
+ .debug_aranges
+                0x00000000000002c0       0x20 ./../../../psp_rel/lib/lib_enhanced/eh_change_location.o
+ .debug_aranges
+                0x00000000000002e0       0x20 ./../../../psp_rel/lib/lib_enhanced/eh_module_sub.o
+ .debug_aranges
+                0x0000000000000300       0x20 ./../../../psp_rel/lib/lib_enhanced/eh_change_location_sub.o
+ .debug_aranges
+                0x0000000000000320       0x20 ./../../lib/ui_menulist.o
+ .debug_aranges
+                0x0000000000000340       0x20 ./../../lib/ui_menulist2.o
+ .debug_aranges
+                0x0000000000000360       0x20 ./../../lib/ui_menulist_simple.o
+ .debug_aranges
+                0x0000000000000380       0x20 ./../../lib/ui_parameter.o
+ .debug_aranges
+                0x00000000000003a0       0x20 ./../../lib/ui_textread.o
+ .debug_aranges
+                0x00000000000003c0       0x20 ./../../lib/setting_comval.o
+ .debug_aranges
+                0x00000000000003e0       0x20 ./../../lib/app_manager_bank.o
+ .debug_aranges
+                0x0000000000000400       0x20 ./../../lib/app_timer_bank.o
+ .debug_aranges
+                0x0000000000000420       0x20 ./../../lib/message_bank_init.o
+ .debug_aranges
+                0x0000000000000440       0x20 ./../../lib/message_bank_send.o
+ .debug_aranges
+                0x0000000000000460       0x20 ./../../lib/message_bank_broadcast.o
+ .debug_aranges
+                0x0000000000000480       0x20 ./../../lib/common_config.o
+ .debug_aranges
+                0x00000000000004a0       0x20 ./../../lib/common_msgmap.o
+ .debug_aranges
+                0x00000000000004c0       0x20 ./../../lib/common_confmenu.o
+ .debug_aranges
+                0x00000000000004e0       0x20 ./../../lib/common_history.o
+ .debug_aranges
+                0x0000000000000500       0x20 ./../../lib/common_string.o
+ .debug_aranges
+                0x0000000000000520       0x20 ./../../lib/common_string2.o
+ .debug_aranges
+                0x0000000000000540       0x20 ./../../lib/common_key.o
+ .debug_aranges
+                0x0000000000000560       0x20 ./../../lib/common_msg.o
+ .debug_aranges
+                0x0000000000000580       0x20 ./../../lib/common_sound.o
+ .debug_aranges
+                0x00000000000005a0       0x20 ./../../lib/common_phy_volume_deal.o
+ .debug_aranges
+                0x00000000000005c0       0x20 ./../../lib/ui_menulist_sub.o
+ .debug_aranges
+                0x00000000000005e0       0x20 ./../../lib/ui_menulist_sub2.o
+ .debug_aranges
+                0x0000000000000600       0x20 ./../../lib/ui_textread_dec.o
+ .debug_aranges
+                0x0000000000000620       0x20 ./../../lib/ui_textread_sub.o
+ .debug_aranges
+                0x0000000000000640       0x20 ./../../lib/ui_headbar.o
+ .debug_aranges
+                0x0000000000000660       0x20 ./../../lib/ui_keylock.o
+ .debug_aranges
+                0x0000000000000680       0x20 ./../../lib/ui_shutoff.o
+ .debug_aranges
+                0x00000000000006a0       0x20 ./../../lib/ui_screensave.o
+ .debug_aranges
+                0x00000000000006c0       0x20 ./../../lib/ui_screensave_sub.o
+ .debug_aranges
+                0x00000000000006e0       0x20 ./../../lib/ui_animation.o
+ .debug_aranges
+                0x0000000000000700       0x20 ./../../lib/ui_volumebar.o
+ .debug_aranges
+                0x0000000000000720       0x20 ./../../lib/ui_volumebar_sub.o
+ .debug_aranges
+                0x0000000000000740       0x20 ./../../lib/ui_dialog.o
+ .debug_aranges
+                0x0000000000000760       0x20 ./../../lib/ui_usbconnect.o
+ .debug_aranges
+                0x0000000000000780       0x20 ./../../lib/miscellaneous.o
+ .debug_aranges
+                0x00000000000007a0       0x20 ./../../lib/app_sleep.o
+ .debug_aranges
+                0x00000000000007c0       0x20 ./../../lib/sys_timer.o
+ .debug_aranges
+                0x00000000000007e0       0x20 ./../../lib/sys_counter.o
+ .debug_aranges
+                0x0000000000000800       0x20 ./../../lib/common_charge.o
+ .debug_aranges
+                0x0000000000000820       0x20 ./../../lib/ui_headbar_handle.o
+ .debug_aranges
+                0x0000000000000840       0x20 ./../../lib/message_box.o
+ .debug_aranges
+                0x0000000000000860       0x20 ./../../lib/alarm_msg_dispatch.o
+ .debug_aranges
+                0x0000000000000880       0x20 ./../../lib/alarm_msg_dispatch2.o
+ .debug_aranges
+                0x00000000000008a0       0x20 ./../../lib/antenna_detect.o
+ .debug_aranges
+                0x00000000000008c0       0x20 ./../../lib/common_setdae_init.o
+ .debug_aranges
+                0x00000000000008e0       0x20 ./../../lib/common_keytone_play.o
+
+.debug_ranges   0x0000000000000000       0x20
+ .debug_ranges  0x0000000000000000       0x20 ./../../lib/app_timer_bank.o

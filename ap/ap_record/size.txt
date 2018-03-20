@@ -1,0 +1,13 @@
+   text	   data	    bss	    dec	    hex	filename
+  0x4d0	    0x0	    0x0	   1232	    4d0	./obj/record_alarm.o
+  0x674	    0x0	    0x0	   1652	    674	./obj/record_control.o
+  0x25c	  0x200	    0x0	   1116	    45c	./obj/record_disk.o
+  0x7d8	    0x0	    0x0	   2008	    7d8	./obj/record_file.o
+   0x3c	    0x0	    0x0	     60	     3c	./obj/record_file_io.o
+  0x7d8	    0x8	  0x298	   2680	    a78	./obj/record_main.o
+  0x770	    0x0	    0x0	   1904	    770	./obj/record_menu.o
+  0x32c	    0x0	    0x0	    812	    32c	./obj/record_menu_config.o
+  0x45c	    0x0	    0x0	   1116	    45c	./obj/record_message.o
+  0x200	    0x0	    0x0	    512	    200	./obj/record_paint.o
+  0x72c	    0x0	    0x0	   1836	    72c	./obj/record_scene_recording.o
+  0x418	    0x0	    0x0	   1048	    418	./obj/record_scene_recording_sub.o

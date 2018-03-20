@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/SVN2/GL5116_MP3/!svn/ver/2597/trunk/US216A/case/ap/ap_music
+END
+music_playing_paint.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1945/trunk/US216A/case/ap/ap_music/music_playing_paint.c
+END
+app_music_menu_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/2597/trunk/US216A/case/ap/ap_music/app_music_menu_config.h
+END
+app_music_albumlist.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1999/trunk/US216A/case/ap/ap_music/app_music_albumlist.h
+END
+music_ape_cue.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1674/trunk/US216A/case/ap/ap_music/music_ape_cue.c
+END
+music_playing_getid3.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_playing_getid3.c
+END
+ap_music.xn
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1832/trunk/US216A/case/ap/ap_music/ap_music.xn
+END
+music_audible_sys.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_audible_sys.c
+END
+music_setmenu_bookmark_deal_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_setmenu_bookmark_deal_sub.c
+END
+music_setmenu_favordeal.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/music_setmenu_favordeal.c
+END
+music_setmenu_soundset.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_setmenu_soundset.c
+END
+music_playing_show_lyric.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1269/trunk/US216A/case/ap/ap_music/music_playing_show_lyric.c
+END
+music_setmenu_audible.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1800/trunk/US216A/case/ap/ap_music/music_setmenu_audible.c
+END
+music_setmenu_bookmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_setmenu_bookmark.c
+END
+music_setmenu_show_bookmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_setmenu_show_bookmark.c
+END
+app_music_playing.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1789/trunk/US216A/case/ap/ap_music/app_music_playing.h
+END
+music_setmenu_playmode.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/832/trunk/US216A/case/ap/ap_music/music_setmenu_playmode.c
+END
+app_music_bookmark.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/app_music_bookmark.h
+END
+music_control_bank.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_control_bank.c
+END
+music_setmenu_show_cue.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1676/trunk/US216A/case/ap/ap_music/music_setmenu_show_cue.c
+END
+music_setmenu_bookmark_rw.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_setmenu_bookmark_rw.c
+END
+music_listmenu_menuoption.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/music_listmenu_menuoption.c
+END
+music_listmenu_listmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_listmenu_listmenu.c
+END
+music_playing_keymsg.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_playing_keymsg.c
+END
+music_listmenu_menusure.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_listmenu_menusure.c
+END
+music_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1685/trunk/US216A/case/ap/ap_music/music_sty.h
+END
+music_setmenu_soundset_param.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_setmenu_soundset_param.c
+END
+app_music_favorite.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/app_music_favorite.h
+END
+music_listmenu_listoption.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_listmenu_listoption.c
+END
+music_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_main.c
+END
+music_playing_playdeal_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/SVN2/GL5116_MP3/!svn/ver/1941/trunk/US216A/case/ap/ap_music/music_playing_playdeal_sub.c
+END
+app_music_show_lyric.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1517/trunk/US216A/case/ap/ap_music/app_music_show_lyric.h
+END
+music_create_bookmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_create_bookmark.c
+END
+music_del_bookmark.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_del_bookmark.c
+END
+music_scene_playing_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/music_scene_playing_sub.c
+END
+music_setmenu_bookmark_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/SVN2/GL5116_MP3/!svn/ver/1782/trunk/US216A/case/ap/ap_music/music_setmenu_bookmark_deal.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/135/trunk/US216A/case/ap/ap_music/Makefile
+END
+music_scene_setmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_scene_setmenu.c
+END
+music_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/2597/trunk/US216A/case/ap/ap_music/music_res.h
+END
+music_add_favorite_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1604/trunk/US216A/case/ap/ap_music/music_add_favorite_sub.c
+END
+music_setmenu_otheritem.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1263/trunk/US216A/case/ap/ap_music/music_setmenu_otheritem.c
+END
+music_del_favorite.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1832/trunk/US216A/case/ap/ap_music/music_del_favorite.c
+END
+music_listmenu_optionitem.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/music_listmenu_optionitem.c
+END
+music_listmenu_albumlist.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1999/trunk/US216A/case/ap/ap_music/music_listmenu_albumlist.c
+END
+music_scene_listmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/2604/trunk/US216A/case/ap/ap_music/music_scene_listmenu.c
+END
+music_playing_playdeal.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1771/trunk/US216A/case/ap/ap_music/music_playing_playdeal.c
+END
+music_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1923/trunk/US216A/case/ap/ap_music/music_control.c
+END
+music_scene_playing.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1836/trunk/US216A/case/ap/ap_music/music_scene_playing.c
+END
+music_creat_albumart_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/SVN2/GL5116_MP3/!svn/ver/1571/trunk/US216A/case/ap/ap_music/music_creat_albumart_file.c
+END
+app_music.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1944/trunk/US216A/case/ap/ap_music/app_music.h
+END
+app_music_setmenu.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/981/trunk/US216A/case/ap/ap_music/app_music_setmenu.h
+END
+music_clear_favorite.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/8/trunk/US216A/case/ap/ap_music/music_clear_favorite.c
+END
+music_add_favorite.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/904/trunk/US216A/case/ap/ap_music/music_add_favorite.c
+END
+music_menu_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/2597/trunk/US216A/case/ap/ap_music/music_menu_config.c
+END

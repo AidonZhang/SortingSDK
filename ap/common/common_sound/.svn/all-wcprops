@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/common/common_sound
+END
+common_phy_volume_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/SVN2/GL5116_MP3/!svn/ver/554/trunk/US216A/case/ap/common/common_sound/common_phy_volume_deal.c
+END
+common_phy_volume_table.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/SVN2/GL5116_MP3/!svn/ver/270/trunk/US216A/case/ap/common/common_sound/common_phy_volume_table.c
+END
+common_keytone_play.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN2/GL5116_MP3/!svn/ver/1853/trunk/US216A/case/ap/common/common_sound/common_keytone_play.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/133/trunk/US216A/case/ap/common/common_sound/Makefile
+END

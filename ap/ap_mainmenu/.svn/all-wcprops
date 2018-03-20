@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ap_mainmenu
+END
+mainmenu_display_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/863/trunk/US216A/case/ap/ap_mainmenu/mainmenu_display_init.c
+END
+mainmenu_get_info.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/11/trunk/US216A/case/ap/ap_mainmenu/mainmenu_get_info.c
+END
+mainmenu_paint.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/642/trunk/US216A/case/ap/ap_mainmenu/mainmenu_paint.c
+END
+mainmenu_option_menu.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_mainmenu/mainmenu_option_menu.c
+END
+mainmenu_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/863/trunk/US216A/case/ap/ap_mainmenu/mainmenu_res.h
+END
+ap_cfg_mainmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_mainmenu/ap_cfg_mainmenu.c
+END
+mainmenu_msg_loop.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/11/trunk/US216A/case/ap/ap_mainmenu/mainmenu_msg_loop.c
+END
+mainmenu_msg_handle.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/11/trunk/US216A/case/ap/ap_mainmenu/mainmenu_msg_handle.c
+END
+main_menu.xn
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/95/trunk/US216A/case/ap/ap_mainmenu/main_menu.xn
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/95/trunk/US216A/case/ap/ap_mainmenu/Makefile
+END
+main_menu.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_mainmenu/main_menu.h
+END
+mainmenu_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/803/trunk/US216A/case/ap/ap_mainmenu/mainmenu_main.c
+END
+mainmenu_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/863/trunk/US216A/case/ap/ap_mainmenu/mainmenu_sty.h
+END

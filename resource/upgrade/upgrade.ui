@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--Actions IDE, Rapid Application Development-->
+<ui-rad type="application-9x">
+    <property name="prj_name" value="upgrade" />
+    <property name="prj_language" value="0" />
+    <property name="prj_screen_width" value="320" />
+    <property name="prj_screen_height" value="240" />
+    <property name="prj_case_path" value="..\..\" />
+    <property name="prj_sdk_path" value="../../psp_rel" />
+    <property name="prj_res_file" value="upgrade.sty" />
+    <property name="prj_res_head_file" value="upgrade_res.h" />
+    <property name="prj_res_str_dir" value="upgrade\" />
+    <property name="prj_sty_file" value="upgrade.sty" />
+    <property name="prj_sty_head_file" value="upgrade_sty.h" />
+    <property name="prj_build_res_type" value="0x1" />
+    <property name="icon" value="" />
+    <property name="snapshot" value="" />
+    <property name="prj_ver" value="V100" />
+    <style>
+        <property name="name" value="style0" />
+        <property name="width" value="320" />
+        <property name="height" value="240" />
+        <property name="fontHeight" value="16" />
+        <property name="x" value="80" />
+        <property name="y" value="10" />
+        <property name="Font_small" value="8" />
+        <property name="Font_middle" value="14" />
+        <property name="Font_large" value="16" />
+        <scene>
+            <property name="name" value="scene_upgrade" />
+            <property name="id" value="0" />
+            <property name="width" value="320" />
+            <property name="height" value="240" />
+            <property name="bgPic" value="" />
+            <property name="background" value="ffffff" />
+            <element class="resgroup_resource">
+                <property name="name" value="resgroup01" />
+                <property name="id" value="1" />
+                <property name="x" value="0" />
+                <property name="y" value="0" />
+                <property name="abs_x" value="0" />
+                <property name="abs_y" value="0" />
+                <property name="width" value="$(screenWidth)" />
+                <property name="height" value="$(screenHeight)" />
+                <property name="background" value="15658734" />
+                <property name="transparency" value="255" />
+                <property name="opaque" value="0" />
+                <property name="visible" value="1" />
+                <element class="TextBox">
+                    <property name="name" value="upgrade_string2" />
+                    <property name="id" value="5" />
+                    <property name="x" value="315" />
+                    <property name="y" value="208" />
+                    <property name="width" value="250" />
+                    <property name="height" value="48" />
+                    <property name="textX" value="-200" />
+                    <property name="textY" value="-88" />
+                    <property name="textWidth" value="250" />
+                    <property name="textHeight" value="48" />
+                    <property name="bgPicX" value="-200" />
+                    <property name="bgPicY" value="-88" />
+                    <property name="text" value="s_upgrade_tips" />
+                    <property name="fontHeight" value="16" />
+                    <property name="foreground" value="16777215" />
+                    <property name="background" value="1579032" />
+                    <property name="bgPic" value="" />
+                    <property name="useBgPic" value="0" />
+                    <property name="bgPicWidth" value="0" />
+                    <property name="bgPicHeight" value="0" />
+                    <property name="visible" value="1" />
+                    <property name="mode" value="0" />
+                    <property name="align" value="1" />
+                    <property name="ShowMultiline" value="0" />
+                    <property name="ArabRgtAlign" value="0" />
+                    <property name="FontSize" value="1" />
+                </element>
+                <element class="TextBox">
+                    <property name="name" value="upgrade_string" />
+                    <property name="id" value="6" />
+                    <property name="x" value="365" />
+                    <property name="y" value="158" />
+                    <property name="width" value="150" />
+                    <property name="height" value="16" />
+                    <property name="textX" value="-200" />
+                    <property name="textY" value="-108" />
+                    <property name="textWidth" value="150" />
+                    <property name="textHeight" value="16" />
+                    <property name="bgPicX" value="-200" />
+                    <property name="bgPicY" value="-108" />
+                    <property name="text" value="s_upgrading" />
+                    <property name="fontHeight" value="16" />
+                    <property name="foreground" value="16777215" />
+                    <property name="background" value="1579032" />
+                    <property name="bgPic" value="" />
+                    <property name="useBgPic" value="0" />
+                    <property name="bgPicWidth" value="0" />
+                    <property name="bgPicHeight" value="0" />
+                    <property name="visible" value="1" />
+                    <property name="mode" value="0" />
+                    <property name="align" value="1" />
+                    <property name="ShowMultiline" value="3" />
+                    <property name="ArabRgtAlign" value="0" />
+                    <property name="FontSize" value="1" />
+                </element>
+                <element class="PictureBox">
+                    <property name="name" value="upgrade_point_1" />
+                    <property name="id" value="7" />
+                    <property name="x" value="152" />
+                    <property name="y" value="195" />
+                    <property name="width" value="16" />
+                    <property name="height" value="16" />
+                    <property name="visible" value="1" />
+                    <property name="screenshotBgPic" value="" />
+                    <element class="layer">
+                        <property name="0" value=".\pic\p_upgrade_point_1ina.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                        <property name="1" value=".\pic\p_upgrade_point_1a.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                    </element>
+                </element>
+                <element class="PictureBox">
+                    <property name="name" value="upgrade_point_2" />
+                    <property name="id" value="8" />
+                    <property name="x" value="192" />
+                    <property name="y" value="195" />
+                    <property name="width" value="16" />
+                    <property name="height" value="16" />
+                    <property name="visible" value="1" />
+                    <property name="screenshotBgPic" value="" />
+                    <element class="layer">
+                        <property name="0" value=".\pic\p_upgrade_point_2ina.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                        <property name="1" value=".\pic\p_upgrade_point_2a.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                    </element>
+                </element>
+                <element class="PictureBox">
+                    <property name="name" value="upgrade_point_3" />
+                    <property name="id" value="9" />
+                    <property name="x" value="232" />
+                    <property name="y" value="195" />
+                    <property name="width" value="16" />
+                    <property name="height" value="16" />
+                    <property name="visible" value="1" />
+                    <property name="screenshotBgPic" value="" />
+                    <element class="layer">
+                        <property name="0" value=".\pic\p_upgrade_point_3ina.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                        <property name="1" value=".\pic\p_upgrade_point_3a.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                    </element>
+                </element>
+                <element class="PictureBox">
+                    <property name="name" value="upgrade_point_4" />
+                    <property name="id" value="10" />
+                    <property name="x" value="272" />
+                    <property name="y" value="195" />
+                    <property name="width" value="16" />
+                    <property name="height" value="16" />
+                    <property name="visible" value="1" />
+                    <property name="screenshotBgPic" value="" />
+                    <element class="layer">
+                        <property name="0" value=".\pic\p_upgrade_point_4ina.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                        <property name="1" value=".\pic\p_upgrade_point_4a.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                    </element>
+                </element>
+                <element class="PictureBox">
+                    <property name="name" value="upgrade_point_5" />
+                    <property name="id" value="11" />
+                    <property name="x" value="312" />
+                    <property name="y" value="195" />
+                    <property name="width" value="16" />
+                    <property name="height" value="16" />
+                    <property name="visible" value="1" />
+                    <property name="screenshotBgPic" value="" />
+                    <element class="layer">
+                        <property name="0" value=".\pic\p_upgrade_point_5ina.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                        <property name="1" value=".\pic\p_upgrade_point_5a.bmp" type="0" forePicPath="" forePicBkColor="0" />
+                    </element>
+                </element>
+            </element>
+        </scene>
+    </style>
+    <resource>
+        <picture value="NULL" />
+        <picture value=".\BgPicDoc\upgrade_progress\upgrade_progress_bg.bmp" />
+        <picture value=".\pic\p_upgrade_prog_0.bmp" />
+        <picture value=".\pic\p_upgrade_prog_1.bmp" />
+        <picture value=".\pic\p_upgrade_point_1a.bmp" />
+        <picture value=".\pic\p_upgrade_point_1ina.bmp" />
+        <picture value=".\pic\p_upgrade_point_2a.bmp" />
+        <picture value=".\pic\p_upgrade_point_2ina.bmp" />
+        <picture value=".\pic\p_upgrade_point_3a.bmp" />
+        <picture value=".\pic\p_upgrade_point_3ina.bmp" />
+        <picture value=".\pic\p_upgrade_point_4a.bmp" />
+        <picture value=".\pic\p_upgrade_point_4ina.bmp" />
+        <picture value=".\pic\p_upgrade_point_5a.bmp" />
+        <picture value=".\pic\p_upgrade_point_5ina.bmp" />
+        <txt value=".\upgrade.xls" />
+        <string value="s_upgrading" />
+        <string value="s_upgrade_tips" />
+        <string value="s_upgrade_succeed" />
+        <string value="s_upgrade_failed" />
+    </resource>
+</ui-rad>

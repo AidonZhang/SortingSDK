@@ -1,0 +1,55 @@
+10
+
+dir
+2603
+http://srv-fw:8080/SVN2/GL5116_MP3/trunk/US216A/case
+http://srv-fw:8080/SVN2/GL5116_MP3
+
+
+
+2018-03-06T13:42:54.286146Z
+2602
+ACTIONS\x5czhangchuanlong
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b204a87-3f64-b84e-ba30-7097e8bfba96
+
+cfg
+dir
+
+ap
+dir
+
+tools
+dir
+
+doc
+dir
+
+lib
+dir
+
+resource
+dir
+
+inc
+dir
+
+drv
+dir
+
+fwpkg
+dir
+

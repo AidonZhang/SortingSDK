@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/inc
+END
+lang_id.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/SVN2/GL5116_MP3/!svn/ver/6/trunk/US216A/case/inc/lang_id.h
+END
+stub_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/295/trunk/US216A/case/inc/stub_interface.h
+END
+vm_def.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/1815/trunk/US216A/case/inc/vm_def.h
+END
+alarm_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/6/trunk/US216A/case/inc/alarm_common.h
+END
+display.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/638/trunk/US216A/case/inc/display.h
+END
+dac_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/1619/trunk/US216A/case/inc/dac_interface.h
+END
+applib.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/1853/trunk/US216A/case/inc/applib.h
+END
+att_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/295/trunk/US216A/case/inc/att_interface.h
+END
+ccd_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/134/trunk/US216A/case/inc/ccd_interface.h
+END
+case_type.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/1879/trunk/US216A/case/inc/case_type.h
+END
+I2C.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/SVN2/GL5116_MP3/!svn/ver/6/trunk/US216A/case/inc/I2C.h
+END
+case_include.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/426/trunk/US216A/case/inc/case_include.h
+END
+config_id.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/1853/trunk/US216A/case/inc/config_id.h
+END
+fm_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/6/trunk/US216A/case/inc/fm_interface.h
+END
+case_mem_define.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/295/trunk/US216A/case/inc/case_mem_define.h
+END
+common_aset_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/295/trunk/US216A/case/inc/common_aset_interface.h
+END
+common_keytone.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/1410/trunk/US216A/case/inc/common_keytone.h
+END
+common_bat_charge.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/632/trunk/US216A/case/inc/common_bat_charge.h
+END
+common_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/815/trunk/US216A/case/inc/common_sty.h
+END
+fmengine.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/825/trunk/US216A/case/inc/fmengine.h
+END
+music_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/1773/trunk/US216A/case/inc/music_common.h
+END
+gui_msg.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/464/trunk/US216A/case/inc/gui_msg.h
+END
+common_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/1293/trunk/US216A/case/inc/common_res.h
+END
+common_speaker.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/134/trunk/US216A/case/inc/common_speaker.h
+END
+common_func.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/1758/trunk/US216A/case/inc/common_func.h
+END
+TWI.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/SVN2/GL5116_MP3/!svn/ver/510/trunk/US216A/case/inc/TWI.h
+END
+key_interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/1897/trunk/US216A/case/inc/key_interface.h
+END
+stub_command.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/134/trunk/US216A/case/inc/stub_command.h
+END
+common_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/56/trunk/US216A/case/inc/common_config.h
+END
+lcd_driver.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/1897/trunk/US216A/case/inc/lcd_driver.h
+END
+common_ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/1758/trunk/US216A/case/inc/common_ui.h
+END
+setting_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/1824/trunk/US216A/case/inc/setting_common.h
+END
+app_msg.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/1773/trunk/US216A/case/inc/app_msg.h
+END
+case_independent.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/1569/trunk/US216A/case/inc/case_independent.h
+END

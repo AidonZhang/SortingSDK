@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/drv/ccd
+END
+PA_TAS5709.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/PA_TAS5709.h
+END
+ccd_banka0_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/ccd_banka0_init.c
+END
+ccd_op_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/ccd_op_entry.c
+END
+ccd_inner.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/ccd_inner.h
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/readme.txt
+END
+ccd_bankb0_pa_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/ccd_bankb0_pa_deal.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/Makefile
+END
+ccd.xn
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/drv/ccd/ccd.xn
+END

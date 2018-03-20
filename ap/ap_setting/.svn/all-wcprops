@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ap_setting
+END
+menu_callback_time_setting.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_time_setting.h
+END
+ap_cfg_menu_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_setting/ap_cfg_menu_setting.c
+END
+ap_setting.xn
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1011/trunk/US216A/case/ap/ap_setting/ap_setting.xn
+END
+ap_setting.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/856/trunk/US216A/case/ap/ap_setting/ap_setting.h
+END
+menu_callback_display_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_setting/menu_callback_display_setting.c
+END
+menu_callback_others.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1537/trunk/US216A/case/ap/ap_setting/menu_callback_others.c
+END
+menu_callback_sound_setting2.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/SVN2/GL5116_MP3/!svn/ver/987/trunk/US216A/case/ap/ap_setting/menu_callback_sound_setting2.c
+END
+menu_callback_display_setting.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/SVN2/GL5116_MP3/!svn/ver/1014/trunk/US216A/case/ap/ap_setting/menu_callback_display_setting.h
+END
+menu_callback_play_mode.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_play_mode.c
+END
+menu_callback_others.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/881/trunk/US216A/case/ap/ap_setting/menu_callback_others.h
+END
+menu_callback_date_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_date_setting.c
+END
+menu_callback_sound_setting_2.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/SVN2/GL5116_MP3/!svn/ver/986/trunk/US216A/case/ap/ap_setting/menu_callback_sound_setting_2.h
+END
+menu_callback_autoupgrade_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/SVN2/GL5116_MP3/!svn/ver/1011/trunk/US216A/case/ap/ap_setting/menu_callback_autoupgrade_setting.c
+END
+menu_callback_play_mode.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/986/trunk/US216A/case/ap/ap_setting/menu_callback_play_mode.h
+END
+ap_setting_callback.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1011/trunk/US216A/case/ap/ap_setting/ap_setting_callback.h
+END
+menu_callback_date_setting.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_date_setting.h
+END
+main_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/1529/trunk/US216A/case/ap/ap_setting/main_setting.c
+END
+setting_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/setting_sty.h
+END
+menu_callback_language.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/803/trunk/US216A/case/ap/ap_setting/menu_callback_language.c
+END
+menu_callback_others_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1808/trunk/US216A/case/ap/ap_setting/menu_callback_others_2.c
+END
+menu_callback_language.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_language.h
+END
+menu_callback_others_2.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_setting/menu_callback_others_2.h
+END
+menu_callback_time_setting.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/SVN2/GL5116_MP3/!svn/ver/130/trunk/US216A/case/ap/ap_setting/menu_callback_time_setting.c
+END
+setting_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/362/trunk/US216A/case/ap/ap_setting/setting_res.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/ap/ap_setting/Makefile
+END

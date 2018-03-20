@@ -1,0 +1,197 @@
+//-*- coding: UTF8 -*- 用来指示以什么编码打包字符串内容，从[ANSI, UTF8, UTF-16, UTF-16BE]中选择一种；如果去掉就默认以ANSI编码打包字符串内容；
+
+
+//系统设置--输入选项
+SETTING_INPUT_KEY_ARRAY = 0[1,2,3,7,9,8,4,6];  //EVB板按键，分别为：play/next/prev/mode/eq/vol+/vol-/AB&REC
+
+
+//系统设置--音频选项
+SETTING_AUDIO_OUTPUT_CHANNAL = 0[0,1,2,3,4];//音频输出通道：0-DAC，1-I2S，2-SPDIF，3-DAC + I2S，4-DAC + SPDIF
+SETTING_AUDIO_INNER_PA_SET_MODE = 1[0,1,2,3]; //IC内部PA工作模式，0 单端+非直驱，1 单端+直驱，2 差分+非直驱，3 差分+直驱 （3暂不支持）
+SETTING_AUDIO_INPUT_CHANNAL = 3[0,1,2,3,4];   //音频输入通道：0 Linein，1 Fm, 2 单端mic，3差分mic，4 数字mic
+SETTING_AUDIO_DAC_BIAS_AND_ANACTL = 0[0,1];  //可通过配置PA的bias电流值来改善THD+N   0:音质优先   1: 功耗优先
+SETTING_AUDIO_ADC_BIAS_TYPE = 0[0,1];  //0:音质优先  1: 功耗优先
+SETTING_AUDIO_KEYTONE_MODE = 0[0, 1];  // 按键音是否与音频同时输出 0: 否  1 : 是 
+//系统设置--声音选项
+SETTING_SOUND_MAIN_VOLUME_GAIN = 0[0~9,1];    //主音量负增益（衰减），0 ~ 9 表示 0db ~ -9db
+
+
+//系统设置--电池充电选项
+SETTING_BAT_CHARGE_MODE{80} = 0[0,1];            //电池充电方式，0表示内部充电，1表示外部充电
+SETTING_BAT_CHARGE_CURRENT = 2[0,1,2,3,4,5,6,7]; //电池充电电流值，0=25mA, 1=50mA, 2=100mA, 3=200mA, 4=300mA, 5=400mA, 6=500mA, 7=600mA
+SETTING_BAT_CHARGE_VOLTAGE = 2[0,1,2,3,4,5,6,7]; //电池充电恒压值，0=4.2V, 1=4.23V, 2=4.26V, 3=4.29, 4=4.32V, 5=4.35V, 6=4.38V, 7=4.41V
+
+//系统设置--card驱动能力设置
+SETTING_CARD_CMD_PAD_LEVEL = 5[0~7,1];      //卡cmd线驱动能力设置
+SETTING_CARD_CLK_PAD_LEVEL = 5[0~7,1];           //卡clk线驱动能力设置
+SETTING_CARD_DAT_PAD_LEVEL = 5[0~7,1];           //卡data线驱动能力设置
+SETTING_CARD_INT_CLK = 0[0,1];                   //卡初始化时钟频率设置 0:13M 1:26M
+SETTING_CARD_RW_CLK = 2[0~2,1];                  //卡读写时钟频率设置 0:13M 1:26M 2:MCUPLL
+SETTING_CARD_MAX_CLK = 40[13,20,26,35,40];       //选择MCUPLL时卡最大工作频率
+SETTING_CARD_LINE_WIDTH=1[0,1];                  //CARD线宽 0:单线 1:4线
+SETTING_CARD_CLK_CHOICE=0[0,1];                  //CARD  CLK选择 0：CLK0  1：CLK1
+
+SETTING_UHOST_USE_DELAY=0[0,1];                  //是否支持UHOST延时，提高uhsot兼容性
+
+
+//系统硬件
+SETTING_HARDWARE_26MHz_CYRSTAL_CAPACITOR{100} = 0[0,1]; //硬件26MHz晶振匹配电容:0表示使用内部电容，1表示使用外部电容
+SETTING_HARDWARE_FREQ_COMPENSATION_OFFSET = 0xFFFF; //硬件设置的频偏偏移值,取值范围0x0000-0x1FFFE,默认加上了65535这个偏移值 
+SETTING_HARDWARE_FREQ_COMPENSATION_DEFAULT_VAL = 0x2222; //硬件设置的默认频偏值,取值范围0x0000-0xFFFF
+
+//测试和调试选项
+SETTING_STUB_TEST_DEBUG_ENABLE{120} = 0[0,1];    //STUB 测试调试使能
+SETTING_SYS_DEBUG_MODE_ENABLE{121} = 1[0,1];     //是否启动调试模式，调试模式不开启开门狗
+SETTING_STUB_PRINT_ENABLE = 0[0,1];              //STUB PRINT 打印使能
+SETTING_UART_PRINT_ENABLE = 1[0,1];              //UART PRINT 打印使能
+
+//系统接口uart1_tx pin配置
+SETTING_SYS_DEBUG_PIN{128} = 0[0,1,2,3];    //0:GPIO_A3;  1: GPIO_A23;  2: GPIO_A17;  3: GPIO_A22
+
+
+//系统设置--数字音效选项
+DAE_BYPASS_ENABLE{130}         = 0[0,1];         //是否禁用DAE数字音效，0表示不禁用，即开启DAE数字音效，1表示禁用
+DAE_PRECUT_RATIO               = 0[0~120,1];   //DAE预衰减幅度，单位0.1db，该参数独立于BYPASS_ENABLE；
+DAE_EQUIVALENT_GAIN            = 0[0~120,1];    //等效预衰减，单位0.1db，该值是对DAE音效模块对信号提升的一个评估值；该参数只有打开MDRC时才起作用
+
+DAE_PEQ_ENABLE            	   = 1[0,1];             //是否打开PEQ算法
+                               
+                               //用于上电配置默认EQ参数,不用修改,具体EQ类型的参数在代码中修改
+                               //[中心频率或截止频率；Q值，单位为0.1；增益，单位为0.1DB，范围-120 ~ 120；类型 1表示peaking，2表示high pass，等]
+                               // Freq   Q: N/10  Gain: N/10  Type
+DAE_PEQ_BANK0_SETTING          = 2[30,     7, -10, 2]; 
+DAE_PEQ_BANK1_SETTING          = 2[30,     7, -10, 2];
+DAE_PEQ_BANK2_SETTING          = 1[47,     7,  50, 1];
+DAE_PEQ_BANK3_SETTING          = 1[80,     7,  43, 1];
+DAE_PEQ_BANK4_SETTING          = 1[125,    7,  53, 1];
+DAE_PEQ_BANK5_SETTING          = 1[160,   10,   0, 1];
+DAE_PEQ_BANK6_SETTING          = 1[200,    5,  28, 1];
+DAE_PEQ_BANK7_SETTING          = 1[315,   10,   0, 1];
+DAE_PEQ_BANK8_SETTING          = 1[467,   10,  40, 1];
+DAE_PEQ_BANK9_SETTING          = 1[1000,   7,  26, 1];
+DAE_PEQ_BANK10_SETTING         = 1[1500,   5,  15, 1];
+DAE_PEQ_BANK11_SETTING         = 1[5000,   7,  40, 1];
+DAE_PEQ_BANK12_SETTING         = 1[7000,   7,  60, 1];
+DAE_PEQ_BANK13_SETTING         = 1[8000,  40, -80, 1];
+DAE_PEQ_BANK14_SETTING         = 1[11000,  7,  20, 1];
+DAE_PEQ_BANK15_SETTING         = 1[14000,  5,  43, 1];
+
+
+DAE_GRAPHICS_EQ_ENABLE         = 1[0,1];         //是否打开图形EQ，即EQ音效，0表示不打开，1表示打开
+DAE_GRAPHICS_EQ_TYPE           = 0[0~7,1];       //图形EQ类型，0-none, 1~7 分别为 JAZZ, POP, CLASSIC, SOFT, DBB, ROCK, USER
+
+DAE_MDRC_ENABLE                = 0[0,1];         //是否打开MDRC，0表示不打开，1表示打开
+                               // threshold, attack_time, release_time, crossover_freq
+DAE_MDRC_BANK0_SETTING         = 0[-70, 10, 500,  125]; //[动态范围控制阈值，单位为0.1DB，范围 -60DB ~ 0DB; 限幅器启动时间，单位为0.01ms，取值范围为 0.02 ~ 10 ms; 限幅器释放时间，单位为1ms，取值范围为 1 ~ 1000 ms; 分频点]
+DAE_MDRC_BANK1_SETTING         = 0[-70, 45, 300, 6000];(当前方案未使用参数) 
+DAE_MDRC_BANK2_SETTING         = 0[-70, 75, 300,    0];(当前方案未使用参数) 
+DAE_MDRC_LIMITER_TH_DIFF       = 10[0~30,1];     //非AUX MDRC模式下Limiter阈值高于MDRC最高阈值的差值，单位为0.1DB
+DAE_MDRC_VOLUME_ADJUST         = -8[-30~30,1];    //(当前方案未使用参数) 非AUX MDRC模式下音量微调，单位为0.1DB
+DAE_MDRC_SIGNAL_ADJUST         = -3[-30~0,1];     //(当前方案未使用参数) 非AUX MDRC模式下信号微调，单位为0.1DB
+
+                               // threshold, attack_time, release_time, crossover_freq
+DAE_MDRC_AUX_BANK0_SETTING     = 0[-90, 10, 500,  125]; //[动态范围控制阈值，单位为0.1DB，范围 -60DB ~ 0DB; 限幅器启动时间，单位为0.01ms，取值范围为 0.02 ~ 10 ms; 限幅器释放时间，单位为1ms，取值范围为 1 ~ 1000 ms; 分频点]
+DAE_MDRC_AUX_BANK1_SETTING     = 0[-90, 45, 300, 6000];(当前方案未使用参数) 
+DAE_MDRC_AUX_BANK2_SETTING     = 0[-90, 75, 300,    0];(当前方案未使用参数) 
+DAE_MDRC_AUX_LIMITER_TH_DIFF   = 10[0~30,1];     //AUX MDRC模式下Limiter阈值高于MDRC最高阈值的差值，单位为0.1DB
+DAE_MDRC_AUX_VOLUME_ADJUST     = -8[-30~30,1];    //(当前方案未使用参数) AUX MDRC模式下音量微调，单位为0.1DB
+DAE_MDRC_AUX_SIGNAL_ADJUST     = -3[-30~0,1];     //(当前方案未使用参数) AUX MDRC模式下信号微调，单位为0.1DB
+
+DAE_LIMITER_ENABLE             = 0[0,1];         //是否打开限幅器，0表示不打开，1表示打开
+                               // threshold, attack_time, release_time, reserve
+DAE_LIMITER_SETTING            = 0[-5,  2,  30,  0]; //[限幅器阈值，单位为0.1DB，范围 -60DB ~ 0DB; 限幅器启动时间，单位为0.01ms，取值范围为 0.02 ~ 10 ms; 限幅器释放时间，单位为1ms，取值范围为 1 ~ 1000 ms]
+
+
+
+//setting ap config参数
+SETTING_AP_ID_LIGHTNESS{200} = 5[1~11,1]; //背光等级1-11
+SETTING_AP_ID_THEME = 0[0~4,1]; //主题，蓝色0，绿色1，灰色2，粉红色3，红色4
+SETTING_AP_ID_SCREEN_SAVER_MODE = 0[0~4,1]; //屏幕保护模式：0-无，1-数字时钟，2-相册图画，3-关闭屏幕，4-演示模式
+SETTING_AP_ID_LIGHT_TIMER = 0[0~60,20];  //背光时间，以半秒为单位； 0-表示常亮 20-表示10秒。。。
+SETTING_AP_ID_SCREEN_SAVER_TIMER = 90[0~180,30]; //屏幕保护时间，以半秒为单位；0表示无屏保
+SETTING_AP_ID_SLEEP_TIMER = 0[0~99,1];  //睡眠时间，以分钟为单位；0表示不睡眠
+SETTING_AP_ID_TIME_FORMAT = 0[0,1]; //时间格式，0表示12小时制，1表示24小时制
+SETTING_AP_ID_DATE_FORMAT = 0[0,1,2,3]; //日期格式，0-DD_MM_YYYY 1-MM_DD_YYYY 2-YYYY_MM_DD 
+SETTING_AP_ID_LANGUAGE_ID = 19[0~23,1]; //语言种类
+SETTING_AP_ID_ONLINE_DEVICE = 0[0,1]; //PC连接首选项，0表示MSC，1表示MTP
+SETTING_AP_ID_AUTORUN_SET = 0[0,1]; //自动运行选项，0表示关闭，1表示开启
+SETTING_AP_ID_SUPPORT_CARD = 1[0,1]; //支持卡选项，0表示不支持卡，1表示支持卡
+SETTING_AP_ID_MUSIC_FROM = 4[0,1,2,3,4]; //音乐来源于，4-default，0-all song，1-album 2-artist， 3-genre
+SETTING_AP_ID_MUSIC_REPEAT_MODE = 0[0,1,2,3]; //循环方式；0-关闭 1-单曲循环 2-全部循环 3-浏览播放
+SETTING_AP_ID_MUSIC_SHUFFLE  = 0[0,16]; //随机播放； 0-关闭 16-开启
+SETTING_AP_ID_EQ_SETTING  = 0[0,1,2,3,4,5,6,7]; //EQ音效 0-关闭 1-遥滚 2-放克 3-希普霍普 4-爵士 5-古典 6-电子乐 7-自定义
+SETTING_AP_ID_VOLUME_LIMIT  = 31[0~31,1]; //音量限制 
+SETTING_AP_ID_VOLUME_CURRENT  = 15[0~31,1]; //当前音量
+SETTING_AP_ID_POWEROFF_TIMER  = 0[0~240,20]; //省电关机，以半秒为单位；
+SETTING_AP_ID_PLAYING_TIMER  = 60[0~90,30]; //返回正在播放的时间，以半秒为单位；
+SETTING_AP_ID_DARK_LIGHTOFF_TIMER  = 20[0~60,20]; //屏幕变暗到关掉屏幕时间，以半秒为单位，0表示无此功能
+SETTING_AP_ID_SCREEN_LIGHTOFF_TIMER  = 3[0~10,1]; //屏保到关掉屏幕时间，以分钟为单位，0表示无此功能
+SETTING_AP_ID_KEYTONE_ENABLE  = 0[0,1]; //按键音开关，0表示禁止，1表示使能
+SETTING_AP_ID_FADE_IN_TIME  = 2[0,1,2,4,6,8,10]; //淡入时间,以50ms为单位  
+SETTING_AP_ID_FADE_OUT_TIME = 2[0,1,2,4,6,8,10]; //淡出时间,以50ms为单位 
+SETTING_AP_ID_AUDIBLE_SEEK_IMAGE = 1[0,1,2,3]; //Audible章节图片定位范围,0:0s, 1:500ms, 2:1000ms, 3: 1500ms
+APP_SCAN_MAX_SPACE=0[0~4,1];          //一次扫描磁盘的空间最大值：0-全盘扫描；1-512M;2-1024M(1G);3-1536M(1.5G);4-2048M(2G)
+
+//mainmenu ap参数
+MAINMENU_AP_ID_ARRAY = 0[0, 2, 3, 1, 4];
+
+//music ap参数
+MUSIC_REPLAY_BY_PREV_KEY = 1[0,1];  //当歌曲播放超过5秒钟后，按PREV键是否回到开头重播，0表示切换到上一曲，1表示重播
+MUSIC_ID3_SUPPORT = 1[0,1];       //支持ID3获取功能
+MUSIC_LRC_SUPPORT = 1[0,1];       //支持歌词显示功能
+MUSIC_ALBUM_ART_SUPPORT = 1[0,1]; //支持专辑图片显示功能
+
+//radio ap参数
+RADIO_AP_ID_BAND = 0[0,1,2];        //默认电台波段，0表示普通波段，1表示日本波段，2表示欧洲波段
+RADIO_AP_ID_SEEKMODE = 1[0,1];           //默认搜台模式，0表示硬件seek模式，1表示软件seek模式
+RADIO_AP_ID_HINT_MODE = 0[0,1];          //搜台提示模式，0按键音提示，1灯闪灯
+//fm engine参数
+FMENGINE_AP_ID_SEEKTH = 7[0~19,1];  //搜台门限，范围及默认值视模组而定
+FMENGINE_CHANNEL_SEL = 0[0,1];           //fm处理通道选择 0:模拟通道 1:数字通道
+FMENGINE_GAIN_INPUT = 3[0~7,1];          //Fm增益:0:-12db,1:-3db,2:0db,3:1.5db,4:3db,5:4.5db,6:6db,7:7.5db
+FMENGINE_GAIN_ADC = 3[0~15,1];           //ADC Fm增益:0-45db, 每级递增3db
+FMENGINE_FREQ_32K_13M = 0[0,1];          //Fm选择32.768k或13M; 0=32768, 1=13M
+FMENGINE_CLK_PAD_LEVEL = 1[0~7,1];       //cpu输出13M时，gpio驱动能力
+FMENGINE_AP_ID_PAMODE = 0[0,1];      //PA输出模式，0表示非直驱，1表示直驱
+
+//record ap参数
+RECORD_INPUT_SOURCE = 3[0~4,1];          //录音来源:0:fm-in;1:line-in;2:单端mic;3差分MIC;4 DMIC
+RECORD_FORMAT_TYPE = 1[0,1];        	 //录音格式:0-wav; 1-mp3
+RECORD_WAV_ENCODE_TYPE = 1[0,1];         //wav编码格式:0-pcm; 1-adpcm
+RECORD_WAV_BITRATE = 6[5~10,1];          //wav比特率:5:256kbps; 6:512kbps; 7:768kbps; 8:1024kbps; 9:1411kbps; 10:1536kbps;
+RECORD_PCM_WAV_BITRATE = 6[5~10,1];          //wav比特率:5:256kbps; 6:512kbps; 7:768kbps; 8:1024kbps; 9:1411kbps; 10:1536kbps;
+RECORD_ADPCM_WAV_BITRATE = 1[1~4,1];           //adpcm比特率:1:32kbps; 2:64kbps; 3:128kbps; 4:192kbps;
+RECORD_MP3_BITRATE = 1[1~3,1];           //mp3比特率:1:32kbps; 2:64kbps; 3:128kbps; 4:192kbps;
+RECORD_TRACK_MODE = 0[0,1];              //自动分曲模式:0-关闭;1-开启
+RECORD_AVR_MODE = 0[0,1];                //avr模式:0-关闭;1-开启
+RECORD_GAIN_INPUT_LINEIN = 2[0~7,1];     //录音line-in增益:0:-12db,1:-3db,2:0db,3:1.5db,4:3db,5:4.5db,6:6db,7:7.5db
+RECORD_GAIN_ADC_LINEIN = 0[0~15,1];      //ADC line-in增益:0-45db, 每级递增3db
+RECORD_GAIN_INPUT_MIC = 7[0~7,1];        //录音mic-in增益:0:26db,1:30db,2:31.5db,3:33db,4:34.5db,5:36db,6:37.5db,7:39db
+RECORD_GAIN_ADC_MIC = 2[0~15,1];         //ADC mic-in增益:0-45db, 0:0db, 每级递增3db
+RECORD_GAIN_INPUT_FM = 2[0~7,1];         //录音Fm增益:0:-12db,1:-3db,2:0db,3:1.5db,4:3db,5:4.5db,6:6db,7:7.5db
+RECORD_GAIN_ADC_FM = 0[0~15,1];          //ADC Fm增益:0-45db, 每级递增3db
+RECORD_TRACK_LEVEL_BREAKSONG = 80[0~128,1];//自动分曲电压门槛值:0表示采用初始录音的噪声平均值，非零则-0.5dB一级
+RECORD_TRACK_LEVEL_AVR = 65[0~128,1];    //avr电压门槛值:0表示采用初始录音的噪声平均值，非零则-0.5dB一级
+RECORD_TRACK_DELAY = 3[0~10,1];          //avr延时时间:单位：s
+RECORD_SCAN_MAX_SPACE=1[0~4,1];          //一次扫描磁盘用于录音的空间最大值：0-全盘扫描；1-512M;2-1024M(1G);3-1536M(1.5G);4-2048M(2G)
+RECORD_LISTENING_ENABLE = 1[0,1];        // 是否打开录音监听功能
+RECORD_LISTENING_VOLUME = 15[0~40,1];      // 录音监听音量
+
+
+//usb
+USOUND_TYPE = 0[0,1];     //usb声卡or音箱选择（0，声卡；1，音箱）
+USB_VID = "0x0781";            //只能为16进制字符串
+USB_PID = "0xd101";     //USB音箱PID，只能为16进制字符串，三个PID必须都不相同
+USB_CARDREADER_PID = "0x74E7"; //读卡器PID，只能为16进制字符串，三个PID必须都不相同
+INF_UDISK_LABEL = "USB DISK AA";                   //最大11字符
+INF_USB_VENDOR = "ACTIONS";                        //最大8字符
+INF_USB_PRODUCTID = "HS USB FlashDisk";            //最大16字符
+INF_DEVICE_PRODUCT_NAME = "USB COMPOSITE";         //USB音箱设备名，最大16字符
+INF_SOUND_PRODUCT_NAME  = "USB AUDIO";             //USB声卡设备名，最大16字符
+INF_CARDREADER_PRODUCT_NAME = "USB CARDREADER";    //读卡器设备名，最大16字符
+INF_DEVICE_PRODUCER = "Actions Semiconductor";     //最大32字符
+INF_INQUIRY_INFORMATION_FOB = "ACTIONS USB DISK FOB 2.00"; //最大58个字符
+INF_INQUIRY_INFORMATION_CDROM = "ACTIONS USB DISK CDROM  1.00"; //最大58个字符
+
+
+

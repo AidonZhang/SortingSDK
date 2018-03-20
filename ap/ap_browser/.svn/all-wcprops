@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ap_browser
+END
+browser_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1356/trunk/US216A/case/ap/ap_browser/browser_res.h
+END
+browser_scene_menu.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1368/trunk/US216A/case/ap/ap_browser/browser_scene_menu.c
+END
+ap_browser.xn
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_browser/ap_browser.xn
+END
+browser_menu_cfg.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1355/trunk/US216A/case/ap/ap_browser/browser_menu_cfg.c
+END
+browser_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/803/trunk/US216A/case/ap/ap_browser/browser_main.c
+END
+browser_message.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_browser/browser_message.c
+END
+browser_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_browser/browser_sty.h
+END
+browser.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/725/trunk/US216A/case/ap/ap_browser/browser.h
+END
+browser_scene_browsing.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_browser/browser_scene_browsing.c
+END
+browser_menu_cfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1355/trunk/US216A/case/ap/ap_browser/browser_menu_cfg.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_browser/Makefile
+END
+browser_comfunc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1077/trunk/US216A/case/ap/ap_browser/browser_comfunc.c
+END

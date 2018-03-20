@@ -1,0 +1,67 @@
+10
+
+dir
+2603
+http://srv-fw:8080/SVN2/GL5116_MP3/trunk/US216A/case/resource
+http://srv-fw:8080/SVN2/GL5116_MP3
+
+
+
+2018-03-06T02:09:02.235765Z
+2598
+ACTIONS\x5czhangchuanlong
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b204a87-3f64-b84e-ba30-7097e8bfba96
+
+udisk
+dir
+
+logo
+dir
+
+music
+dir
+
+playlist
+dir
+
+browser
+dir
+
+config
+dir
+
+end
+dir
+
+upgrade
+dir
+
+common
+dir
+
+MainMenu
+dir
+
+setting
+dir
+
+radio
+dir
+
+record
+dir
+

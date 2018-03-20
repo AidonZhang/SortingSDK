@@ -1,0 +1,14 @@
+   text	   data	    bss	    dec	    hex	filename
+  0x394	  0x300	    0x0	   1684	    694	./obj/mengine_audible_deal.o
+  0x188	  0x200	    0x0	    904	    388	./obj/mengine_audible_sys.o
+  0x4e8	    0x0	    0x0	   1256	    4e8	./obj/mengine_control.o
+  0x77c	    0x0	    0x0	   1916	    77c	./obj/mengine_event.o
+  0x668	    0x0	    0x0	   1640	    668	./obj/mengine_event_audible.o
+  0x760	    0x0	    0x0	   1888	    760	./obj/mengine_event_param.o
+  0x4d8	    0x0	    0x0	   1240	    4d8	./obj/mengine_event_volume.o
+  0x6b0	    0x0	    0x0	   1712	    6b0	./obj/mengine_main.o
+  0x750	    0x0	    0x0	   1872	    750	./obj/mengine_message_done.o
+  0x7b4	   0x18	    0x0	   1996	    7cc	./obj/mengine_play_deal.o
+  0x2d8	    0x0	    0x0	    728	    2d8	./obj/mengine_play_deal_sub.o
+    0x0	   0x10	  0x304	    788	    314	./obj/mengine_rdata.o
+  0x200	    0x0	    0x0	    512	    200	./obj/music_file_io.o

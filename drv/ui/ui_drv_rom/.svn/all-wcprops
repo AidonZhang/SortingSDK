@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/drv/ui/ui_drv_rom
+END
+rom_data_and_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/ui_drv_rom/rom_data_and_common.c
+END
+rom_ui_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/ui_drv_rom/rom_ui_string.c
+END
+ui_driver_rom.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1420/trunk/US216A/case/drv/ui/ui_drv_rom/ui_driver_rom.h
+END
+rom_ui_image.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/53/trunk/US216A/case/drv/ui/ui_drv_rom/rom_ui_image.c
+END

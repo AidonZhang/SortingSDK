@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/ap/ap_record
+END
+record_scene_recording_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/SVN2/GL5116_MP3/!svn/ver/1823/trunk/US216A/case/ap/ap_record/record_scene_recording_sub.c
+END
+ap_record.xn
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/435/trunk/US216A/case/ap/ap_record/ap_record.xn
+END
+record_menu.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/1393/trunk/US216A/case/ap/ap_record/record_menu.c
+END
+ap_record.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/1823/trunk/US216A/case/ap/ap_record/ap_record.h
+END
+record_file_io.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/435/trunk/US216A/case/ap/ap_record/record_file_io.c
+END
+record_paint.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/681/trunk/US216A/case/ap/ap_record/record_paint.c
+END
+record_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/ap/ap_record/record_file.c
+END
+record_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/1823/trunk/US216A/case/ap/ap_record/record_control.c
+END
+record_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/681/trunk/US216A/case/ap/ap_record/record_sty.h
+END
+record_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/1898/trunk/US216A/case/ap/ap_record/record_main.c
+END
+record_message.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/1384/trunk/US216A/case/ap/ap_record/record_message.c
+END
+record_menu_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1713/trunk/US216A/case/ap/ap_record/record_menu_config.c
+END
+record_scene_recording.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1695/trunk/US216A/case/ap/ap_record/record_scene_recording.c
+END
+record_disk.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/1413/trunk/US216A/case/ap/ap_record/record_disk.c
+END
+record_alarm.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/15/trunk/US216A/case/ap/ap_record/record_alarm.c
+END
+record_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/1355/trunk/US216A/case/ap/ap_record/record_res.h
+END
+record_menu_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1355/trunk/US216A/case/ap/ap_record/record_menu_config.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/175/trunk/US216A/case/ap/ap_record/Makefile
+END

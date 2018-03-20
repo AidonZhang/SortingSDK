@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ap_udisk
+END
+udisk_create_label.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1745/trunk/US216A/case/ap/ap_udisk/udisk_create_label.c
+END
+udisk_task.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/1898/trunk/US216A/case/ap/ap_udisk/udisk_task.c
+END
+ap_udisk.xn
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/588/trunk/US216A/case/ap/ap_udisk/ap_udisk.xn
+END
+main_udisk.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/1436/trunk/US216A/case/ap/ap_udisk/main_udisk.c
+END
+udisk_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/262/trunk/US216A/case/ap/ap_udisk/udisk_sty.h
+END
+ap_udisk.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/1401/trunk/US216A/case/ap/ap_udisk/ap_udisk.h
+END
+udisk_enter2exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/1898/trunk/US216A/case/ap/ap_udisk/udisk_enter2exit.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/729/trunk/US216A/case/ap/ap_udisk/Makefile
+END
+udisk_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/262/trunk/US216A/case/ap/ap_udisk/udisk_res.h
+END

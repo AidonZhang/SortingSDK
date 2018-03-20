@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ap_radio
+END
+app_radio_autoseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1806/trunk/US216A/case/ap/ap_radio/app_radio_autoseek.c
+END
+app_radio_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1607/trunk/US216A/case/ap/ap_radio/app_radio_control.c
+END
+app_radio_softseek.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1806/trunk/US216A/case/ap/ap_radio/app_radio_softseek.c
+END
+app_radio_list_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_list_common.c
+END
+radio_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/534/trunk/US216A/case/ap/ap_radio/radio_sty.h
+END
+app_radio_saved_preset.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_saved_preset.c
+END
+app_radio_delete_preset.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_delete_preset.c
+END
+app_radio_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/1108/trunk/US216A/case/ap/ap_radio/app_radio_main.c
+END
+app_radio.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/1607/trunk/US216A/case/ap/ap_radio/app_radio.h
+END
+app_radio_playing_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/935/trunk/US216A/case/ap/ap_radio/app_radio_playing_deal.c
+END
+app_radio_global_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_global_data.c
+END
+app_radio_menu_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_menu_config.c
+END
+app_radio_rcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/825/trunk/US216A/case/ap/ap_radio/app_radio_rcode.c
+END
+radio_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/713/trunk/US216A/case/ap/ap_radio/radio_res.h
+END
+app_radio_menu_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_menu_config.h
+END
+app_radio_playing_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/713/trunk/US216A/case/ap/ap_radio/app_radio_playing_user.c
+END
+app_radio_menu_process.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/app_radio_menu_process.c
+END
+ap_radio.xn
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/ap_radio.xn
+END
+app_radio_playing.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1607/trunk/US216A/case/ap/ap_radio/app_radio_playing.c
+END
+app_radio_userlist_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/803/trunk/US216A/case/ap/ap_radio/app_radio_userlist_parse.c
+END
+app_radio_search.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/718/trunk/US216A/case/ap/ap_radio/app_radio_search.c
+END
+app_radio_list_bank.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/702/trunk/US216A/case/ap/ap_radio/app_radio_list_bank.c
+END
+app_radio_option.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/935/trunk/US216A/case/ap/ap_radio/app_radio_option.c
+END
+app_radio_mainmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/935/trunk/US216A/case/ap/ap_radio/app_radio_mainmenu.c
+END
+app_radio_list_keydeal.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/702/trunk/US216A/case/ap/ap_radio/app_radio_list_keydeal.c
+END
+app_radio_autoseek_bank.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1727/trunk/US216A/case/ap/ap_radio/app_radio_autoseek_bank.c
+END
+app_radio_scene_dispatch.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1723/trunk/US216A/case/ap/ap_radio/app_radio_scene_dispatch.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/ap/ap_radio/Makefile
+END
+app_radio_userlist_parse_uni.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/SVN2/GL5116_MP3/!svn/ver/803/trunk/US216A/case/ap/ap_radio/app_radio_userlist_parse_uni.c
+END

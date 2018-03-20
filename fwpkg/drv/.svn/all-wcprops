@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/drv
+END
+drv_ui.drv
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/fwpkg/drv/drv_ui.drv
+END
+key.drv
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/drv/key.drv
+END
+welcome.bin
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/fwpkg/drv/welcome.bin
+END
+ccd.drv
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/fwpkg/drv/ccd.drv
+END
+drv_fm.drv
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/fwpkg/drv/drv_fm.drv
+END
+drv_lcd.drv
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/fwpkg/drv/drv_lcd.drv
+END

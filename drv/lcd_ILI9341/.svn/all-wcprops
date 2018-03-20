@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/drv/lcd_ILI9341
+END
+bank_a_lcd_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/314/trunk/US216A/case/drv/lcd_ILI9341/bank_a_lcd_init.c
+END
+lcd_driver.xn
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/43/trunk/US216A/case/drv/lcd_ILI9341/lcd_driver.xn
+END
+lcd_hardware_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1899/trunk/US216A/case/drv/lcd_ILI9341/lcd_hardware_init.c
+END
+lcd_inner.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/314/trunk/US216A/case/drv/lcd_ILI9341/lcd_inner.h
+END
+bank_a_lcd_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1785/trunk/US216A/case/drv/lcd_ILI9341/bank_a_lcd_functions.c
+END
+drv_lcd.drv
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/2467/trunk/US216A/case/drv/lcd_ILI9341/drv_lcd.drv
+END
+rcode_lcd_functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/579/trunk/US216A/case/drv/lcd_ILI9341/rcode_lcd_functions.c
+END
+rcode_lcd_functions_1.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/901/trunk/US216A/case/drv/lcd_ILI9341/rcode_lcd_functions_1.c
+END
+rcode_lcd_functions_2.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/901/trunk/US216A/case/drv/lcd_ILI9341/rcode_lcd_functions_2.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/60/trunk/US216A/case/drv/lcd_ILI9341/Makefile
+END
+rcode_lcd_op_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1896/trunk/US216A/case/drv/lcd_ILI9341/rcode_lcd_op_entry.c
+END

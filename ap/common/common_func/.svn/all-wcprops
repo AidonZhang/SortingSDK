@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/common/common_func
+END
+common_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/5/trunk/US216A/case/ap/common/common_func/common_string.c
+END
+common_key.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1853/trunk/US216A/case/ap/common/common_func/common_key.c
+END
+common_setdae_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/SVN2/GL5116_MP3/!svn/ver/1758/trunk/US216A/case/ap/common/common_func/common_setdae_init.c
+END
+common_sound.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1853/trunk/US216A/case/ap/common/common_func/common_sound.c
+END
+common_string2.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/5/trunk/US216A/case/ap/common/common_func/common_string2.c
+END
+common_charge.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1139/trunk/US216A/case/ap/common/common_func/common_charge.c
+END
+common_confmenu.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/5/trunk/US216A/case/ap/common/common_func/common_confmenu.c
+END
+common_msgmap_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/SVN2/GL5116_MP3/!svn/ver/5/trunk/US216A/case/ap/common/common_func/common_msgmap_data.c
+END
+common_history.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/888/trunk/US216A/case/ap/common/common_func/common_history.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/4/trunk/US216A/case/ap/common/common_func/Makefile
+END
+common_msgmap.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/5/trunk/US216A/case/ap/common/common_func/common_msgmap.c
+END

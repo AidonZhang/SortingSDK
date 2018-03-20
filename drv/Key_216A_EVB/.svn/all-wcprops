@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/drv/Key_216A_EVB
+END
+key_bankb0_exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/600/trunk/US216A/case/drv/Key_216A_EVB/key_bankb0_exit.c
+END
+key.drv
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/SVN2/GL5116_MP3/!svn/ver/2591/trunk/US216A/case/drv/Key_216A_EVB/key.drv
+END
+key_rcode_op_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/1896/trunk/US216A/case/drv/Key_216A_EVB/key_rcode_op_entry.c
+END
+key_bankb0_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/542/trunk/US216A/case/drv/Key_216A_EVB/key_bankb0_init.c
+END
+key_inner.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/1896/trunk/US216A/case/drv/Key_216A_EVB/key_inner.h
+END
+key_rcode_scan.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1896/trunk/US216A/case/drv/Key_216A_EVB/key_rcode_scan.c
+END
+key.xn
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/600/trunk/US216A/case/drv/Key_216A_EVB/key.xn
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/12/trunk/US216A/case/drv/Key_216A_EVB/Makefile
+END

@@ -1,0 +1,5 @@
+   text	   data	    bss	    dec	    hex	filename
+  0x65c	    0x8	   0xdc	   1856	    740	./obj/main_udisk.o
+  0x300	    0x0	   0x34	    820	    334	./obj/udisk_create_label.o
+  0x24c	    0x0	    0x0	    588	    24c	./obj/udisk_enter2exit.o
+  0x648	    0x0	    0x0	   1608	    648	./obj/udisk_task.o

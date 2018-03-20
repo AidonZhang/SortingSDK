@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/2602/trunk/US216A/case/ap/ap_playlist
+END
+plist_m3u_deal_sub1.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1303/trunk/US216A/case/ap/ap_playlist/plist_m3u_deal_sub1.c
+END
+plist_scan_music.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/2601/trunk/US216A/case/ap/ap_playlist/plist_scan_music.c
+END
+plist_sort_music.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/2601/trunk/US216A/case/ap/ap_playlist/plist_sort_music.c
+END
+plist_creat_userpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1584/trunk/US216A/case/ap/ap_playlist/plist_creat_userpl.c
+END
+plist_fsel.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/1303/trunk/US216A/case/ap/ap_playlist/plist_fsel.c
+END
+plist_rcode.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/1351/trunk/US216A/case/ap/ap_playlist/plist_rcode.c
+END
+plist_m3u_deal_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1770/trunk/US216A/case/ap/ap_playlist/plist_m3u_deal_sub.c
+END
+plist_sort_al.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/1303/trunk/US216A/case/ap/ap_playlist/plist_sort_al.c
+END
+ap_plist.xn
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/1889/trunk/US216A/case/ap/ap_playlist/ap_plist.xn
+END
+data_mcro.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/2593/trunk/US216A/case/ap/ap_playlist/data_mcro.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/123/trunk/US216A/case/ap/ap_playlist/Makefile
+END
+plist_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/2604/trunk/US216A/case/ap/ap_playlist/plist_main.c
+END
+plist_creat_albumart_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/SVN2/GL5116_MP3/!svn/ver/1770/trunk/US216A/case/ap/ap_playlist/plist_creat_albumart_file.c
+END
+plist.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2601/trunk/US216A/case/ap/ap_playlist/plist.h
+END
+plist_sort_method.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/2601/trunk/US216A/case/ap/ap_playlist/plist_sort_method.c
+END
+plist_creat_bmk.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1781/trunk/US216A/case/ap/ap_playlist/plist_creat_bmk.c
+END
+plist_8k.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/2593/trunk/US216A/case/ap/ap_playlist/plist_8k.h
+END
+plist_m3u_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1303/trunk/US216A/case/ap/ap_playlist/plist_m3u_deal.c
+END
+playlist_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/313/trunk/US216A/case/ap/ap_playlist/playlist_sty.h
+END
+plist_operate_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1770/trunk/US216A/case/ap/ap_playlist/plist_operate_list.c
+END
+plist_rdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/2592/trunk/US216A/case/ap/ap_playlist/plist_rdata.c
+END
+plist_scan_func.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/1303/trunk/US216A/case/ap/ap_playlist/plist_scan_func.c
+END
+plist_sort_music_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/SVN2/GL5116_MP3/!svn/ver/2602/trunk/US216A/case/ap/ap_playlist/plist_sort_music_sub.c
+END
+plist_creat_userpl_sub.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/SVN2/GL5116_MP3/!svn/ver/1584/trunk/US216A/case/ap/ap_playlist/plist_creat_userpl_sub.c
+END
+plist_ui_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/313/trunk/US216A/case/ap/ap_playlist/plist_ui_deal.c
+END
+plist_sys_deal.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/1770/trunk/US216A/case/ap/ap_playlist/plist_sys_deal.c
+END
+playlist_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/318/trunk/US216A/case/ap/ap_playlist/playlist_res.h
+END
+plist_scan_audible.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1781/trunk/US216A/case/ap/ap_playlist/plist_scan_audible.c
+END
+plist_other_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1770/trunk/US216A/case/ap/ap_playlist/plist_other_list.c
+END
+plist_sort_audible.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/SVN2/GL5116_MP3/!svn/ver/1781/trunk/US216A/case/ap/ap_playlist/plist_sort_audible.c
+END
+rdata_ex.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/SVN2/GL5116_MP3/!svn/ver/2592/trunk/US216A/case/ap/ap_playlist/rdata_ex.h
+END

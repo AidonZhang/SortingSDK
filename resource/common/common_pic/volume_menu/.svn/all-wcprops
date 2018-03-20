@@ -1,0 +1,209 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/resource/common/common_pic/volume_menu
+END
+vol_setting_bg.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN2/GL5116_MP3/!svn/ver/245/trunk/US216A/case/resource/common/common_pic/volume_menu/vol_setting_bg.bmp
+END
+p_volume_down_clear_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_down_clear_v.bmp
+END
+p_volume_arrow_left.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_arrow_left.bmp
+END
+p_volume_numbg.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_numbg.bmp
+END
+p_volume_up_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_up_v.bmp
+END
+p_volume_right.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_right.bmp
+END
+p_volume_bg_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_bg_v.bmp
+END
+p_volume_current_clear_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_current_clear_v.bmp
+END
+p_volume_current_line_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_current_line_v.bmp
+END
+p_volumebar_silent.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/SVN2/GL5116_MP3/!svn/ver/313/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volumebar_silent.bmp
+END
+p_volume_forbidden_clean_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_forbidden_clean_v.bmp
+END
+p_volume_pro_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_pro_v.bmp
+END
+p_volume_limit_line.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_limit_line.bmp
+END
+p_volume_arrow_right.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_arrow_right.bmp
+END
+音量数字坐标.txt
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/%E9%9F%B3%E9%87%8F%E6%95%B0%E5%AD%97%E5%9D%90%E6%A0%87.txt
+END
+p_volume_current_clear.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_current_clear.bmp
+END
+p_volume_current_line.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_current_line.bmp
+END
+p_volume_bar_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_bar_v.bmp
+END
+p_volume_down_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_down_v.bmp
+END
+volume_progress_bg1_p.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/volume_progress_bg1_p.bmp
+END
+p_current_value_bg.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_current_value_bg.bmp
+END
+p_volume_limit_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_limit_v.bmp
+END
+p_volume_bar.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_bar.bmp
+END
+p_volume_fill_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_fill_v.bmp
+END
+p_volume_l_arrow_bg.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_l_arrow_bg.bmp
+END
+p_volume_speaker_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_speaker_v.bmp
+END
+p_volume_up_clear_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_up_clear_v.bmp
+END
+p_volume_forbidden_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_forbidden_v.bmp
+END
+p_volume_r_arrow_bg.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_r_arrow_bg.bmp
+END
+volume_progress1_p.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/volume_progress1_p.bmp
+END
+p_volume_unpro_v.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_unpro_v.bmp
+END
+p_volumebar_silent_clear.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/SVN2/GL5116_MP3/!svn/ver/140/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volumebar_silent_clear.bmp
+END
+p_volume_speaker.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/SVN2/GL5116_MP3/!svn/ver/313/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_speaker.bmp
+END
+p_volume_left.bmp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/SVN2/GL5116_MP3/!svn/ver/230/trunk/US216A/case/resource/common/common_pic/volume_menu/p_volume_left.bmp
+END

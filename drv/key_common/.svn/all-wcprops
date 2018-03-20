@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/drv/key_common
+END
+adjust_freq_comm.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/SVN2/GL5116_MP3/!svn/ver/1913/trunk/US216A/case/drv/key_common/adjust_freq_comm.c
+END
+key_bat_charge_comm.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/SVN2/GL5116_MP3/!svn/ver/1200/trunk/US216A/case/drv/key_common/key_bat_charge_comm.c
+END
+adjust_freq_inc.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/SVN2/GL5116_MP3/!svn/ver/908/trunk/US216A/case/drv/key_common/adjust_freq_inc.h
+END
+key_peripheral_detect.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/SVN2/GL5116_MP3/!svn/ver/1105/trunk/US216A/case/drv/key_common/key_peripheral_detect.c
+END

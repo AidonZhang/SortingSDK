@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/cfg
+END
+rules.mk
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/cfg/rules.mk
+END
+common_path
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/cfg/common_path
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/SVN2/GL5116_MP3/!svn/ver/1686/trunk/US216A/case/cfg/Makefile
+END
+Makefile_release
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/cfg/Makefile_release
+END
+common_sub_path
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/cfg/common_sub_path
+END

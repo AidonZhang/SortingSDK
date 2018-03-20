@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/common/data
+END
+common_ui_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/696/trunk/US216A/case/ap/common/data/common_ui_data.c
+END
+applib_app_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/4/trunk/US216A/case/ap/common/data/applib_app_data.c
+END
+applib_globe_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/SVN2/GL5116_MP3/!svn/ver/1263/trunk/US216A/case/ap/common/data/applib_globe_data.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/4/trunk/US216A/case/ap/common/data/Makefile
+END
+common_func_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/SVN2/GL5116_MP3/!svn/ver/554/trunk/US216A/case/ap/common/data/common_func_data.c
+END

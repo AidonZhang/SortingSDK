@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/ap/ud_stub
+END
+ud_stub_exit.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub_exit.c
+END
+ud_set_blkep.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_set_blkep.c
+END
+ud_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_data.c
+END
+ud_deinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_deinit.c
+END
+ud_stub.xn
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub.xn
+END
+ud_stub.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub.h
+END
+USB_STUB.BIN
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/USB_STUB.BIN
+END
+ud_rom.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_rom.c
+END
+ud_stub_entry.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub_entry.c
+END
+ud_setup.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_setup.c
+END
+ud_stub_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub_init.c
+END
+ud_stub_oper.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_stub_oper.c
+END
+ud_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_init.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/Makefile
+END
+ud_intern.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_intern.h
+END
+ud_setup.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/SVN2/GL5116_MP3/!svn/ver/2/trunk/US216A/case/ap/ud_stub/ud_setup.h
+END

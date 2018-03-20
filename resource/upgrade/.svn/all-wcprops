@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/SVN2/GL5116_MP3/!svn/ver/2384/trunk/US216A/case/resource/upgrade
+END
+copyfile.bat
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/SVN2/GL5116_MP3/!svn/ver/362/trunk/US216A/case/resource/upgrade/copyfile.bat
+END
+pro_config.ini
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/SVN2/GL5116_MP3/!svn/ver/375/trunk/US216A/case/resource/upgrade/pro_config.ini
+END
+upgrade.ui
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/SVN2/GL5116_MP3/!svn/ver/680/trunk/US216A/case/resource/upgrade/upgrade.ui
+END
+upgrade.sty
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/680/trunk/US216A/case/resource/upgrade/upgrade.sty
+END
+upgrade_res.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/680/trunk/US216A/case/resource/upgrade/upgrade_res.h
+END
+upgrade.xls
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/SVN2/GL5116_MP3/!svn/ver/558/trunk/US216A/case/resource/upgrade/upgrade.xls
+END
+upgrade_sty.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/SVN2/GL5116_MP3/!svn/ver/680/trunk/US216A/case/resource/upgrade/upgrade_sty.h
+END

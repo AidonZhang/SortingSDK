@@ -244,9 +244,7 @@ bool list_resort(uint16* index_buf, uint16 index_num, char* str_buf, plist_type_
         {
             if (0 != compare_string(&index_buf[i], &index_buf[i - 1], len))
             {
-                //不相等
-                
-                
+                //不相等     
                  n = 0;
             }
             else
